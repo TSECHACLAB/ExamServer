@@ -2,7 +2,7 @@
  * 受験セッションのカスタムフック
  *
  * 問題の読み込み、回答状態の管理、タイマー、採点リクエストを一元管理する。
- * sessionStorage を利用してブラウザリロード時に回答状態を復帰できる。
+ * localStorage を利用してブラウザリロード時に回答状態を復帰できる。
  */
 
 "use client";
@@ -16,9 +16,16 @@ import type {
   AnswerResponse,
   BatchAnswerResponse,
 } from "@/types/exam";
+import {
+  applyAnswerSelection,
+  createEmptyAnswerState,
+  markDontKnow,
+  normalizeAnswerState,
+  toggleDontKnow,
+} from "@/lib/answer-state";
 
 // ---------------------------------------------------------------------------
-// sessionStorage による状態復帰キー
+// localStorage による状態復帰キー
 // ---------------------------------------------------------------------------
 const SESSION_KEY = "exam-session-state";
 
@@ -68,7 +75,7 @@ interface ExamSessionState {
 interface ExamSessionActions {
   setAnswer: (answer: number | number[]) => void;
   toggleFlag: () => void;
-  toggleUncertain: () => void;
+  toggleDontKnow: () => void;
   goTo: (index: number) => void;
   goNext: () => void;
   goPrev: () => void;
@@ -165,7 +172,7 @@ export function useExamSession(
         }
       }
 
-      // sessionStorage から復帰を試みる。
+      // localStorage から復帰を試みる。
       // カテゴリやランダム出題順が違うセッションを復帰すると、
       // 表示中の選択肢と採点対象 questionId がズレるため、問題ID列まで一致させる。
       if (isRestorableSession(saved, categoryId, allQuestions)) {
@@ -173,12 +180,9 @@ export function useExamSession(
         setCurrentIndex(Math.min(saved.currentIndex, allQuestions.length - 1));
         setRemainingTime(saved.remainingTime);
       } else {
-        const initialAnswers: AnswerState[] = allQuestions.map((q) => ({
-          questionId: q.id,
-          selectedAnswer: null,
-          flagged: false,
-          uncertain: false,
-        }));
+        const initialAnswers: AnswerState[] = allQuestions.map((q) =>
+          createEmptyAnswerState(q.id)
+        );
         setAnswers(initialAnswers);
         setRemainingTime(timerEnabled ? timeLimit : null);
       }
@@ -212,7 +216,7 @@ export function useExamSession(
   }, [hasTimer, finished]);
 
   // ---------------------------------------------------------------------------
-  // sessionStorage への保存（回答変更時）
+  // localStorage への保存（回答変更時）
   // ---------------------------------------------------------------------------
   useEffect(() => {
     if (answers.length === 0) return;
@@ -246,9 +250,7 @@ export function useExamSession(
     (answer: number | number[]) => {
       setAnswers((prev) =>
         prev.map((a, i) =>
-          i === currentIndex
-            ? { ...a, selectedAnswer: answer, uncertain: false }
-            : a
+          i === currentIndex ? applyAnswerSelection(a, answer) : a
         )
       );
       // 一問一答で結果表示中に回答を変えたらリセット
@@ -265,15 +267,11 @@ export function useExamSession(
     );
   }, [currentIndex]);
 
-  const toggleUncertain = useCallback(() => {
+  const toggleDontKnowAction = useCallback(() => {
     setAnswers((prev) =>
       prev.map((a, i) =>
         i === currentIndex
-          ? {
-              ...a,
-              selectedAnswer: null,
-              uncertain: !a.uncertain,
-            }
+          ? toggleDontKnow(a)
           : a
       )
     );
@@ -323,7 +321,7 @@ export function useExamSession(
     setAnswers((prev) =>
       prev.map((a, i) =>
         i === currentIndex
-          ? { ...a, selectedAnswer: null, uncertain: true }
+          ? markDontKnow(a)
           : a
       )
     );
@@ -363,7 +361,8 @@ export function useExamSession(
         categoryId,
         answers: answers.map((a, index) => ({
           questionId: questions[index]?.id ?? a.questionId,
-          answer: a.selectedAnswer,
+          answer: a.dontKnow ? null : a.selectedAnswer,
+          dontKnow: a.dontKnow,
         })),
       }),
     });
@@ -399,7 +398,7 @@ export function useExamSession(
     scenarioMap,
     setAnswer,
     toggleFlag,
-    toggleUncertain,
+    toggleDontKnow: toggleDontKnowAction,
     goTo,
     goNext,
     goPrev,
@@ -428,7 +427,8 @@ function shuffle<T>(arr: T[]): T[] {
 function loadSessionState(): SessionState | null {
   if (typeof window === "undefined") return null;
   try {
-    const raw = sessionStorage.getItem(SESSION_KEY);
+    const raw =
+      localStorage.getItem(SESSION_KEY) ?? sessionStorage.getItem(SESSION_KEY);
     return raw ? JSON.parse(raw) : null;
   } catch {
     return null;
@@ -436,10 +436,7 @@ function loadSessionState(): SessionState | null {
 }
 
 function normalizeSavedAnswers(answers: AnswerState[]): AnswerState[] {
-  return answers.map((answer) => ({
-    ...answer,
-    uncertain: Boolean(answer.uncertain),
-  }));
+  return answers.map((answer) => normalizeAnswerState(answer));
 }
 
 function isRestorableSession(
@@ -480,10 +477,12 @@ function restoreSavedQuestionOrder(
 
 function saveSessionState(state: SessionState): void {
   if (typeof window === "undefined") return;
+  localStorage.setItem(SESSION_KEY, JSON.stringify(state));
   sessionStorage.setItem(SESSION_KEY, JSON.stringify(state));
 }
 
 function clearSessionState(): void {
   if (typeof window === "undefined") return;
+  localStorage.removeItem(SESSION_KEY);
   sessionStorage.removeItem(SESSION_KEY);
 }

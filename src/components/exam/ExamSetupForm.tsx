@@ -58,6 +58,7 @@ export default function ExamSetupForm({
   const handleStart = () => {
     if (!canStart) return;
 
+    localStorage.removeItem("exam-session-state");
     sessionStorage.removeItem("exam-session-state");
     const params = new URLSearchParams({
       mode,

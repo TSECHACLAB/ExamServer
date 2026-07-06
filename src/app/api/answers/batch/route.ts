@@ -23,9 +23,15 @@ export async function POST(request: NextRequest) {
   }
 
   // 回答から該当するカテゴリの問題を特定
-  const answerMap = new Map<string, number | number[] | null>();
+  const answerMap = new Map<
+    string,
+    { answer: number | number[] | null; dontKnow: boolean }
+  >();
   for (const a of body.answers) {
-    answerMap.set(a.questionId, a.answer);
+    answerMap.set(a.questionId, {
+      answer: a.answer,
+      dontKnow: Boolean(a.dontKnow),
+    });
   }
 
   // categoryId が指定されている場合はそのカテゴリの問題のみ対象

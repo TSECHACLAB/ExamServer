@@ -11,13 +11,13 @@ const answers: AnswerState[] = [
     questionId: "q1",
     selectedAnswer: null,
     flagged: false,
-    uncertain: true,
+    dontKnow: true,
   },
   {
     questionId: "q2",
     selectedAnswer: 1,
     flagged: true,
-    uncertain: false,
+    dontKnow: false,
   },
 ];
 
@@ -27,7 +27,7 @@ afterEach(() => {
 
 describe("ExamShell", () => {
   it("shows and calls the unknown answer action", () => {
-    const onUncertain = vi.fn();
+    const onDontKnow = vi.fn();
 
     render(
       <ExamShell
@@ -37,9 +37,9 @@ describe("ExamShell", () => {
         answers={answers}
         remainingTime={null}
         isFlagged={false}
-        isUncertain
+        isDontKnow
         onFlag={vi.fn()}
-        onUncertain={onUncertain}
+        onDontKnow={onDontKnow}
         onPrev={vi.fn()}
         onNext={vi.fn()}
         onNavigate={vi.fn()}
@@ -59,7 +59,7 @@ describe("ExamShell", () => {
 
     fireEvent.click(unknownButton);
 
-    expect(onUncertain).toHaveBeenCalledTimes(1);
+    expect(onDontKnow).toHaveBeenCalledTimes(1);
   });
 });
 

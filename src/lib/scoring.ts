@@ -7,6 +7,15 @@
 
 import type { Question, QuestionResult } from "@/types/exam";
 
+type SubmittedAnswer =
+  | number
+  | number[]
+  | null
+  | {
+      answer: number | number[] | null;
+      dontKnow?: boolean;
+    };
+
 /**
  * 1問を採点する
  *
@@ -52,19 +61,21 @@ export function scoreQuestion(
  */
 export function scoreExam(
   questions: Question[],
-  answers: Map<string, number | number[] | null>
+  answers: Map<string, SubmittedAnswer>
 ): {
   results: QuestionResult[];
   totalScore: number;
   correctCount: number;
 } {
   const results: QuestionResult[] = questions.map((q) => {
-    const userAnswer = answers.get(q.id) ?? null;
+    const submitted = normalizeSubmittedAnswer(answers.get(q.id) ?? null);
+    const userAnswer = submitted.dontKnow ? null : submitted.answer;
     const score = scoreQuestion(q, userAnswer);
 
     return {
       questionId: q.id,
       userAnswer,
+      dontKnow: submitted.dontKnow,
       correctAnswer: q.answer,
       score,
       explanation: q.explanation,
@@ -79,4 +90,25 @@ export function scoreExam(
   const correctCount = results.filter((r) => r.score === 1).length;
 
   return { results, totalScore, correctCount };
+}
+
+function normalizeSubmittedAnswer(answer: SubmittedAnswer): {
+  answer: number | number[] | null;
+  dontKnow: boolean;
+} {
+  if (
+    answer !== null &&
+    typeof answer === "object" &&
+    !Array.isArray(answer)
+  ) {
+    return {
+      answer: answer.answer,
+      dontKnow: Boolean(answer.dontKnow),
+    };
+  }
+
+  return {
+    answer,
+    dontKnow: false,
+  };
 }

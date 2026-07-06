@@ -18,11 +18,11 @@ interface Props {
   /** タイマー表示（nullの場合は非表示） */
   remainingTime: number | null;
   isFlagged: boolean;
-  isUncertain: boolean;
+  isDontKnow: boolean;
   /** シナリオ問題の場合 true — 本体エリアを広く取る */
   isScenario?: boolean;
   onFlag: () => void;
-  onUncertain: () => void;
+  onDontKnow: () => void;
   onPrev: () => void;
   onNext: () => void;
   onNavigate: (index: number) => void;
@@ -38,10 +38,10 @@ export default function ExamShell({
   answers,
   remainingTime,
   isFlagged,
-  isUncertain,
+  isDontKnow,
   isScenario = false,
   onFlag,
-  onUncertain,
+  onDontKnow,
   onPrev,
   onNext,
   onNavigate,
@@ -53,7 +53,7 @@ export default function ExamShell({
     (answer) => answer.selectedAnswer !== null
   ).length;
   const flaggedCount = answers.filter((answer) => answer.flagged).length;
-  const uncertainCount = answers.filter((answer) => answer.uncertain).length;
+  const dontKnowCount = answers.filter((answer) => answer.dontKnow).length;
   const progress = Math.round(((currentIndex + 1) / totalCount) * 100);
   const shellWidth = isScenario ? "max-w-7xl" : "max-w-[88rem]";
 
@@ -68,7 +68,7 @@ export default function ExamShell({
               </p>
               <p className="mt-0.5 text-xs text-gray-500">
                 問{currentIndex + 1}/{totalCount} ・ 解答済み {answeredCount}
-                問 ・ 分からない {uncertainCount}問 ・ フラグ {flaggedCount}件
+                問 ・ 分からない {dontKnowCount}問 ・ フラグ {flaggedCount}件
               </p>
             </div>
 
@@ -156,10 +156,10 @@ export default function ExamShell({
 
             <div className="flex min-w-0 items-center gap-2">
               <button
-                onClick={onUncertain}
-                aria-pressed={isUncertain}
+                onClick={onDontKnow}
+                aria-pressed={isDontKnow}
                 className={`min-h-10 rounded-md border px-3 py-2 text-sm font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 sm:px-4 ${
-                  isUncertain
+                  isDontKnow
                     ? "border-sky-300 bg-sky-50 text-sky-800"
                     : "border-gray-300 bg-white text-gray-700 hover:bg-gray-50"
                 }`}

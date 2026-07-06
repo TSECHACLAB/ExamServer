@@ -129,7 +129,7 @@ export interface AnswerState {
   /** フラグ付き */
   flagged: boolean;
   /** 意図的に「分からない」とした */
-  uncertain: boolean;
+  dontKnow: boolean;
 }
 
 // ---------------------------------------------------------------------------
@@ -141,6 +141,8 @@ export interface QuestionResult {
   questionId: string;
   /** ユーザーの回答 */
   userAnswer: number | number[] | null;
+  /** 意図的に「分からない」とした */
+  dontKnow: boolean;
   /** 正解 */
   correctAnswer: number | number[];
   /** 正解したか（部分点は0〜1の小数） */
@@ -173,7 +175,9 @@ export interface ExamResult {
 export interface QuestionHistory {
   correct: number;
   wrong: number;
-  lastAnswer: number | number[];
+  dontKnow: number;
+  lastAnswer: number | number[] | null;
+  lastDontKnow: boolean;
 }
 
 /** カテゴリごとの進捗 */
@@ -205,6 +209,7 @@ export interface BatchAnswerRequest {
   answers: {
     questionId: string;
     answer: number | number[] | null;
+    dontKnow?: boolean;
   }[];
 }
 

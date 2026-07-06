@@ -66,7 +66,9 @@ export function saveExamResult(result: ExamResult): void {
     const history = current.questionHistory[r.questionId] ?? {
       correct: 0,
       wrong: 0,
-      lastAnswer: 0,
+      dontKnow: 0,
+      lastAnswer: null,
+      lastDontKnow: false,
     };
 
     if (r.score === 1) {
@@ -74,7 +76,9 @@ export function saveExamResult(result: ExamResult): void {
     } else {
       history.wrong += 1;
     }
-    history.lastAnswer = r.userAnswer ?? 0;
+    history.dontKnow = (history.dontKnow ?? 0) + (r.dontKnow ? 1 : 0);
+    history.lastAnswer = r.userAnswer;
+    history.lastDontKnow = r.dontKnow;
 
     current.questionHistory[r.questionId] = history;
   }

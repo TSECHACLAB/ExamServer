@@ -179,7 +179,7 @@ export default function ExamSession({
     session.abandonSession();
     router.push(setupHref);
   };
-  const handleUncertain = async () => {
+  const handleDontKnow = async () => {
     if (currentDrillResult) return;
 
     if (mode === "drill") {
@@ -187,7 +187,7 @@ export default function ExamSession({
       return;
     }
 
-    session.toggleUncertain();
+    session.toggleDontKnow();
   };
 
   return (
@@ -198,10 +198,10 @@ export default function ExamSession({
       answers={session.answers}
       remainingTime={session.remainingTime}
       isFlagged={currentAnswer.flagged}
-      isUncertain={currentAnswer.uncertain}
+      isDontKnow={currentAnswer.dontKnow}
       isScenario={isScenario}
       onFlag={session.toggleFlag}
-      onUncertain={handleUncertain}
+      onDontKnow={handleDontKnow}
       onPrev={session.goPrev}
       onNext={handlePrimaryNext}
       onNavigate={session.goTo}

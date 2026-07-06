@@ -86,6 +86,7 @@ export default function ResultView({
 
           const isCorrect = r.score === 1;
           const isPartial = r.score > 0 && r.score < 1;
+          const isDontKnow = r.dontKnow;
 
           return (
             <details
@@ -95,15 +96,17 @@ export default function ResultView({
               <summary className="flex cursor-pointer items-center gap-3 px-4 py-3 hover:bg-gray-50">
                 {/* 正誤アイコン */}
                 <span
-                  className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white ${
-                    isCorrect
-                      ? "bg-green-500"
-                      : isPartial
-                        ? "bg-amber-500"
-                        : "bg-red-500"
+                  className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
+                    isDontKnow
+                      ? "border border-sky-300 bg-sky-50 text-sky-800"
+                      : isCorrect
+                        ? "bg-green-500 text-white"
+                        : isPartial
+                          ? "bg-amber-500 text-white"
+                          : "bg-red-500 text-white"
                   }`}
                 >
-                  {isCorrect ? "○" : isPartial ? "△" : "×"}
+                  {isDontKnow ? "？" : isCorrect ? "○" : isPartial ? "△" : "×"}
                 </span>
 
                 <span className="text-sm text-gray-500">問{index + 1}</span>
@@ -121,6 +124,14 @@ export default function ResultView({
 
                 {/* 選択肢と正誤 */}
                 <div className="space-y-1">
+                  <p className="text-xs font-semibold text-gray-500">
+                    回答:{" "}
+                    {isDontKnow
+                      ? "分からない"
+                      : r.userAnswer === null
+                        ? "未操作"
+                        : "選択済み"}
+                  </p>
                   {question.options.map((opt, optIndex) => {
                     const correctSet = new Set(
                       Array.isArray(r.correctAnswer)
