@@ -53,17 +53,17 @@
     {
       "src": "/learning/defense-in-depth.svg",
       "kind": "direct",
-      "sourceTitle": "Defense In Depth - Onion Model.svg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Defense_In_Depth_-_Onion_Model.svg",
+      "sourceTitle": "Defense In Depth - Onion Model.svg (2013-05-13 version)",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4c/20211125232954%21Defense_In_Depth_-_Onion_Model.svg",
       "publisher": "Wikimedia Commons",
       "licenseName": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "sourceLanguage": "en",
       "assetLanguage": "en",
       "modificationNote": "出典SVGの図形・文字を改変せずに引用。画像内の英語・記号は訳注と本文で補足。",
-      "accessedAt": "2026-06-20",
+      "accessedAt": "2026-07-07",
       "translationNote": "Network はネットワーク、Host はホスト、Application はアプリケーション、Data はデータとして読む。",
-      "localSha256": "bf114e6ee318dfb83218b3e77a3cf9d902adfade6179a673682a6a0a68863e0c"
+      "localSha256": "c8acb444a797e1348e11c761fa07df29a6672135bc7a2bde96ee2ca85240185c"
     },
     {
       "src": "/learning/digital-signature-flow.svg",
