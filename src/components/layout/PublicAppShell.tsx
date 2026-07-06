@@ -239,7 +239,7 @@ function SectionTabs({ activeSection }: { activeSection: PublicSection }) {
           key={item.section}
           href={item.href}
           aria-current={activeSection === item.section ? "page" : undefined}
-          className={`rounded-md px-3 py-1.5 text-sm font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus)] ${
+          className={`inline-flex min-h-11 items-center rounded-md px-3 py-2 text-sm font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus)] ${
             activeSection === item.section
               ? "bg-[var(--primary-soft)] text-[var(--link)]"
               : "text-[var(--text-muted)] hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)]"
