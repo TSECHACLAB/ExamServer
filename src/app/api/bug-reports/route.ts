@@ -32,6 +32,7 @@ export async function POST(request: NextRequest) {
     const created = await createIssue(issue);
     return Response.json({ ok: true, issueUrl: created.url });
   } catch (err: unknown) {
+    console.error("Bug report issue creation failed", githubErrorSummary(err));
     const message =
       process.env.NODE_ENV === "development" && err instanceof Error
         ? err.message
@@ -61,4 +62,19 @@ function validateRequestOrigin(
   }
 
   return null;
+}
+
+function githubErrorSummary(err: unknown) {
+  if (err instanceof Error) {
+    return {
+      name: err.name,
+      message: err.message,
+      status:
+        typeof err === "object" && "status" in err
+          ? (err as { status: unknown }).status
+          : undefined,
+    };
+  }
+
+  return { message: "Unknown error" };
 }

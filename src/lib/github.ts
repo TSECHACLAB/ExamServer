@@ -47,8 +47,8 @@ export async function createIssue({
   body,
   labels = issueLabelsFromEnv(),
 }: CreateIssueInput): Promise<{ number: number; url: string }> {
-  const { owner, repo } = getConfig();
-  const octokit = getOctokit();
+  const { owner, repo, token } = getIssueConfig();
+  const octokit = new Octokit({ auth: token });
 
   try {
     const { data } = await octokit.issues.create({
@@ -88,6 +88,24 @@ function issueLabelsFromEnv(): string[] {
     .split(",")
     .map((label) => label.trim())
     .filter(Boolean);
+}
+
+function getIssueConfig() {
+  const token = process.env.GITHUB_TOKEN;
+  const owner =
+    process.env.GITHUB_ISSUE_OWNER ||
+    process.env.VERCEL_GIT_REPO_OWNER ||
+    "TakesSecHacLab-team";
+  const repo =
+    process.env.GITHUB_ISSUE_REPO ||
+    process.env.VERCEL_GIT_REPO_SLUG ||
+    "ExamServer";
+
+  if (!token) {
+    throw new Error("GitHub 環境変数が不足しています（GITHUB_TOKEN）");
+  }
+
+  return { token, owner, repo };
 }
 
 // ---------------------------------------------------------------------------
