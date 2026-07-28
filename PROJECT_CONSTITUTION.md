@@ -2,7 +2,7 @@
 
 ## Product Thesis
 
-- What this project is: ExamServer is a study and exam practice hub for IT qualifications, computer fundamentals, and security foundations.
+- What this project is: ExamServer is a study, exam practice, and authorized practical-lab entry hub for IT qualifications, computer fundamentals, and security foundations.
 - What this project is not: It is not a generic dashboard, ranking app, CTF hosting platform, or visual showcase.
 - The core value users should feel: "I know where to learn, where to practice, and what to do next."
 - The main behavior this product should create or change: users move between concise lessons and focused practice without losing their place.
@@ -34,15 +34,15 @@
 ## Architecture Grammar
 
 - Source of truth: exam data in `data/exams`, category metadata in `data/categories.json`, learning map in `data/learning-map.json`, UI grammar in `DESIGN.md`.
-- Core domain objects: category, question, scenario, answer state, learning node, lesson.
-- State model: exam runtime state stays in client session/local storage; learning navigation is derived from static data.
+- Core domain objects: category, question, scenario, answer state, learning node, lesson, practical-lab entry.
+- State model: exam runtime state stays in client session/local storage; learning navigation is derived from static data. Practical-lab target state remains with the Debian/Kali lab, while a separate lab service relays only its sanitized projection.
 - Naming rules: user-facing labels are Japanese and task-based; code names describe domain purpose, not visual style.
-- Boundaries between modules: learning navigation belongs to learning components; public shell owns global navigation; exam session owns answer controls.
+- Boundaries between modules: learning navigation belongs to learning components; public shell owns global navigation; exam session owns answer controls. External rewrites delegate `/lab` and `/api/lab` to the isolated lab deployment; ExamServer never owns raw commands, flags, credentials, or target runtime.
 - Things that must not be duplicated: global public navigation, learning tree rendering rules, active/current state rules, category grouping rules.
 
 ## Non-Goals
 
-- Do not build: hosted VM labs, CTF runtime, social ranking, badges, generic analytics dashboard, paid-product landing page.
+- Do not build: hosted VM labs, CTF runtime inside ExamServer, social ranking, badges, generic analytics dashboard, paid-product landing page.
 - Do not optimize for: novelty, visual spectacle, fake engagement, number-heavy dashboards.
 - Do not imitate: AI SaaS landing pages, gamified study apps, admin templates, or the old local brutalist redesign branch.
 

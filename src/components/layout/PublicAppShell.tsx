@@ -5,6 +5,7 @@ import DocsWorkspace from "./DocsWorkspace";
 import ThemeSelector from "./ThemeSelector";
 
 type PublicSection = "learn" | "exam" | "admin";
+type NavigationSection = Exclude<PublicSection, "admin"> | "lab";
 
 interface PublicAppShellProps {
   activeSection: PublicSection;
@@ -18,10 +19,11 @@ interface PublicAppShellProps {
 }
 
 const NAV_ITEMS: Array<{
-  section: PublicSection;
+  section: NavigationSection;
   href: string;
   label: string;
   description: string;
+  hardNavigation?: boolean;
 }> = [
   {
     section: "learn",
@@ -34,6 +36,13 @@ const NAV_ITEMS: Array<{
     href: "/",
     label: "演習",
     description: "問題を解く",
+  },
+  {
+    section: "lab",
+    href: "/lab",
+    label: "実践ラボ",
+    description: "実機で確かめる",
+    hardNavigation: true,
   },
 ];
 
@@ -235,18 +244,28 @@ function SectionTabs({ activeSection }: { activeSection: PublicSection }) {
       className="ml-4 hidden items-center gap-1 lg:flex"
     >
       {NAV_ITEMS.map((item) => (
-        <Link
-          key={item.section}
-          href={item.href}
-          aria-current={activeSection === item.section ? "page" : undefined}
-          className={`inline-flex min-h-11 items-center rounded-md px-3 py-2 text-sm font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus)] ${
-            activeSection === item.section
-              ? "bg-[var(--primary-soft)] text-[var(--link)]"
-              : "text-[var(--text-muted)] hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)]"
-          }`}
-        >
-          {item.label}
-        </Link>
+        item.hardNavigation ? (
+          <a
+            key={item.section}
+            href={item.href}
+            className="inline-flex min-h-11 items-center rounded-md px-3 py-2 text-sm font-semibold text-[var(--text-muted)] transition-colors hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus)]"
+          >
+            {item.label}
+          </a>
+        ) : (
+          <Link
+            key={item.section}
+            href={item.href}
+            aria-current={activeSection === item.section ? "page" : undefined}
+            className={`inline-flex min-h-11 items-center rounded-md px-3 py-2 text-sm font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus)] ${
+              activeSection === item.section
+                ? "bg-[var(--primary-soft)] text-[var(--link)]"
+                : "text-[var(--text-muted)] hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)]"
+            }`}
+          >
+            {item.label}
+          </Link>
+        )
       ))}
     </nav>
   );
@@ -262,29 +281,42 @@ function MobileBottomTabs({
       aria-label="主要ナビゲーション"
       className="fixed inset-x-0 bottom-0 z-40 border-t border-[var(--border)] bg-[var(--surface)]/95 px-3 pb-[calc(env(safe-area-inset-bottom)+0.5rem)] pt-2 shadow-[0_-8px_24px_rgba(15,23,42,0.08)] backdrop-blur lg:hidden"
     >
-      <div className="mx-auto grid max-w-md grid-cols-2 gap-2">
+      <div className="mx-auto grid max-w-xl grid-cols-3 gap-2">
         {NAV_ITEMS.map((item) => (
-          <Link
-            key={item.section}
-            href={item.href}
-            aria-current={activeSection === item.section ? "page" : undefined}
-            className={`min-h-11 rounded-md px-3 py-2 text-center transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus)] ${
-              activeSection === item.section
-                ? "bg-[var(--primary)] text-[var(--surface)]"
-                : "border border-[var(--border)] bg-[var(--surface-muted)] text-[var(--text-muted)] hover:bg-[var(--primary-soft)] hover:text-[var(--foreground)]"
-            }`}
-          >
-            <span className="block text-sm font-semibold">{item.label}</span>
-            <span
-              className={`mt-0.5 block text-[11px] ${
+          item.hardNavigation ? (
+            <a
+              key={item.section}
+              href={item.href}
+              className="min-h-11 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-2 text-center text-[var(--text-muted)] transition-colors hover:bg-[var(--primary-soft)] hover:text-[var(--foreground)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus)]"
+            >
+              <span className="block text-sm font-semibold">{item.label}</span>
+              <span className="mt-0.5 block text-[11px] text-[var(--text-muted)]">
+                {item.description}
+              </span>
+            </a>
+          ) : (
+            <Link
+              key={item.section}
+              href={item.href}
+              aria-current={activeSection === item.section ? "page" : undefined}
+              className={`min-h-11 rounded-md px-3 py-2 text-center transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus)] ${
                 activeSection === item.section
-                  ? "text-[var(--surface)]"
-                  : "text-[var(--text-muted)]"
+                  ? "bg-[var(--primary)] text-[var(--surface)]"
+                  : "border border-[var(--border)] bg-[var(--surface-muted)] text-[var(--text-muted)] hover:bg-[var(--primary-soft)] hover:text-[var(--foreground)]"
               }`}
             >
-              {item.description}
-            </span>
-          </Link>
+              <span className="block text-sm font-semibold">{item.label}</span>
+              <span
+                className={`mt-0.5 block text-[11px] ${
+                  activeSection === item.section
+                    ? "text-[var(--surface)]"
+                    : "text-[var(--text-muted)]"
+                }`}
+              >
+                {item.description}
+              </span>
+            </Link>
+          )
         ))}
       </div>
     </nav>
