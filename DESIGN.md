@@ -127,6 +127,7 @@ Page-specific rules:
 - `/`: category selection, selected detail, and start path keep their existing structure. UI changes here are limited to theme, color, border, focus, and typography tokens.
 - Exam setup: keep the existing sequence and control order. UI changes here are limited to theme, color, border, focus, and typography tokens.
 - Exam session: answer controls, current question, answered count, flag state, and timer take priority over global navigation. Global navigation and theme switching are hidden during active sessions. Structural changes are not allowed except to prevent controls from covering content.
+- `/lab`: a separately deployed practical-lab app is mounted at this same-origin path. Its main task stays visible while facts, choices, hints, and history are revealed only when the learner asks for them.
 
 ## Components
 
@@ -144,7 +145,7 @@ Buttons:
 Navigation:
 
 - Active items must have both visual state and `aria-current` where appropriate.
-- Global public navigation has only `講義` and `演習`.
+- Global public navigation has `講義`, `演習`, and `実践ラボ`. `実践ラボ` uses a full document navigation because another deployment owns `/lab`.
 - Admin is not part of the public navigation.
 - During an exam session, global navigation, mobile tabs, and theme switchers are hidden.
 - Desktop navigation should normally stay at two levels. Deeper structure belongs inside the current page as a compact list or in-page navigation.
