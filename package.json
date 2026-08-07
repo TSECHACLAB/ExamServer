@@ -13,9 +13,13 @@
     "verify:sg-sources": "tsx scripts/verify-sg-official-sources.ts",
     "audit:sg-pm-explanations": "tsx scripts/audit-legacy-sg-pm-explanation-coverage.ts",
     "audit:sg-explanations": "tsx scripts/audit-sg-explanations.ts",
-    "audit:sg-explanations:check": "tsx scripts/audit-sg-explanations.ts --check"
+    "audit:sg-explanations:check": "tsx scripts/audit-sg-explanations.ts --check",
+    "sync:dads": "node scripts/sync-dads-components.mjs",
+    "verify:dads": "node scripts/sync-dads-components.mjs --check"
   },
   "dependencies": {
+    "@digital-go-jp/design-tokens": "2.0.1",
+    "@digital-go-jp/tailwind-theme-plugin": "1.0.1",
     "@octokit/rest": "^22.0.1",
     "lightningcss": "^1.32.0",
     "next": "^16.3.0",
@@ -25,8 +29,9 @@
     "remark-gfm": "^4.0.1"
   },
   "optionalDependencies": {
+    "@rollup/rollup-win32-x64-msvc": "4.62.1",
     "@tailwindcss/oxide-win32-x64-msvc": "^4.2.2",
-    "lightningcss-win32-x64-msvc": "^1.32.0"
+    "lightningcss-win32-x64-msvc": "1.32.0"
   },
   "overrides": {
     "esbuild": "^0.28.1",

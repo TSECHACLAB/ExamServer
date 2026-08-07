@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Upstream DADS files are byte-identical and verified by verify:dads.
+    "vendor/dads/**",
+    "src/vendor/dads-runtime/**",
   ]),
 ]);
 

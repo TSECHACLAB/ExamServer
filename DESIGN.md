@@ -34,7 +34,7 @@ typography:
     lineHeight: "1.45"
     letterSpacing: "0"
   mono:
-    fontFamily: "Geist Mono"
+    fontFamily: "Noto Sans Mono"
     fontSize: "0.875rem"
     fontWeight: 500
     lineHeight: "1.4"
@@ -92,13 +92,13 @@ This document is grounded in:
 
 ## Colors
 
-Use a quiet reading canvas and one action accent. The lecture surface follows a modern documentation tone: warm off-white canvas, restrained borders, and a single brown action/link accent. The exam surface uses a neutral production-test palette: light gray canvas, white panels, and a restrained dark blue primary action. Success, warning, and danger colors are state colors only.
+Use a quiet reading canvas and one action accent. The lecture surface follows a modern documentation tone: warm off-white canvas, restrained borders, and a single brown action/link accent. The exam surface uses Digital Agency Design System semantic tokens. `modern-light` uses the official key-blue and neutral palette as the reference; the other four existing themes remap the same semantic roles without changing component structure. Success, warning, and danger colors are state colors only.
 
 Do not use decorative gradients, glow, glassmorphism, purple-blue neon, or editorial decoration. Warm tones are allowed only as structural documentation tokens; they must not become atmosphere or ornament.
 
 ## Typography
 
-Use Noto Serif JP for lecture page titles and h2/h3 headings only, creating the quieter documentation tone requested for the learning surface. Use Noto Sans JP for Japanese UI and prose, Geist Sans as Latin fallback, and Geist Mono for code, IDs, numbers, and tabular values. Japanese text must be direct and task-oriented. Body prose is capped at roughly 65 characters per line. Labels are short; helper copy is used only when it changes a decision.
+Use Noto Serif JP for lecture page titles and h2/h3 headings only, creating the quieter documentation tone requested for the learning surface. Use Noto Sans JP for Japanese UI and prose, Geist Sans as Latin fallback, and Noto Sans Mono on exercise code, IDs, timers, and tabular values. Japanese text must be direct and task-oriented. Body prose is capped at roughly 65 characters per line. Labels are short; helper copy is used only when it changes a decision.
 
 Do not move the exercise UI to serif typography. The serif layer belongs to lecture hierarchy, not answer controls, setup forms, or production-test surfaces.
 
@@ -106,7 +106,7 @@ Do not use centered body copy for app workflows. Strong left alignment is the de
 
 ## Layout
 
-The lecture shell follows a documentation pattern: fixed top header, desktop left docs navigation, and mobile top `Navigation` disclosure. The exam shell keeps the established practice/test structure: desktop sidebar where already present, mobile bottom tabs for public section switching outside active exam sessions, and no global navigation during sessions.
+The lecture shell follows a documentation pattern: fixed top header, desktop left docs navigation, and mobile top `Navigation` disclosure. Exercise selection and setup use a constrained public-service layout. Active sessions use a dedicated question workspace with desktop review navigation, a compact mobile action region, and no global navigation.
 
 Inside the page body, do not add a second navigation column unless the page is long-form reading. A learning entry page must have one dominant path, not a local map plus cards plus shortcuts.
 
@@ -124,9 +124,12 @@ Page-specific rules:
 - `/learn`: one dominant action is `講義を読む`. The learning map is secondary and compact. Lesson summaries are not repeated in the map when the first lesson panel already explains the next item.
 - `/learn` first viewport must not show both a current lesson and an expanded full curriculum. The default state is the next lesson plus one action; the curriculum is disclosed behind an explicit control.
 - Lesson pages: desktop shows left chapter navigation and a right `このページ` outline. Mobile keeps both `Navigation` and `このページ` collapsed by default. The body order is breadcrumb, outline disclosure, article, next lesson, related practice.
-- `/`: category selection, selected detail, and start path keep their existing structure. UI changes here are limited to theme, color, border, focus, and typography tokens.
-- Exam setup: keep the existing sequence and control order. UI changes here are limited to theme, color, border, focus, and typography tokens.
-- Exam session: answer controls, current question, answered count, flag state, and timer take priority over global navigation. Global navigation and theme switching are hidden during active sessions. Structural changes are not allowed except to prevent controls from covering content.
+- `/`: exercise choices and categories are vertical lists separated by dividers. Category cards and decorative grids are not used. Unavailable categories state the reason in text.
+- Exam setup: use a constrained single-column form. Mode and question count are visible; optional domain and order controls use disclosure. One summary and one primary start action close the form.
+- Exam session: answer controls, current question, answered count, flag state, and timer take priority over global navigation. Global navigation and theme switching are hidden. Desktop uses a question navigator plus one main reading column; mobile opens the navigator in a modal and reserves enough scroll space for the action region.
+- Exam review: the last-question action opens a full review state. Submission only occurs after the user sees answered, unanswered, uncertain, and flagged counts and activates `採点する`.
+- Drill feedback: correct/incorrect status, explanation, and source use one reading flow. Only the persistent primary action advances to the next question.
+- Exam result: pass/fail text, score, passing threshold, and correct count precede per-question disclosures. Status never relies on color alone.
 - `/lab`: a separately deployed practical-lab app is mounted at this same-origin path. Its main task stays visible while facts, choices, hints, and history are revealed only when the learner asks for them.
 
 ## Components
@@ -157,6 +160,7 @@ Forms:
 - Helper text below only when needed.
 - Errors are inline and specific.
 - Multi-step forms must show one linear path.
+- Exercise single-choice controls use the vendored DADS Radio implementation; multiple-choice and toggles use DADS Checkbox. Visual button substitutes are prohibited.
 
 States:
 
@@ -164,6 +168,16 @@ States:
 - Empty states say what is missing, why it matters, and what action remains available.
 - Error states are specific and non-blaming.
 - Avoid disabled buttons when a clear enabled action plus inline guidance would teach the user what to fix.
+
+## Practice DADS Source Contract
+
+- Guideline baseline: Digital Agency Design System v2.17.0.
+- React source baseline: `digital-go-jp/design-system-example-components-react` commit `22cda0df79f8f881953f11dca39e1c5a28619844`.
+- Theme packages: `@digital-go-jp/design-tokens@2.0.1` and `@digital-go-jp/tailwind-theme-plugin@1.0.1`.
+- Byte-identical upstream files live in `vendor/dads`. A generated `src/vendor/dads-runtime` shadow adds only a recorded TypeScript compatibility header because the pinned source predates React 19 ref/element typings; `verify:dads` proves both trees against their manifests. Next.js links, theme mapping, and product-specific composition belong to `src/components/dads` adapters.
+- The exercise surface is scoped by `.practice-dads-surface`; lecture, lab, and admin surfaces do not inherit exercise token overrides.
+- `modern-light`, `modern-dark`, `simple-light`, `simple-dark`, and `high-contrast` share component markup and differ only through semantic token values.
+- Official primitives are used where available. App-specific composites such as question navigation and the exam workspace must be built from native landmarks and official primitives and documented as local composites.
 
 ## Accessibility
 
