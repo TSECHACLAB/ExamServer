@@ -29,9 +29,9 @@ export default function OneshotLayout({
   disabled,
 }: Props) {
   return (
-    <div className="space-y-6">
+    <article className="space-y-7 rounded-8 border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-7">
       {/* 問題文 */}
-      <MarkdownContent className="text-gray-800">
+      <MarkdownContent className="text-[var(--foreground)]">
         {question.text}
       </MarkdownContent>
 
@@ -42,7 +42,7 @@ export default function OneshotLayout({
           <img
             src={question.image}
             alt="問題画像"
-            className="max-w-full max-h-80 rounded border border-gray-200"
+            className="max-h-80 max-w-full rounded-8 border border-[var(--border)]"
           />
         </div>
       )}
@@ -56,7 +56,8 @@ export default function OneshotLayout({
         onChange={onAnswer}
         showResult={showResult}
         disabled={disabled}
+        legend="この問題の回答"
       />
-    </div>
+    </article>
   );
 }

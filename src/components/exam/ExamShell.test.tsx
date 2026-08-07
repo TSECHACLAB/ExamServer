@@ -32,6 +32,7 @@ describe("ExamShell", () => {
     render(
       <ExamShell
         categoryName="Java Silver"
+        mode="exam"
         currentIndex={0}
         totalCount={2}
         answers={answers}
@@ -41,17 +42,18 @@ describe("ExamShell", () => {
         onFlag={vi.fn()}
         onUncertain={onUncertain}
         onPrev={vi.fn()}
-        onNext={vi.fn()}
+        onPrimary={vi.fn()}
         onNavigate={vi.fn()}
-        onFinish={vi.fn()}
+        onReview={vi.fn()}
         onExit={vi.fn()}
+        primaryLabel="次へ"
       >
         <p>問題本文</p>
       </ExamShell>
     );
 
     const unknownButton = screen.getByRole("button", {
-      name: "分からない",
+      name: "？ 分からない",
     });
 
     expect(unknownButton).toHaveAttribute("aria-pressed", "true");
@@ -74,7 +76,9 @@ describe("QuestionNav", () => {
     );
 
     expect(
-      screen.getByRole("button", { name: "問1 分からない" })
-    ).toHaveAttribute("title", "問1 (分からない)");
+      screen.getByRole("button", {
+        name: "問1 未回答、分からない、現在の問題",
+      })
+    ).toHaveAttribute("aria-current", "step");
   });
 });

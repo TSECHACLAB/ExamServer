@@ -1,10 +1,9 @@
-/**
- * 選択肢コンポーネント
- * 2〜10択対応。単一選択はラジオ、複数選択はチェックボックスで表示する。
- */
-
 "use client";
 
+import { useId } from "react";
+import { Checkbox } from "@/vendor/dads-runtime/components/Checkbox";
+import { Radio } from "@/vendor/dads-runtime/components/Radio";
+import { normalizeSelectedAnswer } from "@/lib/answer-state";
 import type { QuestionType } from "@/types/exam";
 
 interface Props {
@@ -13,7 +12,7 @@ interface Props {
   selectionLimit?: number;
   selectedAnswer: number | number[] | null;
   onChange: (answer: number | number[]) => void;
-  /** 正解表示モード（一問一答で答え合わせ後に使用） */
+  legend?: string;
   showResult?: {
     correctAnswer: number | number[];
     userAnswer: number | number[] | null;
@@ -21,166 +20,149 @@ interface Props {
   disabled?: boolean;
 }
 
+type OptionState = "correct" | "wrong" | "missed" | "neutral";
+
 export default function ChoiceGroup({
   options,
   type,
   selectionLimit,
   selectedAnswer,
   onChange,
+  legend = "回答を選択してください",
   showResult,
   disabled = false,
 }: Props) {
+  const groupName = useId();
+  const limitMessageId = `${groupName}-limit`;
   const isSingle = type === "single-choice";
+  const normalized = normalizeSelectedAnswer(selectedAnswer);
+  const selectedMultiple = Array.isArray(normalized) ? normalized : [];
+  const selectionLimitReached =
+    !isSingle &&
+    selectionLimit !== undefined &&
+    selectedMultiple.length >= selectionLimit;
 
-  const handleSelect = (index: number) => {
-    if (disabled) return;
-
-    if (isSingle) {
-      onChange(index);
-    } else {
-      // 複数選択: トグル
-      const current = Array.isArray(selectedAnswer) ? selectedAnswer : [];
-      if (
-        !current.includes(index) &&
-        selectionLimit !== undefined &&
-        current.length >= selectionLimit
-      ) {
-        return;
-      }
-      const next = current.includes(index)
-        ? current.filter((i) => i !== index)
-        : [...current, index];
-      onChange(next);
-    }
-  };
-
-  /** 選択肢ごとの表示状態を判定 */
-  const getOptionState = (
-    index: number
-  ): "correct" | "wrong" | "missed" | "neutral" => {
-    if (!showResult) return "neutral";
-
-    const correctSet = new Set(
-      Array.isArray(showResult.correctAnswer)
-        ? showResult.correctAnswer
-        : [showResult.correctAnswer]
-    );
-    const userSet = new Set(
-      showResult.userAnswer === null
-        ? []
-        : Array.isArray(showResult.userAnswer)
-          ? showResult.userAnswer
-          : [showResult.userAnswer]
-    );
-
-    const isCorrect = correctSet.has(index);
-    const isSelected = userSet.has(index);
-
-    if (isCorrect && isSelected) return "correct";
-    if (!isCorrect && isSelected) return "wrong";
-    if (isCorrect && !isSelected) return "missed";
-    return "neutral";
-  };
-
-  const isSelected = (index: number): boolean => {
-    if (selectedAnswer === null) return false;
-    if (Array.isArray(selectedAnswer)) return selectedAnswer.includes(index);
-    return selectedAnswer === index;
+  const updateMultiple = (index: number, checked: boolean) => {
+    const next = checked
+      ? [...selectedMultiple, index]
+      : selectedMultiple.filter((item) => item !== index);
+    onChange(next);
   };
 
   return (
-    <div className="space-y-2">
-      {options.map((option, index) => {
-        const state = getOptionState(index);
-        const selected = isSelected(index);
-        const selectionLimitReached =
-          !isSingle &&
-          !selected &&
-          selectionLimit !== undefined &&
-          Array.isArray(selectedAnswer) &&
-          selectedAnswer.length >= selectionLimit;
-        const optionDisabled = disabled || selectionLimitReached;
+    <fieldset aria-describedby={selectionLimitReached ? limitMessageId : undefined}>
+      <legend className="sr-only">{legend}</legend>
+      {selectionLimit !== undefined ? (
+        <p className="mb-3 text-std-16N-170 text-solid-gray-700">
+          {selectionLimit}個選択してください。
+        </p>
+      ) : null}
 
-        return (
-          <button
-            key={index}
-            type="button"
-            onClick={() => handleSelect(index)}
-            disabled={optionDisabled}
-            className={`w-full text-left px-4 py-3 rounded-lg border-2 transition-all text-sm ${getOptionStyles(state, selected, optionDisabled)}`}
-          >
-            <span className="flex items-start gap-3">
-              {/* ラジオ/チェックボックスのインジケーター */}
-              <span className="flex-shrink-0 mt-0.5">
-                {isSingle ? (
-                  <span
-                    className={`inline-block w-4 h-4 rounded-full border-2 ${
-                      selected
-                        ? "border-blue-600 bg-blue-600"
-                        : "border-gray-400"
-                    }`}
-                  >
-                    {selected && (
-                      <span className="block w-2 h-2 mx-auto mt-0.5 rounded-full bg-white" />
-                    )}
-                  </span>
-                ) : (
-                  <span
-                    className={`inline-block w-4 h-4 rounded border-2 ${
-                      selected
-                        ? "border-blue-600 bg-blue-600"
-                        : "border-gray-400"
-                    }`}
-                  >
-                    {selected && (
-                      <svg
-                        className="w-3 h-3 text-white mx-auto"
-                        viewBox="0 0 12 12"
-                      >
-                        <path
-                          d="M2 6l3 3 5-5"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          fill="none"
-                        />
-                      </svg>
-                    )}
-                  </span>
-                )}
-              </span>
+      <div className="grid gap-3">
+        {options.map((option, index) => {
+          const selected = isSelected(normalized, index);
+          const state = getOptionState(showResult, index);
+          const unavailable =
+            disabled || (!isSingle && selectionLimitReached && !selected);
+          const control = isSingle ? (
+            <Radio
+              name={groupName}
+              value={index}
+              checked={selected}
+              disabled={unavailable}
+              onChange={() => onChange(index)}
+              size="md"
+            >
+              <OptionLabel option={option} state={state} />
+            </Radio>
+          ) : (
+            <Checkbox
+              name={groupName}
+              value={index}
+              checked={selected}
+              disabled={unavailable}
+              onChange={(event) => updateMultiple(index, event.target.checked)}
+              size="md"
+            >
+              <OptionLabel option={option} state={state} />
+            </Checkbox>
+          );
 
-              {/* 選択肢テキスト */}
-              <span className="flex-1">{option}</span>
+          return (
+            <div
+              key={index}
+              className={`min-h-14 rounded-8 border-2 px-3 py-1 ${optionClassName(
+                state,
+                selected,
+              )}`}
+              data-option-state={state}
+            >
+              {control}
+            </div>
+          );
+        })}
+      </div>
 
-              {/* 正誤アイコン */}
-              {state === "correct" && (
-                <span className="text-green-600 font-bold">○</span>
-              )}
-              {state === "wrong" && (
-                <span className="text-red-600 font-bold">×</span>
-              )}
-              {state === "missed" && (
-                <span className="text-amber-600 text-xs">正解</span>
-              )}
-            </span>
-          </button>
-        );
-      })}
-    </div>
+      {selectionLimitReached && !disabled ? (
+        <p
+          id={limitMessageId}
+          role="status"
+          className="mt-3 border-l-4 border-warning-yellow-1 pl-3 text-std-16N-170 text-solid-gray-800"
+        >
+          選択できる上限の{selectionLimit}個に達しました。別の項目を選ぶには、選択済みの項目を1つ外してください。
+        </p>
+      ) : null}
+    </fieldset>
   );
 }
 
-/** 選択肢の状態に応じたスタイル */
-function getOptionStyles(
-  state: "correct" | "wrong" | "missed" | "neutral",
-  selected: boolean,
-  disabled: boolean
-): string {
-  if (state === "correct") return "border-green-400 bg-green-50";
-  if (state === "wrong") return "border-red-400 bg-red-50";
-  if (state === "missed") return "border-amber-400 bg-amber-50";
+function OptionLabel({ option, state }: { option: string; state: OptionState }) {
+  const status =
+    state === "correct"
+      ? "○ 正解"
+      : state === "wrong"
+        ? "× 選択した不正解"
+        : state === "missed"
+          ? "→ 正解（未選択）"
+          : null;
+  return (
+    <span className="grid gap-1 sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-4">
+      <span>{option}</span>
+      {status ? <span className="whitespace-nowrap font-bold">{status}</span> : null}
+    </span>
+  );
+}
 
-  if (disabled) return "border-gray-200 bg-gray-50 cursor-not-allowed opacity-60";
-  if (selected) return "border-blue-500 bg-blue-50";
-  return "border-gray-200 bg-white hover:border-gray-300";
+function getOptionState(
+  result: Props["showResult"],
+  index: number,
+): OptionState {
+  if (!result) return "neutral";
+  const correct = new Set(
+    Array.isArray(result.correctAnswer) ? result.correctAnswer : [result.correctAnswer],
+  );
+  const user = new Set(
+    result.userAnswer === null
+      ? []
+      : Array.isArray(result.userAnswer)
+        ? result.userAnswer
+        : [result.userAnswer],
+  );
+  if (correct.has(index) && user.has(index)) return "correct";
+  if (!correct.has(index) && user.has(index)) return "wrong";
+  if (correct.has(index)) return "missed";
+  return "neutral";
+}
+
+function isSelected(answer: number | number[] | null, index: number): boolean {
+  if (answer === null) return false;
+  return Array.isArray(answer) ? answer.includes(index) : answer === index;
+}
+
+function optionClassName(state: OptionState, selected: boolean): string {
+  if (state === "correct") return "border-success-1 bg-[var(--surface)]";
+  if (state === "wrong") return "border-error-1 bg-[var(--surface)]";
+  if (state === "missed") return "border-warning-yellow-1 bg-[var(--surface)]";
+  if (selected) return "border-key-900 bg-[var(--primary-soft)]";
+  return "border-[var(--border)] bg-[var(--surface)]";
 }

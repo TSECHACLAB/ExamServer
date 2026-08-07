@@ -7,10 +7,13 @@
 
 "use client";
 
-import { useState } from "react";
 import type { PublicQuestion, PublicScenario, QuestionType } from "@/types/exam";
 import ChoiceGroup from "@/components/exam/ChoiceGroup";
 import MarkdownContent from "@/components/exam/MarkdownContent";
+import {
+  Disclosure,
+  DisclosureSummary,
+} from "@/vendor/dads-runtime/components/Disclosure";
 
 interface Props {
   scenario: PublicScenario;
@@ -32,18 +35,16 @@ export default function ScenarioLayout({
   showResult,
   disabled,
 }: Props) {
-  const [scenarioOpen, setScenarioOpen] = useState(false);
-
   return (
     <>
       {/* ── PC: 左右分割 ── */}
-      <div className="hidden md:grid md:grid-cols-2 md:gap-6 md:h-[calc(100vh-12rem)]">
+      <div className="hidden md:grid md:min-h-[30rem] md:grid-cols-2 md:gap-6">
         {/* 左: シナリオ本文 */}
-        <div className="overflow-auto border border-gray-200 rounded-lg bg-white p-5">
-          <h3 className="text-sm font-semibold text-gray-500 mb-3">
+        <div className="max-h-[calc(100dvh-15rem)] overflow-auto rounded-8 border border-[var(--border)] bg-[var(--surface)] p-5">
+          <h2 className="mb-3 text-std-20B-150 text-solid-gray-900">
             {scenario.title}
-          </h3>
-          <MarkdownContent className="text-gray-800">
+          </h2>
+          <MarkdownContent className="text-[var(--foreground)]">
             {scenario.scenario}
           </MarkdownContent>
 
@@ -54,14 +55,14 @@ export default function ScenarioLayout({
               <img
                 src={src}
                 alt="シナリオ画像"
-                className="max-w-full rounded border border-gray-200"
+                className="max-w-full rounded-8 border border-[var(--border)]"
               />
             </div>
           ))}
         </div>
 
         {/* 右: 問題・選択肢 */}
-        <div className="overflow-auto">
+        <div className="rounded-8 border border-[var(--border)] bg-[var(--surface)] p-5">
           <QuestionPanel
             question={question}
             selectedAnswer={selectedAnswer}
@@ -73,19 +74,13 @@ export default function ScenarioLayout({
       </div>
 
       {/* ── スマホ: 折りたたみ + 縦積み ── */}
-      <div className="md:hidden space-y-4">
-        {/* 折りたたみシナリオ */}
-        <button
-          type="button"
-          onClick={() => setScenarioOpen(!scenarioOpen)}
-          className="flex w-full items-center justify-between rounded-lg border border-gray-200 bg-gray-100 px-4 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50"
-        >
-          <span>{scenarioOpen ? "▲" : "▼"} {scenario.title}</span>
-        </button>
-
-        {scenarioOpen && (
-          <div className="border border-gray-200 rounded-lg bg-white p-4 max-h-[50vh] overflow-auto">
-            <MarkdownContent className="text-gray-800">
+      <div className="space-y-5 md:hidden">
+        <Disclosure className="rounded-8 border border-[var(--border)] bg-[var(--surface)] p-4">
+          <DisclosureSummary className="font-bold text-solid-gray-900">
+            {scenario.title}
+          </DisclosureSummary>
+          <div className="mt-4 max-h-[50vh] overflow-auto border-t border-[var(--border)] pt-4">
+            <MarkdownContent className="text-[var(--foreground)]">
               {scenario.scenario}
             </MarkdownContent>
             {scenario.scenarioImages?.map((src) => (
@@ -94,21 +89,23 @@ export default function ScenarioLayout({
                 <img
                   src={src}
                   alt="シナリオ画像"
-                  className="max-w-full rounded border border-gray-200"
+                  className="max-w-full rounded-8 border border-[var(--border)]"
                 />
               </div>
             ))}
           </div>
-        )}
+        </Disclosure>
 
         {/* 問題・選択肢 */}
-        <QuestionPanel
-          question={question}
-          selectedAnswer={selectedAnswer}
-          onAnswer={onAnswer}
-          showResult={showResult}
-          disabled={disabled}
-        />
+        <div className="rounded-8 border border-[var(--border)] bg-[var(--surface)] p-4">
+          <QuestionPanel
+            question={question}
+            selectedAnswer={selectedAnswer}
+            onAnswer={onAnswer}
+            showResult={showResult}
+            disabled={disabled}
+          />
+        </div>
       </div>
     </>
   );
@@ -128,7 +125,7 @@ function QuestionPanel({
   return (
     <div className="space-y-5">
       {/* 問題文 */}
-      <MarkdownContent className="text-gray-800">
+      <MarkdownContent className="text-[var(--foreground)]">
         {question.text}
       </MarkdownContent>
 
@@ -139,7 +136,7 @@ function QuestionPanel({
           <img
             src={question.image}
             alt="問題画像"
-            className="max-w-full max-h-60 rounded border border-gray-200"
+            className="max-h-60 max-w-full rounded-8 border border-[var(--border)]"
           />
         </div>
       )}
@@ -153,6 +150,7 @@ function QuestionPanel({
         onChange={onAnswer}
         showResult={showResult}
         disabled={disabled}
+        legend="この問題の回答"
       />
     </div>
   );
