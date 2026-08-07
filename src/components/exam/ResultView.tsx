@@ -12,11 +12,14 @@ import type {
   BatchAnswerResponse,
   PublicQuestion,
   ExamMode,
+  QuestionSourcePublisher,
+  PublicQuestionSourceSet,
 } from "@/types/exam";
 import type { CategoryBucket } from "@/components/CategorySelector";
 import { saveExamResult } from "@/lib/storage";
 import FlowBackLink from "@/components/FlowBackLink";
 import MarkdownContent from "@/components/exam/MarkdownContent";
+import QuestionSourceCitation from "@/components/exam/QuestionSourceCitation";
 
 interface Props {
   categoryId: string;
@@ -24,6 +27,8 @@ interface Props {
   mode: ExamMode;
   result: BatchAnswerResponse;
   questions: PublicQuestion[];
+  sourceMap: Record<string, PublicQuestionSourceSet>;
+  sourcePublisher: QuestionSourcePublisher | null;
   returnBucket: CategoryBucket;
 }
 
@@ -33,6 +38,8 @@ export default function ResultView({
   mode,
   result,
   questions,
+  sourceMap,
+  sourcePublisher,
   returnBucket,
 }: Props) {
   // 結果を localStorage に保存
@@ -168,6 +175,18 @@ export default function ResultView({
                     {r.explanation}
                   </MarkdownContent>
                 </div>
+
+                <QuestionSourceCitation
+                  reference={question.source}
+                  additionalReferences={question.sourceOccurrences}
+                  sourceMap={sourceMap}
+                  source={
+                    question.source
+                      ? sourceMap[question.source.sourceId]
+                      : undefined
+                  }
+                  publisher={sourcePublisher}
+                />
               </div>
             </details>
           );

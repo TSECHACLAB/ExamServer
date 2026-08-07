@@ -148,6 +148,7 @@ function QuestionPanel({
       <ChoiceGroup
         options={question.options}
         type={question.type as QuestionType}
+        selectionLimit={question.selectionLimit}
         selectedAnswer={selectedAnswer}
         onChange={onAnswer}
         showResult={showResult}

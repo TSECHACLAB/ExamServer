@@ -9,6 +9,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import type { ExamMode } from "@/types/exam";
 import type { CategoryBucket } from "@/components/CategorySelector";
+import { countUniqueQuestionsForDomains } from "@/lib/question-domains";
 
 interface Props {
   categoryId: string;
@@ -18,6 +19,7 @@ interface Props {
   returnBucket: CategoryBucket;
   domainOptions: string[];
   domainQuestionCounts: Record<string, number>;
+  domainQuestionIds: Record<string, string[]>;
 }
 
 export default function ExamSetupForm({
@@ -28,6 +30,7 @@ export default function ExamSetupForm({
   returnBucket,
   domainOptions,
   domainQuestionCounts,
+  domainQuestionIds,
 }: Props) {
   const router = useRouter();
   const [mode, setMode] = useState<ExamMode>("exam");
@@ -41,10 +44,7 @@ export default function ExamSetupForm({
   const availableQuestionCount =
     selectedDomains.length === 0
       ? totalQuestions
-      : selectedDomains.reduce(
-          (sum, domain) => sum + (domainQuestionCounts[domain] ?? 0),
-          0
-        );
+      : countUniqueQuestionsForDomains(domainQuestionIds, selectedDomains);
   const customQuestionCount = Math.min(
     questionCount,
     Math.max(1, availableQuestionCount)
@@ -72,7 +72,7 @@ export default function ExamSetupForm({
     router.push(`/exam/${categoryId}/session?${params.toString()}`);
   };
 
-  const countLabel = useAllQuestions ? "全問" : `${questionCount}問`;
+  const countLabel = useAllQuestions ? "全問" : `${customQuestionCount}問`;
 
   return (
     <div className="rounded-lg border border-gray-200 bg-white p-5 sm:p-6">

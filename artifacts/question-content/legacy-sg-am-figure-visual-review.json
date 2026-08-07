@@ -1,0 +1,19 @@
+{
+  "reviewedAt": "2026-08-06T15:52:29+09:00",
+  "figureAuditSha256": "cef669809bbaf2c618e6c24567cfb2752825fbbc798149352aff5e6fbd036880",
+  "reviewedCount": 29,
+  "minimumAutomatedMatchScore": 0.4604,
+  "method": "転記支援画像とIPA公式PDF由来の公開画像を問題文、選択肢、正答と並べて全件目視照合した。",
+  "result": "pass",
+  "explanationsCorrectedAfterReview": [
+    "sg-2016-autumn-am-q07",
+    "sg-2016-spring-am-q31",
+    "sg-2016-spring-am-q39",
+    "sg-2017-autumn-am-q28",
+    "sg-2017-spring-am-q43",
+    "sg-2018-autumn-am-q39",
+    "sg-2018-spring-am-q43",
+    "sg-2019-autumn-am-q44"
+  ],
+  "openMismatchCount": 0
+}

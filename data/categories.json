@@ -21,15 +21,15 @@
     "description": "AWS Certified Security - Specialty",
     "group": "certification",
     "defaultStyle": "oneshot",
-    "timeLimit": 10800
+    "timeLimit": 10200
   },
   {
     "id": "sg",
-    "name": "セキュリティマネジメント",
-    "description": "SG 午前A・午前B対策",
+    "name": "情報セキュリティマネジメント",
+    "description": "IPA公式公開のSG実過去問（現行・旧試験）",
     "group": "certification",
     "defaultStyle": "oneshot",
-    "timeLimit": 5400
+    "timeLimit": 7200
   },
   {
     "id": "sc",
@@ -50,7 +50,7 @@
   {
     "id": "java-silver",
     "name": "Java Silver SE 17（Programmer I / 1Z0-825-JPN）",
-    "description": "Java SE 17 Silver（1Z0-825-JPN / Programmer I）対策。基礎構文・String・配列・ArrayList・OOP・interface・record/sealed・例外を全100問で網羅。",
+    "description": "Java SE 17 Silver（1Z0-825-JPN / Programmer I）対策。基礎構文・String・配列・ArrayList・OOP・interface・record/sealed・例外を全50問で網羅。",
     "group": "certification",
     "defaultStyle": "oneshot",
     "timeLimit": 5400

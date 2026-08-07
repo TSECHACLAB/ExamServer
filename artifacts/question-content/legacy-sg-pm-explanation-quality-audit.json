@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-08-06T11:36:06.704Z",
+  "model": "huihui-qwen-thinking:latest",
+  "promptVersion": 14,
+  "generatedExplanationCount": 201,
+  "correctedExplanationCount": 24,
+  "figureBasedExplanationCount": 41,
+  "explanationSha256": "9977a74556bda81395a3ffff6c320a0919e7d7e0b495f699de3ffff33dae934f",
+  "violations": 0
+}

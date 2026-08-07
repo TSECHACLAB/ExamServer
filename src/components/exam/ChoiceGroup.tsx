@@ -10,6 +10,7 @@ import type { QuestionType } from "@/types/exam";
 interface Props {
   options: string[];
   type: QuestionType;
+  selectionLimit?: number;
   selectedAnswer: number | number[] | null;
   onChange: (answer: number | number[]) => void;
   /** 正解表示モード（一問一答で答え合わせ後に使用） */
@@ -23,6 +24,7 @@ interface Props {
 export default function ChoiceGroup({
   options,
   type,
+  selectionLimit,
   selectedAnswer,
   onChange,
   showResult,
@@ -38,6 +40,13 @@ export default function ChoiceGroup({
     } else {
       // 複数選択: トグル
       const current = Array.isArray(selectedAnswer) ? selectedAnswer : [];
+      if (
+        !current.includes(index) &&
+        selectionLimit !== undefined &&
+        current.length >= selectionLimit
+      ) {
+        return;
+      }
       const next = current.includes(index)
         ? current.filter((i) => i !== index)
         : [...current, index];
@@ -84,14 +93,21 @@ export default function ChoiceGroup({
       {options.map((option, index) => {
         const state = getOptionState(index);
         const selected = isSelected(index);
+        const selectionLimitReached =
+          !isSingle &&
+          !selected &&
+          selectionLimit !== undefined &&
+          Array.isArray(selectedAnswer) &&
+          selectedAnswer.length >= selectionLimit;
+        const optionDisabled = disabled || selectionLimitReached;
 
         return (
           <button
             key={index}
             type="button"
             onClick={() => handleSelect(index)}
-            disabled={disabled}
-            className={`w-full text-left px-4 py-3 rounded-lg border-2 transition-all text-sm ${getOptionStyles(state, selected, disabled)}`}
+            disabled={optionDisabled}
+            className={`w-full text-left px-4 py-3 rounded-lg border-2 transition-all text-sm ${getOptionStyles(state, selected, optionDisabled)}`}
           >
             <span className="flex items-start gap-3">
               {/* ラジオ/チェックボックスのインジケーター */}

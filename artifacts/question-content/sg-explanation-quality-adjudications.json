@@ -1,0 +1,50 @@
+{
+  "reviewedAt": "2026-08-07",
+  "method": "独立監査が図表又は日本語の選択肢記号を誤読した項目だけを、IPA公式問題由来の画像又は正答監査記録と現行解説を並べて再判定した。",
+  "items": [
+    {
+      "id": "sg-2016-spring-am-q39",
+      "inputSha256": "b95e699c1f1c4d42928c2f01c51b7e23d579fabefaeff1e0008ab9f90c737038",
+      "status": "pass",
+      "reason": "選択肢の内容が公式画像にあり、テキストだけを受け取った監査では照合できなかったため。",
+      "evidence": "公式画像のアは『監査の対象＝情報資産、コンピュータ未導入部署の監査＝必要』である。解説は情報資産を対象とし、コンピュータ未導入部署にも監査が必要だと説明しており、正答アの二要素と一致する。",
+      "sourceImage": {
+        "path": "public/exams/sg/legacy/sg-2016-spring-am-q39.png",
+        "sha256": "ddda751a81216b81b81f0ee1ff1dd4061505d97c04eb7a787f0943f7b5a3c345"
+      }
+    },
+    {
+      "id": "sg-2017-spring-am-q24",
+      "inputSha256": "fcb451c3f2768b29b72b89dd93ef31e00afa8ed87f6615a7a58a0677dc2f8039",
+      "status": "pass",
+      "reason": "真正性と信頼性の対応表が公式画像にあり、監査が選択肢記号だけを内容として誤読したため。",
+      "evidence": "公式画像のイは『真正性＝b、信頼性＝a』である。解説も、真正性を『主張するとおり』のb、信頼性を『意図する行動と結果が一貫』のaへ対応させており、正答イと一致する。",
+      "sourceImage": {
+        "path": "public/exams/sg/legacy/sg-2017-spring-am-q24.png",
+        "sha256": "3435b49944ed519a6bd678cb658cbdd1815b8e2111fd2fdbff8b3704c7fe0016"
+      }
+    },
+    {
+      "id": "sg-2018-autumn-pm-q02-u02",
+      "inputSha256": "e9aceb81d8d5e1e89b3f6eb86c1dc985c3fcd7aba950fc1d7c5ff2afc2ccf909",
+      "status": "pass",
+      "reason": "監査が日本語の選択肢記号『エ』を英字のE（5番目）と誤読したため。",
+      "evidence": "日本語の選択肢順はア、イ、ウ、エ、オであり、公式正答エは4番目の『退職者から退職時誓約書への署名を拒否されることがあった』を指す。解説はこの4番目の内容と、そのため入社時契約へ退職後の秘密保持条項を加える対応を説明している。",
+      "sourceAudit": {
+        "path": "artifacts/question-content/legacy-sg-pm-audit.json",
+        "contentSha256": "1a4f18049adb28ae028aa8395942762fadd901db9dbf0372066454982a29c209"
+      }
+    },
+    {
+      "id": "sg-2019-spring-am-q02",
+      "inputSha256": "67a76fd4e7a6668c275e3a062505b2e84e5e176ec80d114c130996527c20c887",
+      "status": "pass",
+      "reason": "活動とサービス対象の組合せが公式画像にあり、テキストだけを受け取った監査では照合できなかったため。",
+      "evidence": "公式画像のアは、活動が『インシデント対応の中でCSIRT間の情報連携、調整を行う』、サービス対象が『他のCSIRT』である。解説はこの二要素をいずれも示しており、正答アと一致する。",
+      "sourceImage": {
+        "path": "public/exams/sg/legacy/sg-2019-spring-am-q02.png",
+        "sha256": "0320c751d823b8348e6d152eac2ded8828cb05105a0eb4c68b40cdb99e6a8234"
+      }
+    }
+  ]
+}

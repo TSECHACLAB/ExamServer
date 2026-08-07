@@ -5,15 +5,34 @@
 
 "use client";
 
-import type { AnswerResponse } from "@/types/exam";
+import type {
+  AnswerResponse,
+  QuestionSourcePublisher,
+  PublicQuestionSourceReference,
+  PublicQuestionSourceSet,
+} from "@/types/exam";
 import MarkdownContent from "@/components/exam/MarkdownContent";
+import QuestionSourceCitation from "@/components/exam/QuestionSourceCitation";
 
 interface Props {
   result: AnswerResponse;
+  sourceReference?: PublicQuestionSourceReference;
+  additionalSourceReferences?: PublicQuestionSourceReference[];
+  source?: PublicQuestionSourceSet;
+  sourceMap?: Record<string, PublicQuestionSourceSet>;
+  publisher?: QuestionSourcePublisher | null;
   onNext: () => void;
 }
 
-export default function DrillFeedback({ result, onNext }: Props) {
+export default function DrillFeedback({
+  result,
+  sourceReference,
+  additionalSourceReferences,
+  source,
+  sourceMap,
+  publisher,
+  onNext,
+}: Props) {
   return (
     <div className="mt-6 space-y-4">
       {/* 正誤表示 */}
@@ -42,6 +61,14 @@ export default function DrillFeedback({ result, onNext }: Props) {
           {result.explanation}
         </MarkdownContent>
       </div>
+
+      <QuestionSourceCitation
+        reference={sourceReference}
+        source={source}
+        additionalReferences={additionalSourceReferences}
+        sourceMap={sourceMap}
+        publisher={publisher}
+      />
 
       {/* 次の問題へ */}
       <button

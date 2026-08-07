@@ -1,0 +1,1062 @@
+{
+  "generatedAt": "2026-08-06T11:35:54.626Z",
+  "model": "gpt-oss:20b",
+  "reviewVersion": 2,
+  "explanationInputSha256": "175c8f38c3b5860d1ba19209673c2881d5b71c9482308395fa420b77aa625bbc",
+  "expectedReviewCount": 96,
+  "factCheckNoteCorrectionIds": [
+    "sg-2016-autumn-pm-q03-u03",
+    "sg-2017-autumn-pm-q01-u07"
+  ],
+  "reviewClarificationIds": [
+    "sg-2017-autumn-pm-q01-u05",
+    "sg-2017-autumn-pm-q02-u04",
+    "sg-2017-spring-pm-q01-u02",
+    "sg-2018-autumn-pm-q01-u04",
+    "sg-2019-spring-pm-q02-u09"
+  ],
+  "items": [
+    {
+      "id": "sg-2016-autumn-pm-q01-u01",
+      "coveredFacts": [
+        "a1 = パブリック",
+        "a2 = 閲覧権限"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "b94907b0aaef6980d019c8a6462c7f0f9a7b2f9a22a1fd67b2a1a19d0d8ca1fc"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q01-u03",
+      "coveredFacts": [
+        "製造部のPC以外のJ社PCの中にXサービスに接続したものがあるかを確認する"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "673e834fe550805e0e25d4a160ba6218267884e92d9ab200343e5d861d05b6f7"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q01-u05",
+      "coveredFacts": [
+        "ファイルを暗号化する",
+        "B社にダウンロード完了後に直ちに削除する"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "7344c57a31b427f2d563fe66fef0686968eb110693b2360d462ccd16a1ad12bf"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q01-u11",
+      "coveredFacts": [
+        "社外ITサービス導入を全て承認制にする（ⅲ）",
+        "情報システムの利用アカウント共有を禁止する（ⅳ）",
+        "オンラインストレージへの接続を情報セキュリティ委員会承認済みサービスに限定するコンテンツフィルターを設定する（ⅷ）"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "7923506d8cd8e00250351198f615a8da7c6ee129cfe48f246730640b6b18cf0c"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q02-u05",
+      "coveredFacts": [
+        "期間持出し中にNPCを会社に持ち帰り、追加で保存できる（ⅰ）",
+        "会社貸与のUSBメモリに保存して持ち出し、外出先でNPCに接続して情報を保存できる（ⅱ）",
+        "外出先からLシステムにアクセスし、NPCにダウンロードして保存できる（ⅲ）"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "aaeacd452328d6dadec217469a05142410b652a9e6d36d84067a246d48e1ac2a"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q02-u07",
+      "coveredFacts": [
+        "e1：アクセスを試みた形跡（秘密鍵と証明書を用いた不正ログインの痕跡）",
+        "e2：ログ確認期間を15:30まで（NPC回収時点15時から15:30まで）"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "369977f76ec437c1208111903b298e60ce5bbde44146bbf3fc6f4436e85f7789"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q02-u09",
+      "coveredFacts": [
+        "証拠保全を行い，危険性のあるNPCの使用を中止する",
+        "その対応は適切です"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "d6cde4c6dab5ccbdb9af1a690264a129ba00c36f24373f8af202ec554d25aef8"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q03-u01",
+      "coveredFacts": [
+        "E-PCのHDD内のフォルダとファイルに対して何も操作をしない",
+        "E-PCをLANから切り離す"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "8239590b6c295d7ee428abad869eaf9218e562a7e5b6b294e33c6af90032b566"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q03-u02",
+      "coveredFacts": [
+        "勤怠管理システム",
+        "インターネット",
+        "退勤していた"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "6fdf00120f204db9d996ea3e776162b4abd9ef0ec4409a7c0959ca39da0d7a0e"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q03-u03",
+      "coveredFacts": [
+        "HDDフルコピー＋フルスキャン",
+        "ログ時系列整理・分析"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "b372d8ffc264ab8aca494a064dddd4f1ede7c733a27be03885eb0d83a724bfde"
+    },
+    {
+      "id": "sg-2016-spring-pm-q01-u04",
+      "coveredFacts": [
+        "添付ファイル開くよう誘導（期限指定）",
+        "メールやり取り数回で疑い低減"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "a4ff040a7ecb4c796748ffee7333d78e96759a37521d5b25306f53a3b059526e"
+    },
+    {
+      "id": "sg-2016-spring-pm-q01-u06",
+      "coveredFacts": [
+        "差出人と署名メールアドレスが異なる",
+        "実行形式ファイル添付"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "46e424f186b813c9389b37db93b0caa2eef8884604e1e086cf43697ded19a4ed"
+    },
+    {
+      "id": "sg-2016-spring-pm-q01-u07",
+      "coveredFacts": [
+        "情報セキュリティリーダーに報告しなかった点",
+        "マルウェアには感染していないと自己判断した点"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "4f90566701d62888f13ab193f5d2dff1fe1561e1577c2f847791c7f8d3bc00c1"
+    },
+    {
+      "id": "sg-2016-spring-pm-q01-u10",
+      "coveredFacts": [
+        "管理規程の内容を従業員に周知する施策",
+        "情報共有や報告がスムーズに行われる組織文化を醸成する施策"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "23c264dcc713fe07ded6187b87e3c41892fe55eb0e43a23051db94f58d17e150"
+    },
+    {
+      "id": "sg-2016-spring-pm-q02-u01",
+      "coveredFacts": [
+        "A社販売担当者ロールに承認権限を追加する行為が方針3に違反"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "0c3290c9d63833076ce72a5d798cc08cd7e54df8d6be592f7f78a1e1aa436f51"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u02",
+      "coveredFacts": [
+        "業務内容の十分な理解に基づいて評価できる",
+        "評価実施者に対する意識付けや教育として役立つ"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "e5c45c9a42bd2f8d2688bd6da974ebed3075230ce897d1caa4087093f02780fa"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u04",
+      "coveredFacts": [
+        "評価結果はNG"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "91dc4b2d9b34df29773bb0388e49003c7e719d86023b4d07ab1235645c9634d4"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u05",
+      "coveredFacts": [
+        "評価結果はNA"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "d8ab0bc955524ab72080b28a4250d07ebe3694b975ca68b477d74c2fd904fc98"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u06",
+      "coveredFacts": [
+        "簡易チェックでアクセス権付与状況確認",
+        "定期的に確認"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "fced9e08e40c53ca417ceb5db644fab42a17786a01bdcfa529c49e3baee4399d"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u09",
+      "coveredFacts": [
+        "e1:対策3",
+        "e2:対策2",
+        "e3:対策1"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "9a74de3ccbb8d2fab706e694330a49bf2947e6384341433e72b135bd24dc05f8"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u10",
+      "coveredFacts": [
+        "f1:対策4",
+        "f2:対策5",
+        "f3:対策6"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "a1ce7e00f8b09304c478b4386b7c67c50dc5ce863dac85e4555eff14843f84cd"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u01",
+      "coveredFacts": [
+        "aは可用性の評価値と評価基準",
+        "評価値2は自社・取引先・顧客への深刻な影響",
+        "評価値1は事業への影響",
+        "評価値0は影響なし",
+        "可用性の評価基準は機密性・完全性と同じ方針"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "8bc7fcedb5bc7e7ed84edb11389f24ff46bd23cda5125eb5148a9971b693a3eb"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u02",
+      "coveredFacts": [
+        "b1はオンライン持出し型",
+        "b2はシンクライアント型",
+        "b2はPC紛失・盗難リスクが小さい",
+        "b1とb2の組合せは選択肢エ"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "a8ab292ad69255686498b26e80238b089196fc8068fe5022022963ddf04a29b9"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u03",
+      "coveredFacts": [
+        "従業員名簿の機密性c1=2",
+        "従業員名簿の完全性c2=2",
+        "従業員名簿の可用性c3=1",
+        "従業員名簿の重要度c3=2",
+        "従業員名簿の脅威評価値=2",
+        "従業員名簿の脆弱性評価値=1",
+        "従業員名簿のリスク値c4=4",
+        "cの値は「2,2,2,4」"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "1582bb97b6814c33abe6f39e2731faef5cf1d53b4d6778c4041013126f77a36a"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u04",
+      "coveredFacts": [
+        "d1=0",
+        "d2=1",
+        "d3=4",
+        "機密性0",
+        "完全性1",
+        "可用性1",
+        "重要度1",
+        "脅威評価値2",
+        "脆弱性評価値2",
+        "リスク値4"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "cdff4a30adb501993cb6a51c8aa119b6b7a8adafe27933278f2320d26ffd5cc5"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u05",
+      "coveredFacts": [
+        "重要度1の情報資産で脅威評価値1のときリスク値は3以下で受容可能",
+        "リスク値5以下ならリスクを受容できる"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "17f902ed83e6244fb5265acd4ffe6b601e894bdafbb727b821a65306417939fb"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u06",
+      "coveredFacts": [
+        "OS脆弱性",
+        "暗号アルゴリズム危険",
+        "秘密情報公開",
+        "標的型攻撃メール増加",
+        "リスク値変化"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "6ed2cb4abfe0125893e63afa3860523efb38a749260549fc5dfd036fef2f0006"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u07",
+      "coveredFacts": [
+        "e1: ハードディスクドライブ全体の暗号化",
+        "e2: NPCをケーブルロックで固定する物理的対策"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "29368b2650ebe2fc05afadfeda03821eabc97b7982b67b86d173d20744fda983"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u08",
+      "coveredFacts": [
+        "IT資産管理ソフトウェアによる構成情報の自動収集と管理",
+        "URLフィルタリングの実施",
+        "利用者アカウントに付与されている管理者権限の剥奪",
+        "脆弱性低減に有効"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "c0728a59c1096b802df8f519f5a33b6212776cc7aecab5d18112bf04b3c1d6e2"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u09",
+      "coveredFacts": [
+        "NPC利用時の利用者認証",
+        "データバックアップの実施",
+        "技術的対策として有効"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "1a91a61453213675a3e9ca47fb44853d6a2a24feb6a65944f00833b7787323f6"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u10",
+      "coveredFacts": [
+        "f1はリスク低減",
+        "f2は教育"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "2b0c237ff19754cc4466a8d770986c4b652cefd5a21a7753348ae0c9d7ca070e"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u11",
+      "coveredFacts": [
+        "複数評価者による評価が効果的",
+        "教育・訓練が効果的",
+        "客観的基準が効果的"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "8925740a11e027c2f24ece4b6240afa2d4cd09ee6975bf28f99bee73c603049f"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q02-u01",
+      "coveredFacts": [
+        "パスワード文字数・文字種を増やすとブルートフォース耐性が上がる",
+        "アカウントロック時間を長くすると攻撃試行回数が減る"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "29f4bd2949718d0be1afe8cc24134d862bec4e032b6ac2773a6453ec30c92ab4"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q02-u04",
+      "coveredFacts": [
+        "a1 = 能動的攻撃",
+        "a2 = 受動的攻撃"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "f7ac69628b477822ba7ce81234cc01a22315677e2ec22935e62a75f29f0f1e5e"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q02-u06",
+      "coveredFacts": [
+        "ⅰ: 開発中に追加のセキュリティ対策を委託元へ提案",
+        "ⅱ: 再委託先を含む安全な開発体制を委託元へ説明",
+        "ⅲ: 脆弱性試験結果を成果物として納品",
+        "ⅴ: 納品後のサポート方法と費用負担を委託元へ説明"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "103f427ab768d5640fda4c1f3126bf1eb374cdfcac7dd51aff7616b52ca7afa2"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-u04",
+      "coveredFacts": [
+        "d1 = 実際の手順を検証して正しい利用マニュアルを作成",
+        "d2 = 設定・利用手順・注意事項をモバイルワーカへ定期的に教育"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "cc43e1c1c33cf3532d6b2288c226852fc6130f982c2af40742eef11b8a61599c"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-u06",
+      "coveredFacts": [
+        "e1: 公衆無線LAN及び携帯電話回線",
+        "e2: スマートデバイスの業務フォルダ内に保存されているデータ"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "bf9d5d1fb734d33b491e65d4765b79b6dfbcc80d4aad037ee24f05f5162c222e"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-u10",
+      "coveredFacts": [
+        "(ⅲ) モバイルワークで使用する個人所有のスマートデバイスの電話番号及び国際移動体装置識別番号を記入できるように修正する",
+        "(ⅴ) MM1又はMM2の管理画面上の端末データとモバイル端末利用申請書を目視で突合し、一致した場合にだけB社アプリを配布する"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "c238ed0503818a67f54e56ec6c50e5f4867bda92b2f2ed09719a5164958aaa2a"
+    },
+    {
+      "id": "sg-2017-spring-pm-q01-u02",
+      "coveredFacts": [
+        "ファイルの可用性が失われる点",
+        "脅迫を行う点"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "9e7eb166c08a2a68fd67bc8a053a10bdbc461cc270a03ea5b1e54c4e6b9f5600"
+    },
+    {
+      "id": "sg-2017-spring-pm-q01-u03",
+      "coveredFacts": [
+        "Bitcoin",
+        "Tor"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "890b9cd8a7c69adf600d7ab4f825e2cfeb216411a5e7753f05894482bcf1af06"
+    },
+    {
+      "id": "sg-2017-spring-pm-q01-u06",
+      "problem": "(2) 本文中の下線③について，支払に応じるべきではないと情報セキュリティ委員会で報告するとしたら，その理由は何か。次の(ⅰ)～(ⅳ)のうち，適切なものだけを全て挙げた組合せを，解答群の中から選べ。\n\n1. 金銭を支払うことによって，自社への更なる攻撃につながり得るから\n\n2. 金銭を支払っても，ファイルを復号できる保証がないから\n\n3. 外部業者にデジタルフォレンジックスを依頼すれば，暗号化されたデータを確実に復号できるから\n\n4. 表1において，ⅠとⅡを比較した結果，Ⅰの方が，被害及び費用が小さいから",
+      "answerLabel": "ア",
+      "correctOptions": [
+        "(ⅰ)，(ⅱ)"
+      ],
+      "explanation": "**正解：ア**\n\n支払いに応じることで標的リストに登録され、さらなる攻撃を受ける危険性が高まり、また支払いに応じてもデータを復元できる保証がないため、支払に応じるべきではないという判断になります。",
+      "sourceEvidence": "正しい。支払いに応じることで標的リストなどに登録され、さらなる攻撃を受ける危険性が高まります。正しい。悪意のあるものによって仕掛けたまるマルウェアなので、支払いに応じてもデータを復元できる保証はありません。誤り。デジタルフォレンジックスは証拠となるデータを保全する手続きであり、データの復元をすることはできません。誤り。本文中に「表1作成時の前提を置かずに対応について検討する」とあります。表1は「支払いに応じれば必ずデータが復元できる」という前提に基づいて作成されたものなので、対応策の根拠として挙げるべきではありません。したがって正しい組合せは「(ⅰ)，(ⅱ)」です。",
+      "scenarioContext": "",
+      "figureBased": false,
+      "groupedAnswerCount": 1,
+      "coveredFacts": [
+        "金銭を支払うことによって、自社への更なる攻撃につながり得る",
+        "金銭を支払っても、ファイルを復号できる保証がない"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "136e3d938aad53443a507ca338cdebb281f5d767ecd9c18c4b205fed1120203a"
+    },
+    {
+      "id": "sg-2017-spring-pm-q01-u07",
+      "coveredFacts": [
+        "NASのバックアップが実施されなかったこと",
+        "データ保存ルールが不統一"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "a27710b8fd5aae8cab64078c3f81c52ebffab19c006e737d20be4fbc8494f364"
+    },
+    {
+      "id": "sg-2017-spring-pm-q01-u09",
+      "coveredFacts": [
+        "(ⅰ)",
+        "(ⅱ)"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "74e9251c0bcc28a1b565961c53f180ced07fc5f0f38832be350777e7b49df399"
+    },
+    {
+      "id": "sg-2017-spring-pm-q01-u10",
+      "coveredFacts": [
+        "(ⅰ)",
+        "(ⅱ)"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "1f5bf277d33577848726f82b8adb0f88b1bad97185a7873539ba431720259fcb"
+    },
+    {
+      "id": "sg-2017-spring-pm-q02-u02",
+      "coveredFacts": [
+        "(ⅱ)",
+        "(ⅲ)",
+        "(ⅴ)"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "2ea67c721507216e48bb3585e523afa9468bc33f712cfa9f368e7f308cb1e8f7"
+    },
+    {
+      "id": "sg-2017-spring-pm-q02-u08",
+      "coveredFacts": [
+        "販売員が送信停止処理より販売活動を優先する恐れ",
+        "見込客が本社宛てに電話で申し出た場合でも停止処理ができる必要",
+        "営業所管理者アカウントに送信停止権限を付与する必要"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "2a03203a680ddcd580bbd99093b1504f8ebd1bcad52975b26369788d3ffe16d4"
+    },
+    {
+      "id": "sg-2017-spring-pm-q03-u09",
+      "coveredFacts": [
+        "d1＝シリンダ錠",
+        "d2＝暗証番号錠",
+        "d3＝RFID認証式の錠",
+        "d4＝指静脈認証錠"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "2b4680c93a8a539b2a49d150f69727e10002b5415e21e111e4d6f9db88133255"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-u03",
+      "coveredFacts": [
+        "メール利用禁止",
+        "ファイルサーバアクセスを企画管理部共有フォルダに限定",
+        "USBポートを物理的に閉鎖"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "11b7d316211bb63b2828f431baad832bac2ca252a7048ac805a9c7a691b2392d"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-u04",
+      "coveredFacts": [
+        "経理担当者以外の者による不正ログイン",
+        "他の経理担当者へのなりすまし又は部外者による不正な振込操作",
+        "経理担当者自身のIDを使った不正な振込承認"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "22ae5d054a3a976892dd7ef4b1f358e5d4337093bb79aceabb1126ee7f200b6d"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-u10",
+      "coveredFacts": [
+        "e1: 重要事項の電話確認",
+        "e2: 詐欺事例・注意事項のセキュリティ教育"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "224828b1fbd766363ecb8002d473b70ea2ad787cefc3fc5ab6f33d00c999cf38"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-u11",
+      "coveredFacts": [
+        "f1: 取引先口座マスタ変更のワークフロー・権限分離",
+        "f2: 振込依頼情報のワークフロー・権限分離"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "e2b263900430c08b021d9200b40bee789451d222346f625575ccbd1d0587bc57"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q02-u05",
+      "coveredFacts": [
+        "調査から漏れた高リスクソフトが使われてしまう可能性がある",
+        "高リスクソフトを継続的に調査して登録し続けることは工数が掛かりすぎる"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "13b1eb32135d47d8fe47737b72ac164bbfad1db1875ca6d924fdd50afbc1aed5"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q02-u07",
+      "coveredFacts": [
+        "申請されたソフトウェアが高リスクソフトではないことの判断が難しい",
+        "申請されたソフトウェアが高リスクソフトではないことを確認し検証する工数が掛かりすぎる",
+        "ソフトウェアの利用申請から実際に利用できるようになるまで時間が掛かり業務に影響が出る"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "df90a39e9abb3f2abd95a2539f1aa72b74fb8986c9c34e7896d4aa95263e4fe1"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q03-u01",
+      "coveredFacts": [
+        "問合せ対応者が不審メール対応手順に従って対応できるようにすること",
+        "不審メール受信者が不審メールを見分けられるようにすること",
+        "不審メール受信者が不審メール対応手順に従って対応できるようにすること"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "7c68c132e7593fcd627788078b336c8ce468c4a5dfb04d842d20a904e6af26ee"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q03-u06",
+      "coveredFacts": [
+        "転送だけでは通信が発生しない",
+        "添付ファイル開封で通信が発生"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "c4079b835bf8ec4694531db723b9980c8d3ce80fb952f135fd8dcdf097eaea37"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q03-u07",
+      "coveredFacts": [
+        "添付ファイルに個人情報が含まれ、漏洩リスク",
+        "メールアドレスがフィッシングに利用されるリスク"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "fc4b37e69ca162b569c8cb0b1b5ba2373ed57b46dbbe75021434ee84fd4487cb"
+    },
+    {
+      "id": "sg-2018-spring-pm-q01-u05",
+      "coveredFacts": [
+        "酒宴に持ち込まない",
+        "電車の網棚に置かない",
+        "車両内に放置しない"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "8912b38e7a5fdac68c3935a9a94d16d7981d05d3e0131f2d2a15867651b31103"
+    },
+    {
+      "id": "sg-2018-spring-pm-q01-u06",
+      "coveredFacts": [
+        "OSログイン成功時にカメラで写真撮影",
+        "OSログイン成否をログに記録し、ログ消去に管理者権限を必要とする"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "2475d3a464a957b9c7d0154e9e8c5dbb27777a290c6762caa4521971a893e6cc"
+    },
+    {
+      "id": "sg-2018-spring-pm-q01-u08",
+      "coveredFacts": [
+        "顧客リスト紛失",
+        "顧客情報登録用シート盗難"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "d451571270e5488521749119e384afe3f23aa9f2d84cdc8bdd33e6cb2b1413f7"
+    },
+    {
+      "id": "sg-2018-spring-pm-q01-u09",
+      "coveredFacts": [
+        "顧客番号をハッシュ化",
+        "生年月日を年だけにする",
+        "肌質の少数レコードを除外",
+        "販売年月日を年月だけにする"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "f723a1927dc1843a306b79653eb38ba821ef5c60c5ae80727137b42f6e95f1eb"
+    },
+    {
+      "id": "sg-2018-spring-pm-q01-u10",
+      "coveredFacts": [
+        "匿名加工情報と他情報の照合（成功）",
+        "匿名加工情報と他情報の照合（失敗）",
+        "匿名加工情報の加工方法の取得（有償）",
+        "匿名加工情報の加工方法の取得（無償）"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "4cdecdf7dfeefdd866205ed475073c21e6f07f2211f9b876a0db2d4438b0ad87"
+    },
+    {
+      "id": "sg-2018-spring-pm-q02-u02",
+      "coveredFacts": [
+        "b1: T営業所の営業担当者及び営業所管理者",
+        "b2: 営業部の顧客管理スタッフ及び開発チームのメンバー"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "e47b72503903110b6b6dd1131e8ad3c8d9cd7e504e1e2cdf62e3b8e7a1f62f5f"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-u06",
+      "coveredFacts": [
+        "Eさんへの聞き取り調査",
+        "個人所有PCの業務使用違反"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "2f70f27b4affcd0b6fe2a973c9e8eaa260fc5936230aa14ea85415deb79cbff6"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-u07",
+      "coveredFacts": [
+        "BIOSパスワード設定",
+        "OSパスワード設定",
+        "ハードディスク全体暗号化",
+        "漏えい時対応フロー策定",
+        "ディスプレイ覗き見防止フィルター装着"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "4ef0a4109b1c3af7b6548d1e8fc16e2ec795f9c49e0cb8731a2b9f50102ad11e"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-u10",
+      "coveredFacts": [
+        "e1トップダウンアプローチ",
+        "e2ボトムアップアプローチ"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "e078ba89f38fd2b3fa8a54bb741afece1b6a76ac025bea49cd13bc8541067beb"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q01-u03",
+      "coveredFacts": [
+        "c1メール認証キー",
+        "c2端末設定問合せ"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "69f247f348b5b6cc8618819645adb6667704ca137206a68130781e3dd49abbbd"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q01-u10",
+      "coveredFacts": [
+        "CAPTCHAを入力後に判定する対策",
+        "正当な利用者がボットと誤判定されて問合せが投稿できない問題"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "60ab69783663c066c91c0af9190468eeff188bc68a34b3e2c94a6746975063f0"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q02-u02",
+      "coveredFacts": [
+        "窃取済みのDさんのパスワードを変更する対策",
+        "全従業員にURL-Pへのアクセスを報告する指示",
+        "全従業員にURL-Pへのアクセスをしないよう指示"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "bc70db141b7748ab3ce07e4cca2787c95f172db4eb6af60d715874bf24676532"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q02-u08",
+      "coveredFacts": [
+        "DさんがNPCを業務に利用できない影響",
+        "NPC-D内のデータが消去されて調査できない影響",
+        "Dさんに新たにNPCを手配し詳細調査の間は追加で貸与する対策"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "962a12224aa84096ffb4511e10b166e710781f28a6016ab895ffab48e176925a"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-u02",
+      "coveredFacts": [
+        "NDBの記憶媒体を持ち出した場合にX情報が読めない",
+        "N社従業員がNDBに不正アクセスしてもX情報が読めない"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "cb77f3679c8a876ea8e2d7b027793ad1bf532787fd562df36dcf1ec18be97a83"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-u07",
+      "coveredFacts": [
+        "複合機から送信されるメールの送信者名・件名が同一であるため、従業員が正規メールと誤認しURLをクリックするリスク",
+        "複合機から送信されるメールの添付ファイルを開くことでマルウェア感染するリスク"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "1b2cff4c054d1cf2a382449df8353a8176a5cdb0f920cf938cbb8f9a24c38d04"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-u08",
+      "coveredFacts": [
+        "USBメモリ上のマルウェア付きファイルを開くことでY-PCが感染するリスク"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "6736910e298885ef87c9698199d4ba114b10c51523f06a8b70e6025408c53b18"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-u10",
+      "coveredFacts": [
+        "項番18はインターネット上へのX情報持出しをけん制する要求",
+        "プロキシで利用者認証を行い従業員IDをログに残す",
+        "対象者にプロキシログ監視を通知する",
+        "不正送信を思いとどまらせる効果"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "005e2cb6f5a5980bba78c4f0bd1b5dbdebc47cff8784ea367dacaeff505dfb52"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u02",
+      "coveredFacts": [
+        "偵察はインターネット上の公開情報を用いる",
+        "(ⅰ) WHOISサイトから情報取得",
+        "(ⅱ) 公開WebサイトのHTMLソースから情報取得",
+        "(ⅲ) SNSサイトから情報取得",
+        "(ⅳ) ダークWebから情報取得"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "13e8c7b82c6d958be57625e61a92615625bc6eb8c7d03d1329b75386a94ca3d7"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u03",
+      "coveredFacts": [
+        "b1は3 配送",
+        "b2は5 インストール"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "64a221e56509f47cd9f521186c1bc2edabe02408511858dbf39b5e7b8aea9e51"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u05",
+      "coveredFacts": [
+        "インシデント検知時に情報セキュリティリーダーへ報告",
+        "グループ1は確認優先で報告せず誤",
+        "グループ2は疑いを持った時点で報告し正",
+        "グループ3は独断で削除し報告せず誤"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "01d37699339b6b9ac4de21d927606bf550f733595698920f4a9d3caa6944c182"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u06",
+      "coveredFacts": [
+        "マルウェア感染疑い時にネットワークから切り離す",
+        "ランサムウェア疑い時に電源強制切断",
+        "グループ1はOS再起動で誤",
+        "グループ2は電源切断で正",
+        "グループ3はスリープで誤"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "c411a98777b4823c0ddd2915f2ecbad4494921980ed4c65ae6143bcaeaa061a9"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u07",
+      "coveredFacts": [
+        "通常OS終了でファイル暗号化が継続する",
+        "OS終了で調査に必要な情報が失われる",
+        "強制切断が有効である"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "f646487dac587790348dfe3612348fafd24f0df528f9957711936fcb2bb5d544"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u08",
+      "coveredFacts": [
+        "偵察段階への対策",
+        "従業員教育で情報漏えい防止（選択肢2）",
+        "外部業者によるSNS・匿名掲示板監視（選択肢3）"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "9502d54a7b97efef22872ad5bd6c3e8619f297e2620988e7d34a1e4fa3b7f25c"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u09",
+      "coveredFacts": [
+        "偽サイト対策",
+        "情報公開で偽サイトの存在と危険性を周知（選択肢2）",
+        "ISPに削除要請して偽サイトを閉鎖（選択肢5）"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "b8c680822c1c3db11a3f51913ed41797a8d0269e73f7c95d5a109746d15e0431"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u01",
+      "coveredFacts": [
+        "情報資産の追加記載（名称・管理責任者）",
+        "情報資産の重要度確認",
+        "廃棄された情報資産の削除"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "d1023b15c3b7c2a57a13c0555cb04e6460f1892232ccbc2a345bedd4f532fd96"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u04",
+      "coveredFacts": [
+        "特定商取引に関する法律",
+        "適用法規制一覧"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "1f745a00c0e7c7d3af64639bf186f2599a78804b98cd5c681e21fa658b309e86"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u07",
+      "coveredFacts": [
+        "SNSアカウントのプロフィールに公式アカウントであることを明示",
+        "SNSの提供業者に認証済みアカウント表示を申請",
+        "公式Webサイトに公式アカウントリンクと運用方針を明示"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "08002f2dcc2b73c9f5d2122a89c283cf64a39f5bb5dc2e61715e5bc903527800"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u08",
+      "coveredFacts": [
+        "パスワードを他サービスと共用しない",
+        "社内業務用PCからのみ投稿許可",
+        "多要素認証を併用"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "9a033934284f70ef9ac557591720bf1e7a5b8e24e41f5b8a3f63558ccf67665c"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u09",
+      "coveredFacts": [
+        "業務上の守秘義務に反する投稿をしない",
+        "業務用PCでSNSを個人利用しない",
+        "著作権・肖像権など他人の権利を侵害しない"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "a303eca5c08a685f45cac73e0a764a6de05b7e5ade31a2a10f4f67143a076ab2"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u10",
+      "coveredFacts": [
+        "SNSを利用する個人所有端末に物理的・技術的対策を実施",
+        "投稿削除後も拡散の可能性を留意",
+        "SNSごとに公開範囲を適切に設定"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "766ebca80c988fe2727c07c42a66e9cb35ef9265e1628de57790fd76e19b7bf7"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u11",
+      "coveredFacts": [
+        "f1に◎（編集権限）",
+        "f2に×（権限なし）"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "8b595975d94dd95e2560d1431b7f4a504108b80ff9ee212fec502ddd811e4d76"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u12",
+      "coveredFacts": [
+        "アカウント管理ロール：売上管理×、アカウント管理◎",
+        "モニタリングロール：売上管理〇、アカウント管理〇"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "cfde5efcb3515d9a774c2aeb3f49ddf7e772a2d78d8a10592ced980ae1bea272"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-u01",
+      "coveredFacts": [
+        "NPCを操作した者を特定できないリスク（ⅰ）",
+        "利用資格を失った者が不正に操作するリスク（ⅱ）",
+        "パスワード漏えいによる不正操作のリスク（ⅲ）"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "0ef5599af58158672676bb8d8a44da59f3dd6df6ba80fa027392a20d1cececba"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-u02",
+      "coveredFacts": [
+        "監査人の独立性（a1）",
+        "情報セキュリティ関連規程の準拠確認（a2）",
+        "監査対象部署への質問（a3）"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "61162ddca4eb0b3693bfc41fb8ad6012deac5dbfc32f276579d09846cc66563f"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-u03",
+      "coveredFacts": [
+        "チェック項目3（OSアップデート）",
+        "チェック項目4（ソフトウェア最新化）",
+        "チェック項目8（共有サーバへのデータ保管）",
+        "NPCにおけるランサムウェア脅威への対策"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "e0eb0fd5c4cbc2d7584ecd4bd8469864f1184c180d057b3d35964b673b6fd594"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-u06",
+      "coveredFacts": [
+        "d1＝攻撃条件の複雑さ（低）",
+        "d2＝攻撃に必要な特権レベル（不要）",
+        "d3＝利用者の関与（不要）",
+        "脆弱性の深刻度が最も高い"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "d568b248d51ec48e9bc66696d4740ace09be6418e8e7a547596a78b1b4c1255a"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-u08",
+      "coveredFacts": [
+        "下線②＝シャドーIT",
+        "下線③＝BYOD",
+        "順序はシャドーIT→BYOD"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "d9209f5b534b8c0779b854a284ca105d7d306c36be4bea614a496e9a7403d5cc"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-u09",
+      "coveredFacts": [
+        "チェック項目4の内容を『MyJVNバージョンチェッカで確認し、最新でない場合は更新する』に修正",
+        "チェック項目9の内容を『PCやスマホなどの個人所有端末を業務で利用していない』に修正"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "531a0894185b1eee530c5d734026a69a15cc443ad3e3dac50fbc8fe8cb8f74ea"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-u10",
+      "coveredFacts": [
+        "業務と関係のない友人や宛先グループに誤って業務情報を送付するリスク",
+        "見知らぬ人がAP連絡先に登録されてしまい、誤ってメッセージを送るリスク"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "9b89e1f1f1326f8c20938c6b041ff7aae092e818172d3d4de61bf90fede08553"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-u11",
+      "coveredFacts": [
+        "リスク特定",
+        "リスク分析",
+        "リスク評価"
+      ],
+      "issues": [],
+      "status": "pass",
+      "inputSha256": "11d1074b7315441cae8d6eaa83a406134701ccd69f1d59a8dbc08b449b34019f"
+    }
+  ]
+}

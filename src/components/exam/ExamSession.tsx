@@ -88,6 +88,8 @@ export default function ExamSession({
         mode={mode}
         result={session.batchResult}
         questions={session.questions}
+        sourceMap={session.sourceMap}
+        sourcePublisher={session.sourcePublisher}
         returnBucket={effectiveReturnBucket}
       />
     );
@@ -232,6 +234,15 @@ export default function ExamSession({
       {mode === "drill" && currentDrillResult && (
         <DrillFeedback
           result={currentDrillResult}
+          sourceReference={currentQuestion.source}
+          additionalSourceReferences={currentQuestion.sourceOccurrences}
+          source={
+            currentQuestion.source
+              ? session.sourceMap[currentQuestion.source.sourceId]
+              : undefined
+          }
+          sourceMap={session.sourceMap}
+          publisher={session.sourcePublisher}
           onNext={session.nextDrill}
         />
       )}
