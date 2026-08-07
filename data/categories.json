@@ -2,7 +2,6 @@
   {
     "id": "lpic1-101",
     "name": "LPIC-1 101",
-    "description": "Linux Professional Institute Level 1 - 101試験",
     "group": "certification",
     "defaultStyle": "oneshot",
     "timeLimit": 5400
@@ -10,7 +9,6 @@
   {
     "id": "lpic1-102",
     "name": "LPIC-1 102",
-    "description": "Linux Professional Institute Level 1 - 102試験",
     "group": "certification",
     "defaultStyle": "oneshot",
     "timeLimit": 5400
@@ -18,7 +16,6 @@
   {
     "id": "aws-scs",
     "name": "AWS SCS",
-    "description": "AWS Certified Security - Specialty",
     "group": "certification",
     "defaultStyle": "oneshot",
     "timeLimit": 10200
@@ -26,7 +23,6 @@
   {
     "id": "sg",
     "name": "情報セキュリティマネジメント",
-    "description": "IPA公式公開のSG実過去問（現行・旧試験）",
     "group": "certification",
     "defaultStyle": "oneshot",
     "timeLimit": 7200
@@ -34,7 +30,6 @@
   {
     "id": "sc",
     "name": "情報処理安全確保支援士",
-    "description": "セキュスペ 午前II・午後対策",
     "group": "certification",
     "defaultStyle": "scenario",
     "timeLimit": 5400
@@ -42,7 +37,6 @@
   {
     "id": "thm-basics",
     "name": "THM基礎",
-    "description": "TryHackMe初学者向けLinux基礎コマンドテスト（状況設定10問・コマンド確認10問）",
     "group": "lab",
     "defaultStyle": "oneshot",
     "timeLimit": 600
@@ -50,7 +44,6 @@
   {
     "id": "java-silver",
     "name": "Java Silver SE 17（Programmer I / 1Z0-825-JPN）",
-    "description": "Java SE 17 Silver（1Z0-825-JPN / Programmer I）対策。基礎構文・String・配列・ArrayList・OOP・interface・record/sealed・例外を全50問で網羅。",
     "group": "certification",
     "defaultStyle": "oneshot",
     "timeLimit": 5400
@@ -59,7 +52,6 @@
   {
     "id": "general",
     "name": "一般常識(demo)",
-    "description": "社会・科学・地理などの一般常識問題 デモ用",
     "group": "demo",
     "defaultStyle": "oneshot",
     "timeLimit": 1800

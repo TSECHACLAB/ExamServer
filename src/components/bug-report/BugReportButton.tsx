@@ -2,7 +2,10 @@
 
 import { useId, useState } from "react";
 import { createPortal } from "react-dom";
-import type { FormEvent, ReactNode } from "react";
+import type { ReactNode } from "react";
+import { DadsButton } from "@/components/dads/DadsButton";
+import DadsBugReportDialog from "./DadsBugReportDialog";
+import { useBugReportForm } from "./useBugReportForm";
 import {
   BUG_REPORT_CATEGORIES,
   BUG_REPORT_LOCATIONS,
@@ -10,21 +13,11 @@ import {
   inferBugReportLocation,
   type BugReportCategory,
   type BugReportLocation,
-  type BugReportSeverity,
 } from "@/lib/bug-report";
 
-type SubmitState =
-  | { status: "idle" }
-  | { status: "submitting" }
-  | { status: "success"; issueUrl: string }
-  | { status: "error"; message: string };
-
 interface BugReportButtonProps {
-  variant?: "public" | "exam";
+  variant?: "public" | "practice" | "exam";
 }
-
-const COOLDOWN_KEY = "examserver:last-bug-report-at";
-const COOLDOWN_MS = 60_000;
 
 export default function BugReportButton({
   variant = "public",
@@ -32,31 +25,60 @@ export default function BugReportButton({
   const dialogId = useId();
   const [open, setOpen] = useState(false);
   const [initialWhere, setInitialWhere] = useState<BugReportLocation>("不明");
+  const openDialog = () => {
+    setInitialWhere(inferBugReportLocation(window.location.pathname));
+    setOpen(true);
+  };
+  const label = (
+    <>
+      <span className="sm:hidden">報告</span>
+      <span className="hidden sm:inline">不具合報告</span>
+    </>
+  );
 
   return (
     <>
-      <button
-        type="button"
-        aria-haspopup="dialog"
-        aria-controls={open ? dialogId : undefined}
-        onClick={() => {
-          setInitialWhere(inferBugReportLocation(window.location.pathname));
-          setOpen(true);
-        }}
-        className={buttonClassName(variant)}
-      >
-        <span className="sm:hidden">報告</span>
-        <span className="hidden sm:inline">不具合報告</span>
-      </button>
+      {variant === "public" ? (
+        <button
+          type="button"
+          aria-haspopup="dialog"
+          aria-controls={open ? dialogId : undefined}
+          onClick={openDialog}
+          className={buttonClassName()}
+        >
+          {label}
+        </button>
+      ) : (
+        <DadsButton
+          type="button"
+          size="xs"
+          variant="text"
+          aria-haspopup="dialog"
+          aria-controls={open ? dialogId : undefined}
+          onClick={openDialog}
+          className="shrink-0"
+        >
+          {label}
+        </DadsButton>
+      )}
 
-      {open && (
-        <BugReportPortal>
-          <BugReportDialog
-            id={dialogId}
-            initialWhere={initialWhere}
-            onClose={() => setOpen(false)}
-          />
-        </BugReportPortal>
+      {variant === "public" ? (
+        open ? (
+          <BugReportPortal>
+            <BugReportDialog
+              id={dialogId}
+              initialWhere={initialWhere}
+              onClose={() => setOpen(false)}
+            />
+          </BugReportPortal>
+        ) : null
+      ) : (
+        <DadsBugReportDialog
+          id={dialogId}
+          initialWhere={initialWhere}
+          onClose={() => setOpen(false)}
+          open={open}
+        />
       )}
     </>
   );
@@ -76,67 +98,20 @@ function BugReportDialog({
   onClose: () => void;
 }) {
   const titleId = `${id}-title`;
-  const [category, setCategory] = useState<BugReportCategory>(
-    BUG_REPORT_CATEGORIES[0]
-  );
-  const [severity, setSeverity] = useState<BugReportSeverity>("少し困る");
-  const [where, setWhere] = useState<BugReportLocation>(initialWhere);
-  const [detail, setDetail] = useState("");
-  const [hp, setHp] = useState("");
-  const [submitState, setSubmitState] = useState<SubmitState>({
-    status: "idle",
-  });
-
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-
-    const lastReportAt = Number(localStorage.getItem(COOLDOWN_KEY) || "0");
-    if (Date.now() - lastReportAt < COOLDOWN_MS) {
-      setSubmitState({
-        status: "error",
-        message: "連続送信を抑制しています。少し待ってから送信してください。",
-      });
-      return;
-    }
-
-    setSubmitState({ status: "submitting" });
-
-    try {
-      const response = await fetch("/api/bug-reports", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          category,
-          severity,
-          where,
-          detail,
-          pageUrl: window.location.href,
-          userAgent: navigator.userAgent,
-          viewport: `${window.innerWidth}x${window.innerHeight}`,
-          reportedAt: new Date().toISOString(),
-          hp,
-        }),
-      });
-
-      const data = (await response.json()) as {
-        ok?: boolean;
-        issueUrl?: string;
-        error?: string;
-      };
-
-      if (!response.ok || !data.ok || !data.issueUrl) {
-        throw new Error(data.error || "送信できませんでした");
-      }
-
-      localStorage.setItem(COOLDOWN_KEY, String(Date.now()));
-      setSubmitState({ status: "success", issueUrl: data.issueUrl });
-    } catch (err: unknown) {
-      setSubmitState({
-        status: "error",
-        message: err instanceof Error ? err.message : "送信できませんでした",
-      });
-    }
-  }
+  const {
+    category,
+    detail,
+    handleSubmit,
+    hp,
+    setCategory,
+    setDetail,
+    setHp,
+    setSeverity,
+    setWhere,
+    severity,
+    submitState,
+    where,
+  } = useBugReportForm(initialWhere);
 
   return (
     <div
@@ -314,10 +289,6 @@ function BugReportDialog({
   );
 }
 
-function buttonClassName(variant: "public" | "exam"): string {
-  if (variant === "exam") {
-    return "min-h-10 rounded-md border border-gray-200 bg-white px-3 py-2 text-sm font-semibold text-gray-600 transition-colors hover:bg-gray-50 hover:text-gray-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600";
-  }
-
+function buttonClassName(): string {
   return "min-h-9 rounded-md border border-[var(--border)] bg-[var(--surface)] px-2.5 py-1.5 text-xs font-semibold text-[var(--text-muted)] transition-colors hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus)]";
 }

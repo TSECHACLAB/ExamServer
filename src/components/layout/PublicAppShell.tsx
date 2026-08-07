@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import BugReportButton from "@/components/bug-report/BugReportButton";
 import DocsWorkspace from "./DocsWorkspace";
+import PracticePublicShell from "./PracticePublicShell";
 import ThemeSelector from "./ThemeSelector";
 
 type PublicSection = "learn" | "exam" | "admin";
@@ -69,6 +70,18 @@ export default function PublicAppShell({
       >
         {children}
       </DocsAppShell>
+    );
+  }
+
+  if (activeSection === "exam") {
+    return (
+      <PracticePublicShell
+        title={title}
+        description={description}
+        eyebrow={eyebrow}
+      >
+        {children}
+      </PracticePublicShell>
     );
   }
 

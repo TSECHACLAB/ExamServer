@@ -16,6 +16,7 @@ export {
   HeadingTitle,
 } from "@/vendor/dads-runtime/components/Heading";
 export { Input } from "@/vendor/dads-runtime/components/Input";
+export { Link } from "@/vendor/dads-runtime/components/Link";
 export {
   ModalDialog,
   ModalDialogActions,
@@ -25,8 +26,7 @@ export {
   ModalDialogHeader,
   ModalDialogHeading,
   ModalDialogScrollArea,
-  useModalDialog,
-} from "@/vendor/dads-runtime/components/ModalDialog";
+} from "@/vendor/dads-runtime/components/ModalDialog/ModalDialog";
 export {
   NotificationBanner,
   NotificationBannerBody,
@@ -36,7 +36,8 @@ export {
   ProgressIndicatorLinear,
   ProgressIndicatorSpinner,
   ProgressIndicatorStatic,
-} from "@/vendor/dads-runtime/components/ProgressIndicator";
+} from "@/vendor/dads-runtime/components/ProgressIndicator/ProgressIndicator";
 export { Radio } from "@/vendor/dads-runtime/components/Radio";
 export { Select } from "@/vendor/dads-runtime/components/Select";
 export { Textarea } from "@/vendor/dads-runtime/components/Textarea";
+export { UtilityLink } from "@/vendor/dads-runtime/components/UtilityLink";

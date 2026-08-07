@@ -1,6 +1,7 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
+import { Select } from "@/vendor/dads-runtime/components/Select";
 
 const THEME_STORAGE_KEY = "examserver-theme";
 
@@ -20,10 +21,12 @@ function isThemeId(value: string | null): value is ThemeId {
 
 interface ThemeSelectorProps {
   modernLightLabel?: string;
+  variant?: "default" | "practice";
 }
 
 export default function ThemeSelector({
   modernLightLabel = "モダン",
+  variant = "default",
 }: ThemeSelectorProps) {
   const theme = useSyncExternalStore(
     subscribeTheme,
@@ -41,6 +44,30 @@ export default function ThemeSelector({
     window.dispatchEvent(new CustomEvent("examserver-themechange"));
   };
 
+  const options = THEMES.map((item) => (
+    <option key={item.id} value={item.id}>
+      {item.id === "modern-light" ? modernLightLabel : item.label}
+    </option>
+  ));
+
+  if (variant === "practice") {
+    return (
+      <label className="flex min-w-0 items-center gap-2 text-sm font-bold text-solid-gray-800">
+        <span className="hidden md:inline">表示</span>
+        <Select
+          value={theme}
+          onChange={(event) => handleChange(event.target.value as ThemeId)}
+          blockSize="sm"
+          className="max-w-36 py-1 text-sm"
+          aria-label="テーマを選択"
+          suppressHydrationWarning
+        >
+          {options}
+        </Select>
+      </label>
+    );
+  }
+
   return (
     <label className="inline-flex min-h-9 items-center gap-2 rounded-md border border-[var(--border)] bg-[var(--surface)] px-2.5 py-1.5 text-xs font-semibold text-[var(--foreground)] shadow-sm">
       <span className="text-[var(--text-muted)]">テーマ</span>
@@ -51,11 +78,7 @@ export default function ThemeSelector({
         aria-label="テーマを選択"
         suppressHydrationWarning
       >
-        {THEMES.map((item) => (
-          <option key={item.id} value={item.id}>
-            {item.id === "modern-light" ? modernLightLabel : item.label}
-          </option>
-        ))}
+        {options}
       </select>
     </label>
   );

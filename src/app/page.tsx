@@ -13,15 +13,18 @@ interface Props {
 export default async function HomePage({ searchParams }: Props) {
   const params = await searchParams;
   const bucket = normalizeBucket(params?.bucket);
-  const categories = getCategories().map((category) => ({
-    id: category.id,
-    name: category.name,
-    defaultStyle: category.defaultStyle,
-    description: category.description,
-    group: category.group,
-    timeLimit: category.timeLimit,
-    questionCount: getAllQuestions(category.id).length,
-  }));
+  const categories = getCategories().map((category) => {
+    return {
+      id: category.id,
+      name: category.name,
+      defaultStyle: category.defaultStyle,
+      description: category.description,
+      group: category.group,
+      passingScore: category.passingScore,
+      timeLimit: category.timeLimit,
+      questionCount: getAllQuestions(category.id).length,
+    };
+  });
 
   return (
     <PublicAppShell
@@ -34,9 +37,7 @@ export default async function HomePage({ searchParams }: Props) {
           : "まずは演習の種類を選びます。"
       }
     >
-      <div className="max-w-5xl">
-        <CategorySelector categories={categories} bucket={bucket} />
-      </div>
+      <CategorySelector categories={categories} bucket={bucket} />
     </PublicAppShell>
   );
 }

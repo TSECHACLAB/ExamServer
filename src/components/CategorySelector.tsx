@@ -1,30 +1,39 @@
 "use client";
 
-import Link from "next/link";
-import FlowBackLink from "@/components/FlowBackLink";
 import { useEffect, useState } from "react";
-import { loadCategoryProgress } from "@/lib/storage";
+import { DadsStatusBanner } from "@/components/dads/DadsStatus";
+import { DadsUtilityLink } from "@/components/dads/DadsLink";
+import { ChipLabel } from "@/vendor/dads-runtime/components/ChipLabel";
+import {
+  Disclosure,
+  DisclosureSummary,
+} from "@/vendor/dads-runtime/components/Disclosure";
+import { Divider } from "@/vendor/dads-runtime/components/Divider";
+import FlowBackLink from "@/components/FlowBackLink";
+import { loadProgress } from "@/lib/storage";
 import type {
   CategoryGroup,
   CategoryProgress,
   QuestionStyle,
+  StudyProgress,
 } from "@/types/exam";
 
 export type CategoryBucket = "certification" | "other";
 
 interface CategoryWithCount {
-  id: string;
-  name: string;
+  defaultStyle: QuestionStyle;
   description: string;
   group: CategoryGroup;
-  defaultStyle: QuestionStyle;
-  timeLimit: number;
+  id: string;
+  name: string;
+  passingScore: number;
   questionCount: number;
+  timeLimit: number;
 }
 
 interface Props {
-  categories: CategoryWithCount[];
   bucket: CategoryBucket | null;
+  categories: CategoryWithCount[];
 }
 
 const GROUP_ORDER: Record<CategoryGroup, number> = {
@@ -34,201 +43,236 @@ const GROUP_ORDER: Record<CategoryGroup, number> = {
 };
 
 export default function CategorySelector({ categories, bucket }: Props) {
-  if (!bucket) {
-    return <BucketChoices categories={categories} />;
-  }
+  if (!bucket) return <BucketChoices categories={categories} />;
 
   const visibleCategories = sortCategoriesForSelection(
-    categories.filter((category) => categoryMatchesBucket(category, bucket))
+    categories.filter((category) => categoryMatchesBucket(category, bucket)),
   );
 
+  return <CategoryList bucket={bucket} categories={visibleCategories} />;
+}
+
+function CategoryList({
+  bucket,
+  categories,
+}: {
+  bucket: CategoryBucket;
+  categories: CategoryWithCount[];
+}) {
+  const [progress, setProgress] = useState<StudyProgress>({});
+
+  useEffect(() => {
+    queueMicrotask(() => setProgress(loadProgress()));
+  }, []);
+
   return (
-    <div>
+    <div className="max-w-4xl">
       <FlowBackLink href="/" label="演習の種類に戻る" />
 
-      <div className="space-y-3">
-        {visibleCategories.map((category) => (
-          <CategoryRow key={category.id} category={category} bucket={bucket} />
-        ))}
-      </div>
+      {categories.length === 0 ? (
+        <DadsStatusBanner title="表示できる演習がありません" type="info2">
+          別の演習の種類を選んでください。
+        </DadsStatusBanner>
+      ) : (
+        <ul aria-label="演習カテゴリ" className="mt-8">
+          {categories.map((category, index) => (
+            <li key={category.id}>
+              {index > 0 ? <Divider color="gray-420" className="my-7" /> : null}
+              <CategoryRow
+                category={category}
+                bucket={bucket}
+                progress={progress[category.id] ?? null}
+              />
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
 
 function BucketChoices({ categories }: { categories: CategoryWithCount[] }) {
-  const certificationCount = categories.filter(
-    (category) => category.group === "certification"
-  ).length;
-  const otherCount = categories.length - certificationCount;
+  const choices: Array<{
+    bucket: CategoryBucket;
+    description: string;
+    title: string;
+  }> = [
+    {
+      bucket: "certification",
+      title: "資格試験",
+      description: "資格・公的試験の問題を解く",
+    },
+    {
+      bucket: "other",
+      title: "それ以外",
+      description: "基礎確認やデモの問題を解く",
+    },
+  ];
 
   return (
-    <div className="grid gap-3">
-      <BucketChoice
-        href="/?bucket=certification"
-        title="資格試験"
-        description={`${certificationCount}カテゴリ`}
-      />
-      <BucketChoice
-        href="/?bucket=other"
-        title="それ以外"
-        description={`${otherCount}カテゴリ`}
-      />
-    </div>
-  );
-}
+    <ul aria-label="演習の種類" className="max-w-3xl">
+      {choices.map((choice, index) => {
+        const entries = categories.filter((category) =>
+          categoryMatchesBucket(category, choice.bucket),
+        );
+        const questionCount = entries.reduce(
+          (total, category) => total + category.questionCount,
+          0,
+        );
 
-function BucketChoice({
-  href,
-  title,
-  description,
-}: {
-  href: string;
-  title: string;
-  description: string;
-}) {
-  return (
-    <Link
-      href={href}
-      className="group flex min-h-28 items-center justify-between rounded-lg border border-gray-300 bg-white px-5 py-5 transition-colors hover:border-blue-300 hover:bg-blue-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
-    >
-      <span>
-        <span className="block text-xl font-bold text-gray-950">{title}</span>
-        <span className="mt-1.5 block text-sm font-medium text-gray-500">
-          {description}
-        </span>
-      </span>
-      <span
-        aria-hidden="true"
-        className="flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 bg-gray-50 text-lg font-semibold text-gray-500 shadow-sm transition-colors group-hover:border-blue-200 group-hover:bg-white group-hover:text-blue-700"
-      >
-        →
-      </span>
-    </Link>
+        return (
+          <li key={choice.bucket}>
+            {index > 0 ? <Divider color="gray-420" className="my-7" /> : null}
+            <div className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
+              <div>
+                <DadsUtilityLink
+                  href={`/?bucket=${choice.bucket}`}
+                  className="inline-flex min-h-11 items-center text-std-24B-150"
+                >
+                  {choice.title}
+                  <span aria-hidden="true" className="ml-2">
+                    →
+                  </span>
+                </DadsUtilityLink>
+                <p className="mt-1 text-std-16N-170 text-solid-gray-700">
+                  {choice.description}
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 sm:justify-end">
+                <ChipLabel color="gray" variant="outlined">
+                  {entries.length}カテゴリ
+                </ChipLabel>
+                <ChipLabel color="blue" variant="filled-1">
+                  {questionCount}問
+                </ChipLabel>
+              </div>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
   );
 }
 
 function CategoryRow({
-  category,
   bucket,
+  category,
+  progress,
 }: {
-  category: CategoryWithCount;
   bucket: CategoryBucket;
+  category: CategoryWithCount;
+  progress: CategoryProgress | null;
 }) {
   const ready = category.questionCount > 0;
   const setupHref = `/exam/${category.id}?bucket=${bucket}`;
-  const [progress, setProgress] = useState<CategoryProgress | null>(null);
-
-  useEffect(() => {
-    let cancelled = false;
-
-    queueMicrotask(() => {
-      if (!cancelled) {
-        setProgress(loadCategoryProgress(category.id));
-      }
-    });
-
-    return () => {
-      cancelled = true;
-    };
-  }, [category.id]);
 
   return (
-    <article className="overflow-hidden rounded-lg border border-gray-200 bg-white">
-      <div className="grid gap-2 bg-gray-50 px-4 py-3.5 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
-        {ready ? (
-          <Link
-            href={setupHref}
-            className="min-w-0 rounded-md py-1 text-lg font-bold leading-snug text-gray-950 hover:text-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
-          >
-            {category.name}
-          </Link>
-        ) : (
-          <span className="min-w-0 py-1 text-lg font-bold leading-snug text-gray-500">
-            {category.name}
-          </span>
-        )}
+    <section aria-labelledby={`category-${category.id}`}>
+      <div className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-start">
+        <div>
+          {ready ? (
+            <DadsUtilityLink
+              href={setupHref}
+              className="inline-block min-h-11 py-2 text-std-20B-150"
+            >
+              <span id={`category-${category.id}`}>{category.name}</span>
+              <span aria-hidden="true" className="ml-2">
+                →
+              </span>
+            </DadsUtilityLink>
+          ) : (
+            <h2
+              id={`category-${category.id}`}
+              className="py-2 text-std-20B-150 text-solid-gray-600"
+            >
+              {category.name}
+            </h2>
+          )}
+        </div>
 
-        <div className="flex flex-wrap items-center gap-2 text-[11px] font-medium leading-5 text-gray-500 sm:justify-end">
-          <span>{styleLabel(category.defaultStyle)}</span>
-          <span aria-hidden="true">/</span>
-          <span>{Math.floor(category.timeLimit / 60)}分</span>
-          <span aria-hidden="true">/</span>
-          <span className={ready ? "text-gray-600" : "text-amber-700"}>
+        <div className="flex flex-wrap gap-2 sm:max-w-md sm:justify-end">
+          <ChipLabel color={ready ? "blue" : "yellow"} variant="filled-1">
             {ready ? `${category.questionCount}問` : "準備中"}
-          </span>
+          </ChipLabel>
+          <ChipLabel color="gray" variant="outlined">
+            {styleLabel(category.defaultStyle)}
+          </ChipLabel>
+          <ChipLabel color="gray" variant="outlined">
+            標準{Math.floor(category.timeLimit / 60)}分
+          </ChipLabel>
+          <ChipLabel color="green" variant="outlined">
+            合格基準 {category.passingScore}%
+          </ChipLabel>
         </div>
       </div>
 
-      <details className="group border-t border-gray-200 bg-white">
-        <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 bg-white px-4 py-2 text-xs font-semibold text-gray-600 transition-colors hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-600">
-          <span>概要</span>
-          <span
-            aria-hidden="true"
-            className="text-gray-500 transition-transform group-open:rotate-180"
-          >
-            ↓
-          </span>
-        </summary>
-        <div className="border-t border-gray-100 bg-white px-4 pb-4 pt-3 text-[0.95rem] leading-7 text-gray-600">
+      <Disclosure className="mt-3">
+        <DisclosureSummary className="font-bold text-solid-gray-800">
+          概要を見る
+        </DisclosureSummary>
+        <div className="ml-8 mt-3 max-w-[65ch] space-y-4 text-std-16N-170 text-solid-gray-700">
           <p>{category.description}</p>
-          {!ready && (
-            <p className="mt-2 rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-amber-900">
-              このカテゴリは問題が登録されるまで開始できません。
-            </p>
-          )}
-          {progress && (
-            <dl className="mt-3 grid gap-2 rounded-md border border-gray-200 bg-gray-50 px-3 py-2 sm:grid-cols-3">
-              <ProgressItem label="最高得点" value={`${progress.bestScore}%`} />
-              <ProgressItem label="挑戦" value={`${progress.attempts}回`} />
-              <ProgressItem
-                label="解答済み"
-                value={`${Object.keys(progress.questionHistory).length}問`}
-              />
-            </dl>
-          )}
+          {!ready ? (
+            <DadsStatusBanner title="現在は開始できません" type="warning">
+              問題が登録されると、この一覧から設定へ進めます。
+            </DadsStatusBanner>
+          ) : null}
+          {progress ? <ProgressSummary progress={progress} /> : null}
         </div>
-      </details>
-    </article>
+      </Disclosure>
+    </section>
+  );
+}
+
+function ProgressSummary({ progress }: { progress: CategoryProgress }) {
+  return (
+    <dl className="grid gap-x-8 gap-y-3 border-l-4 border-key-900 pl-4 sm:grid-cols-3">
+      <ProgressItem label="最高得点" value={`${progress.bestScore}%`} />
+      <ProgressItem label="挑戦" value={`${progress.attempts}回`} />
+      <ProgressItem
+        label="解答履歴"
+        value={`${Object.keys(progress.questionHistory).length}問`}
+      />
+    </dl>
   );
 }
 
 function ProgressItem({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <dt className="text-xs font-medium text-gray-500">{label}</dt>
-      <dd className="mt-0.5 text-sm font-semibold text-gray-900">{value}</dd>
+      <dt className="text-sm text-solid-gray-700">{label}</dt>
+      <dd className="font-bold text-solid-gray-900">{value}</dd>
     </div>
   );
 }
 
 function sortCategoriesForSelection(
-  categories: CategoryWithCount[]
+  categories: CategoryWithCount[],
 ): CategoryWithCount[] {
   return categories
     .map((category, index) => ({ category, index }))
-    .sort((a, b) => {
+    .sort((left, right) => {
       const groupDiff =
-        GROUP_ORDER[a.category.group] - GROUP_ORDER[b.category.group];
+        GROUP_ORDER[left.category.group] - GROUP_ORDER[right.category.group];
       if (groupDiff !== 0) return groupDiff;
 
       const readyDiff =
-        Number(b.category.questionCount > 0) -
-        Number(a.category.questionCount > 0);
-      if (readyDiff !== 0) return readyDiff;
-
-      return a.index - b.index;
+        Number(right.category.questionCount > 0) -
+        Number(left.category.questionCount > 0);
+      return readyDiff !== 0 ? readyDiff : left.index - right.index;
     })
     .map(({ category }) => category);
 }
 
 function categoryMatchesBucket(
   category: CategoryWithCount,
-  bucket: CategoryBucket
+  bucket: CategoryBucket,
 ): boolean {
-  if (bucket === "certification") return category.group === "certification";
-  return category.group !== "certification";
+  return bucket === "certification"
+    ? category.group === "certification"
+    : category.group !== "certification";
 }
 
 function styleLabel(style: QuestionStyle): string {
-  return style === "scenario" ? "長文" : "一問一答";
+  return style === "scenario" ? "長文形式" : "一問形式";
 }

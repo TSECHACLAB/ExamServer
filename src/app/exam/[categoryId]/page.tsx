@@ -8,6 +8,7 @@ import { getCategoryById, getAllQuestions } from "@/lib/questions";
 import ExamSetupForm from "@/components/exam/ExamSetupForm";
 import FlowBackLink from "@/components/FlowBackLink";
 import PublicAppShell from "@/components/layout/PublicAppShell";
+import { DadsStatusBanner } from "@/components/dads/DadsStatus";
 import type { CategoryBucket } from "@/components/CategorySelector";
 import { getQuestionDomains } from "@/lib/question-domains";
 
@@ -46,23 +47,19 @@ export default async function ExamSetupPage({ params, searchParams }: Props) {
       title={category.name}
       description={category.description}
     >
-      <section className="mx-auto max-w-3xl">
+      <section className="max-w-3xl">
         <FlowBackLink href={`/?bucket=${bucket}`} label="カテゴリ一覧に戻る" />
         {totalQuestions === 0 ? (
-          <div className="rounded-lg border border-gray-200 bg-white px-5 py-12 text-center text-gray-500">
-            <p className="text-lg font-semibold text-gray-800">
-              まだ問題が登録されていません
-            </p>
-            <p className="mt-2 text-sm">
-              管理画面から問題をアップロードしてください。
-            </p>
-          </div>
+          <DadsStatusBanner title="まだ問題が登録されていません" type="warning">
+            このカテゴリは準備中です。カテゴリ一覧から別の演習を選んでください。
+          </DadsStatusBanner>
         ) : (
           <ExamSetupForm
             categoryId={category.id}
             categoryName={category.name}
             totalQuestions={totalQuestions}
             timeLimit={category.timeLimit}
+            passingScore={category.passingScore}
             returnBucket={bucket}
             domainOptions={domainOptions}
             domainQuestionCounts={domainQuestionCounts}

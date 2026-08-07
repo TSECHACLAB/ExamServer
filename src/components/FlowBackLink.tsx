@@ -1,6 +1,4 @@
-"use client";
-
-import Link from "next/link";
+import { DadsUtilityLink } from "@/components/dads/DadsLink";
 
 interface Props {
   href: string;
@@ -9,13 +7,14 @@ interface Props {
 
 export default function FlowBackLink({ href, label }: Props) {
   return (
-    <div className="mb-5">
-      <Link
+    <div className="mb-6">
+      <DadsUtilityLink
         href={href}
-        className="inline-flex min-h-10 items-center rounded-md border border-gray-200 bg-white px-3 py-2 text-sm font-semibold text-gray-700 transition-colors hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
+        className="inline-flex min-h-11 items-center font-bold"
       >
-        ← {label}
-      </Link>
+        <span aria-hidden="true" className="mr-2">←</span>
+        {label}
+      </DadsUtilityLink>
     </div>
   );
 }

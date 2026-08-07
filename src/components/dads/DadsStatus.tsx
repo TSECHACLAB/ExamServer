@@ -6,7 +6,7 @@ import {
 import {
   ProgressIndicator,
   ProgressIndicatorSpinner,
-} from "@/vendor/dads-runtime/components/ProgressIndicator";
+} from "@/vendor/dads-runtime/components/ProgressIndicator/ProgressIndicator";
 
 type DadsStatusBannerProps = {
   children?: ReactNode;

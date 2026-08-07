@@ -732,3 +732,11 @@ summary::-webkit-details-marker {
     font-size: 1.6rem;
   }
 }
+
+/* DADS focus treatment always uses dark blue text on the yellow focus fill. */
+html[data-theme="modern-dark"] body .practice-dads-surface :is(a, summary):focus-visible,
+html[data-theme="simple-dark"] body .practice-dads-surface :is(a, summary):focus-visible,
+html[data-theme="modern-dark"] body .practice-dads-surface button.dads-adapter-button[data-dads-variant="text"]:focus-visible,
+html[data-theme="simple-dark"] body .practice-dads-surface button.dads-adapter-button[data-dads-variant="text"]:focus-visible {
+  color: #00118f !important;
+}

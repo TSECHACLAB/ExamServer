@@ -7,10 +7,29 @@ import {
   screen,
   waitFor,
 } from "@testing-library/react";
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeAll, beforeEach, describe, expect, it, vi } from "vitest";
 import BugReportButton from "@/components/bug-report/BugReportButton";
 
 const fetchMock = vi.fn();
+const dialogInvokers = new WeakMap<HTMLDialogElement, HTMLElement>();
+
+beforeAll(() => {
+  Object.defineProperty(HTMLDialogElement.prototype, "showModal", {
+    configurable: true,
+    value(this: HTMLDialogElement) {
+      const active = document.activeElement;
+      if (active instanceof HTMLElement) dialogInvokers.set(this, active);
+      this.setAttribute("open", "");
+    },
+  });
+  Object.defineProperty(HTMLDialogElement.prototype, "close", {
+    configurable: true,
+    value(this: HTMLDialogElement) {
+      this.removeAttribute("open");
+      dialogInvokers.get(this)?.focus();
+    },
+  });
+});
 
 beforeEach(() => {
   fetchMock.mockReset();
@@ -79,5 +98,27 @@ describe("BugReportButton", () => {
       })
     );
     expect(screen.getByText("報告しました。")).toBeInTheDocument();
+  });
+
+  it("DADS版モーダルで初期フォーカス、Esc、呼出元への復帰を扱う", async () => {
+    render(<BugReportButton variant="practice" />);
+
+    const trigger = screen.getByRole("button", { name: /報告/ });
+    trigger.focus();
+    fireEvent.click(trigger);
+
+    const dialog = await screen.findByRole("dialog", { name: "不具合報告" });
+    await waitFor(() => {
+      expect(screen.getByRole("heading", { name: "不具合報告" })).toHaveFocus();
+    });
+    expect(screen.getAllByRole("radio")).toHaveLength(3);
+    expect(screen.getByLabelText("何が起きましたか？")).toHaveValue("表示が崩れる");
+
+    fireEvent(dialog, new Event("cancel", { bubbles: false, cancelable: true }));
+
+    await waitFor(() => {
+      expect(dialog).not.toHaveAttribute("open");
+      expect(trigger).toHaveFocus();
+    });
   });
 });
