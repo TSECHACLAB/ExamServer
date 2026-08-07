@@ -96,8 +96,12 @@ function validateCategories(): string[] {
 
     if (!c.id || typeof c.id !== "string") error(`${prefix} id が未設定`);
     if (!c.name || typeof c.name !== "string") error(`${prefix} name が未設定`);
-    if (!c.description || typeof c.description !== "string")
-      error(`${prefix} description が未設定`);
+    if ("description" in c)
+      error(`${prefix} description は exams/<id>/meta.json から生成します`);
+    if ("questionCount" in c)
+      error(`${prefix} questionCount は実問題データから生成します`);
+    if ("passingScore" in c)
+      error(`${prefix} passingScore は exams/<id>/meta.json で管理します`);
     if (!VALID_CATEGORY_GROUPS.includes(c.group as typeof VALID_CATEGORY_GROUPS[number]))
       error(`${prefix} group が不正: ${c.group}`);
     if (!VALID_STYLES.includes(c.defaultStyle as typeof VALID_STYLES[number]))
@@ -789,6 +793,16 @@ function validateExamData(categoryIds: string[]) {
         const meta = JSON.parse(fs.readFileSync(metaPath, "utf-8"));
         if (meta.categoryId !== catId) {
           error(`meta.json の categoryId (${meta.categoryId}) がディレクトリ名 (${catId}) と不一致`);
+        }
+        if (
+          !Number.isInteger(meta.passingScore) ||
+          meta.passingScore < 1 ||
+          meta.passingScore > 100
+        ) {
+          error(`meta.json の passingScore が不正: ${meta.passingScore}`);
+        }
+        if (typeof meta.description !== "string" || meta.description.trim() === "") {
+          error("meta.json の description が未設定");
         }
         info("meta.json OK");
       } catch {

@@ -62,6 +62,7 @@ export default function RootLayout({
   return (
     <html
       lang="ja"
+      data-scroll-behavior="smooth"
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} ${notoSansJp.variable} ${notoSansMono.variable} ${notoSerifJp.variable} h-full antialiased`}
     >

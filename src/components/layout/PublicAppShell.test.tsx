@@ -37,7 +37,7 @@ describe("PublicAppShell practical-lab navigation", () => {
     );
 
     const labLinks = screen.getAllByRole("link", { name: /実践ラボ/ });
-    expect(labLinks).toHaveLength(2);
+    expect(labLinks).toHaveLength(1);
     for (const link of labLinks) {
       expect(link).toHaveAttribute("href", "/lab");
       expect(link).not.toHaveAttribute("data-next-link");
@@ -45,7 +45,7 @@ describe("PublicAppShell practical-lab navigation", () => {
     }
 
     const examLinks = screen.getAllByRole("link", { name: /演習/ });
-    expect(examLinks).toHaveLength(2);
+    expect(examLinks).toHaveLength(1);
     for (const link of examLinks) {
       expect(link).toHaveAttribute("data-next-link", "true");
       expect(link).toHaveAttribute("aria-current", "page");

@@ -1,5 +1,5 @@
-import NextLink, { type LinkProps as NextLinkProps } from "next/link";
-import { forwardRef, type ReactNode } from "react";
+import NextLink from "next/link";
+import { forwardRef, type ComponentProps } from "react";
 import {
   Button,
   type ButtonProps,
@@ -21,9 +21,7 @@ export const DadsButton = forwardRef<HTMLButtonElement, ButtonProps>(
 
 DadsButton.displayName = "DadsButton";
 
-type DadsButtonLinkProps = NextLinkProps & {
-  children: ReactNode;
-  className?: string;
+type DadsButtonLinkProps = ComponentProps<typeof NextLink> & {
   size?: ButtonSize;
   variant?: ButtonVariant;
 };

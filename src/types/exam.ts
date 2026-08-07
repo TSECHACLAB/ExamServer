@@ -190,6 +190,8 @@ export interface Category {
   defaultStyle: QuestionStyle;
   /** 制限時間（秒） */
   timeLimit: number;
+  /** meta.jsonを正規化して得る合格点（%） */
+  passingScore: number;
 }
 
 // ---------------------------------------------------------------------------
@@ -200,9 +202,9 @@ export interface Category {
 export interface ExamMeta {
   categoryId: string;
   /** 合格点（%） */
-  passingScore?: number;
+  passingScore: number;
   /** 説明文 */
-  description?: string;
+  description: string;
 }
 
 // ---------------------------------------------------------------------------

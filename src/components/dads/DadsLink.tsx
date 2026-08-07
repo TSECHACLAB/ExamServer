@@ -1,12 +1,9 @@
-import NextLink, { type LinkProps as NextLinkProps } from "next/link";
-import type { ReactNode } from "react";
+import NextLink from "next/link";
+import type { ComponentProps } from "react";
 import { Link } from "@/vendor/dads-runtime/components/Link";
 import { UtilityLink } from "@/vendor/dads-runtime/components/UtilityLink";
 
-type DadsNextLinkProps = NextLinkProps & {
-  children: ReactNode;
-  className?: string;
-};
+type DadsNextLinkProps = ComponentProps<typeof NextLink>;
 
 export function DadsLink({ children, className, ...props }: DadsNextLinkProps) {
   return (

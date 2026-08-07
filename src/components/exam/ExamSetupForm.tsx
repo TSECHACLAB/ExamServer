@@ -1,68 +1,74 @@
-/**
- * 試験設定フォーム
- * モード・出題条件を設定して受験を開始する。
- */
-
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
-import type { ExamMode } from "@/types/exam";
 import type { CategoryBucket } from "@/components/CategorySelector";
+import { DadsButton } from "@/components/dads/DadsButton";
+import { Checkbox } from "@/vendor/dads-runtime/components/Checkbox";
+import {
+  Disclosure,
+  DisclosureSummary,
+} from "@/vendor/dads-runtime/components/Disclosure";
+import { Divider } from "@/vendor/dads-runtime/components/Divider";
+import { Input } from "@/vendor/dads-runtime/components/Input";
+import { Radio } from "@/vendor/dads-runtime/components/Radio";
 import { countUniqueQuestionsForDomains } from "@/lib/question-domains";
+import type { ExamMode } from "@/types/exam";
 
 interface Props {
   categoryId: string;
   categoryName: string;
-  totalQuestions: number;
-  timeLimit: number;
-  returnBucket: CategoryBucket;
   domainOptions: string[];
   domainQuestionCounts: Record<string, number>;
   domainQuestionIds: Record<string, string[]>;
+  passingScore: number;
+  returnBucket: CategoryBucket;
+  timeLimit: number;
+  totalQuestions: number;
 }
 
 export default function ExamSetupForm({
   categoryId,
   categoryName,
-  totalQuestions,
-  timeLimit,
-  returnBucket,
   domainOptions,
   domainQuestionCounts,
   domainQuestionIds,
+  passingScore,
+  returnBucket,
+  timeLimit,
+  totalQuestions,
 }: Props) {
   const router = useRouter();
   const [mode, setMode] = useState<ExamMode>("exam");
   const [useAllQuestions, setUseAllQuestions] = useState(true);
-  const [questionCount, setQuestionCount] = useState(
-    Math.min(10, totalQuestions)
-  );
+  const [questionCount, setQuestionCount] = useState(Math.min(10, totalQuestions));
   const [timerEnabled, setTimerEnabled] = useState(true);
   const [randomEnabled, setRandomEnabled] = useState(false);
   const [selectedDomains, setSelectedDomains] = useState<string[]>([]);
+
   const availableQuestionCount =
     selectedDomains.length === 0
       ? totalQuestions
       : countUniqueQuestionsForDomains(domainQuestionIds, selectedDomains);
   const customQuestionCount = Math.min(
     questionCount,
-    Math.max(1, availableQuestionCount)
+    Math.max(1, availableQuestionCount),
   );
   const selectedCount = useAllQuestions
     ? availableQuestionCount
     : customQuestionCount;
-  const canStart =
-    selectedCount >= 1 && selectedCount <= availableQuestionCount;
+  const canStart = selectedCount >= 1 && selectedCount <= availableQuestionCount;
+  const usesTimer = mode === "exam" && timerEnabled;
 
-  const handleStart = () => {
+  function handleStart(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
     if (!canStart) return;
 
     sessionStorage.removeItem("exam-session-state");
     const params = new URLSearchParams({
       mode,
       count: String(selectedCount),
-      timer: timerEnabled ? "1" : "0",
+      timer: usesTimer ? "1" : "0",
       random: randomEnabled ? "1" : "0",
       bucket: returnBucket,
     });
@@ -70,186 +76,179 @@ export default function ExamSetupForm({
       params.set("domains", selectedDomains.join(","));
     }
     router.push(`/exam/${categoryId}/session?${params.toString()}`);
-  };
-
-  const countLabel = useAllQuestions ? "全問" : `${customQuestionCount}問`;
+  }
 
   return (
-    <div className="rounded-lg border border-gray-200 bg-white p-5 sm:p-6">
-      <div className="space-y-6">
-        <fieldset>
-          <legend className="text-base font-bold text-gray-950">
-            モード
-          </legend>
-          <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
-            <ModeOption
-              selected={mode === "exam"}
-              onClick={() => setMode("exam")}
-              title="試験モード"
-              description="最後にまとめて採点します。"
-            />
-            <ModeOption
-              selected={mode === "drill"}
-              onClick={() => setMode("drill")}
-              title="一問一答"
-              description="1問ずつ答え合わせします。"
-            />
-          </div>
-        </fieldset>
-
-        <details className="group rounded-md border border-gray-200">
-          <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 bg-white px-4 py-3 text-sm font-semibold text-gray-950 transition-colors hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-600">
-            <span>出題条件</span>
-            <span className="flex items-center gap-2 text-xs font-medium text-gray-500">
-              {countLabel}
-              {randomEnabled ? " / ランダム" : ""}
-              <span
-                aria-hidden="true"
-                className="transition-transform group-open:rotate-180"
-              >
-                ↓
+    <form className="max-w-3xl space-y-8" onSubmit={handleStart}>
+      <fieldset>
+        <legend className="text-std-20B-150 text-solid-gray-900">解き方</legend>
+        <p className="mt-1 text-std-16N-170 text-solid-gray-700">
+          採点するタイミングを選びます。
+        </p>
+        <div className="mt-3 grid gap-2">
+          <Radio
+            name="mode"
+            value="exam"
+            checked={mode === "exam"}
+            onChange={() => setMode("exam")}
+            size="md"
+          >
+            <span>
+              <span className="block font-bold">試験モード</span>
+              <span className="block text-solid-gray-700">
+                最後に回答状況を確認してから、まとめて採点します。
               </span>
             </span>
-          </summary>
-
-          <div className="space-y-5 border-t border-gray-200 px-4 py-4">
-            <fieldset>
-              <legend className="text-sm font-semibold text-gray-950">
-                問題数
-              </legend>
-              <p className="mt-1 text-sm leading-6 text-gray-600">
-                対象は全{availableQuestionCount}問です。
-              </p>
-              <div className="mt-3 space-y-3">
-                <label className="flex min-h-11 cursor-pointer items-center gap-3 rounded-md border border-gray-200 bg-white px-3 py-2 transition-colors hover:bg-gray-50">
-                  <input
-                    type="radio"
-                    name="questionCount"
-                    checked={useAllQuestions}
-                    onChange={() => setUseAllQuestions(true)}
-                    className="accent-blue-600"
-                  />
-                  <span className="text-sm font-medium text-gray-800">
-                    全問
-                  </span>
-                </label>
-                <label className="flex min-h-11 cursor-pointer flex-wrap items-center gap-3 rounded-md border border-gray-200 bg-white px-3 py-2 transition-colors hover:bg-gray-50">
-                  <input
-                    type="radio"
-                    name="questionCount"
-                    checked={!useAllQuestions}
-                    onChange={() => setUseAllQuestions(false)}
-                    className="accent-blue-600"
-                  />
-                  <span className="text-sm font-medium text-gray-800">
-                    問題数を選ぶ
-                  </span>
-                  <input
-                    type="number"
-                    min={1}
-                    max={availableQuestionCount}
-                    value={customQuestionCount}
-                    onChange={(e) =>
-                      setQuestionCount(
-                        Math.max(
-                          1,
-                          Math.min(
-                            availableQuestionCount,
-                            Number(e.target.value)
-                          )
-                        )
-                      )
-                    }
-                    disabled={useAllQuestions}
-                    className="w-20 rounded-md border border-gray-300 px-2 py-1 text-sm disabled:bg-gray-100 disabled:opacity-60"
-                  />
-                  <span className="text-sm text-gray-700">問</span>
-                </label>
-              </div>
-            </fieldset>
-
-            <label className="flex min-h-11 cursor-pointer items-center gap-3 rounded-md border border-gray-200 bg-white px-3 py-2 transition-colors hover:bg-gray-50">
-              <input
-                type="checkbox"
-                checked={randomEnabled}
-                onChange={(e) => setRandomEnabled(e.target.checked)}
-                className="accent-blue-600"
-              />
-              <span className="text-sm text-gray-700">
-                ランダムな順番で出題する
-              </span>
-            </label>
-
-            <label className="flex min-h-11 cursor-pointer items-center gap-3 rounded-md border border-gray-200 bg-white px-3 py-2 transition-colors hover:bg-gray-50">
-              <input
-                type="checkbox"
-                checked={timerEnabled}
-                onChange={(e) => setTimerEnabled(e.target.checked)}
-                className="accent-blue-600"
-              />
-              <span className="text-sm text-gray-700">
-                制限時間あり（{Math.floor(timeLimit / 60)}分）
-              </span>
-            </label>
-
-            {domainOptions.length > 0 && (
-              <DomainOptions
-                domains={domainOptions}
-                domainQuestionCounts={domainQuestionCounts}
-                selectedDomains={selectedDomains}
-                onChange={setSelectedDomains}
-              />
-            )}
-          </div>
-        </details>
-
-        <div className="border-t border-gray-200 pt-5">
-          <p className="mb-3 text-sm leading-6 text-gray-600">
-            {mode === "exam" ? "試験モード" : "一問一答"}で{selectedCount}
-            問を開始します。
-          </p>
-          <button
-            onClick={handleStart}
-            disabled={!canStart}
-            className="inline-flex min-h-11 w-full items-center justify-center rounded-md bg-blue-600 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:bg-gray-300 disabled:text-gray-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 sm:w-auto"
+          </Radio>
+          <Radio
+            name="mode"
+            value="drill"
+            checked={mode === "drill"}
+            onChange={() => setMode("drill")}
+            size="md"
           >
-            {categoryName} を開始
-          </button>
+            <span>
+              <span className="block font-bold">一問一答</span>
+              <span className="block text-solid-gray-700">
+                1問ごとに正誤と解説を確認します。制限時間はありません。
+              </span>
+            </span>
+          </Radio>
         </div>
-      </div>
-    </div>
-  );
-}
+      </fieldset>
 
-function ModeOption({
-  selected,
-  onClick,
-  title,
-  description,
-}: {
-  selected: boolean;
-  onClick: () => void;
-  title: string;
-  description: string;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-pressed={selected}
-      className={`min-h-24 rounded-md border p-4 text-left transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 ${
-        selected
-          ? "border-blue-500 bg-blue-50"
-          : "border-gray-200 bg-white hover:bg-gray-50"
-      }`}
-    >
-      <span className="block text-sm font-semibold text-gray-900">
-        {title}
-      </span>
-      <span className="mt-1 block text-xs leading-5 text-gray-500">
-        {description}
-      </span>
-    </button>
+      <Divider color="gray-420" />
+
+      <fieldset>
+        <legend className="text-std-20B-150 text-solid-gray-900">問題数</legend>
+        <p className="mt-1 text-std-16N-170 text-solid-gray-700">
+          現在の出題範囲には{availableQuestionCount}問あります。
+        </p>
+        <div className="mt-3 grid gap-2">
+          <Radio
+            name="questionCount"
+            checked={useAllQuestions}
+            onChange={() => setUseAllQuestions(true)}
+            size="md"
+          >
+            全{availableQuestionCount}問
+          </Radio>
+          <div className="flex flex-wrap items-center gap-3">
+            <Radio
+              name="questionCount"
+              checked={!useAllQuestions}
+              onChange={() => setUseAllQuestions(false)}
+              size="md"
+            >
+              問題数を指定
+            </Radio>
+            <label htmlFor="practice-question-count" className="sr-only">
+              出題する問題数
+            </label>
+            <Input
+              id="practice-question-count"
+              type="number"
+              min={1}
+              max={Math.max(1, availableQuestionCount)}
+              value={customQuestionCount}
+              onChange={(event) =>
+                setQuestionCount(
+                  Math.max(
+                    1,
+                    Math.min(availableQuestionCount, Number(event.target.value)),
+                  ),
+                )
+              }
+              onFocus={() => setUseAllQuestions(false)}
+              disabled={useAllQuestions}
+              blockSize="md"
+              className="w-24"
+            />
+            <span>問</span>
+          </div>
+        </div>
+      </fieldset>
+
+      {mode === "exam" ? (
+        <>
+          <Divider color="gray-420" />
+          <fieldset>
+            <legend className="text-std-20B-150 text-solid-gray-900">
+              制限時間
+            </legend>
+            <Checkbox
+              checked={timerEnabled}
+              onChange={(event) => setTimerEnabled(event.target.checked)}
+              size="md"
+            >
+              制限時間を使う（{Math.floor(timeLimit / 60)}分）
+            </Checkbox>
+            <p className="mt-1 text-std-16N-170 text-solid-gray-700">
+              時間切れになると、その時点の回答で一度だけ自動採点します。
+            </p>
+          </fieldset>
+        </>
+      ) : null}
+
+      <Divider color="gray-420" />
+
+      <Disclosure>
+        <DisclosureSummary className="text-std-16B-170 text-solid-gray-900">
+          出題範囲と順番
+        </DisclosureSummary>
+        <div className="ml-8 mt-4 space-y-6">
+          {domainOptions.length > 0 ? (
+            <DomainOptions
+              domains={domainOptions}
+              domainQuestionCounts={domainQuestionCounts}
+              selectedDomains={selectedDomains}
+              onChange={setSelectedDomains}
+            />
+          ) : null}
+          <Checkbox
+            checked={randomEnabled}
+            onChange={(event) => setRandomEnabled(event.target.checked)}
+            size="md"
+          >
+            問題をランダムな順番にする
+          </Checkbox>
+        </div>
+      </Disclosure>
+
+      <Divider color="gray-420" />
+
+      <section aria-labelledby="start-summary-title">
+        <h2 id="start-summary-title" className="text-std-20B-150 text-solid-gray-900">
+          開始条件
+        </h2>
+        <dl className="mt-3 grid max-w-2xl gap-x-8 gap-y-3 border-l-4 border-key-900 pl-4 sm:grid-cols-2">
+          <SummaryItem label="解き方" value={mode === "exam" ? "試験モード" : "一問一答"} />
+          <SummaryItem label="問題数" value={`${selectedCount}問`} />
+          <SummaryItem
+            label="制限時間"
+            value={usesTimer ? `${Math.floor(timeLimit / 60)}分` : "なし"}
+          />
+          <SummaryItem
+            label="出題順"
+            value={randomEnabled ? "ランダム" : "登録順"}
+          />
+          <SummaryItem
+            label="出題範囲"
+            value={selectedDomains.length > 0 ? `${selectedDomains.length}範囲` : "全範囲"}
+          />
+          <SummaryItem label="合格基準" value={`${passingScore}%`} />
+        </dl>
+        <DadsButton
+          type="submit"
+          size="lg"
+          variant="solid-fill"
+          aria-disabled={!canStart}
+          className="mt-6 w-full sm:w-fit"
+        >
+          {categoryName}を開始する
+        </DadsButton>
+      </section>
+    </form>
   );
 }
 
@@ -268,33 +267,37 @@ function DomainOptions({
     onChange(
       selectedDomains.includes(domain)
         ? selectedDomains.filter((item) => item !== domain)
-        : [...selectedDomains, domain]
+        : [...selectedDomains, domain],
     );
   };
 
   return (
     <fieldset>
-      <legend className="text-sm font-semibold text-gray-950">
-        ドメイン
-      </legend>
-      <div className="mt-3 grid gap-2 sm:grid-cols-2">
+      <legend className="font-bold text-solid-gray-900">出題範囲</legend>
+      <p className="mt-1 text-std-16N-170 text-solid-gray-700">
+        選ばない場合は全範囲から出題します。
+      </p>
+      <div className="mt-2 grid gap-1 sm:grid-cols-2">
         {domains.map((domain) => (
-          <label
+          <Checkbox
             key={domain}
-            className="flex min-h-11 cursor-pointer items-center gap-3 rounded-md border border-gray-200 bg-white px-3 py-2 transition-colors hover:bg-gray-50"
+            checked={selectedDomains.includes(domain)}
+            onChange={() => toggleDomain(domain)}
+            size="md"
           >
-            <input
-              type="checkbox"
-              checked={selectedDomains.includes(domain)}
-              onChange={() => toggleDomain(domain)}
-              className="accent-blue-600"
-            />
-            <span className="text-sm text-gray-700">
-              {domain}（{domainQuestionCounts[domain] ?? 0}問）
-            </span>
-          </label>
+            {domain}（{domainQuestionCounts[domain] ?? 0}問）
+          </Checkbox>
         ))}
       </div>
     </fieldset>
+  );
+}
+
+function SummaryItem({ label, value }: { label: string; value: string }) {
+  return (
+    <div>
+      <dt className="text-sm text-solid-gray-700">{label}</dt>
+      <dd className="font-bold text-solid-gray-900">{value}</dd>
+    </div>
   );
 }
