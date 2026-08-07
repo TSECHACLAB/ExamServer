@@ -1,0 +1,25 @@
+{
+  "reviewedAt": "2026-08-06T19:15:00+09:00",
+  "figureAuditSha256": "4ad16e84c5449579282d55ec39adc26c3fe3d195bb92d012a382569175e989ac",
+  "reviewedCount": 151,
+  "minimumAutomatedMatchScore": 0.4898,
+  "method": "既に目視照合済みの150画像は、再抽出後も欠落画像によるID移動を対応付けるとSHA-256が全件一致した。追加したc解答群をIPA公式PDF由来の原寸画像で確認し、対応するd解答群も再確認した。",
+  "result": "pass",
+  "correctedMatches": [
+    {
+      "id": "sg-2017-autumn-pm-q03-u06-choices-f01",
+      "rejectedPage": 37,
+      "officialPage": 39,
+      "reason": "e1/e2の7行表が、形の似た直前のd1/d2の6行表へ誤一致していたため。"
+    }
+  ],
+  "correctedOmissions": [
+    {
+      "id": "sg-2017-autumn-pm-q01-u03-choices-f01",
+      "source": "平成29年度秋期午後 問1 設問3(1) cに関する解答群",
+      "reason": "同じ解答選択欄の直前にc用とd用の図表が連続していたが、取込処理が最も近いd用だけを取得していたため。",
+      "verification": "c用の6行表とd用の6行表を別画像として公式PDFから抽出し、両方が演習本文に表示されることをテストで固定した。"
+    }
+  ],
+  "openMismatchCount": 0
+}

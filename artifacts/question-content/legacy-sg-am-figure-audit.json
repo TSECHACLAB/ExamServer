@@ -1,0 +1,867 @@
+{
+  "generatedAt": "2026-08-06T05:11:51.715Z",
+  "renderDpi": 180,
+  "minimumMatchScore": 0.44,
+  "records": [
+    {
+      "id": "sg-2019-autumn-am-q20",
+      "sourceId": "ipa-sg-2019-autumn-am",
+      "officialPdfSha256": "7b6f317f84d379ddad923d45030a0a7e85a8bf04ef00cad59dedab82033a61d1",
+      "page": 11,
+      "matches": [
+        {
+          "score": 0.7597,
+          "page": 11,
+          "scale": 1.9,
+          "box": [
+            182,
+            851,
+            519,
+            281
+          ],
+          "markerFile": "20.png"
+        }
+      ],
+      "cropBox": [
+        158,
+        827,
+        567,
+        329
+      ],
+      "output": "/exams/sg/legacy/sg-2019-autumn-am-q20.png",
+      "outputSha256": "9a8e0864870a689d2f358b0be83886ecea50e58ccb432904a731d0115e10d245"
+    },
+    {
+      "id": "sg-2019-autumn-am-q44",
+      "sourceId": "ipa-sg-2019-autumn-am",
+      "officialPdfSha256": "7b6f317f84d379ddad923d45030a0a7e85a8bf04ef00cad59dedab82033a61d1",
+      "page": 21,
+      "matches": [
+        {
+          "score": 0.9004,
+          "page": 21,
+          "scale": 1.9,
+          "box": [
+            249,
+            285,
+            807,
+            302
+          ],
+          "markerFile": "44.png"
+        }
+      ],
+      "cropBox": [
+        225,
+        261,
+        855,
+        350
+      ],
+      "output": "/exams/sg/legacy/sg-2019-autumn-am-q44.png",
+      "outputSha256": "d89ae7610d40bfa40e20d127915d8351d3bc0ac58f32889397715f86dc7548d0"
+    },
+    {
+      "id": "sg-2019-spring-am-q01",
+      "sourceId": "ipa-sg-2019-spring-am",
+      "officialPdfSha256": "245c4f92f8ff54330dcd33921f5640602b1224cbf501d748b57b0ed3b1b97704",
+      "page": 3,
+      "matches": [
+        {
+          "score": 0.8407,
+          "page": 3,
+          "scale": 1.79,
+          "box": [
+            175,
+            358,
+            958,
+            555
+          ],
+          "markerFile": "01.png"
+        }
+      ],
+      "cropBox": [
+        151,
+        334,
+        1006,
+        603
+      ],
+      "output": "/exams/sg/legacy/sg-2019-spring-am-q01.png",
+      "outputSha256": "24c07117e4b4532a8d7398c6d33cadef1d84fe9aa370bcafcd11e434814582e5"
+    },
+    {
+      "id": "sg-2019-spring-am-q02",
+      "sourceId": "ipa-sg-2019-spring-am",
+      "officialPdfSha256": "245c4f92f8ff54330dcd33921f5640602b1224cbf501d748b57b0ed3b1b97704",
+      "page": 4,
+      "matches": [
+        {
+          "score": 0.8391,
+          "page": 4,
+          "scale": 1.79,
+          "box": [
+            168,
+            408,
+            967,
+            422
+          ],
+          "markerFile": "02.png"
+        }
+      ],
+      "cropBox": [
+        144,
+        384,
+        1015,
+        470
+      ],
+      "output": "/exams/sg/legacy/sg-2019-spring-am-q02.png",
+      "outputSha256": "0320c751d823b8348e6d152eac2ded8828cb05105a0eb4c68b40cdb99e6a8234"
+    },
+    {
+      "id": "sg-2019-spring-am-q14",
+      "sourceId": "ipa-sg-2019-spring-am",
+      "officialPdfSha256": "245c4f92f8ff54330dcd33921f5640602b1224cbf501d748b57b0ed3b1b97704",
+      "page": 9,
+      "matches": [
+        {
+          "score": 0.8361,
+          "page": 9,
+          "scale": 1.79,
+          "box": [
+            168,
+            812,
+            970,
+            374
+          ],
+          "markerFile": "14.png"
+        }
+      ],
+      "cropBox": [
+        144,
+        788,
+        1018,
+        422
+      ],
+      "output": "/exams/sg/legacy/sg-2019-spring-am-q14.png",
+      "outputSha256": "cd570d019dba2899a3ec5d7a094e83509af09a01fbefecb6a73b074e2d4aa63e"
+    },
+    {
+      "id": "sg-2019-spring-am-q25",
+      "sourceId": "ipa-sg-2019-spring-am",
+      "officialPdfSha256": "245c4f92f8ff54330dcd33921f5640602b1224cbf501d748b57b0ed3b1b97704",
+      "page": 14,
+      "matches": [
+        {
+          "score": 0.8347,
+          "page": 14,
+          "scale": 1.79,
+          "box": [
+            164,
+            965,
+            949,
+            303
+          ],
+          "markerFile": "25.png"
+        }
+      ],
+      "cropBox": [
+        140,
+        941,
+        997,
+        351
+      ],
+      "output": "/exams/sg/legacy/sg-2019-spring-am-q25.png",
+      "outputSha256": "f9ab0b25655e6da805ae266718f6fb0f14dff236e9a4751875f1e7391959aec0"
+    },
+    {
+      "id": "sg-2019-spring-am-q36",
+      "sourceId": "ipa-sg-2019-spring-am",
+      "officialPdfSha256": "245c4f92f8ff54330dcd33921f5640602b1224cbf501d748b57b0ed3b1b97704",
+      "page": 18,
+      "matches": [
+        {
+          "score": 0.8736,
+          "page": 18,
+          "scale": 1.79,
+          "box": [
+            469,
+            718,
+            406,
+            184
+          ],
+          "markerFile": "36.png"
+        }
+      ],
+      "cropBox": [
+        445,
+        694,
+        454,
+        232
+      ],
+      "output": "/exams/sg/legacy/sg-2019-spring-am-q36.png",
+      "outputSha256": "b10a8612371fa23485535ec1ca557f57d11e3f4bdcf941b529424102e11b9047"
+    },
+    {
+      "id": "sg-2019-spring-am-q46",
+      "sourceId": "ipa-sg-2019-spring-am",
+      "officialPdfSha256": "245c4f92f8ff54330dcd33921f5640602b1224cbf501d748b57b0ed3b1b97704",
+      "page": 23,
+      "matches": [
+        {
+          "score": 0.8532,
+          "page": 23,
+          "scale": 1.79,
+          "box": [
+            176,
+            306,
+            514,
+            243
+          ],
+          "markerFile": "46.png"
+        }
+      ],
+      "cropBox": [
+        152,
+        282,
+        562,
+        291
+      ],
+      "output": "/exams/sg/legacy/sg-2019-spring-am-q46.png",
+      "outputSha256": "927df7dfbbe2b4ab1a490500fc9a19bce39f691a784b06a0911b8f45a6791289"
+    },
+    {
+      "id": "sg-2019-spring-am-q48",
+      "sourceId": "ipa-sg-2019-spring-am",
+      "officialPdfSha256": "245c4f92f8ff54330dcd33921f5640602b1224cbf501d748b57b0ed3b1b97704",
+      "page": 24,
+      "matches": [
+        {
+          "score": 0.8337,
+          "page": 24,
+          "scale": 1.79,
+          "box": [
+            404,
+            461,
+            482,
+            159
+          ],
+          "markerFile": "48.png"
+        }
+      ],
+      "cropBox": [
+        380,
+        437,
+        530,
+        207
+      ],
+      "output": "/exams/sg/legacy/sg-2019-spring-am-q48.png",
+      "outputSha256": "c49930233b2c3c46dbd59538bc142e17d267ce77f5c633461e0de9336c81dc93"
+    },
+    {
+      "id": "sg-2018-autumn-am-q19",
+      "sourceId": "ipa-sg-2018-autumn-am",
+      "officialPdfSha256": "31e1e6f9883948ed3b2bc009c8c0390379626daf470fe1c9350364463463e0c4",
+      "page": 11,
+      "matches": [
+        {
+          "score": 0.7289,
+          "page": 11,
+          "scale": 1.83,
+          "box": [
+            166,
+            411,
+            986,
+            302
+          ],
+          "markerFile": "19.png"
+        }
+      ],
+      "cropBox": [
+        142,
+        387,
+        1034,
+        350
+      ],
+      "output": "/exams/sg/legacy/sg-2018-autumn-am-q19.png",
+      "outputSha256": "fb89bff63599779a37df9839bc778db93dd025ccfff1cc34f85514e71e87edc2"
+    },
+    {
+      "id": "sg-2018-autumn-am-q20",
+      "sourceId": "ipa-sg-2018-autumn-am",
+      "officialPdfSha256": "31e1e6f9883948ed3b2bc009c8c0390379626daf470fe1c9350364463463e0c4",
+      "page": 11,
+      "matches": [
+        {
+          "score": 0.7327,
+          "page": 11,
+          "scale": 1.83,
+          "box": [
+            164,
+            961,
+            981,
+            553
+          ],
+          "markerFile": "20.png"
+        }
+      ],
+      "cropBox": [
+        140,
+        937,
+        1029,
+        601
+      ],
+      "output": "/exams/sg/legacy/sg-2018-autumn-am-q20.png",
+      "outputSha256": "4c85d21498301a29e45cb28abbccc16c4c77105e6630b1a9dbdc66615675b1cf"
+    },
+    {
+      "id": "sg-2018-autumn-am-q39",
+      "sourceId": "ipa-sg-2018-autumn-am",
+      "officialPdfSha256": "31e1e6f9883948ed3b2bc009c8c0390379626daf470fe1c9350364463463e0c4",
+      "page": 19,
+      "matches": [
+        {
+          "score": 0.6899,
+          "page": 19,
+          "scale": 1.83,
+          "box": [
+            164,
+            1059,
+            986,
+            265
+          ],
+          "markerFile": "39.png"
+        }
+      ],
+      "cropBox": [
+        140,
+        1035,
+        1034,
+        313
+      ],
+      "output": "/exams/sg/legacy/sg-2018-autumn-am-q39.png",
+      "outputSha256": "27fdb64f22849ba9333dc35d3eb387f82e3882cda69b944b4bd8cad39b7a41a2"
+    },
+    {
+      "id": "sg-2018-autumn-am-q50",
+      "sourceId": "ipa-sg-2018-autumn-am",
+      "officialPdfSha256": "31e1e6f9883948ed3b2bc009c8c0390379626daf470fe1c9350364463463e0c4",
+      "page": 24,
+      "matches": [
+        {
+          "score": 0.8193,
+          "page": 24,
+          "scale": 1.83,
+          "box": [
+            445,
+            704,
+            458,
+            439
+          ],
+          "markerFile": "50.png"
+        }
+      ],
+      "cropBox": [
+        421,
+        680,
+        506,
+        487
+      ],
+      "output": "/exams/sg/legacy/sg-2018-autumn-am-q50.png",
+      "outputSha256": "71e99577b866a279e0141b4045af9d557ffd863de9e23df5878f615fcd7b459a"
+    },
+    {
+      "id": "sg-2018-spring-am-q06",
+      "sourceId": "ipa-sg-2018-spring-am",
+      "officialPdfSha256": "85f0f53a578a6cb3a93df27694183138786fd9efada58dc133ed7e3e26e3c6fa",
+      "page": 5,
+      "matches": [
+        {
+          "score": 0.8377,
+          "page": 5,
+          "scale": 1.9,
+          "box": [
+            211,
+            362,
+            927,
+            215
+          ],
+          "markerFile": "06.png"
+        },
+        {
+          "score": 0.8212,
+          "page": 5,
+          "scale": 1.9,
+          "box": [
+            163,
+            623,
+            956,
+            484
+          ],
+          "markerFile": "06a.png"
+        }
+      ],
+      "cropBox": [
+        139,
+        338,
+        1023,
+        793
+      ],
+      "output": "/exams/sg/legacy/sg-2018-spring-am-q06.png",
+      "outputSha256": "667119e5b79622714dd71827616091a86630b7a0d8d1bbf38f6d339d9cdf6159"
+    },
+    {
+      "id": "sg-2018-spring-am-q18",
+      "sourceId": "ipa-sg-2018-spring-am",
+      "officialPdfSha256": "85f0f53a578a6cb3a93df27694183138786fd9efada58dc133ed7e3e26e3c6fa",
+      "page": 11,
+      "matches": [
+        {
+          "score": 0.8607,
+          "page": 11,
+          "scale": 1.9,
+          "box": [
+            162,
+            515,
+            868,
+            507
+          ],
+          "markerFile": "18.png"
+        }
+      ],
+      "cropBox": [
+        138,
+        491,
+        916,
+        555
+      ],
+      "output": "/exams/sg/legacy/sg-2018-spring-am-q18.png",
+      "outputSha256": "7dde59c57a67bbb1ee48ca7f341d72363342654f1644d9ccd1c95b975d523a3c"
+    },
+    {
+      "id": "sg-2018-spring-am-q43",
+      "sourceId": "ipa-sg-2018-spring-am",
+      "officialPdfSha256": "85f0f53a578a6cb3a93df27694183138786fd9efada58dc133ed7e3e26e3c6fa",
+      "page": 21,
+      "matches": [
+        {
+          "score": 0.6087,
+          "page": 21,
+          "scale": 1.9,
+          "box": [
+            300,
+            366,
+            564,
+            167
+          ],
+          "markerFile": "43.png"
+        }
+      ],
+      "cropBox": [
+        276,
+        342,
+        612,
+        215
+      ],
+      "output": "/exams/sg/legacy/sg-2018-spring-am-q43.png",
+      "outputSha256": "3d92f41a1bcaa094a40e00d3221fe59724d1b70bfb872fa6025a0d18ed9b9aa6"
+    },
+    {
+      "id": "sg-2018-spring-am-q50",
+      "sourceId": "ipa-sg-2018-spring-am",
+      "officialPdfSha256": "85f0f53a578a6cb3a93df27694183138786fd9efada58dc133ed7e3e26e3c6fa",
+      "page": 24,
+      "matches": [
+        {
+          "score": 0.863,
+          "page": 24,
+          "scale": 1.9,
+          "box": [
+            264,
+            262,
+            762,
+            401
+          ],
+          "markerFile": "50.png"
+        }
+      ],
+      "cropBox": [
+        240,
+        238,
+        810,
+        449
+      ],
+      "output": "/exams/sg/legacy/sg-2018-spring-am-q50.png",
+      "outputSha256": "9dda878714db8fc8f70956fa38010fc1bd271b18eeb5cde6299d2524f5234c6c"
+    },
+    {
+      "id": "sg-2017-autumn-am-q02",
+      "sourceId": "ipa-sg-2017-autumn-am",
+      "officialPdfSha256": "4c5d2578cc71ae7cd64e7eb54f202ca3ffe827fe9e591fcd436bc5ef0adb6a28",
+      "page": 3,
+      "matches": [
+        {
+          "score": 0.8398,
+          "page": 3,
+          "scale": 1.9,
+          "box": [
+            173,
+            1055,
+            982,
+            300
+          ],
+          "markerFile": "02.png"
+        }
+      ],
+      "cropBox": [
+        149,
+        1031,
+        1030,
+        348
+      ],
+      "output": "/exams/sg/legacy/sg-2017-autumn-am-q02.png",
+      "outputSha256": "00ec008ec0ac3b1d1c27e362f35ca7aa33b651d037238eafa21824324942d77e"
+    },
+    {
+      "id": "sg-2017-autumn-am-q28",
+      "sourceId": "ipa-sg-2017-autumn-am",
+      "officialPdfSha256": "4c5d2578cc71ae7cd64e7eb54f202ca3ffe827fe9e591fcd436bc5ef0adb6a28",
+      "page": 14,
+      "matches": [
+        {
+          "score": 0.8235,
+          "page": 14,
+          "scale": 1.9,
+          "box": [
+            158,
+            344,
+            929,
+            365
+          ],
+          "markerFile": "28.png"
+        }
+      ],
+      "cropBox": [
+        134,
+        320,
+        977,
+        413
+      ],
+      "output": "/exams/sg/legacy/sg-2017-autumn-am-q28.png",
+      "outputSha256": "a2b30c8c6cc3547ddd3457a4bb90b37a5abda10e62c9cb56f2f94319d35c11ab"
+    },
+    {
+      "id": "sg-2017-autumn-am-q42",
+      "sourceId": "ipa-sg-2017-autumn-am",
+      "officialPdfSha256": "4c5d2578cc71ae7cd64e7eb54f202ca3ffe827fe9e591fcd436bc5ef0adb6a28",
+      "page": 20,
+      "matches": [
+        {
+          "score": 0.8404,
+          "page": 20,
+          "scale": 1.9,
+          "box": [
+            205,
+            418,
+            859,
+            167
+          ],
+          "markerFile": "42.png"
+        }
+      ],
+      "cropBox": [
+        181,
+        394,
+        907,
+        215
+      ],
+      "output": "/exams/sg/legacy/sg-2017-autumn-am-q42.png",
+      "outputSha256": "c755565b9c9823f36445e1eaecea249986a80eddfc41087ef605c4a4f20aa56a"
+    },
+    {
+      "id": "sg-2017-autumn-am-q43",
+      "sourceId": "ipa-sg-2017-autumn-am",
+      "officialPdfSha256": "4c5d2578cc71ae7cd64e7eb54f202ca3ffe827fe9e591fcd436bc5ef0adb6a28",
+      "page": 20,
+      "matches": [
+        {
+          "score": 0.8706,
+          "page": 20,
+          "scale": 1.9,
+          "box": [
+            251,
+            942,
+            342,
+            289
+          ],
+          "markerFile": "43a.png"
+        },
+        {
+          "score": 0.8742,
+          "page": 20,
+          "scale": 1.9,
+          "box": [
+            726,
+            944,
+            342,
+            293
+          ],
+          "markerFile": "43i.png"
+        },
+        {
+          "score": 0.8307,
+          "page": 20,
+          "scale": 1.9,
+          "box": [
+            251,
+            1302,
+            342,
+            293
+          ],
+          "markerFile": "43u.png"
+        },
+        {
+          "score": 0.8791,
+          "page": 20,
+          "scale": 1.9,
+          "box": [
+            724,
+            1303,
+            340,
+            291
+          ],
+          "markerFile": "43e.png"
+        }
+      ],
+      "cropBox": [
+        227,
+        918,
+        865,
+        701
+      ],
+      "output": "/exams/sg/legacy/sg-2017-autumn-am-q43.png",
+      "outputSha256": "30226c097785c8ec0783a9a062a9c83a3bb983d0b1d394210370a9d1f6ad0e52"
+    },
+    {
+      "id": "sg-2017-autumn-am-q48",
+      "sourceId": "ipa-sg-2017-autumn-am",
+      "officialPdfSha256": "4c5d2578cc71ae7cd64e7eb54f202ca3ffe827fe9e591fcd436bc5ef0adb6a28",
+      "page": 23,
+      "matches": [
+        {
+          "score": 0.8694,
+          "page": 23,
+          "scale": 1.9,
+          "box": [
+            216,
+            315,
+            749,
+            587
+          ],
+          "markerFile": "48.png"
+        }
+      ],
+      "cropBox": [
+        192,
+        291,
+        797,
+        635
+      ],
+      "output": "/exams/sg/legacy/sg-2017-autumn-am-q48.png",
+      "outputSha256": "6285a00652c4d9efd5b4a12a19f8ffec7ea56b4cfbbb2f56e4fb4f2b4c57c3f7"
+    },
+    {
+      "id": "sg-2017-spring-am-q16",
+      "sourceId": "ipa-sg-2017-spring-am",
+      "officialPdfSha256": "6677d7d3ed0c1eb7ca579a616628a5bc9a39be8b39e187fa52c17724c0e37602",
+      "page": 9,
+      "matches": [
+        {
+          "score": 0.7038,
+          "page": 9,
+          "scale": 1.93,
+          "box": [
+            177,
+            293,
+            859,
+            413
+          ],
+          "markerFile": "16.png"
+        }
+      ],
+      "cropBox": [
+        153,
+        269,
+        907,
+        461
+      ],
+      "output": "/exams/sg/legacy/sg-2017-spring-am-q16.png",
+      "outputSha256": "87efa54fd245ad83d85c1bb8247d6ac4ba314e17aa237f422b4fa381967f5b0e"
+    },
+    {
+      "id": "sg-2017-spring-am-q24",
+      "sourceId": "ipa-sg-2017-spring-am",
+      "officialPdfSha256": "6677d7d3ed0c1eb7ca579a616628a5bc9a39be8b39e187fa52c17724c0e37602",
+      "page": 13,
+      "matches": [
+        {
+          "score": 0.8256,
+          "page": 13,
+          "scale": 1.91,
+          "box": [
+            170,
+            700,
+            321,
+            264
+          ],
+          "markerFile": "24.png"
+        }
+      ],
+      "cropBox": [
+        146,
+        676,
+        369,
+        312
+      ],
+      "output": "/exams/sg/legacy/sg-2017-spring-am-q24.png",
+      "outputSha256": "3435b49944ed519a6bd678cb658cbdd1815b8e2111fd2fdbff8b3704c7fe0016"
+    },
+    {
+      "id": "sg-2017-spring-am-q43",
+      "sourceId": "ipa-sg-2017-spring-am",
+      "officialPdfSha256": "6677d7d3ed0c1eb7ca579a616628a5bc9a39be8b39e187fa52c17724c0e37602",
+      "page": 20,
+      "matches": [
+        {
+          "score": 0.6645,
+          "page": 20,
+          "scale": 1.91,
+          "box": [
+            267,
+            304,
+            737,
+            355
+          ],
+          "markerFile": "43.png"
+        }
+      ],
+      "cropBox": [
+        243,
+        280,
+        785,
+        403
+      ],
+      "output": "/exams/sg/legacy/sg-2017-spring-am-q43.png",
+      "outputSha256": "5765968d7c690ce722462901bea7bba2e1ecac0d7a663744d0da0e4f2d536e16"
+    },
+    {
+      "id": "sg-2016-autumn-am-q07",
+      "sourceId": "ipa-sg-2016-autumn-am",
+      "officialPdfSha256": "0584c6c5a60073ab33110e86aa73822ffd3835e49979d9954c75c655cdf0864a",
+      "page": 5,
+      "matches": [
+        {
+          "score": 0.7955,
+          "page": 5,
+          "scale": 1.95,
+          "box": [
+            169,
+            914,
+            973,
+            335
+          ],
+          "markerFile": "07.png"
+        }
+      ],
+      "cropBox": [
+        145,
+        890,
+        1021,
+        383
+      ],
+      "output": "/exams/sg/legacy/sg-2016-autumn-am-q07.png",
+      "outputSha256": "65bb1b590fb8f7a0e7595bbce1c58f5b2f8d30e143f5aafaf16e37478ded898b"
+    },
+    {
+      "id": "sg-2016-spring-am-q31",
+      "sourceId": "ipa-sg-2016-spring-am",
+      "officialPdfSha256": "0a92d61db0ba94543e0c8dd0a64b6d391c85b0e0e05b1f341e357fa31fddb81a",
+      "page": 14,
+      "matches": [
+        {
+          "score": 0.4604,
+          "page": 14,
+          "scale": 1.93,
+          "box": [
+            164,
+            909,
+            994,
+            521
+          ],
+          "markerFile": "31.png"
+        }
+      ],
+      "cropBox": [
+        140,
+        885,
+        1042,
+        569
+      ],
+      "output": "/exams/sg/legacy/sg-2016-spring-am-q31.png",
+      "outputSha256": "185de0eebee59a11b4c153f85ae2fb5b435307431b097b2eaf466314a721a323"
+    },
+    {
+      "id": "sg-2016-spring-am-q39",
+      "sourceId": "ipa-sg-2016-spring-am",
+      "officialPdfSha256": "0a92d61db0ba94543e0c8dd0a64b6d391c85b0e0e05b1f341e357fa31fddb81a",
+      "page": 18,
+      "matches": [
+        {
+          "score": 0.6594,
+          "page": 18,
+          "scale": 1.93,
+          "box": [
+            165,
+            355,
+            849,
+            286
+          ],
+          "markerFile": "39.png"
+        }
+      ],
+      "cropBox": [
+        141,
+        331,
+        897,
+        334
+      ],
+      "output": "/exams/sg/legacy/sg-2016-spring-am-q39.png",
+      "outputSha256": "ddda751a81216b81b81f0ee1ff1dd4061505d97c04eb7a787f0943f7b5a3c345"
+    },
+    {
+      "id": "sg-2016-spring-am-q48",
+      "sourceId": "ipa-sg-2016-spring-am",
+      "officialPdfSha256": "0a92d61db0ba94543e0c8dd0a64b6d391c85b0e0e05b1f341e357fa31fddb81a",
+      "page": 20,
+      "matches": [
+        {
+          "score": 0.6574,
+          "page": 20,
+          "scale": 1.81,
+          "box": [
+            304,
+            1013,
+            720,
+            409
+          ],
+          "markerFile": "48.png"
+        }
+      ],
+      "cropBox": [
+        280,
+        989,
+        768,
+        457
+      ],
+      "output": "/exams/sg/legacy/sg-2016-spring-am-q48.png",
+      "outputSha256": "41d48bfc2e8fc84937861c9144b68746663a5d4202fd592cea3001291958e400"
+    }
+  ]
+}

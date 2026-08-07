@@ -1,0 +1,2572 @@
+{
+  "generatedAt": "2026-08-06T10:07:50.429Z",
+  "figures": [
+    {
+      "id": "sg-2019-autumn-pm-q01-scenario-f01",
+      "filename": "pm01_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm01_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-autumn-pm-q01",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2019-autumn-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q01-scenario-f01.png"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q01-scenario-f02",
+      "filename": "pm01_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm01_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-autumn-pm-q01",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2019-autumn-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q01-scenario-f02.png"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q01-u03-choices-f01",
+      "filename": "pm01_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm01_3.png",
+      "alt": "pm01_3.png/image-size:249×232",
+      "scenarioId": "sg-2019-autumn-pm-q01",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2019-autumn-pm-q01-u03",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q01-u03-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q01-u10-choices-f01",
+      "filename": "pm01_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm01_4.png",
+      "alt": "pm01_4.png/image-size:249×232",
+      "scenarioId": "sg-2019-autumn-pm-q01",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2019-autumn-pm-q01-u10",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q01-u10-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q02-scenario-f01",
+      "filename": "pm02_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm02_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-autumn-pm-q02",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q02-scenario-f01.png"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q02-scenario-f02",
+      "filename": "pm02_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm02_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-autumn-pm-q02",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q02-scenario-f02.png"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q02-scenario-f03",
+      "filename": "pm02_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm02_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-autumn-pm-q02",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q02-scenario-f03.png"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q02-scenario-f04",
+      "filename": "pm02_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm02_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-autumn-pm-q02",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q02-scenario-f04.png"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q02-scenario-f05",
+      "filename": "pm02_5.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm02_5.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-autumn-pm-q02",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q02-scenario-f05.png"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q02-scenario-f06",
+      "filename": "pm02_6.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm02_6.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-autumn-pm-q02",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q02-scenario-f06.png"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-scenario-f01",
+      "filename": "pm03_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm03_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-autumn-pm-q03",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2019-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q03-scenario-f01.png"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-scenario-f02",
+      "filename": "pm03_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm03_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-autumn-pm-q03",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2019-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q03-scenario-f02.png"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-scenario-f03",
+      "filename": "pm03_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm03_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-autumn-pm-q03",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2019-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q03-scenario-f03.png"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-scenario-f04",
+      "filename": "pm03_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm03_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-autumn-pm-q03",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2019-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q03-scenario-f04.png"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-scenario-f05",
+      "filename": "pm03_5.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm03_5.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-autumn-pm-q03",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2019-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q03-scenario-f05.png"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-scenario-f06",
+      "filename": "pm03_6.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/01_aki/img/pm03_6.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-autumn-pm-q03",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2019-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_pm_qs.pdf",
+        "sha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q03-scenario-f06.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-scenario-f01",
+      "filename": "pm01_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm01_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2019-spring-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-scenario-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-scenario-f02",
+      "filename": "pm01_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm01_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2019-spring-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-scenario-f02.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-scenario-f03",
+      "filename": "pm01_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm01_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2019-spring-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-scenario-f03.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-scenario-f04",
+      "filename": "pm01_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm01_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2019-spring-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-scenario-f04.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-scenario-f05",
+      "filename": "pm01_5.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm01_5.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2019-spring-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-scenario-f05.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u03-choices-f01",
+      "filename": "pm01_6.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm01_6.png",
+      "alt": "pm01_6.png/image-size:311×294",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2019-spring-pm-q01-u03",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-u03-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u05-choices-f01",
+      "filename": "pm01_7.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm01_7.png",
+      "alt": "pm01_7.png/image-size:395×239",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2019-spring-pm-q01-u05",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-u05-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u06-choices-f01",
+      "filename": "pm01_8.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm01_8.png",
+      "alt": "pm01_8.png/image-size:394×240",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2019-spring-pm-q01-u06",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-u06-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u08-choices-f01",
+      "filename": "pm01_9.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm01_9.png",
+      "alt": "pm01_9.png/image-size:276×292",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2019-spring-pm-q01-u08",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-u08-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u09-choices-f01",
+      "filename": "pm01_10.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm01_10.png",
+      "alt": "pm01_10.png/image-size:274×293",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2019-spring-pm-q01-u09",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-u09-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f01",
+      "filename": "pm02_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f02",
+      "filename": "pm02_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f02.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f03",
+      "filename": "pm02_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f03.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f04",
+      "filename": "pm02_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f04.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f05",
+      "filename": "pm02_5.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_5.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f05.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f06",
+      "filename": "pm02_6.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_6.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f06.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f07",
+      "filename": "pm02_7.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_7.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f07.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f08",
+      "filename": "pm02_8.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_8.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f08.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f09",
+      "filename": "pm02_9.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_9.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f09.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u04-choices-f01",
+      "filename": "pm02_10.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_10.png",
+      "alt": "pm02_10.png/image-size:497×285",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02-u04",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-u04-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u07-choices-f01",
+      "filename": "pm02_11.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_11.png",
+      "alt": "pm02_11.png/image-size:393×295",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02-u07",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-u07-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u08-choices-f01",
+      "filename": "pm02_12.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_12.png",
+      "alt": "pm02_12.png/image-size:393×291",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02-u08",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-u08-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u09-choices-f01",
+      "filename": "pm02_13.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_13.png",
+      "alt": "pm02_13.png/image-size:395×293",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02-u09",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-u09-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u10-choices-f01",
+      "filename": "pm02_14.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_14.png",
+      "alt": "pm02_14.png/image-size:393×293",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02-u10",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-u10-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u11-choices-f01",
+      "filename": "pm02_15.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_15.png",
+      "alt": "pm02_15.png/image-size:275×267",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02-u11",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-u11-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u12-choices-f01",
+      "filename": "pm02_16.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm02_16.png",
+      "alt": "pm02_16.png/image-size:275×267",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2019-spring-pm-q02-u12",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-u12-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-scenario-f01",
+      "filename": "pm03_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm03_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2019-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-scenario-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-scenario-f02",
+      "filename": "pm03_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm03_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2019-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-scenario-f02.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-scenario-f03",
+      "filename": "pm03_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm03_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2019-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-scenario-f03.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-scenario-f04",
+      "filename": "pm03_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm03_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2019-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-scenario-f04.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-scenario-f05",
+      "filename": "pm03_5.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm03_5.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2019-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-scenario-f05.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-u02-choices-f01",
+      "filename": "pm03_6.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm03_6.png",
+      "alt": "pm03_6.png/image-size:472×266",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2019-spring-pm-q03-u02",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-u02-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-u06-choices-f01",
+      "filename": "pm03_7.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm03_7.png",
+      "alt": "pm03_7.png/image-size:393×293",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2019-spring-pm-q03-u06",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-u06-choices-f01.png"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-u08-choices-f01",
+      "filename": "pm03_8.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/31_haru/img/pm03_8.png",
+      "alt": "pm03_8.png/image-size:275×268",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2019-spring-pm-q03-u08",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_pm_qs.pdf",
+        "sha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-u08-choices-f01.png"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-scenario-f01",
+      "filename": "pm01_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_aki/img/pm01_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2018-autumn-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_pm_qs.pdf",
+        "sha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-scenario-f01.png"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-scenario-f02",
+      "filename": "pm01_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_aki/img/pm01_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2018-autumn-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_pm_qs.pdf",
+        "sha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-scenario-f02.png"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-scenario-f03",
+      "filename": "pm01_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_aki/img/pm01_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2018-autumn-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_pm_qs.pdf",
+        "sha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-scenario-f03.png"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-scenario-f04",
+      "filename": "pm01_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_aki/img/pm01_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2018-autumn-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_pm_qs.pdf",
+        "sha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-scenario-f04.png"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-scenario-f05",
+      "filename": "pm01_5.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_aki/img/pm01_5.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2018-autumn-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_pm_qs.pdf",
+        "sha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-scenario-f05.png"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-u03-choices-f01",
+      "filename": "pm01_6.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_aki/img/pm01_6.png",
+      "alt": "pm01_6.png/image-size:382×302",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2018-autumn-pm-q01-u03",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_pm_qs.pdf",
+        "sha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-u03-choices-f01.png"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-u04-choices-f01",
+      "filename": "pm01_7.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_aki/img/pm01_7.png",
+      "alt": "pm01_7.png/image-size:381×302",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2018-autumn-pm-q01-u04",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_pm_qs.pdf",
+        "sha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-u04-choices-f01.png"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-u10-choices-f01",
+      "filename": "pm01_8.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_aki/img/pm01_8.png",
+      "alt": "pm01_8.png/image-size:500×304",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2018-autumn-pm-q01-u10",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_pm_qs.pdf",
+        "sha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-u10-choices-f01.png"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-u11-choices-f01",
+      "filename": "pm01_9.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_aki/img/pm01_9.png",
+      "alt": "pm01_9.png/image-size:267×275",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2018-autumn-pm-q01-u11",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_pm_qs.pdf",
+        "sha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-u11-choices-f01.png"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q02-scenario-f01",
+      "filename": "pm02_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_aki/img/pm02_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-autumn-pm-q02",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2018-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_pm_qs.pdf",
+        "sha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q02-scenario-f01.png"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q02-scenario-f02",
+      "filename": "pm02_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_aki/img/pm02_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-autumn-pm-q02",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2018-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_pm_qs.pdf",
+        "sha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q02-scenario-f02.png"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q02-scenario-f03",
+      "filename": "pm02_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_aki/img/pm02_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-autumn-pm-q02",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2018-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_pm_qs.pdf",
+        "sha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q02-scenario-f03.png"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q03-scenario-f01",
+      "filename": "pm03_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_aki/img/pm03_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-autumn-pm-q03",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2018-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_pm_qs.pdf",
+        "sha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q03-scenario-f01.png"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q03-scenario-f02",
+      "filename": "pm03_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_aki/img/pm03_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-autumn-pm-q03",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2018-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_pm_qs.pdf",
+        "sha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q03-scenario-f02.png"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q03-scenario-f03",
+      "filename": "pm03_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_aki/img/pm03_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-autumn-pm-q03",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2018-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_pm_qs.pdf",
+        "sha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q03-scenario-f03.png"
+    },
+    {
+      "id": "sg-2018-spring-pm-q01-scenario-f01",
+      "filename": "pm01_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_haru/img/pm01_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-spring-pm-q01",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2018-spring-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_pm_qs.pdf",
+        "sha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q01-scenario-f01.png"
+    },
+    {
+      "id": "sg-2018-spring-pm-q01-scenario-f02",
+      "filename": "pm01_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_haru/img/pm01_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-spring-pm-q01",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2018-spring-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_pm_qs.pdf",
+        "sha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q01-scenario-f02.png"
+    },
+    {
+      "id": "sg-2018-spring-pm-q02-scenario-f01",
+      "filename": "pm02_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_haru/img/pm02_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-spring-pm-q02",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2018-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_pm_qs.pdf",
+        "sha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q02-scenario-f01.png"
+    },
+    {
+      "id": "sg-2018-spring-pm-q02-scenario-f02",
+      "filename": "pm02_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_haru/img/pm02_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-spring-pm-q02",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2018-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_pm_qs.pdf",
+        "sha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q02-scenario-f02.png"
+    },
+    {
+      "id": "sg-2018-spring-pm-q02-scenario-f03",
+      "filename": "pm02_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_haru/img/pm02_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-spring-pm-q02",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2018-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_pm_qs.pdf",
+        "sha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q02-scenario-f03.png"
+    },
+    {
+      "id": "sg-2018-spring-pm-q02-scenario-f04",
+      "filename": "pm02_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_haru/img/pm02_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-spring-pm-q02",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2018-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_pm_qs.pdf",
+        "sha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q02-scenario-f04.png"
+    },
+    {
+      "id": "sg-2018-spring-pm-q02-scenario-f05",
+      "filename": "pm02_5.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_haru/img/pm02_5.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-spring-pm-q02",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2018-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_pm_qs.pdf",
+        "sha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q02-scenario-f05.png"
+    },
+    {
+      "id": "sg-2018-spring-pm-q02-u02-choices-f01",
+      "filename": "pm02_6.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_haru/img/pm02_6.png",
+      "alt": "pm02_6.png/image-size:496×338",
+      "scenarioId": "sg-2018-spring-pm-q02",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2018-spring-pm-q02-u02",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_pm_qs.pdf",
+        "sha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q02-u02-choices-f01.png"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-scenario-f01",
+      "filename": "pm03_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_haru/img/pm03_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-spring-pm-q03",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2018-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_pm_qs.pdf",
+        "sha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q03-scenario-f01.png"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-scenario-f02",
+      "filename": "pm03_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_haru/img/pm03_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-spring-pm-q03",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2018-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_pm_qs.pdf",
+        "sha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q03-scenario-f02.png"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-scenario-f03",
+      "filename": "pm03_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_haru/img/pm03_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-spring-pm-q03",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2018-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_pm_qs.pdf",
+        "sha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q03-scenario-f03.png"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-scenario-f04",
+      "filename": "pm03_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_haru/img/pm03_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-spring-pm-q03",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2018-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_pm_qs.pdf",
+        "sha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q03-scenario-f04.png"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-scenario-f05",
+      "filename": "pm03_5.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_haru/img/pm03_5.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2018-spring-pm-q03",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2018-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_pm_qs.pdf",
+        "sha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q03-scenario-f05.png"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-u06-prompt-f01",
+      "filename": "pm03_6.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_haru/img/pm03_6.png",
+      "alt": "pm03_6.png/image-size:490×354",
+      "scenarioId": "sg-2018-spring-pm-q03",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2018-spring-pm-q03-u06",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_pm_qs.pdf",
+        "sha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q03-u06-prompt-f01.png"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-u10-choices-f01",
+      "filename": "pm03_7.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/30_haru/img/pm03_7.png",
+      "alt": "pm03_7.png/image-size:435×250",
+      "scenarioId": "sg-2018-spring-pm-q03",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2018-spring-pm-q03-u10",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_pm_qs.pdf",
+        "sha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q03-u10-choices-f01.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-scenario-f01",
+      "filename": "pm01_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm01_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-autumn-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-scenario-f01.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-scenario-f02",
+      "filename": "pm01_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm01_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-autumn-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-scenario-f02.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-scenario-f03",
+      "filename": "pm01_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm01_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-autumn-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-scenario-f03.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-scenario-f04",
+      "filename": "pm01_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm01_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-autumn-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-scenario-f04.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u01-choices-f01",
+      "filename": "pm01_5a.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm01_5a.png",
+      "alt": "pm01_5a.png/image-size:448×94",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-autumn-pm-q01-u01",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u01-choices-f01.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u01-choices-f02",
+      "filename": "pm01_5i.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm01_5i.png",
+      "alt": "pm01_5i.png/image-size:448×92",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-autumn-pm-q01-u01",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u01-choices-f02.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u01-choices-f03",
+      "filename": "pm01_5u.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm01_5u.png",
+      "alt": "pm01_5u.png/image-size:448×93",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-autumn-pm-q01-u01",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u01-choices-f03.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u01-choices-f04",
+      "filename": "pm01_5e.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm01_5e.png",
+      "alt": "pm01_5e.png/image-size:449×93",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-autumn-pm-q01-u01",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u01-choices-f04.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u01-choices-f05",
+      "filename": "pm01_5o.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm01_5o.png",
+      "alt": "pm01_5o.png/image-size:448×93",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-autumn-pm-q01-u01",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u01-choices-f05.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u01-choices-f06",
+      "filename": "pm01_5ka.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm01_5ka.png",
+      "alt": "pm01_5ka.png/image-size:449×93",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-autumn-pm-q01-u01",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u01-choices-f06.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u02-choices-f01",
+      "filename": "pm01_6.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm01_6.png",
+      "alt": "pm01_6.png/image-size:381×173",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-autumn-pm-q01-u02",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u02-choices-f01.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u03-choices-f01",
+      "filename": "pm01_7.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm01_7.png",
+      "alt": "pm01_7.png/image-size:326×175",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-autumn-pm-q01-u03",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u03-choices-f01.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u03-choices-f02",
+      "filename": "pm01_8.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm01_8.png",
+      "alt": "pm01_8.png/image-size:253×174",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-autumn-pm-q01-u03",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u03-choices-f02.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u07-choices-f01",
+      "filename": "pm01_9.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm01_9.png",
+      "alt": "pm01_9.png/image-size:475×150",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-autumn-pm-q01-u07",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u07-choices-f01.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u10-choices-f01",
+      "filename": "pm01_10.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm01_10.png",
+      "alt": "pm01_10.png/image-size:317×175",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-autumn-pm-q01-u10",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u10-choices-f01.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q02-scenario-f01",
+      "filename": "pm02_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm02_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-autumn-pm-q02",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2017-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q02-scenario-f01.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q02-scenario-f02",
+      "filename": "pm02_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm02_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-autumn-pm-q02",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2017-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q02-scenario-f02.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q02-scenario-f03",
+      "filename": "pm02_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm02_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-autumn-pm-q02",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2017-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q02-scenario-f03.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q02-u04-choices-f01",
+      "filename": "pm02_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm02_4.png",
+      "alt": "pm02_4.png/image-size:234×128",
+      "scenarioId": "sg-2017-autumn-pm-q02",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2017-autumn-pm-q02-u04",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q02-u04-choices-f01.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-scenario-f01",
+      "filename": "pm03_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm03_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-autumn-pm-q03",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2017-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q03-scenario-f01.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-scenario-f02",
+      "filename": "pm03_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm03_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-autumn-pm-q03",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2017-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q03-scenario-f02.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-scenario-f03",
+      "filename": "pm03_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm03_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-autumn-pm-q03",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2017-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q03-scenario-f03.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-scenario-f04",
+      "filename": "pm03_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm03_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-autumn-pm-q03",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2017-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q03-scenario-f04.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-scenario-f05",
+      "filename": "pm03_5.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm03_5.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-autumn-pm-q03",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2017-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q03-scenario-f05.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-u04-choices-f01",
+      "filename": "pm03_6.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm03_6.png",
+      "alt": "pm03_6.png/image-size:244×184",
+      "scenarioId": "sg-2017-autumn-pm-q03",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2017-autumn-pm-q03-u04",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q03-u04-choices-f01.png"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-u06-choices-f01",
+      "filename": "pm03_7.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_aki/img/pm03_7.png",
+      "alt": "pm03_7.png/image-size:244×211",
+      "scenarioId": "sg-2017-autumn-pm-q03",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2017-autumn-pm-q03-u06",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_pm_qs.pdf",
+        "sha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q03-u06-choices-f01.png"
+    },
+    {
+      "id": "sg-2017-spring-pm-q01-scenario-f01",
+      "filename": "pm01_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_haru/img/pm01_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-spring-pm-q01",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-spring-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_sg_pm_qs.pdf",
+        "sha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q01-scenario-f01.png"
+    },
+    {
+      "id": "sg-2017-spring-pm-q01-scenario-f02",
+      "filename": "pm01_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_haru/img/pm01_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-spring-pm-q01",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-spring-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_sg_pm_qs.pdf",
+        "sha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q01-scenario-f02.png"
+    },
+    {
+      "id": "sg-2017-spring-pm-q01-scenario-f03",
+      "filename": "pm01_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_haru/img/pm01_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-spring-pm-q01",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2017-spring-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_sg_pm_qs.pdf",
+        "sha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q01-scenario-f03.png"
+    },
+    {
+      "id": "sg-2017-spring-pm-q02-scenario-f01",
+      "filename": "pm02_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_haru/img/pm02_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-spring-pm-q02",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2017-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_sg_pm_qs.pdf",
+        "sha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q02-scenario-f01.png"
+    },
+    {
+      "id": "sg-2017-spring-pm-q02-scenario-f02",
+      "filename": "pm02_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_haru/img/pm02_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-spring-pm-q02",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2017-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_sg_pm_qs.pdf",
+        "sha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q02-scenario-f02.png"
+    },
+    {
+      "id": "sg-2017-spring-pm-q02-scenario-f03",
+      "filename": "pm02_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_haru/img/pm02_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-spring-pm-q02",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2017-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_sg_pm_qs.pdf",
+        "sha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q02-scenario-f03.png"
+    },
+    {
+      "id": "sg-2017-spring-pm-q02-scenario-f04",
+      "filename": "pm02_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_haru/img/pm02_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-spring-pm-q02",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2017-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_sg_pm_qs.pdf",
+        "sha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q02-scenario-f04.png"
+    },
+    {
+      "id": "sg-2017-spring-pm-q03-scenario-f01",
+      "filename": "pm03_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_haru/img/pm03_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-spring-pm-q03",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2017-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_sg_pm_qs.pdf",
+        "sha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q03-scenario-f01.png"
+    },
+    {
+      "id": "sg-2017-spring-pm-q03-scenario-f02",
+      "filename": "pm03_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_haru/img/pm03_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-spring-pm-q03",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2017-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_sg_pm_qs.pdf",
+        "sha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q03-scenario-f02.png"
+    },
+    {
+      "id": "sg-2017-spring-pm-q03-scenario-f03",
+      "filename": "pm03_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_haru/img/pm03_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-spring-pm-q03",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2017-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_sg_pm_qs.pdf",
+        "sha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q03-scenario-f03.png"
+    },
+    {
+      "id": "sg-2017-spring-pm-q03-scenario-f04",
+      "filename": "pm03_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_haru/img/pm03_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2017-spring-pm-q03",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2017-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_sg_pm_qs.pdf",
+        "sha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q03-scenario-f04.png"
+    },
+    {
+      "id": "sg-2017-spring-pm-q03-u09-choices-f01",
+      "filename": "pm03_5.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/29_haru/img/pm03_5.png",
+      "alt": "pm03_5.png/image-size:503×287",
+      "scenarioId": "sg-2017-spring-pm-q03",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2017-spring-pm-q03-u09",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_sg_pm_qs.pdf",
+        "sha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q03-u09-choices-f01.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q01-scenario-f01",
+      "filename": "pm01_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm01_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-autumn-pm-q01",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2016-autumn-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q01-scenario-f01.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q01-scenario-f02",
+      "filename": "pm01_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm01_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-autumn-pm-q01",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2016-autumn-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q01-scenario-f02.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q01-scenario-f03",
+      "filename": "pm01_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm01_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-autumn-pm-q01",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2016-autumn-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q01-scenario-f03.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q01-scenario-f04",
+      "filename": "pm01_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm01_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-autumn-pm-q01",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2016-autumn-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q01-scenario-f04.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q01-u01-choices-f01",
+      "filename": "pm01_5.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm01_5.png",
+      "alt": "pm01_5.png/image-size:374×173",
+      "scenarioId": "sg-2016-autumn-pm-q01",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2016-autumn-pm-q01-u01",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q01-u01-choices-f01.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q02-scenario-f01",
+      "filename": "pm02_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm02_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-autumn-pm-q02",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2016-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q02-scenario-f01.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q02-scenario-f02",
+      "filename": "pm02_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm02_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-autumn-pm-q02",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2016-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q02-scenario-f02.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q02-scenario-f03",
+      "filename": "pm02_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm02_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-autumn-pm-q02",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2016-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q02-scenario-f03.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q02-scenario-f04",
+      "filename": "pm02_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm02_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-autumn-pm-q02",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2016-autumn-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q02-scenario-f04.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q02-u07-choices-f01",
+      "filename": "pm02_5.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm02_5.png",
+      "alt": "pm02_5.png/image-size:485×125",
+      "scenarioId": "sg-2016-autumn-pm-q02",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2016-autumn-pm-q02-u07",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q02-u07-choices-f01.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q02-u09-choices-f01",
+      "filename": "pm02_6.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm02_6.png",
+      "alt": "pm02_6.png/image-size:486×244",
+      "scenarioId": "sg-2016-autumn-pm-q02",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2016-autumn-pm-q02-u09",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q02-u09-choices-f01.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q03-scenario-f01",
+      "filename": "pm03_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm03_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-autumn-pm-q03",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2016-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q03-scenario-f01.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q03-scenario-f02",
+      "filename": "pm03_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm03_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-autumn-pm-q03",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2016-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q03-scenario-f02.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q03-scenario-f03",
+      "filename": "pm03_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm03_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-autumn-pm-q03",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2016-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q03-scenario-f03.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q03-scenario-f04",
+      "filename": "pm03_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm03_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-autumn-pm-q03",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2016-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q03-scenario-f04.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q03-scenario-f05",
+      "filename": "pm03_5.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm03_5.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-autumn-pm-q03",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2016-autumn-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q03-scenario-f05.png"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q03-u02-choices-f01",
+      "filename": "pm03_6.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_aki/img/pm03_6.png",
+      "alt": "pm03_6.png/image-size:482×175",
+      "scenarioId": "sg-2016-autumn-pm-q03",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2016-autumn-pm-q03-u02",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_pm_qs.pdf",
+        "sha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q03-u02-choices-f01.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q01-scenario-f01",
+      "filename": "pm01_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm01_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-spring-pm-q01",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2016-spring-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q01-scenario-f01.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q01-scenario-f02",
+      "filename": "pm01_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm01_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-spring-pm-q01",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2016-spring-pm-q01",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q01-scenario-f02.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q01-u10-choices-f01",
+      "filename": "pm01_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm01_3.png",
+      "alt": "pm01_3.png/image-size:198×173",
+      "scenarioId": "sg-2016-spring-pm-q01",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "1",
+      "ownerId": "sg-2016-spring-pm-q01-u10",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm01.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q01-u10-choices-f01.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q02-scenario-f01",
+      "filename": "pm02_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm02_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-spring-pm-q02",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2016-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q02-scenario-f01.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q02-scenario-f02",
+      "filename": "pm02_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm02_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-spring-pm-q02",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2016-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q02-scenario-f02.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q02-scenario-f03",
+      "filename": "pm02_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm02_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-spring-pm-q02",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2016-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q02-scenario-f03.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q02-scenario-f04",
+      "filename": "pm02_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm02_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-spring-pm-q02",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "2",
+      "ownerId": "sg-2016-spring-pm-q02",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm02.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q02-scenario-f04.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-scenario-f01",
+      "filename": "pm03_1.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm03_1.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2016-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-scenario-f01.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-scenario-f02",
+      "filename": "pm03_2.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm03_2.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2016-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-scenario-f02.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-scenario-f03",
+      "filename": "pm03_3.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm03_3.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2016-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-scenario-f03.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-scenario-f04",
+      "filename": "pm03_4.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm03_4.png",
+      "alt": "公式問題の図表",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2016-spring-pm-q03",
+      "role": "scenario",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-scenario-f04.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u04-choices-f01",
+      "filename": "pm03_5.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm03_5.png",
+      "alt": "pm03_5.png/image-size:482×164",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2016-spring-pm-q03-u04",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-u04-choices-f01.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u05-choices-f01",
+      "filename": "pm03_6.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm03_6.png",
+      "alt": "pm03_6.png/image-size:481×128",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2016-spring-pm-q03-u05",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-u05-choices-f01.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u06-choices-f01",
+      "filename": "pm03_7.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm03_7.png",
+      "alt": "pm03_7.png/image-size:482×184",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2016-spring-pm-q03-u06",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-u06-choices-f01.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u09-choices-f01",
+      "filename": "pm03_8.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm03_8.png",
+      "alt": "pm03_8.png/image-size:339×186",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2016-spring-pm-q03-u09",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-u09-choices-f01.png"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u10-choices-f01",
+      "filename": "pm03_9.png",
+      "sourceUrl": "https://www.sg-siken.com/kakomon/28_haru/img/pm03_9.png",
+      "alt": "pm03_9.png/image-size:339×186",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "majorQuestionNumber": "3",
+      "ownerId": "sg-2016-spring-pm-q03-u10",
+      "role": "question",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/pm03.html",
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_pm_qs.pdf",
+        "sha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4"
+      },
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-u10-choices-f01.png"
+    }
+  ]
+}

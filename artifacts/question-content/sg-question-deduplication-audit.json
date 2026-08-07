@@ -1,0 +1,1176 @@
+{
+  "generatedAt": "2026-08-07T02:26:50.643Z",
+  "candidateOccurrenceCount": 460,
+  "uniqueQuestionCount": 413,
+  "duplicateGroupCount": 44,
+  "removedOccurrenceCount": 47,
+  "reviewedNearDuplicatePairs": [
+    [
+      "sg-2019-autumn-am-q07",
+      "sg-2018-spring-am-q10"
+    ],
+    [
+      "sg-2019-autumn-am-q30",
+      "sg-2017-spring-am-q30"
+    ],
+    [
+      "sg-2019-spring-am-q02",
+      "sg-2017-autumn-am-q03"
+    ],
+    [
+      "sg-2019-autumn-am-q05",
+      "sg-2017-autumn-am-q10"
+    ],
+    [
+      "sg-2019-spring-am-q11",
+      "sg-2016-autumn-am-q16"
+    ],
+    [
+      "sg-2018-autumn-am-q18",
+      "sg-2016-autumn-am-q19"
+    ],
+    [
+      "sg-2018-autumn-am-q01",
+      "sg-2017-spring-am-q03"
+    ],
+    [
+      "sg-2018-autumn-am-q14",
+      "sg-2016-autumn-am-q12"
+    ],
+    [
+      "sg-2019-spring-am-q33",
+      "sg-2017-autumn-am-q32"
+    ],
+    [
+      "sg-2019-autumn-am-q24",
+      "sg-2018-spring-am-q25"
+    ],
+    [
+      "sg-2019-autumn-am-q20",
+      "sg-2017-spring-am-q22"
+    ],
+    [
+      "sg-2019-autumn-am-q22",
+      "sg-2018-spring-am-q23"
+    ],
+    [
+      "sg-2019-autumn-am-q17",
+      "sg-2016-spring-am-q28"
+    ],
+    [
+      "sg-2019-autumn-am-q15",
+      "sg-2017-autumn-am-q21"
+    ],
+    [
+      "sg-2018-autumn-am-q22",
+      "sg-r06-q06"
+    ],
+    [
+      "sg-2017-autumn-am-q31",
+      "sg-r06-q07"
+    ],
+    [
+      "sg-2016-spring-am-q46",
+      "sg-r06-q10"
+    ],
+    [
+      "sg-2018-autumn-am-q11",
+      "sg-r06-q02"
+    ]
+  ],
+  "reviewedSemanticDuplicatePairs": [
+    [
+      "sg-r05-q08",
+      "sg-2017-spring-am-q31"
+    ],
+    [
+      "sg-2018-autumn-am-q21",
+      "sg-2016-spring-am-q19"
+    ],
+    [
+      "sg-2019-autumn-am-q10",
+      "sg-2017-autumn-am-q16"
+    ],
+    [
+      "sg-2019-autumn-am-q11",
+      "sg-2017-autumn-am-q17"
+    ],
+    [
+      "sg-r07-q04",
+      "sg-2017-spring-am-q27"
+    ],
+    [
+      "sg-2018-autumn-am-q30",
+      "sg-2017-spring-am-q29"
+    ],
+    [
+      "sg-2019-spring-am-q05",
+      "sg-2017-autumn-am-q06"
+    ],
+    [
+      "sg-2018-spring-am-q30",
+      "sg-2016-autumn-am-q29"
+    ],
+    [
+      "sg-r08-q02",
+      "sg-2018-autumn-am-q01"
+    ],
+    [
+      "sg-2018-spring-am-q38",
+      "sg-2016-autumn-am-q37"
+    ],
+    [
+      "sg-2019-autumn-am-q31",
+      "sg-2018-spring-am-q32"
+    ],
+    [
+      "sg-2019-spring-am-q47",
+      "sg-2016-autumn-am-q48"
+    ],
+    [
+      "sg-2019-autumn-am-q03",
+      "sg-2016-spring-am-q05"
+    ]
+  ],
+  "reviewedDistinctSimilarPairs": [
+    [
+      "sg-2018-autumn-am-q07",
+      "sg-2018-spring-am-q03"
+    ]
+  ],
+  "groups": [
+    {
+      "canonicalId": "sg-r08-q02",
+      "memberIds": [
+        "sg-r08-q02",
+        "sg-2018-autumn-am-q01",
+        "sg-2017-spring-am-q03"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2026-r08",
+          "questionNumber": "2",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2018-autumn-am",
+          "questionNumber": "1",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-spring-am",
+          "questionNumber": "3",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和8年度公開問題",
+        "平成30年度秋期 午前",
+        "平成29年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-r07-q04",
+      "memberIds": [
+        "sg-r07-q04",
+        "sg-2017-spring-am-q27"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2025-r07",
+          "questionNumber": "4",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-spring-am",
+          "questionNumber": "27",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和7年度公開問題",
+        "平成29年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-r06-q02",
+      "memberIds": [
+        "sg-r06-q02",
+        "sg-2018-autumn-am-q11"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2024-r06",
+          "questionNumber": "2",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2018-autumn-am",
+          "questionNumber": "11",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和6年度公開問題",
+        "平成30年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-r06-q06",
+      "memberIds": [
+        "sg-r06-q06",
+        "sg-2018-autumn-am-q22"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2024-r06",
+          "questionNumber": "6",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2018-autumn-am",
+          "questionNumber": "22",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和6年度公開問題",
+        "平成30年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-r06-q07",
+      "memberIds": [
+        "sg-r06-q07",
+        "sg-2017-autumn-am-q31"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2024-r06",
+          "questionNumber": "7",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-autumn-am",
+          "questionNumber": "31",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和6年度公開問題",
+        "平成29年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-r06-q10",
+      "memberIds": [
+        "sg-r06-q10",
+        "sg-2016-spring-am-q46"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2024-r06",
+          "questionNumber": "10",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2016-spring-am",
+          "questionNumber": "46",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和6年度公開問題",
+        "平成28年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-r05-q02",
+      "memberIds": [
+        "sg-r05-q02",
+        "sg-2019-spring-am-q13",
+        "sg-2017-autumn-am-q15"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2023-r05",
+          "questionNumber": "2",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2019-spring-am",
+          "questionNumber": "13",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-autumn-am",
+          "questionNumber": "15",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和5年度公開問題",
+        "平成31年度春期 午前",
+        "平成29年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-r05-q05",
+      "memberIds": [
+        "sg-r05-q05",
+        "sg-2019-autumn-am-q12"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2023-r05",
+          "questionNumber": "5",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "12",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和5年度公開問題",
+        "令和元年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-r05-q08",
+      "memberIds": [
+        "sg-r05-q08",
+        "sg-2018-autumn-am-q33",
+        "sg-2017-spring-am-q31"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2023-r05",
+          "questionNumber": "8",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2018-autumn-am",
+          "questionNumber": "33",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-spring-am",
+          "questionNumber": "31",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和5年度公開問題",
+        "平成30年度秋期 午前",
+        "平成29年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q03",
+      "memberIds": [
+        "sg-2019-autumn-am-q03",
+        "sg-2016-spring-am-q05"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "3",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2016-spring-am",
+          "questionNumber": "5",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成28年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q04",
+      "memberIds": [
+        "sg-2019-autumn-am-q04",
+        "sg-2018-spring-am-q04"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "4",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2018-spring-am",
+          "questionNumber": "4",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成30年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q05",
+      "memberIds": [
+        "sg-2019-autumn-am-q05",
+        "sg-2017-autumn-am-q10"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "5",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-autumn-am",
+          "questionNumber": "10",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成29年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q07",
+      "memberIds": [
+        "sg-2019-autumn-am-q07",
+        "sg-2018-spring-am-q10"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "7",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2018-spring-am",
+          "questionNumber": "10",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成30年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q10",
+      "memberIds": [
+        "sg-2019-autumn-am-q10",
+        "sg-2017-autumn-am-q16"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "10",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-autumn-am",
+          "questionNumber": "16",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成29年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q11",
+      "memberIds": [
+        "sg-2019-autumn-am-q11",
+        "sg-2017-autumn-am-q17"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "11",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-autumn-am",
+          "questionNumber": "17",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成29年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q15",
+      "memberIds": [
+        "sg-2019-autumn-am-q15",
+        "sg-2017-autumn-am-q21"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "15",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-autumn-am",
+          "questionNumber": "21",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成29年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q17",
+      "memberIds": [
+        "sg-2019-autumn-am-q17",
+        "sg-2016-spring-am-q28"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "17",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2016-spring-am",
+          "questionNumber": "28",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成28年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q20",
+      "memberIds": [
+        "sg-2019-autumn-am-q20",
+        "sg-2017-spring-am-q22"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "20",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-spring-am",
+          "questionNumber": "22",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成29年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q22",
+      "memberIds": [
+        "sg-2019-autumn-am-q22",
+        "sg-2018-spring-am-q23"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "22",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2018-spring-am",
+          "questionNumber": "23",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成30年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q23",
+      "memberIds": [
+        "sg-2019-autumn-am-q23",
+        "sg-2018-spring-am-q24"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "23",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2018-spring-am",
+          "questionNumber": "24",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成30年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q24",
+      "memberIds": [
+        "sg-2019-autumn-am-q24",
+        "sg-2018-spring-am-q25"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "24",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2018-spring-am",
+          "questionNumber": "25",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成30年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q27",
+      "memberIds": [
+        "sg-2019-autumn-am-q27",
+        "sg-2017-spring-am-q26"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "27",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-spring-am",
+          "questionNumber": "26",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成29年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q30",
+      "memberIds": [
+        "sg-2019-autumn-am-q30",
+        "sg-2017-spring-am-q30"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "30",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-spring-am",
+          "questionNumber": "30",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成29年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q31",
+      "memberIds": [
+        "sg-2019-autumn-am-q31",
+        "sg-2018-spring-am-q32"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "31",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2018-spring-am",
+          "questionNumber": "32",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成30年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-autumn-am-q37",
+      "memberIds": [
+        "sg-2019-autumn-am-q37",
+        "sg-2017-autumn-am-q38"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-autumn-am",
+          "questionNumber": "37",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-autumn-am",
+          "questionNumber": "38",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "令和元年度秋期 午前",
+        "平成29年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-spring-am-q02",
+      "memberIds": [
+        "sg-2019-spring-am-q02",
+        "sg-2017-autumn-am-q03"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-spring-am",
+          "questionNumber": "2",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-autumn-am",
+          "questionNumber": "3",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成31年度春期 午前",
+        "平成29年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-spring-am-q03",
+      "memberIds": [
+        "sg-2019-spring-am-q03",
+        "sg-2017-autumn-am-q04"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-spring-am",
+          "questionNumber": "3",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-autumn-am",
+          "questionNumber": "4",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成31年度春期 午前",
+        "平成29年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-spring-am-q04",
+      "memberIds": [
+        "sg-2019-spring-am-q04",
+        "sg-2017-autumn-am-q12"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-spring-am",
+          "questionNumber": "4",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-autumn-am",
+          "questionNumber": "12",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成31年度春期 午前",
+        "平成29年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-spring-am-q05",
+      "memberIds": [
+        "sg-2019-spring-am-q05",
+        "sg-2017-autumn-am-q06"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-spring-am",
+          "questionNumber": "5",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-autumn-am",
+          "questionNumber": "6",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成31年度春期 午前",
+        "平成29年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-spring-am-q06",
+      "memberIds": [
+        "sg-2019-spring-am-q06",
+        "sg-2017-spring-am-q07"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-spring-am",
+          "questionNumber": "6",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-spring-am",
+          "questionNumber": "7",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成31年度春期 午前",
+        "平成29年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-spring-am-q07",
+      "memberIds": [
+        "sg-2019-spring-am-q07",
+        "sg-2017-autumn-am-q08"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-spring-am",
+          "questionNumber": "7",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-autumn-am",
+          "questionNumber": "8",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成31年度春期 午前",
+        "平成29年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-spring-am-q11",
+      "memberIds": [
+        "sg-2019-spring-am-q11",
+        "sg-2016-autumn-am-q16"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-spring-am",
+          "questionNumber": "11",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2016-autumn-am",
+          "questionNumber": "16",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成31年度春期 午前",
+        "平成28年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-spring-am-q25",
+      "memberIds": [
+        "sg-2019-spring-am-q25",
+        "sg-2017-autumn-am-q25"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-spring-am",
+          "questionNumber": "25",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-autumn-am",
+          "questionNumber": "25",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成31年度春期 午前",
+        "平成29年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-spring-am-q33",
+      "memberIds": [
+        "sg-2019-spring-am-q33",
+        "sg-2017-autumn-am-q32"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-spring-am",
+          "questionNumber": "33",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-autumn-am",
+          "questionNumber": "32",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成31年度春期 午前",
+        "平成29年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-spring-am-q41",
+      "memberIds": [
+        "sg-2019-spring-am-q41",
+        "sg-2016-autumn-am-q42"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-spring-am",
+          "questionNumber": "41",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2016-autumn-am",
+          "questionNumber": "42",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成31年度春期 午前",
+        "平成28年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2019-spring-am-q47",
+      "memberIds": [
+        "sg-2019-spring-am-q47",
+        "sg-2016-autumn-am-q48"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2019-spring-am",
+          "questionNumber": "47",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2016-autumn-am",
+          "questionNumber": "48",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成31年度春期 午前",
+        "平成28年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2018-autumn-am-q14",
+      "memberIds": [
+        "sg-2018-autumn-am-q14",
+        "sg-2016-autumn-am-q12"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2018-autumn-am",
+          "questionNumber": "14",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2016-autumn-am",
+          "questionNumber": "12",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成30年度秋期 午前",
+        "平成28年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2018-autumn-am-q18",
+      "memberIds": [
+        "sg-2018-autumn-am-q18",
+        "sg-2016-autumn-am-q19"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2018-autumn-am",
+          "questionNumber": "18",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2016-autumn-am",
+          "questionNumber": "19",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成30年度秋期 午前",
+        "平成28年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2018-autumn-am-q21",
+      "memberIds": [
+        "sg-2018-autumn-am-q21",
+        "sg-2016-spring-am-q19"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2018-autumn-am",
+          "questionNumber": "21",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2016-spring-am",
+          "questionNumber": "19",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成30年度秋期 午前",
+        "平成28年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2018-autumn-am-q30",
+      "memberIds": [
+        "sg-2018-autumn-am-q30",
+        "sg-2017-spring-am-q29"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2018-autumn-am",
+          "questionNumber": "30",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2017-spring-am",
+          "questionNumber": "29",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成30年度秋期 午前",
+        "平成29年度春期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2018-spring-am-q19",
+      "memberIds": [
+        "sg-2018-spring-am-q19",
+        "sg-2016-autumn-am-q23"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2018-spring-am",
+          "questionNumber": "19",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2016-autumn-am",
+          "questionNumber": "23",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成30年度春期 午前",
+        "平成28年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2018-spring-am-q30",
+      "memberIds": [
+        "sg-2018-spring-am-q30",
+        "sg-2016-autumn-am-q29"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2018-spring-am",
+          "questionNumber": "30",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2016-autumn-am",
+          "questionNumber": "29",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成30年度春期 午前",
+        "平成28年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2018-spring-am-q38",
+      "memberIds": [
+        "sg-2018-spring-am-q38",
+        "sg-2016-autumn-am-q37"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2018-spring-am",
+          "questionNumber": "38",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2016-autumn-am",
+          "questionNumber": "37",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成30年度春期 午前",
+        "平成28年度秋期 午前"
+      ]
+    },
+    {
+      "canonicalId": "sg-2018-spring-am-q41",
+      "memberIds": [
+        "sg-2018-spring-am-q41",
+        "sg-2016-autumn-am-q39"
+      ],
+      "sourceOccurrences": [
+        {
+          "sourceId": "ipa-sg-2018-spring-am",
+          "questionNumber": "41",
+          "modified": true
+        },
+        {
+          "sourceId": "ipa-sg-2016-autumn-am",
+          "questionNumber": "39",
+          "modified": true
+        }
+      ],
+      "domains": [
+        "平成30年度春期 午前",
+        "平成28年度秋期 午前"
+      ]
+    }
+  ]
+}

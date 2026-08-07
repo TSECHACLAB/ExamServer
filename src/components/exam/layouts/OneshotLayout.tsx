@@ -51,6 +51,7 @@ export default function OneshotLayout({
       <ChoiceGroup
         options={question.options}
         type={question.type as QuestionType}
+        selectionLimit={question.selectionLimit}
         selectedAnswer={selectedAnswer}
         onChange={onAnswer}
         showResult={showResult}

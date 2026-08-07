@@ -1,0 +1,212 @@
+{
+  "generatedAt": "2026-08-07T02:27:02.164Z",
+  "officialAnswerUnitCount": 257,
+  "playableQuestionCount": 247,
+  "groupedQuestionCount": 8,
+  "groupedAnswerUnitCount": 18,
+  "removedRepeatedScreenCount": 10,
+  "groups": [
+    {
+      "playableQuestionId": "sg-2019-spring-pm-q02-u01",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "sourceAnswerSlots": [
+        "2.01",
+        "2.02",
+        "2.03"
+      ],
+      "rawAnswerSlots": [
+        "11",
+        "12",
+        "13"
+      ],
+      "groupedUnitIds": [
+        "sg-2019-spring-pm-q02-u01",
+        "sg-2019-spring-pm-q02-u02",
+        "sg-2019-spring-pm-q02-u03"
+      ],
+      "officialAnswers": [
+        "ア",
+        "イ",
+        "カ"
+      ],
+      "answerIndexes": [
+        0,
+        1,
+        5
+      ]
+    },
+    {
+      "playableQuestionId": "sg-2018-autumn-pm-q02-u05",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "sourceAnswerSlots": [
+        "2.05",
+        "2.06"
+      ],
+      "rawAnswerSlots": [
+        "141",
+        "142"
+      ],
+      "groupedUnitIds": [
+        "sg-2018-autumn-pm-q02-u05",
+        "sg-2018-autumn-pm-q02-u06"
+      ],
+      "officialAnswers": [
+        "ア",
+        "ウ"
+      ],
+      "answerIndexes": [
+        0,
+        2
+      ]
+    },
+    {
+      "playableQuestionId": "sg-2018-autumn-pm-q02-u07",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "sourceAnswerSlots": [
+        "2.07",
+        "2.08",
+        "2.09"
+      ],
+      "rawAnswerSlots": [
+        "151",
+        "152",
+        "153"
+      ],
+      "groupedUnitIds": [
+        "sg-2018-autumn-pm-q02-u07",
+        "sg-2018-autumn-pm-q02-u08",
+        "sg-2018-autumn-pm-q02-u09"
+      ],
+      "officialAnswers": [
+        "ア",
+        "イ",
+        "ウ"
+      ],
+      "answerIndexes": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "playableQuestionId": "sg-2018-spring-pm-q01-u06",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "sourceAnswerSlots": [
+        "1.06",
+        "1.07"
+      ],
+      "rawAnswerSlots": [
+        "221",
+        "222"
+      ],
+      "groupedUnitIds": [
+        "sg-2018-spring-pm-q01-u06",
+        "sg-2018-spring-pm-q01-u07"
+      ],
+      "officialAnswers": [
+        "ウ",
+        "エ"
+      ],
+      "answerIndexes": [
+        2,
+        3
+      ]
+    },
+    {
+      "playableQuestionId": "sg-2017-autumn-pm-q02-u01",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "sourceAnswerSlots": [
+        "2.01",
+        "2.02"
+      ],
+      "rawAnswerSlots": [
+        "111",
+        "112"
+      ],
+      "groupedUnitIds": [
+        "sg-2017-autumn-pm-q02-u01",
+        "sg-2017-autumn-pm-q02-u02"
+      ],
+      "officialAnswers": [
+        "イ",
+        "オ"
+      ],
+      "answerIndexes": [
+        1,
+        4
+      ]
+    },
+    {
+      "playableQuestionId": "sg-2017-spring-pm-q01-u07",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "sourceAnswerSlots": [
+        "1.07",
+        "1.08"
+      ],
+      "rawAnswerSlots": [
+        "311",
+        "312"
+      ],
+      "groupedUnitIds": [
+        "sg-2017-spring-pm-q01-u07",
+        "sg-2017-spring-pm-q01-u08"
+      ],
+      "officialAnswers": [
+        "ウ",
+        "エ"
+      ],
+      "answerIndexes": [
+        2,
+        3
+      ]
+    },
+    {
+      "playableQuestionId": "sg-2016-spring-pm-q01-u04",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "sourceAnswerSlots": [
+        "1.04",
+        "1.05"
+      ],
+      "rawAnswerSlots": [
+        "131",
+        "132"
+      ],
+      "groupedUnitIds": [
+        "sg-2016-spring-pm-q01-u04",
+        "sg-2016-spring-pm-q01-u05"
+      ],
+      "officialAnswers": [
+        "ア",
+        "エ"
+      ],
+      "answerIndexes": [
+        0,
+        3
+      ]
+    },
+    {
+      "playableQuestionId": "sg-2016-spring-pm-q03-u02",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "sourceAnswerSlots": [
+        "3.02",
+        "3.03"
+      ],
+      "rawAnswerSlots": [
+        "21",
+        "22"
+      ],
+      "groupedUnitIds": [
+        "sg-2016-spring-pm-q03-u02",
+        "sg-2016-spring-pm-q03-u03"
+      ],
+      "officialAnswers": [
+        "イ",
+        "オ"
+      ],
+      "answerIndexes": [
+        1,
+        4
+      ]
+    }
+  ]
+}

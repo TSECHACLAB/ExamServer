@@ -1,0 +1,415 @@
+{
+  "generatedAt": "2026-08-06T05:11:51.715Z",
+  "figures": [
+    {
+      "id": "sg-2019-autumn-am-q20",
+      "sourceId": "ipa-sg-2019-autumn-am",
+      "questionNumber": "20",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/q20.html",
+      "markerFiles": [
+        "20.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_am_qs.pdf",
+        "sha256": "7b6f317f84d379ddad923d45030a0a7e85a8bf04ef00cad59dedab82033a61d1"
+      },
+      "output": "/exams/sg/legacy/sg-2019-autumn-am-q20.png"
+    },
+    {
+      "id": "sg-2019-autumn-am-q44",
+      "sourceId": "ipa-sg-2019-autumn-am",
+      "questionNumber": "44",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/01_aki/q44.html",
+      "markerFiles": [
+        "44.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_sg_am_qs.pdf",
+        "sha256": "7b6f317f84d379ddad923d45030a0a7e85a8bf04ef00cad59dedab82033a61d1"
+      },
+      "output": "/exams/sg/legacy/sg-2019-autumn-am-q44.png"
+    },
+    {
+      "id": "sg-2019-spring-am-q01",
+      "sourceId": "ipa-sg-2019-spring-am",
+      "questionNumber": "1",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/q1.html",
+      "markerFiles": [
+        "01.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_am_qs.pdf",
+        "sha256": "245c4f92f8ff54330dcd33921f5640602b1224cbf501d748b57b0ed3b1b97704"
+      },
+      "output": "/exams/sg/legacy/sg-2019-spring-am-q01.png"
+    },
+    {
+      "id": "sg-2019-spring-am-q02",
+      "sourceId": "ipa-sg-2019-spring-am",
+      "questionNumber": "2",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/q2.html",
+      "markerFiles": [
+        "02.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_am_qs.pdf",
+        "sha256": "245c4f92f8ff54330dcd33921f5640602b1224cbf501d748b57b0ed3b1b97704"
+      },
+      "output": "/exams/sg/legacy/sg-2019-spring-am-q02.png"
+    },
+    {
+      "id": "sg-2019-spring-am-q14",
+      "sourceId": "ipa-sg-2019-spring-am",
+      "questionNumber": "14",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/q14.html",
+      "markerFiles": [
+        "14.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_am_qs.pdf",
+        "sha256": "245c4f92f8ff54330dcd33921f5640602b1224cbf501d748b57b0ed3b1b97704"
+      },
+      "output": "/exams/sg/legacy/sg-2019-spring-am-q14.png"
+    },
+    {
+      "id": "sg-2019-spring-am-q25",
+      "sourceId": "ipa-sg-2019-spring-am",
+      "questionNumber": "25",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/q25.html",
+      "markerFiles": [
+        "25.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_am_qs.pdf",
+        "sha256": "245c4f92f8ff54330dcd33921f5640602b1224cbf501d748b57b0ed3b1b97704"
+      },
+      "output": "/exams/sg/legacy/sg-2019-spring-am-q25.png"
+    },
+    {
+      "id": "sg-2019-spring-am-q36",
+      "sourceId": "ipa-sg-2019-spring-am",
+      "questionNumber": "36",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/q36.html",
+      "markerFiles": [
+        "36.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_am_qs.pdf",
+        "sha256": "245c4f92f8ff54330dcd33921f5640602b1224cbf501d748b57b0ed3b1b97704"
+      },
+      "output": "/exams/sg/legacy/sg-2019-spring-am-q36.png"
+    },
+    {
+      "id": "sg-2019-spring-am-q46",
+      "sourceId": "ipa-sg-2019-spring-am",
+      "questionNumber": "46",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/q46.html",
+      "markerFiles": [
+        "46.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_am_qs.pdf",
+        "sha256": "245c4f92f8ff54330dcd33921f5640602b1224cbf501d748b57b0ed3b1b97704"
+      },
+      "output": "/exams/sg/legacy/sg-2019-spring-am-q46.png"
+    },
+    {
+      "id": "sg-2019-spring-am-q48",
+      "sourceId": "ipa-sg-2019-spring-am",
+      "questionNumber": "48",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/31_haru/q48.html",
+      "markerFiles": [
+        "48.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_sg_am_qs.pdf",
+        "sha256": "245c4f92f8ff54330dcd33921f5640602b1224cbf501d748b57b0ed3b1b97704"
+      },
+      "output": "/exams/sg/legacy/sg-2019-spring-am-q48.png"
+    },
+    {
+      "id": "sg-2018-autumn-am-q19",
+      "sourceId": "ipa-sg-2018-autumn-am",
+      "questionNumber": "19",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/q19.html",
+      "markerFiles": [
+        "19.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_am_qs.pdf",
+        "sha256": "31e1e6f9883948ed3b2bc009c8c0390379626daf470fe1c9350364463463e0c4"
+      },
+      "output": "/exams/sg/legacy/sg-2018-autumn-am-q19.png"
+    },
+    {
+      "id": "sg-2018-autumn-am-q20",
+      "sourceId": "ipa-sg-2018-autumn-am",
+      "questionNumber": "20",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/q20.html",
+      "markerFiles": [
+        "20.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_am_qs.pdf",
+        "sha256": "31e1e6f9883948ed3b2bc009c8c0390379626daf470fe1c9350364463463e0c4"
+      },
+      "output": "/exams/sg/legacy/sg-2018-autumn-am-q20.png"
+    },
+    {
+      "id": "sg-2018-autumn-am-q39",
+      "sourceId": "ipa-sg-2018-autumn-am",
+      "questionNumber": "39",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/q39.html",
+      "markerFiles": [
+        "39.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_am_qs.pdf",
+        "sha256": "31e1e6f9883948ed3b2bc009c8c0390379626daf470fe1c9350364463463e0c4"
+      },
+      "output": "/exams/sg/legacy/sg-2018-autumn-am-q39.png"
+    },
+    {
+      "id": "sg-2018-autumn-am-q50",
+      "sourceId": "ipa-sg-2018-autumn-am",
+      "questionNumber": "50",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_aki/q50.html",
+      "markerFiles": [
+        "50.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_sg_am_qs.pdf",
+        "sha256": "31e1e6f9883948ed3b2bc009c8c0390379626daf470fe1c9350364463463e0c4"
+      },
+      "output": "/exams/sg/legacy/sg-2018-autumn-am-q50.png"
+    },
+    {
+      "id": "sg-2018-spring-am-q06",
+      "sourceId": "ipa-sg-2018-spring-am",
+      "questionNumber": "6",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/q6.html",
+      "markerFiles": [
+        "06.png",
+        "06a.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_am_qs.pdf",
+        "sha256": "85f0f53a578a6cb3a93df27694183138786fd9efada58dc133ed7e3e26e3c6fa"
+      },
+      "output": "/exams/sg/legacy/sg-2018-spring-am-q06.png"
+    },
+    {
+      "id": "sg-2018-spring-am-q18",
+      "sourceId": "ipa-sg-2018-spring-am",
+      "questionNumber": "18",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/q18.html",
+      "markerFiles": [
+        "18.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_am_qs.pdf",
+        "sha256": "85f0f53a578a6cb3a93df27694183138786fd9efada58dc133ed7e3e26e3c6fa"
+      },
+      "output": "/exams/sg/legacy/sg-2018-spring-am-q18.png"
+    },
+    {
+      "id": "sg-2018-spring-am-q43",
+      "sourceId": "ipa-sg-2018-spring-am",
+      "questionNumber": "43",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/q43.html",
+      "markerFiles": [
+        "43.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_am_qs.pdf",
+        "sha256": "85f0f53a578a6cb3a93df27694183138786fd9efada58dc133ed7e3e26e3c6fa"
+      },
+      "output": "/exams/sg/legacy/sg-2018-spring-am-q43.png"
+    },
+    {
+      "id": "sg-2018-spring-am-q50",
+      "sourceId": "ipa-sg-2018-spring-am",
+      "questionNumber": "50",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/30_haru/q50.html",
+      "markerFiles": [
+        "50.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_sg_am_qs.pdf",
+        "sha256": "85f0f53a578a6cb3a93df27694183138786fd9efada58dc133ed7e3e26e3c6fa"
+      },
+      "output": "/exams/sg/legacy/sg-2018-spring-am-q50.png"
+    },
+    {
+      "id": "sg-2017-autumn-am-q02",
+      "sourceId": "ipa-sg-2017-autumn-am",
+      "questionNumber": "2",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/q2.html",
+      "markerFiles": [
+        "02.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_am_qs.pdf",
+        "sha256": "4c5d2578cc71ae7cd64e7eb54f202ca3ffe827fe9e591fcd436bc5ef0adb6a28"
+      },
+      "output": "/exams/sg/legacy/sg-2017-autumn-am-q02.png"
+    },
+    {
+      "id": "sg-2017-autumn-am-q28",
+      "sourceId": "ipa-sg-2017-autumn-am",
+      "questionNumber": "28",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/q28.html",
+      "markerFiles": [
+        "28.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_am_qs.pdf",
+        "sha256": "4c5d2578cc71ae7cd64e7eb54f202ca3ffe827fe9e591fcd436bc5ef0adb6a28"
+      },
+      "output": "/exams/sg/legacy/sg-2017-autumn-am-q28.png"
+    },
+    {
+      "id": "sg-2017-autumn-am-q42",
+      "sourceId": "ipa-sg-2017-autumn-am",
+      "questionNumber": "42",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/q42.html",
+      "markerFiles": [
+        "42.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_am_qs.pdf",
+        "sha256": "4c5d2578cc71ae7cd64e7eb54f202ca3ffe827fe9e591fcd436bc5ef0adb6a28"
+      },
+      "output": "/exams/sg/legacy/sg-2017-autumn-am-q42.png"
+    },
+    {
+      "id": "sg-2017-autumn-am-q43",
+      "sourceId": "ipa-sg-2017-autumn-am",
+      "questionNumber": "43",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/q43.html",
+      "markerFiles": [
+        "43a.png",
+        "43i.png",
+        "43u.png",
+        "43e.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_am_qs.pdf",
+        "sha256": "4c5d2578cc71ae7cd64e7eb54f202ca3ffe827fe9e591fcd436bc5ef0adb6a28"
+      },
+      "output": "/exams/sg/legacy/sg-2017-autumn-am-q43.png"
+    },
+    {
+      "id": "sg-2017-autumn-am-q48",
+      "sourceId": "ipa-sg-2017-autumn-am",
+      "questionNumber": "48",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_aki/q48.html",
+      "markerFiles": [
+        "48.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_sg_am_qs.pdf",
+        "sha256": "4c5d2578cc71ae7cd64e7eb54f202ca3ffe827fe9e591fcd436bc5ef0adb6a28"
+      },
+      "output": "/exams/sg/legacy/sg-2017-autumn-am-q48.png"
+    },
+    {
+      "id": "sg-2017-spring-am-q16",
+      "sourceId": "ipa-sg-2017-spring-am",
+      "questionNumber": "16",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_haru/q16.html",
+      "markerFiles": [
+        "16.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_sg_am_qs.pdf",
+        "sha256": "6677d7d3ed0c1eb7ca579a616628a5bc9a39be8b39e187fa52c17724c0e37602"
+      },
+      "output": "/exams/sg/legacy/sg-2017-spring-am-q16.png"
+    },
+    {
+      "id": "sg-2017-spring-am-q24",
+      "sourceId": "ipa-sg-2017-spring-am",
+      "questionNumber": "24",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_haru/q24.html",
+      "markerFiles": [
+        "24.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_sg_am_qs.pdf",
+        "sha256": "6677d7d3ed0c1eb7ca579a616628a5bc9a39be8b39e187fa52c17724c0e37602"
+      },
+      "output": "/exams/sg/legacy/sg-2017-spring-am-q24.png"
+    },
+    {
+      "id": "sg-2017-spring-am-q43",
+      "sourceId": "ipa-sg-2017-spring-am",
+      "questionNumber": "43",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/29_haru/q43.html",
+      "markerFiles": [
+        "43.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_sg_am_qs.pdf",
+        "sha256": "6677d7d3ed0c1eb7ca579a616628a5bc9a39be8b39e187fa52c17724c0e37602"
+      },
+      "output": "/exams/sg/legacy/sg-2017-spring-am-q43.png"
+    },
+    {
+      "id": "sg-2016-autumn-am-q07",
+      "sourceId": "ipa-sg-2016-autumn-am",
+      "questionNumber": "7",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_aki/q7.html",
+      "markerFiles": [
+        "07.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_sg_am_qs.pdf",
+        "sha256": "0584c6c5a60073ab33110e86aa73822ffd3835e49979d9954c75c655cdf0864a"
+      },
+      "output": "/exams/sg/legacy/sg-2016-autumn-am-q07.png"
+    },
+    {
+      "id": "sg-2016-spring-am-q31",
+      "sourceId": "ipa-sg-2016-spring-am",
+      "questionNumber": "31",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/q31.html",
+      "markerFiles": [
+        "31.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_am_qs.pdf",
+        "sha256": "0a92d61db0ba94543e0c8dd0a64b6d391c85b0e0e05b1f341e357fa31fddb81a"
+      },
+      "output": "/exams/sg/legacy/sg-2016-spring-am-q31.png"
+    },
+    {
+      "id": "sg-2016-spring-am-q39",
+      "sourceId": "ipa-sg-2016-spring-am",
+      "questionNumber": "39",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/q39.html",
+      "markerFiles": [
+        "39.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_am_qs.pdf",
+        "sha256": "0a92d61db0ba94543e0c8dd0a64b6d391c85b0e0e05b1f341e357fa31fddb81a"
+      },
+      "output": "/exams/sg/legacy/sg-2016-spring-am-q39.png"
+    },
+    {
+      "id": "sg-2016-spring-am-q48",
+      "sourceId": "ipa-sg-2016-spring-am",
+      "questionNumber": "48",
+      "transcriptionUrl": "https://www.sg-siken.com/kakomon/28_haru/q48.html",
+      "markerFiles": [
+        "48.png"
+      ],
+      "officialPdf": {
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_sg_am_qs.pdf",
+        "sha256": "0a92d61db0ba94543e0c8dd0a64b6d391c85b0e0e05b1f341e357fa31fddb81a"
+      },
+      "output": "/exams/sg/legacy/sg-2016-spring-am-q48.png"
+    }
+  ]
+}

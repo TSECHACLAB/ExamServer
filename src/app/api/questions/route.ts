@@ -9,6 +9,8 @@ import { NextRequest } from "next/server";
 import {
   getQuestions,
   getScenarios,
+  getQuestionSourceRegistry,
+  toPublicQuestionSourceSet,
   toPublicQuestion,
   toPublicScenario,
 } from "@/lib/questions";
@@ -25,6 +27,21 @@ export async function GET(request: NextRequest) {
 
   const questions = getQuestions(categoryId).map(toPublicQuestion);
   const scenarios = getScenarios(categoryId).map(toPublicScenario);
+  const sourceRegistry = getQuestionSourceRegistry(categoryId);
+  const referencedSourceIds = new Set(
+    [...questions, ...scenarios.flatMap((scenario) => scenario.questions)]
+      .flatMap((question) => [question.source, ...(question.sourceOccurrences ?? [])])
+      .filter((reference): reference is NonNullable<typeof reference> => Boolean(reference))
+      .map((reference) => reference.sourceId),
+  );
+  const sources = (sourceRegistry?.sources ?? [])
+    .filter((source) => referencedSourceIds.has(source.id))
+    .map(toPublicQuestionSourceSet);
 
-  return Response.json({ questions, scenarios });
+  return Response.json({
+    questions,
+    scenarios,
+    sources,
+    sourcePublisher: sourceRegistry?.publisher ?? null,
+  });
 }

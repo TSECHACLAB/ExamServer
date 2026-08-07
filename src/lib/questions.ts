@@ -15,6 +15,11 @@ import type {
   Scenario,
   PublicScenario,
   ExamMeta,
+  PublicQuestionSourceReference,
+  PublicQuestionSourceSet,
+  QuestionSourceReference,
+  QuestionSourceRegistry,
+  QuestionSourceSet,
 } from "@/types/exam";
 import { getCategories } from "@/lib/categories";
 
@@ -48,6 +53,41 @@ export function getExamMeta(categoryId: string): ExamMeta | null {
   return JSON.parse(fs.readFileSync(metaPath, "utf-8")) as ExamMeta;
 }
 
+/** カテゴリ内の問題出典台帳を取得 */
+export function getQuestionSourceRegistry(
+  categoryId: string
+): QuestionSourceRegistry | null {
+  const sourcePath = path.join(getExamDir(categoryId), "sources.json");
+  if (!fs.existsSync(sourcePath)) return null;
+  return JSON.parse(
+    fs.readFileSync(sourcePath, "utf-8")
+  ) as QuestionSourceRegistry;
+}
+
+/** クライアント表示に使う公式資料セットを取得 */
+export function getQuestionSources(categoryId: string): QuestionSourceSet[] {
+  return getQuestionSourceRegistry(categoryId)?.sources ?? [];
+}
+
+/** 受験前表示に不要な解答PDF、講評、監査用ハッシュを除く */
+export function toPublicQuestionSourceSet(
+  source: QuestionSourceSet,
+): PublicQuestionSourceSet {
+  return {
+    id: source.id,
+    kind: source.kind,
+    title: source.title,
+    ...(source.year ? { year: source.year } : {}),
+    ...(source.season ? { season: source.season } : {}),
+    section: source.section,
+    officialPageUrl: source.officialPageUrl,
+    ...(source.questionPdf ? { questionPdf: { url: source.questionPdf.url } } : {}),
+    ...(source.defaultModificationNote
+      ? { defaultModificationNote: source.defaultModificationNote }
+      : {}),
+  };
+}
+
 /** 一問一答型の問題を取得（正解付き） */
 export function getQuestions(categoryId: string): Question[] {
   const questionsPath = path.join(getExamDir(categoryId), "questions.json");
@@ -66,6 +106,7 @@ export function getScenarios(categoryId: string): Scenario[] {
   return fs
     .readdirSync(examDir)
     .filter((f) => f.startsWith("scenario-") && f.endsWith(".json"))
+    .sort((left, right) => left.localeCompare(right, "en"))
     .map((f) => {
       const raw = fs.readFileSync(path.join(examDir, f), "utf-8");
       return JSON.parse(raw) as Scenario;
@@ -108,9 +149,29 @@ export function findQuestionByIdInCategory(
 
 /** 問題から正解・解説を除外する */
 export function toPublicQuestion(q: Question): PublicQuestion {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { answer, explanation, ...publicFields } = q;
-  return publicFields;
+  const { answer: _answer, explanation: _explanation, source, sourceOccurrences, ...publicFields } = q;
+  void _answer;
+  void _explanation;
+  return {
+    ...publicFields,
+    ...(source ? { source: toPublicSourceReference(source) } : {}),
+    ...(sourceOccurrences
+      ? { sourceOccurrences: sourceOccurrences.map(toPublicSourceReference) }
+      : {}),
+  };
+}
+
+function toPublicSourceReference(
+  reference: QuestionSourceReference,
+): PublicQuestionSourceReference {
+  return {
+    sourceId: reference.sourceId,
+    questionNumber: reference.questionNumber,
+    modified: reference.modified,
+    ...(reference.modificationNote
+      ? { modificationNote: reference.modificationNote }
+      : {}),
+  };
 }
 
 /** シナリオから正解・解説を除外する */

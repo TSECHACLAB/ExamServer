@@ -1,0 +1,5556 @@
+{
+  "generatedAt": "2026-08-06T10:07:50.429Z",
+  "renderDpi": 180,
+  "minimumMatchScore": 0.42,
+  "records": [
+    {
+      "id": "sg-2019-autumn-pm-q01-scenario-f01",
+      "scenarioId": "sg-2019-autumn-pm-q01",
+      "ownerId": "sg-2019-autumn-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        6
+      ],
+      "matches": [
+        {
+          "score": 0.6554,
+          "page": 6,
+          "featureMatches": 230,
+          "scale": 1.85,
+          "box": [
+            137,
+            677,
+            1019,
+            707
+          ]
+        }
+      ],
+      "templateSha256": "5034b048b0bb3d08eeb703910f53caae1c9a5812ca9209eb3e51e3e0cd474964",
+      "cropBoxes": [
+        [
+          113,
+          653,
+          1067,
+          755
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q01-scenario-f01.png",
+      "outputSha256": "7845720a56f382c83986e782e85277772f68d9d8fecb252670772e7c3b1cafc8"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q01-scenario-f02",
+      "scenarioId": "sg-2019-autumn-pm-q01",
+      "ownerId": "sg-2019-autumn-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        9
+      ],
+      "matches": [
+        {
+          "score": 0.8058,
+          "page": 9,
+          "featureMatches": 37,
+          "scale": 1.85,
+          "box": [
+            319,
+            767,
+            649,
+            300
+          ]
+        }
+      ],
+      "templateSha256": "e8cf5396202f2ee09576897274acf0c8b90f5c68f84f8d5995659beeed61c76d",
+      "cropBoxes": [
+        [
+          295,
+          743,
+          697,
+          348
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q01-scenario-f02.png",
+      "outputSha256": "04bda2aff4e90dd369d7029eaeb2c57c742f77908aef90a5612abd85e8ba0ee5"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q01-u03-choices-f01",
+      "scenarioId": "sg-2019-autumn-pm-q01",
+      "ownerId": "sg-2019-autumn-pm-q01-u03",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        11
+      ],
+      "matches": [
+        {
+          "score": 0.7755,
+          "page": 11,
+          "featureMatches": 66,
+          "scale": 1.85,
+          "box": [
+            226,
+            1210,
+            461,
+            429
+          ]
+        }
+      ],
+      "templateSha256": "2f5f96e9e3b34faedeb7afa7ce5cc42b3604a5a8fdbfd84d14882ca356a2f0e0",
+      "cropBoxes": [
+        [
+          202,
+          1186,
+          509,
+          477
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q01-u03-choices-f01.png",
+      "outputSha256": "da695ff5b9516642f3475974dcdf3e0c521c54ebb2094782b7295ee5abd29a5a"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q01-u10-choices-f01",
+      "scenarioId": "sg-2019-autumn-pm-q01",
+      "ownerId": "sg-2019-autumn-pm-q01-u10",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        15
+      ],
+      "matches": [
+        {
+          "score": 0.771,
+          "page": 15,
+          "featureMatches": 33,
+          "scale": 1.85,
+          "box": [
+            226,
+            1115,
+            461,
+            429
+          ]
+        }
+      ],
+      "templateSha256": "848d4255c17b85ea6196dc179a631fc93cd51f91e17a8b938c744a4c357f4684",
+      "cropBoxes": [
+        [
+          202,
+          1091,
+          509,
+          477
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q01-u10-choices-f01.png",
+      "outputSha256": "0270a01ae187dff093a55dc61a925239ac86d64463a84c6d2bc8046e8a7327f3"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q02-scenario-f01",
+      "scenarioId": "sg-2019-autumn-pm-q02",
+      "ownerId": "sg-2019-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        18
+      ],
+      "matches": [
+        {
+          "score": 0.556,
+          "page": 18,
+          "featureMatches": 387,
+          "scale": 1.85,
+          "box": [
+            137,
+            163,
+            1029,
+            1306
+          ]
+        }
+      ],
+      "templateSha256": "76fc5f79084148844f76260cb1575f30f60676462739ccbd6f9ca630b8f479d1",
+      "cropBoxes": [
+        [
+          113,
+          139,
+          1077,
+          1354
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q02-scenario-f01.png",
+      "outputSha256": "9d0a5e254f3d97ffbe98acd984830283a232ae979cf49b75bf458e4787fc8e1e"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q02-scenario-f02",
+      "scenarioId": "sg-2019-autumn-pm-q02",
+      "ownerId": "sg-2019-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        19,
+        20
+      ],
+      "matches": [
+        {
+          "score": 0.644,
+          "page": 19,
+          "featureMatches": 243,
+          "scale": 1.85,
+          "box": [
+            141,
+            656,
+            1014,
+            764
+          ],
+          "part": 1,
+          "partCount": 2
+        },
+        {
+          "score": 0.6097,
+          "page": 20,
+          "featureMatches": 173,
+          "scale": 1.85,
+          "box": [
+            135,
+            169,
+            1014,
+            668
+          ],
+          "part": 2,
+          "partCount": 2
+        }
+      ],
+      "templateSha256": "970f1bf7e416c72bfc1b622d1cdeace47b914522ff7d68323cb5c7ffc830014a",
+      "cropBoxes": [
+        [
+          117,
+          632,
+          1062,
+          812
+        ],
+        [
+          111,
+          145,
+          1062,
+          716
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q02-scenario-f02.png",
+      "outputSha256": "211265a3340538966bdb2c185111aec09df87625701693beb31c393805c6d99f"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q02-scenario-f03",
+      "scenarioId": "sg-2019-autumn-pm-q02",
+      "ownerId": "sg-2019-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        20
+      ],
+      "matches": [
+        {
+          "score": 0.6815,
+          "page": 20,
+          "featureMatches": 89,
+          "scale": 1.85,
+          "box": [
+            135,
+            1047,
+            1016,
+            274
+          ]
+        }
+      ],
+      "templateSha256": "c3a7ae3ecf2954b61c87fd71bbc8d133d3567ef1ea55036c126b6b04f50b5b97",
+      "cropBoxes": [
+        [
+          111,
+          1023,
+          1064,
+          322
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q02-scenario-f03.png",
+      "outputSha256": "31235d1fe79685749af6293ee98310a145ab700232d372823f66ca5c27c4fadd"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q02-scenario-f04",
+      "scenarioId": "sg-2019-autumn-pm-q02",
+      "ownerId": "sg-2019-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        21
+      ],
+      "matches": [
+        {
+          "score": 0.7747,
+          "page": 21,
+          "featureMatches": 69,
+          "scale": 1.85,
+          "box": [
+            143,
+            183,
+            1014,
+            283
+          ]
+        }
+      ],
+      "templateSha256": "a8723e2d9948794abef1201520e4a3b176ca41b283939be1d27d9f2c247cd29e",
+      "cropBoxes": [
+        [
+          119,
+          159,
+          1062,
+          331
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q02-scenario-f04.png",
+      "outputSha256": "f34025f2ae0c8310325bd8b3f373a88fb9ae64433d3c72223fbb8a6bbc7c0ab1"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q02-scenario-f05",
+      "scenarioId": "sg-2019-autumn-pm-q02",
+      "ownerId": "sg-2019-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        21
+      ],
+      "matches": [
+        {
+          "score": 0.7694,
+          "page": 21,
+          "featureMatches": 3,
+          "scale": 1.85,
+          "box": [
+            147,
+            924,
+            1023,
+            146
+          ]
+        }
+      ],
+      "templateSha256": "7602ee0f0e4600ddba269d05f31cdd24723d27573cd6de053342227807fe5e99",
+      "cropBoxes": [
+        [
+          123,
+          900,
+          1071,
+          194
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q02-scenario-f05.png",
+      "outputSha256": "99e01e133c5ac75a850ff8c0ce7e190537a0bc68e223824cf2f58d6446fde888"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q02-scenario-f06",
+      "scenarioId": "sg-2019-autumn-pm-q02",
+      "ownerId": "sg-2019-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        23
+      ],
+      "matches": [
+        {
+          "score": 0.735,
+          "page": 23,
+          "featureMatches": 106,
+          "scale": 1.85,
+          "box": [
+            150,
+            1317,
+            1014,
+            283
+          ]
+        }
+      ],
+      "templateSha256": "ed6bd83673a5f94eedbca869a81858c8a28961782b4ea8f50aaabd6be0cd4d36",
+      "cropBoxes": [
+        [
+          126,
+          1293,
+          1062,
+          331
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q02-scenario-f06.png",
+      "outputSha256": "3591def5401c0a252cb1db5de58df9e8dec26cf9e0ed1cee0a9af53760b7dbcc"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-scenario-f01",
+      "scenarioId": "sg-2019-autumn-pm-q03",
+      "ownerId": "sg-2019-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        32
+      ],
+      "matches": [
+        {
+          "score": 0.6252,
+          "page": 32,
+          "featureMatches": 208,
+          "scale": 1.85,
+          "box": [
+            140,
+            165,
+            1016,
+            762
+          ]
+        }
+      ],
+      "templateSha256": "05241495a8ce094764ef152bd46b63c0c1845b19c8b70ea10fa73aab798f57c1",
+      "cropBoxes": [
+        [
+          116,
+          141,
+          1064,
+          810
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q03-scenario-f01.png",
+      "outputSha256": "140133c6ac172398b00ae404290851959032137198ad483dc2339827ba6db84f"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-scenario-f02",
+      "scenarioId": "sg-2019-autumn-pm-q03",
+      "ownerId": "sg-2019-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        33
+      ],
+      "matches": [
+        {
+          "score": 0.6508,
+          "page": 33,
+          "featureMatches": 161,
+          "scale": 1.85,
+          "box": [
+            143,
+            972,
+            1014,
+            548
+          ]
+        }
+      ],
+      "templateSha256": "8bda2c0f153a6e98011b368c3430b39d863e39cd489089bd65ff9db75ee902a0",
+      "cropBoxes": [
+        [
+          119,
+          948,
+          1062,
+          596
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q03-scenario-f02.png",
+      "outputSha256": "341103f950741fbeba44c47cb4200e1b87d2cb8ff911a230fc10cd36f45c045f"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-scenario-f03",
+      "scenarioId": "sg-2019-autumn-pm-q03",
+      "ownerId": "sg-2019-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        34
+      ],
+      "matches": [
+        {
+          "score": 0.6977,
+          "page": 34,
+          "featureMatches": 186,
+          "scale": 1.85,
+          "box": [
+            139,
+            570,
+            1016,
+            435
+          ]
+        }
+      ],
+      "templateSha256": "587128119d3624cbf536d9e7d374af7d1c35a4a2bf5e4c58b427f69dbce8b98c",
+      "cropBoxes": [
+        [
+          115,
+          546,
+          1064,
+          483
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q03-scenario-f03.png",
+      "outputSha256": "ba2a5c81caaccb010b67fd9928104d222abc498ec97462d734cd5cc79744ff6e"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-scenario-f04",
+      "scenarioId": "sg-2019-autumn-pm-q03",
+      "ownerId": "sg-2019-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        35
+      ],
+      "matches": [
+        {
+          "score": 0.7057,
+          "page": 35,
+          "featureMatches": 248,
+          "scale": 1.85,
+          "box": [
+            139,
+            524,
+            1012,
+            710
+          ]
+        }
+      ],
+      "templateSha256": "fb82c1f95f21f1f11af0ee9478ef32bfacb0ae45611eeb8b9d7b3d067a010abf",
+      "cropBoxes": [
+        [
+          115,
+          500,
+          1060,
+          758
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q03-scenario-f04.png",
+      "outputSha256": "a0c75c7a16dcbb74ce9378d028dc51ea6375a0c5ab58eae689952df74561e279"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-scenario-f05",
+      "scenarioId": "sg-2019-autumn-pm-q03",
+      "ownerId": "sg-2019-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        36
+      ],
+      "matches": [
+        {
+          "score": 0.7501,
+          "page": 36,
+          "featureMatches": 88,
+          "scale": 1.85,
+          "box": [
+            137,
+            736,
+            1018,
+            309
+          ]
+        }
+      ],
+      "templateSha256": "21a8a15ed1c79184b0629727e48bb66e599434af038ece9c47ce8a7fdfdbaf27",
+      "cropBoxes": [
+        [
+          113,
+          712,
+          1066,
+          357
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q03-scenario-f05.png",
+      "outputSha256": "90509df7de682efd5776885659271965562251078d8dc00d2e9d3425739d562e"
+    },
+    {
+      "id": "sg-2019-autumn-pm-q03-scenario-f06",
+      "scenarioId": "sg-2019-autumn-pm-q03",
+      "ownerId": "sg-2019-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-autumn-pm",
+      "officialPdfSha256": "772c468e1fe69cdf7f3b99f9c80dbf140dbad0817048fed350a2c50fce7f43e1",
+      "pages": [
+        37
+      ],
+      "matches": [
+        {
+          "score": 0.7241,
+          "page": 37,
+          "featureMatches": 225,
+          "scale": 1.85,
+          "box": [
+            145,
+            727,
+            1008,
+            686
+          ]
+        }
+      ],
+      "templateSha256": "43242d71040bdea0b0de9e2312d59a6a6501fa64eaf9d559d8687f1760e73c2c",
+      "cropBoxes": [
+        [
+          121,
+          703,
+          1056,
+          734
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-autumn-pm-q03-scenario-f06.png",
+      "outputSha256": "17c0ef7b712c140f11e42159355c59de089d332dbb437c976ee83ea43254d169"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-scenario-f01",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "ownerId": "sg-2019-spring-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        4
+      ],
+      "matches": [
+        {
+          "score": 0.6679,
+          "page": 4,
+          "featureMatches": 87,
+          "scale": 1.79,
+          "box": [
+            148,
+            677,
+            1010,
+            342
+          ]
+        }
+      ],
+      "templateSha256": "6587a009e88e667457a0e345031412976514d4476ce98fd9b0f23982279f625e",
+      "cropBoxes": [
+        [
+          124,
+          653,
+          1058,
+          390
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-scenario-f01.png",
+      "outputSha256": "88ce34de30328a04fe937608639bd3f72f12ffe3d6fd3b159381a0cad31c5287"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-scenario-f02",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "ownerId": "sg-2019-spring-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        5
+      ],
+      "matches": [
+        {
+          "score": 0.5911,
+          "page": 5,
+          "featureMatches": 181,
+          "scale": 1.79,
+          "box": [
+            134,
+            174,
+            1015,
+            609
+          ]
+        }
+      ],
+      "templateSha256": "0dc285d724893476bbdd6570aa498a822b02dad434c5e4e684d1fbc1c9f0acf3",
+      "cropBoxes": [
+        [
+          110,
+          150,
+          1063,
+          657
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-scenario-f02.png",
+      "outputSha256": "c6b890a50702a601a61337159065a9f7666f9d3d8cf5c706a68ed7925e898230"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-scenario-f03",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "ownerId": "sg-2019-spring-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        6
+      ],
+      "matches": [
+        {
+          "score": 0.5111,
+          "page": 6,
+          "featureMatches": 398,
+          "scale": 1.79,
+          "box": [
+            147,
+            414,
+            1010,
+            1056
+          ]
+        }
+      ],
+      "templateSha256": "0fa5656319a763fa685d429940ef9b0e23cd134895a3c937282955346e8111ea",
+      "cropBoxes": [
+        [
+          123,
+          390,
+          1058,
+          1104
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-scenario-f03.png",
+      "outputSha256": "4a42b70e150fa3818bbadee5617df2ee0b7d60cd1df379e1ed46ec0b8e9b58ae"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-scenario-f04",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "ownerId": "sg-2019-spring-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        7
+      ],
+      "matches": [
+        {
+          "score": 0.5643,
+          "page": 7,
+          "featureMatches": 428,
+          "scale": 1.79,
+          "box": [
+            134,
+            271,
+            1019,
+            798
+          ]
+        }
+      ],
+      "templateSha256": "b390088347f4a1ffbabf1abb6a5e7ac65df66d920234cb26cf2b0eba625df014",
+      "cropBoxes": [
+        [
+          110,
+          247,
+          1067,
+          846
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-scenario-f04.png",
+      "outputSha256": "765f971cbb816b09d03000ff1a6d3da470e8ca3a60448432820a9248a80f887f"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-scenario-f05",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "ownerId": "sg-2019-spring-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        8
+      ],
+      "matches": [
+        {
+          "score": 0.7036,
+          "page": 8,
+          "featureMatches": 204,
+          "scale": 1.79,
+          "box": [
+            147,
+            328,
+            1013,
+            501
+          ]
+        }
+      ],
+      "templateSha256": "e77bd239c6e1a5235dd113228f9e911836206cb38098425f5ff54dc53e23d46c",
+      "cropBoxes": [
+        [
+          123,
+          304,
+          1061,
+          549
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-scenario-f05.png",
+      "outputSha256": "41e0cc5d9646611ea0604b9e59ad03c3da52527c9666d20829914ba205a606ee"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u03-choices-f01",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "ownerId": "sg-2019-spring-pm-q01-u03",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        10
+      ],
+      "matches": [
+        {
+          "score": 0.7109,
+          "page": 10,
+          "featureMatches": 250,
+          "scale": 1.79,
+          "box": [
+            231,
+            366,
+            557,
+            526
+          ]
+        }
+      ],
+      "templateSha256": "748a271272e970cabc9ea9c0993aa0a24053a8f3638ef795e5eebb766020f292",
+      "cropBoxes": [
+        [
+          207,
+          342,
+          605,
+          574
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-u03-choices-f01.png",
+      "outputSha256": "7ad172350678547b0755f43958681057a21110c63276d5afbe541a283b0db342"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u05-choices-f01",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "ownerId": "sg-2019-spring-pm-q01-u05",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        11
+      ],
+      "matches": [
+        {
+          "score": 0.7389,
+          "page": 11,
+          "featureMatches": 148,
+          "scale": 1.79,
+          "box": [
+            224,
+            471,
+            707,
+            428
+          ]
+        }
+      ],
+      "templateSha256": "7f93852189baff731d7da45e5cebd5ac7d9e59c16914ba113b561268c521692c",
+      "cropBoxes": [
+        [
+          200,
+          447,
+          755,
+          476
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-u05-choices-f01.png",
+      "outputSha256": "fe58eabef57159f1274dd13c386089c7384edc175bbe28f849a3869a45736292"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u06-choices-f01",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "ownerId": "sg-2019-spring-pm-q01-u06",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        11
+      ],
+      "matches": [
+        {
+          "score": 0.7755,
+          "page": 11,
+          "featureMatches": 181,
+          "scale": 1.79,
+          "box": [
+            225,
+            470,
+            705,
+            430
+          ]
+        }
+      ],
+      "templateSha256": "00964c786f745030fe378ad842aa20cca27e160802185b52c2bafe3c6cd36a34",
+      "cropBoxes": [
+        [
+          201,
+          446,
+          753,
+          478
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-u06-choices-f01.png",
+      "outputSha256": "856f5d8432809fc13d790cf0b4728e65740079ead0ab3bcb60f8792b60e4afa7"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u08-choices-f01",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "ownerId": "sg-2019-spring-pm-q01-u08",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        14
+      ],
+      "matches": [
+        {
+          "score": 0.5679,
+          "page": 14,
+          "featureMatches": 175,
+          "scale": 1.77,
+          "box": [
+            224,
+            818,
+            489,
+            517
+          ]
+        }
+      ],
+      "templateSha256": "d862fa55ba09dd6fb949e550f96e890b21f07d382d23d2d06ec9f4bd52839ddd",
+      "cropBoxes": [
+        [
+          200,
+          794,
+          537,
+          565
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-u08-choices-f01.png",
+      "outputSha256": "9d130496f168a88a147f5557791c2566ac5736da9e106f3aa2431e609bed151e"
+    },
+    {
+      "id": "sg-2019-spring-pm-q01-u09-choices-f01",
+      "scenarioId": "sg-2019-spring-pm-q01",
+      "ownerId": "sg-2019-spring-pm-q01-u09",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        14
+      ],
+      "matches": [
+        {
+          "score": 0.7772,
+          "page": 14,
+          "featureMatches": 164,
+          "scale": 1.79,
+          "box": [
+            224,
+            720,
+            490,
+            524
+          ]
+        }
+      ],
+      "templateSha256": "4cab8549d3c5c67f8bf9c52a5f1e4e67ce3bf9e24ea00f4f8d628c0911cd3b1d",
+      "cropBoxes": [
+        [
+          200,
+          696,
+          538,
+          572
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q01-u09-choices-f01.png",
+      "outputSha256": "6e29ae2988c54b7cdd2d6be845ec0bd12b050009fd3389394a382d057a1d1c45"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f01",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        17
+      ],
+      "matches": [
+        {
+          "score": 0.6788,
+          "page": 17,
+          "featureMatches": 141,
+          "scale": 1.79,
+          "box": [
+            138,
+            174,
+            1011,
+            410
+          ]
+        }
+      ],
+      "templateSha256": "4b5e280c14ffaf5300280ac29d8383cec7f527bce77359ad391b73b0c963e7d6",
+      "cropBoxes": [
+        [
+          114,
+          150,
+          1059,
+          458
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f01.png",
+      "outputSha256": "6eed3df9532cda05d889747e4deb4f8565aa8b2565e3dc2a25131316d19feb69"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f02",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        17
+      ],
+      "matches": [
+        {
+          "score": 0.7156,
+          "page": 17,
+          "featureMatches": 91,
+          "scale": 1.79,
+          "box": [
+            126,
+            953,
+            1026,
+            277
+          ]
+        }
+      ],
+      "templateSha256": "0eb4af337bf4ac41444e517c0e0945b0d1ed063ccad18df9412b4d12cdc7c97e",
+      "cropBoxes": [
+        [
+          102,
+          929,
+          1074,
+          325
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f02.png",
+      "outputSha256": "94405f78f9a88fcb4514e04ffcade065f6449fcf2f2729eca57e3f74a06f5ce2"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f03",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        18
+      ],
+      "matches": [
+        {
+          "score": 0.637,
+          "page": 18,
+          "featureMatches": 203,
+          "scale": 1.79,
+          "box": [
+            139,
+            178,
+            1010,
+            542
+          ]
+        }
+      ],
+      "templateSha256": "d541d3ac53f58c8a07556143f3f8bcbe3fabc36f5d0879f74f9be6f59bec6e69",
+      "cropBoxes": [
+        [
+          115,
+          154,
+          1058,
+          590
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f03.png",
+      "outputSha256": "59f06f5b159fd4476cbc0691e05c755a70b70ab96575b0dc76a6050506248d32"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f04",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        19
+      ],
+      "matches": [
+        {
+          "score": 0.7123,
+          "page": 19,
+          "featureMatches": 193,
+          "scale": 1.79,
+          "box": [
+            136,
+            833,
+            1036,
+            537
+          ]
+        }
+      ],
+      "templateSha256": "c63af994e321f10ba7ac7c471a08a4c5cf4aeb14c7f5ce619f6c70c833180dcf",
+      "cropBoxes": [
+        [
+          112,
+          809,
+          1084,
+          585
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f04.png",
+      "outputSha256": "1fd52dfc793f11cf6bd3dfa66c058c284550b1bed68bd0c16353b790dca2e30d"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f05",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        20
+      ],
+      "matches": [
+        {
+          "score": 0.7483,
+          "page": 20,
+          "featureMatches": 188,
+          "scale": 1.79,
+          "box": [
+            144,
+            184,
+            1033,
+            478
+          ]
+        }
+      ],
+      "templateSha256": "e8428ea4e077a604f6a59a6bfa45cbf4f65ba3872aaccb18281e951ed9ab2c74",
+      "cropBoxes": [
+        [
+          120,
+          160,
+          1081,
+          526
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f05.png",
+      "outputSha256": "1fd5ad41a5ef1bfc483e3c2bcd1dc11b96551bb4e26f01933c319c04f34e9470"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f06",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        21
+      ],
+      "matches": [
+        {
+          "score": 0.6716,
+          "page": 21,
+          "featureMatches": 171,
+          "scale": 1.79,
+          "box": [
+            143,
+            175,
+            1017,
+            507
+          ]
+        }
+      ],
+      "templateSha256": "6f81ed5409d92862918f1553e4df3f181693542a816eb4a1a2b9f48de7088dbd",
+      "cropBoxes": [
+        [
+          119,
+          151,
+          1065,
+          555
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f06.png",
+      "outputSha256": "e31f628b575f43b18253efdc4e04a653d319d9ed1ceaef8f7dee96a36bcc7670"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f07",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        21
+      ],
+      "matches": [
+        {
+          "score": 0.7497,
+          "page": 21,
+          "featureMatches": 55,
+          "scale": 1.79,
+          "box": [
+            141,
+            831,
+            1035,
+            231
+          ]
+        }
+      ],
+      "templateSha256": "4f2416226622d66bee395c8c186b88b5224174c3ed79d61db4008b04c3c2dcf9",
+      "cropBoxes": [
+        [
+          117,
+          807,
+          1083,
+          279
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f07.png",
+      "outputSha256": "90c4d07497762a7ad6a63c9b9c97223990761a3244b9c16fbb5edc092b996269"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f08",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        21
+      ],
+      "matches": [
+        {
+          "score": 0.7171,
+          "page": 21,
+          "featureMatches": 48,
+          "scale": 1.79,
+          "box": [
+            141,
+            1355,
+            1022,
+            317
+          ]
+        }
+      ],
+      "templateSha256": "0ce2ddb9baea645dad4a8ac48ffae8d9d78f84c591259c7da7672b2c4df6bb3f",
+      "cropBoxes": [
+        [
+          117,
+          1331,
+          1070,
+          365
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f08.png",
+      "outputSha256": "ddd1959d9eaaaaebdf40f2a1fab9140b9eaac49deafcfd780d29cfcfc35a7bae"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-scenario-f09",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        22
+      ],
+      "matches": [
+        {
+          "score": 0.7808,
+          "page": 22,
+          "featureMatches": 49,
+          "scale": 1.79,
+          "box": [
+            137,
+            1029,
+            1022,
+            209
+          ]
+        }
+      ],
+      "templateSha256": "87658ad7f96acc0309cc1a4145286ffea4389da521a4c08ae7c7f7ac918d758a",
+      "cropBoxes": [
+        [
+          113,
+          1005,
+          1070,
+          257
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-scenario-f09.png",
+      "outputSha256": "15ac4e33f889803c58137a0e9aac4f59125b881cf7bd148ec1a835e24c4220ed"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u04-choices-f01",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02-u04",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        23
+      ],
+      "matches": [
+        {
+          "score": 0.7072,
+          "page": 23,
+          "featureMatches": 259,
+          "scale": 1.79,
+          "box": [
+            222,
+            925,
+            890,
+            510
+          ]
+        }
+      ],
+      "templateSha256": "f5967c1c8790e4f24a67a7f5f9674d0815fb9bdc3c1d3e2be0ca33b149a58519",
+      "cropBoxes": [
+        [
+          198,
+          901,
+          938,
+          558
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-u04-choices-f01.png",
+      "outputSha256": "56016a5755bee592fb8df87ba8773e83bee60d08918611046323123a2e7d663f"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u07-choices-f01",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02-u07",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        25
+      ],
+      "matches": [
+        {
+          "score": 0.7392,
+          "page": 25,
+          "featureMatches": 240,
+          "scale": 1.79,
+          "box": [
+            229,
+            866,
+            703,
+            528
+          ]
+        }
+      ],
+      "templateSha256": "06ed0ad9e23aeb28bf5059df3dfd698441bbb2bae5c7a1f5ec696670da1e35cd",
+      "cropBoxes": [
+        [
+          205,
+          842,
+          751,
+          576
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-u07-choices-f01.png",
+      "outputSha256": "f5c68ae02cf98fe41c2f040f964e74e835d11b524fbef96aafba972abd47ba75"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u08-choices-f01",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02-u08",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        27
+      ],
+      "matches": [
+        {
+          "score": 0.7722,
+          "page": 27,
+          "featureMatches": 285,
+          "scale": 1.79,
+          "box": [
+            229,
+            617,
+            703,
+            521
+          ]
+        }
+      ],
+      "templateSha256": "87798a1021dded49dc3a921e8b1e37f1fc308302258b7e738552188047f62cee",
+      "cropBoxes": [
+        [
+          205,
+          593,
+          751,
+          569
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-u08-choices-f01.png",
+      "outputSha256": "91139b15190eb0de90fe31857f48e7a31636ade99eb35de21e2f07abca9298a2"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u09-choices-f01",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02-u09",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        27
+      ],
+      "matches": [
+        {
+          "score": 0.7629,
+          "page": 27,
+          "featureMatches": 339,
+          "scale": 1.79,
+          "box": [
+            227,
+            615,
+            707,
+            524
+          ]
+        }
+      ],
+      "templateSha256": "2b496fb40a6df9293b23ae3db934c8837c589d51b7c4645a88a88271bfe47e20",
+      "cropBoxes": [
+        [
+          203,
+          591,
+          755,
+          572
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-u09-choices-f01.png",
+      "outputSha256": "2fba48ae84426514b51113c633a6eedb976768fb8202e32a3e1a4cb4ef2b04fc"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u10-choices-f01",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02-u10",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        27
+      ],
+      "matches": [
+        {
+          "score": 0.7556,
+          "page": 27,
+          "featureMatches": 285,
+          "scale": 1.79,
+          "box": [
+            230,
+            615,
+            703,
+            524
+          ]
+        }
+      ],
+      "templateSha256": "72e45d43b043ef029811adda1f32562802e04e7bd3333c118de36a2c95beb271",
+      "cropBoxes": [
+        [
+          206,
+          591,
+          751,
+          572
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-u10-choices-f01.png",
+      "outputSha256": "6ed926c11b51a6251148e17d18cc7047d0e182a9067ac96d1ff89598a98fc292"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u11-choices-f01",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02-u11",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        29
+      ],
+      "matches": [
+        {
+          "score": 0.7496,
+          "page": 29,
+          "featureMatches": 63,
+          "scale": 1.79,
+          "box": [
+            224,
+            414,
+            492,
+            478
+          ]
+        }
+      ],
+      "templateSha256": "cf6686596db207d83c8b815465cfb397a8026bf3d4266eeb09dba99da81b5bb9",
+      "cropBoxes": [
+        [
+          200,
+          390,
+          540,
+          526
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-u11-choices-f01.png",
+      "outputSha256": "6ebb4779f8b7e8f9ff8c366152607a251b55e47be72c226f6b13c3cf85ee711b"
+    },
+    {
+      "id": "sg-2019-spring-pm-q02-u12-choices-f01",
+      "scenarioId": "sg-2019-spring-pm-q02",
+      "ownerId": "sg-2019-spring-pm-q02-u12",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        29
+      ],
+      "matches": [
+        {
+          "score": 0.7717,
+          "page": 29,
+          "featureMatches": 57,
+          "scale": 1.79,
+          "box": [
+            224,
+            414,
+            492,
+            478
+          ]
+        }
+      ],
+      "templateSha256": "7d63254a27af2993d45e2fdd8049cd7f85ecf2d4673280e89e84c23043ffdee4",
+      "cropBoxes": [
+        [
+          200,
+          390,
+          540,
+          526
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q02-u12-choices-f01.png",
+      "outputSha256": "6ebb4779f8b7e8f9ff8c366152607a251b55e47be72c226f6b13c3cf85ee711b"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-scenario-f01",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "ownerId": "sg-2019-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        31
+      ],
+      "matches": [
+        {
+          "score": 0.5741,
+          "page": 31,
+          "featureMatches": 343,
+          "scale": 1.79,
+          "box": [
+            132,
+            654,
+            1022,
+            1008
+          ]
+        }
+      ],
+      "templateSha256": "2ea0f2fe3fdc5e3732db2a416cb57aaaac051f527a38fbc748b6b1efafa4dc8f",
+      "cropBoxes": [
+        [
+          108,
+          630,
+          1070,
+          1056
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-scenario-f01.png",
+      "outputSha256": "277233223dc7eabf7f0f1bf536d23a6f13c8dc1ec50d17226503fe0daa9a6d90"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-scenario-f02",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "ownerId": "sg-2019-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        32
+      ],
+      "matches": [
+        {
+          "score": 0.6916,
+          "page": 32,
+          "featureMatches": 222,
+          "scale": 1.79,
+          "box": [
+            145,
+            262,
+            1022,
+            433
+          ]
+        }
+      ],
+      "templateSha256": "3cbd61358b1eb172af129e5550b313701d37a6a7a8b62a41b4bf508f870e93f0",
+      "cropBoxes": [
+        [
+          121,
+          238,
+          1070,
+          481
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-scenario-f02.png",
+      "outputSha256": "9c377db08f71a7ff137d1a3aa0fccdc806dd7a9ff401e23d921e804e50f56048"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-scenario-f03",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "ownerId": "sg-2019-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        33
+      ],
+      "matches": [
+        {
+          "score": 0.7187,
+          "page": 33,
+          "featureMatches": 156,
+          "scale": 1.79,
+          "box": [
+            135,
+            162,
+            1019,
+            480
+          ]
+        }
+      ],
+      "templateSha256": "a3276d070164a16725dbed28c2b2687302d1c7b4b8d5fea0fde32b257cda8160",
+      "cropBoxes": [
+        [
+          111,
+          138,
+          1067,
+          528
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-scenario-f03.png",
+      "outputSha256": "765efdf50f524d78c1f0cbd4952686b23003e565272f7327ed610366631c446b"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-scenario-f04",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "ownerId": "sg-2019-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        35
+      ],
+      "matches": [
+        {
+          "score": 0.6334,
+          "page": 35,
+          "featureMatches": 199,
+          "scale": 1.79,
+          "box": [
+            129,
+            512,
+            1019,
+            501
+          ]
+        }
+      ],
+      "templateSha256": "f9823e77d71b372d5cbfd20a55dde0a6b4ab9883473aea4dd6f665da2f3c68be",
+      "cropBoxes": [
+        [
+          105,
+          488,
+          1067,
+          549
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-scenario-f04.png",
+      "outputSha256": "0a4914ff8796838eccb23c901f508180faa9564c25064c98078276cc2672c622"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-scenario-f05",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "ownerId": "sg-2019-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        35
+      ],
+      "matches": [
+        {
+          "score": 0.7379,
+          "page": 35,
+          "featureMatches": 120,
+          "scale": 1.79,
+          "box": [
+            129,
+            1323,
+            1017,
+            240
+          ]
+        }
+      ],
+      "templateSha256": "233679cbc69473d79cd20001d5683c0488abc3d444129a9ba94ae0481f258dc2",
+      "cropBoxes": [
+        [
+          105,
+          1299,
+          1065,
+          288
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-scenario-f05.png",
+      "outputSha256": "6fa7c425bbc4a62874aadec8618cf5e2a7086df42ab3d1c040789ab77916eb32"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-u02-choices-f01",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "ownerId": "sg-2019-spring-pm-q03-u02",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        37
+      ],
+      "matches": [
+        {
+          "score": 0.7064,
+          "page": 37,
+          "featureMatches": 275,
+          "scale": 1.79,
+          "box": [
+            220,
+            412,
+            845,
+            476
+          ]
+        }
+      ],
+      "templateSha256": "941a85af6e16f6692fd4c0258ef5e30815b1e6f30bcdcdf198a5b9c1828e94d3",
+      "cropBoxes": [
+        [
+          196,
+          388,
+          893,
+          524
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-u02-choices-f01.png",
+      "outputSha256": "308a507ee86dfff30cac287095d98329dea180ac3f44de310a98cb906465c842"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-u06-choices-f01",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "ownerId": "sg-2019-spring-pm-q03-u06",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        38
+      ],
+      "matches": [
+        {
+          "score": 0.7491,
+          "page": 38,
+          "featureMatches": 176,
+          "scale": 1.79,
+          "box": [
+            233,
+            1064,
+            703,
+            524
+          ]
+        }
+      ],
+      "templateSha256": "942bdaae413c95d48369ebb60b49532c795ecf877c45168db69f89cb07e12fa4",
+      "cropBoxes": [
+        [
+          209,
+          1040,
+          751,
+          572
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-u06-choices-f01.png",
+      "outputSha256": "8b0c2b0c076c1561489b601e166629d8e94af360b2c0909de49a8f3e280c9e59"
+    },
+    {
+      "id": "sg-2019-spring-pm-q03-u08-choices-f01",
+      "scenarioId": "sg-2019-spring-pm-q03",
+      "ownerId": "sg-2019-spring-pm-q03-u08",
+      "role": "question",
+      "sourceId": "ipa-sg-2019-spring-pm",
+      "officialPdfSha256": "87973b574917443a5077b453d310c6a6944f3565546b58ece53ddca3c9629dcf",
+      "pages": [
+        39
+      ],
+      "matches": [
+        {
+          "score": 0.7512,
+          "page": 39,
+          "featureMatches": 206,
+          "scale": 1.79,
+          "box": [
+            221,
+            962,
+            492,
+            480
+          ]
+        }
+      ],
+      "templateSha256": "4adf0881aa8419d744b11e2310ffd77d5d022b95d85f94b9944b7851494b72ff",
+      "cropBoxes": [
+        [
+          197,
+          938,
+          540,
+          528
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2019-spring-pm-q03-u08-choices-f01.png",
+      "outputSha256": "cf972129f601c8a1edd16bd3bce075e3f64a2bfa65ba465402323fb394adfe03"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-scenario-f01",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "ownerId": "sg-2018-autumn-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "officialPdfSha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6",
+      "pages": [
+        4
+      ],
+      "matches": [
+        {
+          "score": 0.4939,
+          "page": 4,
+          "featureMatches": 308,
+          "scale": 1.85,
+          "box": [
+            139,
+            154,
+            1018,
+            1354
+          ]
+        }
+      ],
+      "templateSha256": "495087af7b2f653258be45512e32952d502a953032ee92e48dcb2e39090ad4e1",
+      "cropBoxes": [
+        [
+          115,
+          130,
+          1066,
+          1402
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-scenario-f01.png",
+      "outputSha256": "b80364109b4b71d8ff12e32d927a5c8c811886165fa8e1ebb5f3d10ac8a76a09"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-scenario-f02",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "ownerId": "sg-2018-autumn-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "officialPdfSha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6",
+      "pages": [
+        5
+      ],
+      "matches": [
+        {
+          "score": 0.5651,
+          "page": 5,
+          "featureMatches": 303,
+          "scale": 1.85,
+          "box": [
+            139,
+            496,
+            1018,
+            855
+          ]
+        }
+      ],
+      "templateSha256": "dc680e64dd4a29a4287faf35bf327f6da3e08d07709e6d0c8e75b813eafa59d9",
+      "cropBoxes": [
+        [
+          115,
+          472,
+          1066,
+          903
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-scenario-f02.png",
+      "outputSha256": "285ac58c499c2830f4c4d9dfaf22958b9d995bea445bb0945f067ffa630cfc92"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-scenario-f03",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "ownerId": "sg-2018-autumn-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "officialPdfSha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6",
+      "pages": [
+        6
+      ],
+      "matches": [
+        {
+          "score": 0.6925,
+          "page": 6,
+          "featureMatches": 192,
+          "scale": 1.85,
+          "box": [
+            128,
+            171,
+            968,
+            636
+          ]
+        }
+      ],
+      "templateSha256": "078a0759478c8244d2a01e63d56643d2b7992865c1514725de9d162917be56c8",
+      "cropBoxes": [
+        [
+          104,
+          147,
+          1016,
+          684
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-scenario-f03.png",
+      "outputSha256": "258716c5f6f114655315f6825a3806e2466ba6fbb9bfcbbbde105fb2d97df784"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-scenario-f04",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "ownerId": "sg-2018-autumn-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "officialPdfSha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6",
+      "pages": [
+        7
+      ],
+      "matches": [
+        {
+          "score": 0.6715,
+          "page": 7,
+          "featureMatches": 227,
+          "scale": 1.85,
+          "box": [
+            191,
+            758,
+            910,
+            749
+          ]
+        }
+      ],
+      "templateSha256": "653317cb3d8df0e4cfd6a36a5c37b7e39728ea438eecaa37682a9b5117acd845",
+      "cropBoxes": [
+        [
+          167,
+          734,
+          958,
+          797
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-scenario-f04.png",
+      "outputSha256": "cf6c9090eac38b0e1a0f7160ec3f9c13c61350ff6d515d4cb6837b62cd5cc7ee"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-scenario-f05",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "ownerId": "sg-2018-autumn-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "officialPdfSha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6",
+      "pages": [
+        8
+      ],
+      "matches": [
+        {
+          "score": 0.7519,
+          "page": 8,
+          "featureMatches": 19,
+          "scale": 1.85,
+          "box": [
+            132,
+            176,
+            1006,
+            178
+          ]
+        }
+      ],
+      "templateSha256": "d1802f0f66bdea63b179bb9854e33763bc35b7da8331f100a2a79498eec4b7f0",
+      "cropBoxes": [
+        [
+          108,
+          152,
+          1054,
+          226
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-scenario-f05.png",
+      "outputSha256": "3bb12ea71d2562295e3a58ab7e3b516785a3be80ed2b58e22ae1c2f08d6afdd4"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-u03-choices-f01",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "ownerId": "sg-2018-autumn-pm-q01-u03",
+      "role": "question",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "officialPdfSha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6",
+      "pages": [
+        11
+      ],
+      "matches": [
+        {
+          "score": 0.6855,
+          "page": 11,
+          "featureMatches": 140,
+          "scale": 1.85,
+          "box": [
+            226,
+            961,
+            707,
+            559
+          ]
+        }
+      ],
+      "templateSha256": "fb2cee0f7f537e94885c7b9b907c5c002a3b2bdff70d17fe3926415f6a20b169",
+      "cropBoxes": [
+        [
+          202,
+          937,
+          755,
+          607
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-u03-choices-f01.png",
+      "outputSha256": "cab5b9e4806e5e3f44972756154543cce790943260d09cea5877f60ed2e450c7"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-u04-choices-f01",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "ownerId": "sg-2018-autumn-pm-q01-u04",
+      "role": "question",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "officialPdfSha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6",
+      "pages": [
+        12
+      ],
+      "matches": [
+        {
+          "score": 0.6779,
+          "page": 12,
+          "featureMatches": 168,
+          "scale": 1.85,
+          "box": [
+            224,
+            779,
+            705,
+            559
+          ]
+        }
+      ],
+      "templateSha256": "e0f0aab2319c0370a4ead4099ee9be7c66d7c1652ffb16c2674157beb9a903f5",
+      "cropBoxes": [
+        [
+          200,
+          755,
+          753,
+          607
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-u04-choices-f01.png",
+      "outputSha256": "52cb3361ea1235e82bf0abe03fb18747d24dea07ce483990dee84e583eac16e1"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-u10-choices-f01",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "ownerId": "sg-2018-autumn-pm-q01-u10",
+      "role": "question",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "officialPdfSha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6",
+      "pages": [
+        15
+      ],
+      "matches": [
+        {
+          "score": 0.7185,
+          "page": 15,
+          "featureMatches": 292,
+          "scale": 1.85,
+          "box": [
+            233,
+            363,
+            925,
+            562
+          ]
+        }
+      ],
+      "templateSha256": "b3894dc96087df1356fbd101e3085920a07120896e3d6c5969640cc7ab7deec6",
+      "cropBoxes": [
+        [
+          209,
+          339,
+          973,
+          610
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-u10-choices-f01.png",
+      "outputSha256": "a21e73cc88cf36799f6e55c203692a23ddc897631e62be78882cc1b1a1769f36"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q01-u11-choices-f01",
+      "scenarioId": "sg-2018-autumn-pm-q01",
+      "ownerId": "sg-2018-autumn-pm-q01-u11",
+      "role": "question",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "officialPdfSha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6",
+      "pages": [
+        16
+      ],
+      "matches": [
+        {
+          "score": 0.7245,
+          "page": 16,
+          "featureMatches": 38,
+          "scale": 1.85,
+          "box": [
+            219,
+            961,
+            494,
+            509
+          ]
+        }
+      ],
+      "templateSha256": "37baf9a0069217881d2deef3553ffdd7b313e202885100364cb5618794eee0ca",
+      "cropBoxes": [
+        [
+          195,
+          937,
+          542,
+          557
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q01-u11-choices-f01.png",
+      "outputSha256": "59229438ccfdac405d1960025b7adb18923714e96ec18bdd35a7b61d11994a57"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q02-scenario-f01",
+      "scenarioId": "sg-2018-autumn-pm-q02",
+      "ownerId": "sg-2018-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "officialPdfSha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6",
+      "pages": [
+        19
+      ],
+      "matches": [
+        {
+          "score": 0.6695,
+          "page": 19,
+          "featureMatches": 153,
+          "scale": 1.85,
+          "box": [
+            178,
+            718,
+            984,
+            533
+          ]
+        }
+      ],
+      "templateSha256": "c53b9e656ea52b873ea7cafc42ac6efd8b37ee67fc1a9ef402319c0d324478dd",
+      "cropBoxes": [
+        [
+          154,
+          694,
+          1032,
+          581
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q02-scenario-f01.png",
+      "outputSha256": "64c3b2dc85f3e29f176528635df44477d5c74a571cc34199b3836229d2b1ddd4"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q02-scenario-f02",
+      "scenarioId": "sg-2018-autumn-pm-q02",
+      "ownerId": "sg-2018-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "officialPdfSha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6",
+      "pages": [
+        20
+      ],
+      "matches": [
+        {
+          "score": 0.793,
+          "page": 20,
+          "featureMatches": 37,
+          "scale": 1.85,
+          "box": [
+            171,
+            914,
+            984,
+            270
+          ]
+        }
+      ],
+      "templateSha256": "b637fa445be61a81968eb10e57a208524ec00a0d9b979e08d2567b2bc0e06da3",
+      "cropBoxes": [
+        [
+          147,
+          890,
+          1032,
+          318
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q02-scenario-f02.png",
+      "outputSha256": "681eaad058d3224ba0a2f2a6edd4ce925d40fe848d0f22f185617453bcaf8a79"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q02-scenario-f03",
+      "scenarioId": "sg-2018-autumn-pm-q02",
+      "ownerId": "sg-2018-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "officialPdfSha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6",
+      "pages": [
+        21
+      ],
+      "matches": [
+        {
+          "score": 0.7793,
+          "page": 21,
+          "featureMatches": 106,
+          "scale": 1.85,
+          "box": [
+            189,
+            822,
+            980,
+            377
+          ]
+        }
+      ],
+      "templateSha256": "a6a614e45a74195d1c16d4c8e9950be2a6bf007e01448a8dc733bc1b98c69546",
+      "cropBoxes": [
+        [
+          165,
+          798,
+          1028,
+          425
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q02-scenario-f03.png",
+      "outputSha256": "4bf5ef4b9c6d72464e2c657e220b701f4818e12a050ad6b5a9916a3e2ce0a784"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q03-scenario-f01",
+      "scenarioId": "sg-2018-autumn-pm-q03",
+      "ownerId": "sg-2018-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "officialPdfSha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6",
+      "pages": [
+        28
+      ],
+      "matches": [
+        {
+          "score": 0.6326,
+          "page": 28,
+          "featureMatches": 284,
+          "scale": 1.85,
+          "box": [
+            137,
+            158,
+            1008,
+            762
+          ]
+        }
+      ],
+      "templateSha256": "8c128f5104fdb21387c51bd79d165e1981f2572984ce22eb2e26d189a6861931",
+      "cropBoxes": [
+        [
+          113,
+          134,
+          1056,
+          810
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q03-scenario-f01.png",
+      "outputSha256": "d6a57ec2cf2a861e8f2f3ad0485a26e7f4d7f90b0213246340ce92464c3db545"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q03-scenario-f02",
+      "scenarioId": "sg-2018-autumn-pm-q03",
+      "ownerId": "sg-2018-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "officialPdfSha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6",
+      "pages": [
+        30
+      ],
+      "matches": [
+        {
+          "score": 0.6128,
+          "page": 30,
+          "featureMatches": 239,
+          "scale": 1.85,
+          "box": [
+            141,
+            174,
+            1019,
+            779
+          ]
+        }
+      ],
+      "templateSha256": "f7703cfb0dd5436697aed1267da811095848a632c3dfc7c1559084a15be26990",
+      "cropBoxes": [
+        [
+          117,
+          150,
+          1067,
+          827
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q03-scenario-f02.png",
+      "outputSha256": "9e3373f350a3b33152a0455e0ad9ab8b8f109d3d6a122a951813c48350f0883d"
+    },
+    {
+      "id": "sg-2018-autumn-pm-q03-scenario-f03",
+      "scenarioId": "sg-2018-autumn-pm-q03",
+      "ownerId": "sg-2018-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-autumn-pm",
+      "officialPdfSha256": "86e00489741bd43ec0f6205bc4c46b47a5d930b22243b1c02aea67dcafb3d8c6",
+      "pages": [
+        32
+      ],
+      "matches": [
+        {
+          "score": 0.4898,
+          "page": 32,
+          "featureMatches": 376,
+          "scale": 1.85,
+          "box": [
+            143,
+            173,
+            1023,
+            1482
+          ]
+        }
+      ],
+      "templateSha256": "2664b47096acac977b9f7ee7f970e98edce23218fdfd13ed822351bc4cff9e6c",
+      "cropBoxes": [
+        [
+          119,
+          149,
+          1071,
+          1530
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-autumn-pm-q03-scenario-f03.png",
+      "outputSha256": "62a128381cbe18d87dc7339d9099141e057676dcfa3e1685e049384ad104c84e"
+    },
+    {
+      "id": "sg-2018-spring-pm-q01-scenario-f01",
+      "scenarioId": "sg-2018-spring-pm-q01",
+      "ownerId": "sg-2018-spring-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "officialPdfSha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d",
+      "pages": [
+        5
+      ],
+      "matches": [
+        {
+          "score": 0.8401,
+          "page": 5,
+          "featureMatches": 132,
+          "scale": 1.9,
+          "box": [
+            237,
+            177,
+            825,
+            749
+          ]
+        }
+      ],
+      "templateSha256": "5a528cf2a516de796504f82eb01808eaea5b3a18840d13c793619971c665f086",
+      "cropBoxes": [
+        [
+          213,
+          153,
+          873,
+          797
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q01-scenario-f01.png",
+      "outputSha256": "321aca1eb489a10f33f24fb7e2d7eb975c91ef9f4b96e991a3febe46bccd7fd8"
+    },
+    {
+      "id": "sg-2018-spring-pm-q01-scenario-f02",
+      "scenarioId": "sg-2018-spring-pm-q01",
+      "ownerId": "sg-2018-spring-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "officialPdfSha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d",
+      "pages": [
+        6
+      ],
+      "matches": [
+        {
+          "score": 0.8132,
+          "page": 6,
+          "featureMatches": 89,
+          "scale": 1.9,
+          "box": [
+            141,
+            1243,
+            1024,
+            439
+          ]
+        }
+      ],
+      "templateSha256": "3a38914b352e55850e175b526b4ecabffb739c828648e9d2ef28242ca92bfb1e",
+      "cropBoxes": [
+        [
+          117,
+          1219,
+          1072,
+          487
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q01-scenario-f02.png",
+      "outputSha256": "184b048e30d2a5687adcb993e2d7ecfe00c2ad1fc614177fbbad4ed22db900ff"
+    },
+    {
+      "id": "sg-2018-spring-pm-q02-scenario-f01",
+      "scenarioId": "sg-2018-spring-pm-q02",
+      "ownerId": "sg-2018-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "officialPdfSha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d",
+      "pages": [
+        14
+      ],
+      "matches": [
+        {
+          "score": 0.8306,
+          "page": 14,
+          "featureMatches": 95,
+          "scale": 1.9,
+          "box": [
+            141,
+            489,
+            1001,
+            433
+          ]
+        }
+      ],
+      "templateSha256": "bbd6ac9cd0dd0548ccf6798ca5b5428ffbe7e8ce729a35e53094169a57dbe19f",
+      "cropBoxes": [
+        [
+          117,
+          465,
+          1049,
+          481
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q02-scenario-f01.png",
+      "outputSha256": "dbe87771598293a55f1578e3d9c6ac1e9ff42ce490aa6a4581c8b6c2878d057e"
+    },
+    {
+      "id": "sg-2018-spring-pm-q02-scenario-f02",
+      "scenarioId": "sg-2018-spring-pm-q02",
+      "ownerId": "sg-2018-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "officialPdfSha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d",
+      "pages": [
+        15
+      ],
+      "matches": [
+        {
+          "score": 0.792,
+          "page": 15,
+          "featureMatches": 212,
+          "scale": 1.9,
+          "box": [
+            140,
+            162,
+            1013,
+            656
+          ]
+        }
+      ],
+      "templateSha256": "324ce5495689d5d5fe992fbbf3ce286e95bb624f4ef178284332f62ac8391ccf",
+      "cropBoxes": [
+        [
+          116,
+          138,
+          1061,
+          704
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q02-scenario-f02.png",
+      "outputSha256": "a0f88f025562cf34e8416738d2efd6d828745bca7380b2de16a656a9326f94e2"
+    },
+    {
+      "id": "sg-2018-spring-pm-q02-scenario-f03",
+      "scenarioId": "sg-2018-spring-pm-q02",
+      "ownerId": "sg-2018-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "officialPdfSha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d",
+      "pages": [
+        15
+      ],
+      "matches": [
+        {
+          "score": 0.8289,
+          "page": 15,
+          "featureMatches": 148,
+          "scale": 1.9,
+          "box": [
+            146,
+            1230,
+            1009,
+            429
+          ]
+        }
+      ],
+      "templateSha256": "e104aa9a4df004bbbecaa8d8667b09eefd6d21fc6b8fabb4c03621852a3033ef",
+      "cropBoxes": [
+        [
+          122,
+          1206,
+          1057,
+          477
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q02-scenario-f03.png",
+      "outputSha256": "65a9682a388a2c48e7e17b5a2a66cf4cfcbde7eeb1a31a65514bd455c4f2c887"
+    },
+    {
+      "id": "sg-2018-spring-pm-q02-scenario-f04",
+      "scenarioId": "sg-2018-spring-pm-q02",
+      "ownerId": "sg-2018-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "officialPdfSha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d",
+      "pages": [
+        17
+      ],
+      "matches": [
+        {
+          "score": 0.8044,
+          "page": 17,
+          "featureMatches": 284,
+          "scale": 1.9,
+          "box": [
+            146,
+            170,
+            1013,
+            1250
+          ]
+        }
+      ],
+      "templateSha256": "abcf477d15bb06c7a33a5e5dc24a795dc417ac2466667c991d904ea7d5820cd0",
+      "cropBoxes": [
+        [
+          122,
+          146,
+          1061,
+          1298
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q02-scenario-f04.png",
+      "outputSha256": "6d2346d18c362545264b7926399a0998f56e411c7c16148f649df4680bc1e07f"
+    },
+    {
+      "id": "sg-2018-spring-pm-q02-scenario-f05",
+      "scenarioId": "sg-2018-spring-pm-q02",
+      "ownerId": "sg-2018-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "officialPdfSha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d",
+      "pages": [
+        19
+      ],
+      "matches": [
+        {
+          "score": 0.8467,
+          "page": 19,
+          "featureMatches": 225,
+          "scale": 1.9,
+          "box": [
+            146,
+            531,
+            1026,
+            790
+          ]
+        }
+      ],
+      "templateSha256": "2f0bcbc0c002493b8e2c35f6ab122b1c152fd04075f6c5bcd33e463841bd3a1d",
+      "cropBoxes": [
+        [
+          122,
+          507,
+          1074,
+          838
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q02-scenario-f05.png",
+      "outputSha256": "1ed1ea739e1bff4dfaf1a708340e1be7f09634b0e6759845296c5202a6137b74"
+    },
+    {
+      "id": "sg-2018-spring-pm-q02-u02-choices-f01",
+      "scenarioId": "sg-2018-spring-pm-q02",
+      "ownerId": "sg-2018-spring-pm-q02-u02",
+      "role": "question",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "officialPdfSha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d",
+      "pages": [
+        21
+      ],
+      "matches": [
+        {
+          "score": 0.8094,
+          "page": 21,
+          "featureMatches": 301,
+          "scale": 1.9,
+          "box": [
+            222,
+            365,
+            942,
+            642
+          ]
+        }
+      ],
+      "templateSha256": "6c65eab0a08d01457232ee939c9d336cbe529b14b562013b63eda177033a8d91",
+      "cropBoxes": [
+        [
+          198,
+          341,
+          990,
+          690
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q02-u02-choices-f01.png",
+      "outputSha256": "d08829c2141c9995181d9f3ffa8db67301930861cb90906025c2b81baf7fe6b3"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-scenario-f01",
+      "scenarioId": "sg-2018-spring-pm-q03",
+      "ownerId": "sg-2018-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "officialPdfSha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d",
+      "pages": [
+        24
+      ],
+      "matches": [
+        {
+          "score": 0.7826,
+          "page": 24,
+          "featureMatches": 198,
+          "scale": 1.9,
+          "box": [
+            140,
+            185,
+            1017,
+            787
+          ]
+        }
+      ],
+      "templateSha256": "9f003d4fea38700da230985e2dd783880e783a7980ab09320ccf38b92bbcb9d5",
+      "cropBoxes": [
+        [
+          116,
+          161,
+          1065,
+          835
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q03-scenario-f01.png",
+      "outputSha256": "75e659c3294a1ea42103037692901ec175a4efee49850e5531037868acd97f31"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-scenario-f02",
+      "scenarioId": "sg-2018-spring-pm-q03",
+      "ownerId": "sg-2018-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "officialPdfSha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d",
+      "pages": [
+        26
+      ],
+      "matches": [
+        {
+          "score": 0.7781,
+          "page": 26,
+          "featureMatches": 52,
+          "scale": 1.9,
+          "box": [
+            139,
+            170,
+            1011,
+            203
+          ]
+        }
+      ],
+      "templateSha256": "d35111b9460fc702985a7856a3099f689fd1b1f5a3b37aaaafc6d663ae777fcb",
+      "cropBoxes": [
+        [
+          115,
+          146,
+          1059,
+          251
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q03-scenario-f02.png",
+      "outputSha256": "715a67381257a13151b1afb4fefc5bbd35eb53a329394a09942e264ef57ccbed"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-scenario-f03",
+      "scenarioId": "sg-2018-spring-pm-q03",
+      "ownerId": "sg-2018-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "officialPdfSha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d",
+      "pages": [
+        26
+      ],
+      "matches": [
+        {
+          "score": 0.8059,
+          "page": 26,
+          "featureMatches": 143,
+          "scale": 1.9,
+          "box": [
+            140,
+            637,
+            1011,
+            496
+          ]
+        }
+      ],
+      "templateSha256": "16b07a12863ceded6d9a44c9300f87e317173a508b269b7df2d4bd3ac99e41f9",
+      "cropBoxes": [
+        [
+          116,
+          613,
+          1059,
+          544
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q03-scenario-f03.png",
+      "outputSha256": "d9853edbf960f30b5b0283034a5b707f0d5304be550f84bb5d13e4882c387688"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-scenario-f04",
+      "scenarioId": "sg-2018-spring-pm-q03",
+      "ownerId": "sg-2018-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "officialPdfSha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d",
+      "pages": [
+        27
+      ],
+      "matches": [
+        {
+          "score": 0.8207,
+          "page": 27,
+          "featureMatches": 128,
+          "scale": 1.9,
+          "box": [
+            144,
+            561,
+            1013,
+            564
+          ]
+        }
+      ],
+      "templateSha256": "c954f98d0cb41c3d7b113993de6f3f083d72980d52d438479943bac538a1d66f",
+      "cropBoxes": [
+        [
+          120,
+          537,
+          1061,
+          612
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q03-scenario-f04.png",
+      "outputSha256": "a8721c16062ed50f39cf2c02dfa8f4509d2d0e8e85713b0391bd1ebb5fb85947"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-scenario-f05",
+      "scenarioId": "sg-2018-spring-pm-q03",
+      "ownerId": "sg-2018-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "officialPdfSha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d",
+      "pages": [
+        28
+      ],
+      "matches": [
+        {
+          "score": 0.8006,
+          "page": 28,
+          "featureMatches": 44,
+          "scale": 1.9,
+          "box": [
+            137,
+            1124,
+            1011,
+            203
+          ]
+        }
+      ],
+      "templateSha256": "97655d41dc5a9a51b189e1e1e31a2ebdefc7bccf77f8339410edc2f65671974a",
+      "cropBoxes": [
+        [
+          113,
+          1100,
+          1059,
+          251
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q03-scenario-f05.png",
+      "outputSha256": "e3804d0b06f774127091bf381fb29137bdd56a88ea2933ea9c49f3a0b6d1cb49"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-u06-prompt-f01",
+      "scenarioId": "sg-2018-spring-pm-q03",
+      "ownerId": "sg-2018-spring-pm-q03-u06",
+      "role": "question",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "officialPdfSha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d",
+      "pages": [
+        32
+      ],
+      "matches": [
+        {
+          "score": 0.8116,
+          "page": 32,
+          "featureMatches": 279,
+          "scale": 1.9,
+          "box": [
+            230,
+            319,
+            931,
+            673
+          ]
+        }
+      ],
+      "templateSha256": "34438a3f187f19f153f7bc08239cce17ab806379d1570350cd2cf4e28f3aab5b",
+      "cropBoxes": [
+        [
+          206,
+          295,
+          979,
+          721
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q03-u06-prompt-f01.png",
+      "outputSha256": "cb0739cb6b6cb8f649d8ba9128bfe4ad03b99e01a15594d14319b775e91a05fd"
+    },
+    {
+      "id": "sg-2018-spring-pm-q03-u10-choices-f01",
+      "scenarioId": "sg-2018-spring-pm-q03",
+      "ownerId": "sg-2018-spring-pm-q03-u10",
+      "role": "question",
+      "sourceId": "ipa-sg-2018-spring-pm",
+      "officialPdfSha256": "9d94ff2762b0f9f1ae96b5ac381e5a512d83f8a01fb428fc467354312456412d",
+      "pages": [
+        34
+      ],
+      "matches": [
+        {
+          "score": 0.7927,
+          "page": 34,
+          "featureMatches": 151,
+          "scale": 1.9,
+          "box": [
+            228,
+            1139,
+            827,
+            475
+          ]
+        }
+      ],
+      "templateSha256": "dc35c3c92f23aac7ec5919f776c6f6e7a3d40d472167614169f0b17b99631092",
+      "cropBoxes": [
+        [
+          204,
+          1115,
+          875,
+          523
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2018-spring-pm-q03-u10-choices-f01.png",
+      "outputSha256": "214676b18ed72a8cf92ec9cb590fcebde05418f78b5fee52adf139067d313f61"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-scenario-f01",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "ownerId": "sg-2017-autumn-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        3,
+        4,
+        4
+      ],
+      "matches": [
+        {
+          "score": 0.6244,
+          "page": 3,
+          "featureMatches": 139,
+          "scale": 1.93,
+          "box": [
+            133,
+            956,
+            1017,
+            511
+          ],
+          "part": 1,
+          "partCount": 3
+        },
+        {
+          "score": 0.6073,
+          "page": 4,
+          "featureMatches": 275,
+          "scale": 1.93,
+          "box": [
+            133,
+            151,
+            1017,
+            1019
+          ],
+          "part": 2,
+          "partCount": 3
+        },
+        {
+          "score": 0.7421,
+          "page": 4,
+          "featureMatches": 66,
+          "scale": 1.93,
+          "box": [
+            133,
+            1209,
+            1017,
+            347
+          ],
+          "part": 3,
+          "partCount": 3
+        }
+      ],
+      "templateSha256": "424b8c282f77a39ab5954dc2128a18b109d86eede9e697f612472571b66d0750",
+      "cropBoxes": [
+        [
+          109,
+          932,
+          1065,
+          559
+        ],
+        [
+          109,
+          127,
+          1065,
+          1067
+        ],
+        [
+          109,
+          1185,
+          1065,
+          395
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-scenario-f01.png",
+      "outputSha256": "a90e7af55cec1b62b318c9d0dc13e5e8378e5739bec754adeb79183568fcc81a"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-scenario-f02",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "ownerId": "sg-2017-autumn-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        6
+      ],
+      "matches": [
+        {
+          "score": 0.5772,
+          "page": 6,
+          "featureMatches": 166,
+          "scale": 1.93,
+          "box": [
+            132,
+            160,
+            1015,
+            896
+          ]
+        }
+      ],
+      "templateSha256": "72047d6c00a9fcda048328bc5f1cbba4acfc79b93cd97b30bbc20a09aebe4f59",
+      "cropBoxes": [
+        [
+          108,
+          136,
+          1063,
+          944
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-scenario-f02.png",
+      "outputSha256": "09ef1521cbc49f5c3b55c7e4704e4a473ab8450cb51b28b1c7d7f4c8fc5dfdf9"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-scenario-f03",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "ownerId": "sg-2017-autumn-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        7
+      ],
+      "matches": [
+        {
+          "score": 0.6215,
+          "page": 7,
+          "featureMatches": 128,
+          "scale": 1.93,
+          "box": [
+            136,
+            512,
+            1015,
+            583
+          ]
+        }
+      ],
+      "templateSha256": "9be94d31a3845cfc3f624d62900005349e008303e94b096b98bf69ec4fb07eda",
+      "cropBoxes": [
+        [
+          112,
+          488,
+          1063,
+          631
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-scenario-f03.png",
+      "outputSha256": "e4c4b085017595e397b4cb7641ef06b1702c4ee4dd3b8dcb9851ef686733e03a"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-scenario-f04",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "ownerId": "sg-2017-autumn-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        8
+      ],
+      "matches": [
+        {
+          "score": 0.7135,
+          "page": 8,
+          "featureMatches": 65,
+          "scale": 1.93,
+          "box": [
+            129,
+            157,
+            1023,
+            293
+          ]
+        }
+      ],
+      "templateSha256": "7c43b6920182f9f25e2f45e71084998419e9408c7a7b7d2796da3d8abf34c6c3",
+      "cropBoxes": [
+        [
+          105,
+          133,
+          1071,
+          341
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-scenario-f04.png",
+      "outputSha256": "b81d2430e02df5f3aad8d7b8b712b7a715494f98b3eb91929a456cdde54b32b5"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u01-choices-f01",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "ownerId": "sg-2017-autumn-pm-q01-u01",
+      "role": "question",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        10
+      ],
+      "matches": [
+        {
+          "score": 0.7414,
+          "page": 10,
+          "featureMatches": 20,
+          "scale": 1.91,
+          "box": [
+            285,
+            346,
+            856,
+            180
+          ]
+        }
+      ],
+      "templateSha256": "46aeab81b0836da51efb12fb31d1dbe9e536a00a89643cfb27fb0d23029deaed",
+      "cropBoxes": [
+        [
+          261,
+          322,
+          904,
+          228
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u01-choices-f01.png",
+      "outputSha256": "8c31e811b6be4c668f37bb5e9b45f825ac3b41b8f836784386bfc027917b4640"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u01-choices-f02",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "ownerId": "sg-2017-autumn-pm-q01-u01",
+      "role": "question",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        10
+      ],
+      "matches": [
+        {
+          "score": 0.7283,
+          "page": 10,
+          "featureMatches": 27,
+          "scale": 1.91,
+          "box": [
+            287,
+            571,
+            856,
+            176
+          ]
+        }
+      ],
+      "templateSha256": "34bdee40d9cdb53bd4155ae1ac2d33f80fc819f246ff2387d9e0d675044eb5e6",
+      "cropBoxes": [
+        [
+          263,
+          547,
+          904,
+          224
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u01-choices-f02.png",
+      "outputSha256": "2930a1891f1671d363bac5e644264868bbc56dcb88f3185889b0bef01cece492"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u01-choices-f03",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "ownerId": "sg-2017-autumn-pm-q01-u01",
+      "role": "question",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        10
+      ],
+      "matches": [
+        {
+          "score": 0.744,
+          "page": 10,
+          "featureMatches": 18,
+          "scale": 1.93,
+          "box": [
+            283,
+            792,
+            865,
+            179
+          ]
+        }
+      ],
+      "templateSha256": "2c2a03ccd23d7dc67cd3ea1a02a3191d7fbeb20ca96032b8eee84dece0a5d89e",
+      "cropBoxes": [
+        [
+          259,
+          768,
+          913,
+          227
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u01-choices-f03.png",
+      "outputSha256": "b4e73047f3eb7169596c914e5eb1457310e0022faacb80ff66ebe1f2e4c20939"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u01-choices-f04",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "ownerId": "sg-2017-autumn-pm-q01-u01",
+      "role": "question",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        10
+      ],
+      "matches": [
+        {
+          "score": 0.7322,
+          "page": 10,
+          "featureMatches": 22,
+          "scale": 1.93,
+          "box": [
+            283,
+            1015,
+            867,
+            179
+          ]
+        }
+      ],
+      "templateSha256": "bb0c433448c873487fe9d4775ea2bf658cdc95d648b3cead60da05ed9dbb5ee5",
+      "cropBoxes": [
+        [
+          259,
+          991,
+          915,
+          227
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u01-choices-f04.png",
+      "outputSha256": "2a086fb3831d970eeed3e6046594d282e2fb925685f5f9cd02ad54fe4e141488"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u01-choices-f05",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "ownerId": "sg-2017-autumn-pm-q01-u01",
+      "role": "question",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        10
+      ],
+      "matches": [
+        {
+          "score": 0.7662,
+          "page": 10,
+          "featureMatches": 24,
+          "scale": 1.93,
+          "box": [
+            285,
+            1236,
+            865,
+            179
+          ]
+        }
+      ],
+      "templateSha256": "d3528041423e837e0d43965a251bd9f20efb64a5d31439ab5c778bab11312964",
+      "cropBoxes": [
+        [
+          261,
+          1212,
+          913,
+          227
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u01-choices-f05.png",
+      "outputSha256": "d8cc4333366b8675e343fcc14fca9162800964e200c2da302643bb54e203fa0b"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u01-choices-f06",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "ownerId": "sg-2017-autumn-pm-q01-u01",
+      "role": "question",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        10
+      ],
+      "matches": [
+        {
+          "score": 0.765,
+          "page": 10,
+          "featureMatches": 13,
+          "scale": 1.93,
+          "box": [
+            285,
+            1459,
+            867,
+            179
+          ]
+        }
+      ],
+      "templateSha256": "7a5235b554c31cc22729863907614b9c0ea23b04237c75f025871789049d4606",
+      "cropBoxes": [
+        [
+          261,
+          1435,
+          915,
+          227
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u01-choices-f06.png",
+      "outputSha256": "8eb066a58f9d4cbe1c3df55294770ff06f38d362d4e3db02cb316ae4c45bbcd6"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u02-choices-f01",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "ownerId": "sg-2017-autumn-pm-q01-u02",
+      "role": "question",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        11
+      ],
+      "matches": [
+        {
+          "score": 0.711,
+          "page": 11,
+          "featureMatches": 131,
+          "scale": 1.93,
+          "box": [
+            235,
+            351,
+            735,
+            334
+          ]
+        }
+      ],
+      "templateSha256": "049bdf99e3247cf98109b81653ffc65da54dc36797dd63c21423c796e57510ec",
+      "cropBoxes": [
+        [
+          211,
+          327,
+          783,
+          382
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u02-choices-f01.png",
+      "outputSha256": "3196c52ce2e3eb71efdc74847aae6a0c531d781b37579151fb6d72fbfd0f1fa4"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u03-choices-f01",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "ownerId": "sg-2017-autumn-pm-q01-u03",
+      "role": "question",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        12
+      ],
+      "matches": [
+        {
+          "score": 0.7745,
+          "page": 12,
+          "featureMatches": 80,
+          "scale": 1.93,
+          "box": [
+            214,
+            447,
+            629,
+            338
+          ]
+        }
+      ],
+      "templateSha256": "b80a3c7b88143137c3b2e3dd3dd26bda06499a744503d025389baa25edcf0cf5",
+      "cropBoxes": [
+        [
+          190,
+          423,
+          677,
+          386
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u03-choices-f01.png",
+      "outputSha256": "b68cfca8d58db5f97606bd6f717ad35f5c97591d50449178f1e463bf4594ea9e"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u03-choices-f02",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "ownerId": "sg-2017-autumn-pm-q01-u03",
+      "role": "question",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        12
+      ],
+      "matches": [
+        {
+          "score": 0.7756,
+          "page": 12,
+          "featureMatches": 69,
+          "scale": 1.93,
+          "box": [
+            217,
+            879,
+            488,
+            336
+          ]
+        }
+      ],
+      "templateSha256": "aabc86a39787b373ac35a3417cfeca9e71be008a495ee82bc77403d01b1e8ddb",
+      "cropBoxes": [
+        [
+          193,
+          855,
+          536,
+          384
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u03-choices-f02.png",
+      "outputSha256": "628a1600bb1a1f0b27e7e715b704d0969686431c790f1d820ef7107adb3406f2"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u07-choices-f01",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "ownerId": "sg-2017-autumn-pm-q01-u07",
+      "role": "question",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        14
+      ],
+      "matches": [
+        {
+          "score": 0.701,
+          "page": 14,
+          "featureMatches": 72,
+          "scale": 1.93,
+          "box": [
+            217,
+            1149,
+            917,
+            290
+          ]
+        }
+      ],
+      "templateSha256": "a9e1cff3d6462f85ca4b51294ae0c10369e373513e245e69b4ca073bf7845a86",
+      "cropBoxes": [
+        [
+          193,
+          1125,
+          965,
+          338
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u07-choices-f01.png",
+      "outputSha256": "a840f96cc135f96cb9d2f118903f540e1b8d6f4f4569dc500863993ffc8382c4"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q01-u10-choices-f01",
+      "scenarioId": "sg-2017-autumn-pm-q01",
+      "ownerId": "sg-2017-autumn-pm-q01-u10",
+      "role": "question",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        16
+      ],
+      "matches": [
+        {
+          "score": 0.7415,
+          "page": 16,
+          "featureMatches": 82,
+          "scale": 1.93,
+          "box": [
+            212,
+            1045,
+            612,
+            338
+          ]
+        }
+      ],
+      "templateSha256": "e985d60529755399fbfb40ee8edffff06ef634abca0de337dda28b5106a8cee1",
+      "cropBoxes": [
+        [
+          188,
+          1021,
+          660,
+          386
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q01-u10-choices-f01.png",
+      "outputSha256": "eb5e7395cdf9bf556e1e7f9b4ab3b23fe2e2d532cb18db6b8a7a142408a0ba9d"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q02-scenario-f01",
+      "scenarioId": "sg-2017-autumn-pm-q02",
+      "ownerId": "sg-2017-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        19
+      ],
+      "matches": [
+        {
+          "score": 0.6315,
+          "page": 19,
+          "featureMatches": 219,
+          "scale": 1.93,
+          "box": [
+            153,
+            448,
+            1011,
+            664
+          ]
+        }
+      ],
+      "templateSha256": "a4300c25d8f7288699dd68cbf572375b6348b9863d2e5633999274650c8bfaea",
+      "cropBoxes": [
+        [
+          129,
+          424,
+          1059,
+          712
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q02-scenario-f01.png",
+      "outputSha256": "679341f69d17d4eb48266e6e824b9dd2e12f8be2ba704e0c732a4317b4cc4bcc"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q02-scenario-f02",
+      "scenarioId": "sg-2017-autumn-pm-q02",
+      "ownerId": "sg-2017-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        21
+      ],
+      "matches": [
+        {
+          "score": 0.6657,
+          "page": 21,
+          "featureMatches": 244,
+          "scale": 1.93,
+          "box": [
+            152,
+            162,
+            1015,
+            791
+          ]
+        }
+      ],
+      "templateSha256": "3c86886f4ccbe52594eb4dba63be8bab9229690ac57d434154907e36cf75e212",
+      "cropBoxes": [
+        [
+          128,
+          138,
+          1063,
+          839
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q02-scenario-f02.png",
+      "outputSha256": "c1838be244dd18b4168ffaf6b5ec4cc37a45ece871bbecfbd1475feca9247f57"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q02-scenario-f03",
+      "scenarioId": "sg-2017-autumn-pm-q02",
+      "ownerId": "sg-2017-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        22
+      ],
+      "matches": [
+        {
+          "score": 0.6131,
+          "page": 22,
+          "featureMatches": 211,
+          "scale": 1.93,
+          "box": [
+            120,
+            211,
+            1013,
+            726
+          ]
+        }
+      ],
+      "templateSha256": "e5520b41ac0c8f471636747bfcbf51c0193b5a3fb9c5bced0eb4c66b8fd49c7e",
+      "cropBoxes": [
+        [
+          96,
+          187,
+          1061,
+          774
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q02-scenario-f03.png",
+      "outputSha256": "c9ac80c4122d42c413003eda5277c500d6877525901ac4f6166d819d9c736509"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q02-u04-choices-f01",
+      "scenarioId": "sg-2017-autumn-pm-q02",
+      "ownerId": "sg-2017-autumn-pm-q02-u04",
+      "role": "question",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        25
+      ],
+      "matches": [
+        {
+          "score": 0.7591,
+          "page": 25,
+          "featureMatches": 48,
+          "scale": 1.93,
+          "box": [
+            232,
+            403,
+            452,
+            247
+          ]
+        }
+      ],
+      "templateSha256": "31adb5e22404bb82dfb19fc495872db309b502cc1c144f225249e2a74377b62e",
+      "cropBoxes": [
+        [
+          208,
+          379,
+          500,
+          295
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q02-u04-choices-f01.png",
+      "outputSha256": "56dbe3db3fbcf5d96e71b9dfaae6720d55fb7cc7900871995629732b131476d6"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-scenario-f01",
+      "scenarioId": "sg-2017-autumn-pm-q03",
+      "ownerId": "sg-2017-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        31
+      ],
+      "matches": [
+        {
+          "score": 0.6484,
+          "page": 31,
+          "featureMatches": 211,
+          "scale": 1.93,
+          "box": [
+            144,
+            149,
+            1015,
+            762
+          ]
+        }
+      ],
+      "templateSha256": "5ab1bdbce2a5c83c2d5995281adeff0364b2f9e233b45fa18c32fe6d565d7154",
+      "cropBoxes": [
+        [
+          120,
+          125,
+          1063,
+          810
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q03-scenario-f01.png",
+      "outputSha256": "9f9ab22695aac7fe806753bd487e863f9a4ffb074a5ba9f2215012ad650c3e2c"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-scenario-f02",
+      "scenarioId": "sg-2017-autumn-pm-q03",
+      "ownerId": "sg-2017-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        32
+      ],
+      "matches": [
+        {
+          "score": 0.6594,
+          "page": 32,
+          "featureMatches": 168,
+          "scale": 1.93,
+          "box": [
+            128,
+            647,
+            1013,
+            471
+          ]
+        }
+      ],
+      "templateSha256": "4dcfbf882a30ffd3fea6346d19e400f1dfe649d342e81c6ce132ac9b2c95aa07",
+      "cropBoxes": [
+        [
+          104,
+          623,
+          1061,
+          519
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q03-scenario-f02.png",
+      "outputSha256": "98ca527127e04022d84154963dde01e80878f6d17c2857442956191b5e0b5eee"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-scenario-f03",
+      "scenarioId": "sg-2017-autumn-pm-q03",
+      "ownerId": "sg-2017-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        33
+      ],
+      "matches": [
+        {
+          "score": 0.6714,
+          "page": 33,
+          "featureMatches": 262,
+          "scale": 1.93,
+          "box": [
+            143,
+            164,
+            1009,
+            911
+          ]
+        }
+      ],
+      "templateSha256": "4b2d2a06951298d3455dcf80f0444e66b4df185b876429b986a355ac93fba26d",
+      "cropBoxes": [
+        [
+          119,
+          140,
+          1057,
+          959
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q03-scenario-f03.png",
+      "outputSha256": "233701d362a8cc76f298dde1f7756da2686ab7fb8309da254761053ad2dc2dd8"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-scenario-f04",
+      "scenarioId": "sg-2017-autumn-pm-q03",
+      "ownerId": "sg-2017-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        34
+      ],
+      "matches": [
+        {
+          "score": 0.5518,
+          "page": 34,
+          "featureMatches": 345,
+          "scale": 1.93,
+          "box": [
+            132,
+            145,
+            1013,
+            1222
+          ]
+        }
+      ],
+      "templateSha256": "8eb9a69cb6867ec6406d604a7918da8f7b3bd147baea3e29547945c84fa0bd36",
+      "cropBoxes": [
+        [
+          108,
+          121,
+          1061,
+          1270
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q03-scenario-f04.png",
+      "outputSha256": "c1efd115b7a1272a48bcfe3980efc6f67a3b4f2387e8714081bdc8527c75c24a"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-scenario-f05",
+      "scenarioId": "sg-2017-autumn-pm-q03",
+      "ownerId": "sg-2017-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        35
+      ],
+      "matches": [
+        {
+          "score": 0.6808,
+          "page": 35,
+          "featureMatches": 177,
+          "scale": 1.93,
+          "box": [
+            139,
+            514,
+            1017,
+            623
+          ]
+        }
+      ],
+      "templateSha256": "ff56a21e9005a04018e8b8f3fc7c8210a73128956620ea2a7c490d36b0d55f41",
+      "cropBoxes": [
+        [
+          115,
+          490,
+          1065,
+          671
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q03-scenario-f05.png",
+      "outputSha256": "bc372254a3d464d7100bd28c49118c7f1d81cfd09f7d4cf02b974998898d4e68"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-u04-choices-f01",
+      "scenarioId": "sg-2017-autumn-pm-q03",
+      "ownerId": "sg-2017-autumn-pm-q03-u04",
+      "role": "question",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        37
+      ],
+      "matches": [
+        {
+          "score": 0.7723,
+          "page": 37,
+          "featureMatches": 83,
+          "scale": 1.93,
+          "box": [
+            228,
+            903,
+            471,
+            355
+          ]
+        }
+      ],
+      "templateSha256": "72a328c82d3d4a499424109d5d7544ddabec900db4a3d173a0c61b376c913164",
+      "cropBoxes": [
+        [
+          204,
+          879,
+          519,
+          403
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q03-u04-choices-f01.png",
+      "outputSha256": "016fbd08bba172e8d97a1d0933d48864cdc51fadc5a9903423c17ad4e05f59da"
+    },
+    {
+      "id": "sg-2017-autumn-pm-q03-u06-choices-f01",
+      "scenarioId": "sg-2017-autumn-pm-q03",
+      "ownerId": "sg-2017-autumn-pm-q03-u06",
+      "role": "question",
+      "sourceId": "ipa-sg-2017-autumn-pm",
+      "officialPdfSha256": "589883c8ada5b2325b01471c67460eb5a87a4279b141f3e6c8f1199c49ec19f0",
+      "pages": [
+        39
+      ],
+      "matches": [
+        {
+          "score": 0.7676,
+          "page": 39,
+          "featureMatches": 125,
+          "scale": 1.93,
+          "box": [
+            226,
+            649,
+            471,
+            407
+          ]
+        }
+      ],
+      "templateSha256": "49f99acd18c744a90b470453fa1e319bccda3f26fef28fbf8bf9789c72474c4f",
+      "cropBoxes": [
+        [
+          202,
+          625,
+          519,
+          455
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-autumn-pm-q03-u06-choices-f01.png",
+      "outputSha256": "ae021004ed5fdc88cb3ac168fb4ea127a32698f0282cb7b36e9f3e1c0be8c5d4"
+    },
+    {
+      "id": "sg-2017-spring-pm-q01-scenario-f01",
+      "scenarioId": "sg-2017-spring-pm-q01",
+      "ownerId": "sg-2017-spring-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "officialPdfSha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623",
+      "pages": [
+        4
+      ],
+      "matches": [
+        {
+          "score": 0.827,
+          "page": 4,
+          "featureMatches": 277,
+          "scale": 1.83,
+          "box": [
+            139,
+            494,
+            1005,
+            699
+          ]
+        }
+      ],
+      "templateSha256": "61da5c54291dde1d489b4ae42412915bcc9e656742a722ac694cd99b8ffccd74",
+      "cropBoxes": [
+        [
+          115,
+          470,
+          1053,
+          747
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q01-scenario-f01.png",
+      "outputSha256": "d083c190a6426e9e8e7d6afa0ab48833aa6368744e9a9ec720f3ddd1de415c42"
+    },
+    {
+      "id": "sg-2017-spring-pm-q01-scenario-f02",
+      "scenarioId": "sg-2017-spring-pm-q01",
+      "ownerId": "sg-2017-spring-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "officialPdfSha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623",
+      "pages": [
+        5
+      ],
+      "matches": [
+        {
+          "score": 0.8224,
+          "page": 5,
+          "featureMatches": 196,
+          "scale": 1.83,
+          "box": [
+            141,
+            597,
+            1008,
+            467
+          ]
+        }
+      ],
+      "templateSha256": "a9eb87a8f79883d070460509998ef534b70a58dbfd3f00a9d0624302e8980ecc",
+      "cropBoxes": [
+        [
+          117,
+          573,
+          1056,
+          515
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q01-scenario-f02.png",
+      "outputSha256": "0be12c4fdf237fc0e74767864bc2e86ab63b9a0995dcee3dd65e4e8927162977"
+    },
+    {
+      "id": "sg-2017-spring-pm-q01-scenario-f03",
+      "scenarioId": "sg-2017-spring-pm-q01",
+      "ownerId": "sg-2017-spring-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "officialPdfSha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623",
+      "pages": [
+        6
+      ],
+      "matches": [
+        {
+          "score": 0.8134,
+          "page": 6,
+          "featureMatches": 129,
+          "scale": 1.83,
+          "box": [
+            141,
+            157,
+            1008,
+            265
+          ]
+        }
+      ],
+      "templateSha256": "74e1664325facf73c9e4e98cb541f6798434b0c4a81ac8cdbe2e12d29fb3609e",
+      "cropBoxes": [
+        [
+          117,
+          133,
+          1056,
+          313
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q01-scenario-f03.png",
+      "outputSha256": "b306b093764b63671b4903f1c1e1e44670283fe2662f499062b7967b1c60d53a"
+    },
+    {
+      "id": "sg-2017-spring-pm-q02-scenario-f01",
+      "scenarioId": "sg-2017-spring-pm-q02",
+      "ownerId": "sg-2017-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "officialPdfSha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623",
+      "pages": [
+        13
+      ],
+      "matches": [
+        {
+          "score": 0.8059,
+          "page": 13,
+          "featureMatches": 83,
+          "scale": 1.83,
+          "box": [
+            143,
+            617,
+            1008,
+            410
+          ]
+        }
+      ],
+      "templateSha256": "d74b8c5e7c29d902aaebceef725d4311358d226d078769ee8bfe16acd0222019",
+      "cropBoxes": [
+        [
+          119,
+          593,
+          1056,
+          458
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q02-scenario-f01.png",
+      "outputSha256": "05649ebc424774c50fe8b1744a0c4beeacfa8be58241a69b895cdc8010b7c9d4"
+    },
+    {
+      "id": "sg-2017-spring-pm-q02-scenario-f02",
+      "scenarioId": "sg-2017-spring-pm-q02",
+      "ownerId": "sg-2017-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "officialPdfSha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623",
+      "pages": [
+        14
+      ],
+      "matches": [
+        {
+          "score": 0.8035,
+          "page": 14,
+          "featureMatches": 65,
+          "scale": 1.83,
+          "box": [
+            142,
+            1114,
+            1005,
+            274
+          ]
+        }
+      ],
+      "templateSha256": "6f659e11032725d38e466060fcfa9422c9f6b0dae3af6112b52d49c7f697d391",
+      "cropBoxes": [
+        [
+          118,
+          1090,
+          1053,
+          322
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q02-scenario-f02.png",
+      "outputSha256": "e95446d7eb5bdf0ddee3cec0bc8f4cf27e5f6242a61a856815b1afa46f719728"
+    },
+    {
+      "id": "sg-2017-spring-pm-q02-scenario-f03",
+      "scenarioId": "sg-2017-spring-pm-q02",
+      "ownerId": "sg-2017-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "officialPdfSha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623",
+      "pages": [
+        15
+      ],
+      "matches": [
+        {
+          "score": 0.8291,
+          "page": 15,
+          "featureMatches": 282,
+          "scale": 1.83,
+          "box": [
+            137,
+            538,
+            1014,
+            1096
+          ]
+        }
+      ],
+      "templateSha256": "95da61badd2f94edb291fd9cb5c467b998e280874b18a350f83433b868e5a929",
+      "cropBoxes": [
+        [
+          113,
+          514,
+          1062,
+          1144
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q02-scenario-f03.png",
+      "outputSha256": "e647b9467e339adcb177ac4aff18591d5512b286e7bd230134249ef6b24a21bf"
+    },
+    {
+      "id": "sg-2017-spring-pm-q02-scenario-f04",
+      "scenarioId": "sg-2017-spring-pm-q02",
+      "ownerId": "sg-2017-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "officialPdfSha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623",
+      "pages": [
+        17
+      ],
+      "matches": [
+        {
+          "score": 0.7638,
+          "page": 17,
+          "featureMatches": 305,
+          "scale": 1.83,
+          "box": [
+            141,
+            435,
+            1010,
+            1136
+          ]
+        }
+      ],
+      "templateSha256": "f373932af731ce304c0f7add61b77c6bcd2d6b92687b4fe5fa010e7f71531294",
+      "cropBoxes": [
+        [
+          117,
+          411,
+          1058,
+          1184
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q02-scenario-f04.png",
+      "outputSha256": "b54f95d49bcbbb9aea2698ea93c5f6cc64951f670bb60a5565d848ef156e2b91"
+    },
+    {
+      "id": "sg-2017-spring-pm-q03-scenario-f01",
+      "scenarioId": "sg-2017-spring-pm-q03",
+      "ownerId": "sg-2017-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "officialPdfSha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623",
+      "pages": [
+        23
+      ],
+      "matches": [
+        {
+          "score": 0.8372,
+          "page": 23,
+          "featureMatches": 107,
+          "scale": 1.83,
+          "box": [
+            146,
+            1123,
+            994,
+            476
+          ]
+        }
+      ],
+      "templateSha256": "af70a71ce863090b5c9a0a5ba2d7a3976a48420e6e4f74c85e0fc0644ad28ede",
+      "cropBoxes": [
+        [
+          122,
+          1099,
+          1042,
+          524
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q03-scenario-f01.png",
+      "outputSha256": "7bce93ac591f8e9155f394e68d2dc0a7b6d82753a12d734c3233933586e4f464"
+    },
+    {
+      "id": "sg-2017-spring-pm-q03-scenario-f02",
+      "scenarioId": "sg-2017-spring-pm-q03",
+      "ownerId": "sg-2017-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "officialPdfSha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623",
+      "pages": [
+        24
+      ],
+      "matches": [
+        {
+          "score": 0.8413,
+          "page": 24,
+          "featureMatches": 111,
+          "scale": 1.83,
+          "box": [
+            139,
+            912,
+            1005,
+            313
+          ]
+        }
+      ],
+      "templateSha256": "486b96f7030b10c5573bcc3308caf44efcc10a8dfde458ebc30dabf2707f6613",
+      "cropBoxes": [
+        [
+          115,
+          888,
+          1053,
+          361
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q03-scenario-f02.png",
+      "outputSha256": "ff8def7f28608768bbc319091b90f26bb812c01b4aa64395e09cd6069aa7c820"
+    },
+    {
+      "id": "sg-2017-spring-pm-q03-scenario-f03",
+      "scenarioId": "sg-2017-spring-pm-q03",
+      "ownerId": "sg-2017-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "officialPdfSha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623",
+      "pages": [
+        25
+      ],
+      "matches": [
+        {
+          "score": 0.7878,
+          "page": 25,
+          "featureMatches": 419,
+          "scale": 1.83,
+          "box": [
+            146,
+            158,
+            1006,
+            1228
+          ]
+        }
+      ],
+      "templateSha256": "a5e00c3e53d0de4cc71bf636b8ab8979928886f549249b87d1e0bd3dd0762a44",
+      "cropBoxes": [
+        [
+          122,
+          134,
+          1054,
+          1276
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q03-scenario-f03.png",
+      "outputSha256": "7ed9cfaa3cab0eb31324ebd3347daeb6a45438fec69fa4ecd5ee4376f3509f8f"
+    },
+    {
+      "id": "sg-2017-spring-pm-q03-scenario-f04",
+      "scenarioId": "sg-2017-spring-pm-q03",
+      "ownerId": "sg-2017-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "officialPdfSha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623",
+      "pages": [
+        28
+      ],
+      "matches": [
+        {
+          "score": 0.8551,
+          "page": 28,
+          "featureMatches": 215,
+          "scale": 1.83,
+          "box": [
+            146,
+            164,
+            999,
+            436
+          ]
+        }
+      ],
+      "templateSha256": "ee64f9f070c455731c136723f5416c8dbb87d0372efe1f4d0738a9a136065048",
+      "cropBoxes": [
+        [
+          122,
+          140,
+          1047,
+          484
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q03-scenario-f04.png",
+      "outputSha256": "7623780c82a4c12594c8f8f04e131543584b054b76f4f4de470e39d7aabded05"
+    },
+    {
+      "id": "sg-2017-spring-pm-q03-u09-choices-f01",
+      "scenarioId": "sg-2017-spring-pm-q03",
+      "ownerId": "sg-2017-spring-pm-q03-u09",
+      "role": "question",
+      "sourceId": "ipa-sg-2017-spring-pm",
+      "officialPdfSha256": "050ec359700d1d815dbf9333096f93e133bb667ad5bcb661cf66d0dfa7f0e623",
+      "pages": [
+        31
+      ],
+      "matches": [
+        {
+          "score": 0.8087,
+          "page": 31,
+          "featureMatches": 307,
+          "scale": 1.83,
+          "box": [
+            227,
+            550,
+            920,
+            525
+          ]
+        }
+      ],
+      "templateSha256": "2d8df0de4d98b6135da21690f5f991da405d3d8822117ee98d6fca91568c2db7",
+      "cropBoxes": [
+        [
+          203,
+          526,
+          968,
+          573
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2017-spring-pm-q03-u09-choices-f01.png",
+      "outputSha256": "6096575038e7ff8876a3de4e05549d8e484d4c75265b32461719f17a6bae2826"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q01-scenario-f01",
+      "scenarioId": "sg-2016-autumn-pm-q01",
+      "ownerId": "sg-2016-autumn-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        4
+      ],
+      "matches": [
+        {
+          "score": 0.7344,
+          "page": 4,
+          "featureMatches": 113,
+          "scale": 1.91,
+          "box": [
+            147,
+            770,
+            1005,
+            474
+          ]
+        }
+      ],
+      "templateSha256": "58f53bfc5464c1e9beb8a2e8fcdbc4ec46833849cb2913e71e00085f82dbfda2",
+      "cropBoxes": [
+        [
+          123,
+          746,
+          1053,
+          522
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q01-scenario-f01.png",
+      "outputSha256": "4bfedd4e1d6253ffeb9cb214c2f2a3bfef415ed54b01a775f6e5dc7ffa4d95f8"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q01-scenario-f02",
+      "scenarioId": "sg-2016-autumn-pm-q01",
+      "ownerId": "sg-2016-autumn-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        5
+      ],
+      "matches": [
+        {
+          "score": 0.7929,
+          "page": 5,
+          "featureMatches": 132,
+          "scale": 1.91,
+          "box": [
+            147,
+            138,
+            1007,
+            367
+          ]
+        }
+      ],
+      "templateSha256": "af086991376114907e703b52bccfa6c747c3bbc8c9eb73a0f149e9a79263468a",
+      "cropBoxes": [
+        [
+          123,
+          114,
+          1055,
+          415
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q01-scenario-f02.png",
+      "outputSha256": "86ef02fec011527ecce20587a329c82325827f7f3cc4612f1165064291893062"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q01-scenario-f03",
+      "scenarioId": "sg-2016-autumn-pm-q01",
+      "ownerId": "sg-2016-autumn-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        6
+      ],
+      "matches": [
+        {
+          "score": 0.7684,
+          "page": 6,
+          "featureMatches": 85,
+          "scale": 1.91,
+          "box": [
+            143,
+            757,
+            1007,
+            317
+          ]
+        }
+      ],
+      "templateSha256": "0ba3c3852047be38e860d427d18e73e401008b07f140fc0dd7d843c97a0fc362",
+      "cropBoxes": [
+        [
+          119,
+          733,
+          1055,
+          365
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q01-scenario-f03.png",
+      "outputSha256": "311c13bc0c6bb8e430944d5a2509c60e9016e860653f5601ee5e5aae5bc61f9a"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q01-scenario-f04",
+      "scenarioId": "sg-2016-autumn-pm-q01",
+      "ownerId": "sg-2016-autumn-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        7
+      ],
+      "matches": [
+        {
+          "score": 0.7743,
+          "page": 7,
+          "featureMatches": 136,
+          "scale": 1.91,
+          "box": [
+            192,
+            578,
+            953,
+            472
+          ]
+        }
+      ],
+      "templateSha256": "80212f9695084c480c5bf90c2ff1db24d9bb2cecf3ef4d0ce33460ac934c089a",
+      "cropBoxes": [
+        [
+          168,
+          554,
+          1001,
+          520
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q01-scenario-f04.png",
+      "outputSha256": "62bc2b8ef0b5871b8f68aa9ad8f362ab1fdfb97b8262709405b8433985989649"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q01-u01-choices-f01",
+      "scenarioId": "sg-2016-autumn-pm-q01",
+      "ownerId": "sg-2016-autumn-pm-q01-u01",
+      "role": "question",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        8
+      ],
+      "matches": [
+        {
+          "score": 0.7659,
+          "page": 8,
+          "featureMatches": 70,
+          "scale": 1.91,
+          "box": [
+            241,
+            1244,
+            714,
+            330
+          ]
+        }
+      ],
+      "templateSha256": "a47940d5fa73708f0d80a00fdf2aaeb541fe25b9ab47548f6734c8c277eaa028",
+      "cropBoxes": [
+        [
+          217,
+          1220,
+          762,
+          378
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q01-u01-choices-f01.png",
+      "outputSha256": "e19320ba2e88388eee7378bd8fe556d3fe7d631a0dd2ebe93c18bd23d658fb72"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q02-scenario-f01",
+      "scenarioId": "sg-2016-autumn-pm-q02",
+      "ownerId": "sg-2016-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        14
+      ],
+      "matches": [
+        {
+          "score": 0.6561,
+          "page": 14,
+          "featureMatches": 253,
+          "scale": 1.91,
+          "box": [
+            136,
+            628,
+            1010,
+            940
+          ]
+        }
+      ],
+      "templateSha256": "d30325fe4d3ee9a1a5fb5aa1952cd4f6d7a7ba88acc17d7c1ef7f30fdd2f888f",
+      "cropBoxes": [
+        [
+          112,
+          604,
+          1058,
+          988
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q02-scenario-f01.png",
+      "outputSha256": "a5c1d6105e1029d94ccd3cb18264ab099faaeda4c1f8166504b1096175810cc9"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q02-scenario-f02",
+      "scenarioId": "sg-2016-autumn-pm-q02",
+      "ownerId": "sg-2016-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        15
+      ],
+      "matches": [
+        {
+          "score": 0.6839,
+          "page": 15,
+          "featureMatches": 207,
+          "scale": 1.91,
+          "box": [
+            159,
+            665,
+            1003,
+            659
+          ]
+        }
+      ],
+      "templateSha256": "7c8fe5a1454ddd9ba772bc755a6135273e5113df22e7429410a87222e1ee5001",
+      "cropBoxes": [
+        [
+          135,
+          641,
+          1051,
+          707
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q02-scenario-f02.png",
+      "outputSha256": "3e9adbedea323d907406663b287c85f84c441063476bf304bef59a766a8c57a8"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q02-scenario-f03",
+      "scenarioId": "sg-2016-autumn-pm-q02",
+      "ownerId": "sg-2016-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        16
+      ],
+      "matches": [
+        {
+          "score": 0.7378,
+          "page": 16,
+          "featureMatches": 141,
+          "scale": 1.91,
+          "box": [
+            138,
+            1026,
+            1005,
+            567
+          ]
+        }
+      ],
+      "templateSha256": "60f0b1a7efe7bd6cc52ba6a8552c530c06b6abc068f431b418a1fcb76a4e7cca",
+      "cropBoxes": [
+        [
+          114,
+          1002,
+          1053,
+          615
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q02-scenario-f03.png",
+      "outputSha256": "af153f715c0a727acfb4ed15fc31d8ea09f4a01040f94151a3e4a3583687c0df"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q02-scenario-f04",
+      "scenarioId": "sg-2016-autumn-pm-q02",
+      "ownerId": "sg-2016-autumn-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        17,
+        18
+      ],
+      "matches": [
+        {
+          "score": 0.5215,
+          "page": 17,
+          "featureMatches": 337,
+          "scale": 1.91,
+          "box": [
+            162,
+            303,
+            1003,
+            1293
+          ],
+          "part": 1,
+          "partCount": 2
+        },
+        {
+          "score": 0.7344,
+          "page": 18,
+          "featureMatches": 101,
+          "scale": 1.91,
+          "box": [
+            134,
+            150,
+            1003,
+            422
+          ],
+          "part": 2,
+          "partCount": 2
+        }
+      ],
+      "templateSha256": "316ec8b983f0884b08ed27ebbb38688a68cd678faee6bfe91e8d72e93ffa9bd7",
+      "cropBoxes": [
+        [
+          138,
+          279,
+          1051,
+          1341
+        ],
+        [
+          110,
+          126,
+          1051,
+          470
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q02-scenario-f04.png",
+      "outputSha256": "99a9f61abd69ca0a64b16fa4503a0d6842757202be99b181ff484686284dd1b3"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q02-u07-choices-f01",
+      "scenarioId": "sg-2016-autumn-pm-q02",
+      "ownerId": "sg-2016-autumn-pm-q02-u07",
+      "role": "question",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        22
+      ],
+      "matches": [
+        {
+          "score": 0.7606,
+          "page": 22,
+          "featureMatches": 93,
+          "scale": 1.91,
+          "box": [
+            228,
+            356,
+            926,
+            239
+          ]
+        }
+      ],
+      "templateSha256": "09c021b9d9b77edc71c87d29127334b6a6c5a6f4ebf77112bb82a42a5fce4c23",
+      "cropBoxes": [
+        [
+          204,
+          332,
+          974,
+          287
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q02-u07-choices-f01.png",
+      "outputSha256": "93a474f3e3e780201aedb10b48990cd0b208370fd3e616d25a276c306922e6e1"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q02-u09-choices-f01",
+      "scenarioId": "sg-2016-autumn-pm-q02",
+      "ownerId": "sg-2016-autumn-pm-q02-u09",
+      "role": "question",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        23
+      ],
+      "matches": [
+        {
+          "score": 0.7572,
+          "page": 23,
+          "featureMatches": 201,
+          "scale": 1.91,
+          "box": [
+            235,
+            355,
+            928,
+            466
+          ]
+        }
+      ],
+      "templateSha256": "9622ff43e556dd776a3f558daaa15dc1d8c49e43c28328d469ba68f02e9b1188",
+      "cropBoxes": [
+        [
+          211,
+          331,
+          976,
+          514
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q02-u09-choices-f01.png",
+      "outputSha256": "c108f56da681cfb39b94652ebfecffd311a0700da5df1bc89e6a2d4a7c82af50"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q03-scenario-f01",
+      "scenarioId": "sg-2016-autumn-pm-q03",
+      "ownerId": "sg-2016-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        25
+      ],
+      "matches": [
+        {
+          "score": 0.68,
+          "page": 25,
+          "featureMatches": 302,
+          "scale": 1.91,
+          "box": [
+            149,
+            157,
+            1003,
+            1156
+          ]
+        }
+      ],
+      "templateSha256": "6aea9fb6d7c4ff5712a0c37834f9c1380ab791de5b4d776dbc5d64274ae3ab63",
+      "cropBoxes": [
+        [
+          125,
+          133,
+          1051,
+          1204
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q03-scenario-f01.png",
+      "outputSha256": "bf6b72d88ca2e80281d53af6e112f26f23986c1ca365c0c8e0020991dfcc3956"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q03-scenario-f02",
+      "scenarioId": "sg-2016-autumn-pm-q03",
+      "ownerId": "sg-2016-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        26
+      ],
+      "matches": [
+        {
+          "score": 0.7457,
+          "page": 26,
+          "featureMatches": 43,
+          "scale": 1.91,
+          "box": [
+            143,
+            303,
+            1003,
+            204
+          ]
+        }
+      ],
+      "templateSha256": "e426075fba029445f3a270be22572dd586ec694236f85ef4f9ccff235958ea51",
+      "cropBoxes": [
+        [
+          119,
+          279,
+          1051,
+          252
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q03-scenario-f02.png",
+      "outputSha256": "bc1f4eacbfec5c1612528ff929e2ea8c56fffedf91087d5fb85733780911d5f0"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q03-scenario-f03",
+      "scenarioId": "sg-2016-autumn-pm-q03",
+      "ownerId": "sg-2016-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        26,
+        27
+      ],
+      "matches": [
+        {
+          "score": 0.7414,
+          "page": 26,
+          "featureMatches": 28,
+          "scale": 1.91,
+          "box": [
+            143,
+            1324,
+            1003,
+            225
+          ],
+          "part": 1,
+          "partCount": 2
+        },
+        {
+          "score": 0.7395,
+          "page": 27,
+          "featureMatches": 141,
+          "scale": 1.91,
+          "box": [
+            147,
+            169,
+            1003,
+            749
+          ],
+          "part": 2,
+          "partCount": 2
+        }
+      ],
+      "templateSha256": "b15952757322860dfafeaa2cadd631578d7850e7fd10333f6e4f24b86a6cbb07",
+      "cropBoxes": [
+        [
+          119,
+          1300,
+          1051,
+          273
+        ],
+        [
+          123,
+          145,
+          1051,
+          797
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q03-scenario-f03.png",
+      "outputSha256": "20a18a97ab9919ba1b61b3ab798140984bb1d94da3d02c533c5b2a31bf1fa837"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q03-scenario-f04",
+      "scenarioId": "sg-2016-autumn-pm-q03",
+      "ownerId": "sg-2016-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        28
+      ],
+      "matches": [
+        {
+          "score": 0.7316,
+          "page": 28,
+          "featureMatches": 139,
+          "scale": 1.91,
+          "box": [
+            145,
+            1089,
+            1012,
+            495
+          ]
+        }
+      ],
+      "templateSha256": "d89edac9b615736d0a0dd4a936a2cbf1139a3cc6999e56b72a4b50ff0b777d39",
+      "cropBoxes": [
+        [
+          121,
+          1065,
+          1060,
+          543
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q03-scenario-f04.png",
+      "outputSha256": "dca2c656785e8afc380be81218275be87ef7453d544ffa8899c36327fe8085af"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q03-scenario-f05",
+      "scenarioId": "sg-2016-autumn-pm-q03",
+      "ownerId": "sg-2016-autumn-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        29
+      ],
+      "matches": [
+        {
+          "score": 0.7674,
+          "page": 29,
+          "featureMatches": 165,
+          "scale": 1.91,
+          "box": [
+            149,
+            311,
+            1003,
+            430
+          ]
+        }
+      ],
+      "templateSha256": "b1f3029cddc84587f33060b4fea7344388a360d85033e2e022b6087fa7f543cc",
+      "cropBoxes": [
+        [
+          125,
+          287,
+          1051,
+          478
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q03-scenario-f05.png",
+      "outputSha256": "da055780b94738575407f2b3baa5bac421f517cd93a42d5568e4329d7f049df8"
+    },
+    {
+      "id": "sg-2016-autumn-pm-q03-u02-choices-f01",
+      "scenarioId": "sg-2016-autumn-pm-q03",
+      "ownerId": "sg-2016-autumn-pm-q03-u02",
+      "role": "question",
+      "sourceId": "ipa-sg-2016-autumn-pm",
+      "officialPdfSha256": "cad1fa097d84731b379eac9b4e4f4dfcabad43f71bd3b24cff70c3f003294b25",
+      "pages": [
+        30
+      ],
+      "matches": [
+        {
+          "score": 0.7661,
+          "page": 30,
+          "featureMatches": 118,
+          "scale": 1.91,
+          "box": [
+            227,
+            1060,
+            921,
+            334
+          ]
+        }
+      ],
+      "templateSha256": "62404c8235f11e0da5c98e48e3d897e6b3042c39681e83a7005d4a327721cd17",
+      "cropBoxes": [
+        [
+          203,
+          1036,
+          969,
+          382
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-autumn-pm-q03-u02-choices-f01.png",
+      "outputSha256": "9205480c81b04f304f595b3cc5fe33df9ef800d19b21bc1cd76c8ade2fd280a6"
+    },
+    {
+      "id": "sg-2016-spring-pm-q01-scenario-f01",
+      "scenarioId": "sg-2016-spring-pm-q01",
+      "ownerId": "sg-2016-spring-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        4
+      ],
+      "matches": [
+        {
+          "score": 0.629,
+          "page": 4,
+          "featureMatches": 229,
+          "scale": 1.91,
+          "box": [
+            198,
+            536,
+            923,
+            817
+          ]
+        }
+      ],
+      "templateSha256": "31680a8d35f36634ec9ee029d50b4ab3f911858a4d0012a88e7f62bf64ca0a6d",
+      "cropBoxes": [
+        [
+          174,
+          512,
+          971,
+          865
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q01-scenario-f01.png",
+      "outputSha256": "bc620d2855192d0d93f21980436fd6428081bf59f1d7276bd32776fd9fc9baee"
+    },
+    {
+      "id": "sg-2016-spring-pm-q01-scenario-f02",
+      "scenarioId": "sg-2016-spring-pm-q01",
+      "ownerId": "sg-2016-spring-pm-q01",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        5
+      ],
+      "matches": [
+        {
+          "score": 0.6336,
+          "page": 5,
+          "featureMatches": 304,
+          "scale": 1.91,
+          "box": [
+            145,
+            268,
+            1005,
+            1293
+          ]
+        }
+      ],
+      "templateSha256": "681d9510a0e005e0cbb123ecbe57202ba291101e287c2715127fbfd4421c0a78",
+      "cropBoxes": [
+        [
+          121,
+          244,
+          1053,
+          1341
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q01-scenario-f02.png",
+      "outputSha256": "6b8f4320b1f5c1933dbafd04cfc980709adb1eed7fd5938d7a2fb377aff9a209"
+    },
+    {
+      "id": "sg-2016-spring-pm-q01-u10-choices-f01",
+      "scenarioId": "sg-2016-spring-pm-q01",
+      "ownerId": "sg-2016-spring-pm-q01-u10",
+      "role": "question",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        10
+      ],
+      "matches": [
+        {
+          "score": 0.7944,
+          "page": 10,
+          "featureMatches": 19,
+          "scale": 1.91,
+          "box": [
+            233,
+            563,
+            378,
+            330
+          ]
+        }
+      ],
+      "templateSha256": "68cfdd2954bb3e64237367b18d2532f3919f823b25601baad5c33ac9254118f6",
+      "cropBoxes": [
+        [
+          209,
+          539,
+          426,
+          378
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q01-u10-choices-f01.png",
+      "outputSha256": "a8144afa7b0642c625b5e677ad282ea8ee3b450830b27db81abaafdc8d9065e3"
+    },
+    {
+      "id": "sg-2016-spring-pm-q02-scenario-f01",
+      "scenarioId": "sg-2016-spring-pm-q02",
+      "ownerId": "sg-2016-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        11
+      ],
+      "matches": [
+        {
+          "score": 0.7282,
+          "page": 11,
+          "featureMatches": 250,
+          "scale": 1.91,
+          "box": [
+            203,
+            777,
+            961,
+            722
+          ]
+        }
+      ],
+      "templateSha256": "9ff4be8f45a2f88d341009bc76aef9c0cadc6272b13e1e5a0159d34be8c1b534",
+      "cropBoxes": [
+        [
+          179,
+          753,
+          1009,
+          770
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q02-scenario-f01.png",
+      "outputSha256": "a333df8c73b5cbaba6e1840493dda37f5990f7e251e098350c7ece5ae03b4749"
+    },
+    {
+      "id": "sg-2016-spring-pm-q02-scenario-f02",
+      "scenarioId": "sg-2016-spring-pm-q02",
+      "ownerId": "sg-2016-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        12
+      ],
+      "matches": [
+        {
+          "score": 0.8202,
+          "page": 12,
+          "featureMatches": 33,
+          "scale": 1.91,
+          "box": [
+            163,
+            1131,
+            953,
+            306
+          ]
+        }
+      ],
+      "templateSha256": "b653ee1058c332c998ba24f3cd89dece484c29cee085c9b2d844111a7fb83b2c",
+      "cropBoxes": [
+        [
+          139,
+          1107,
+          1001,
+          354
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q02-scenario-f02.png",
+      "outputSha256": "5ac8c9035f09bae31062af470d588e3397305c6f10aa0d8ae1d13fb51ba876e8"
+    },
+    {
+      "id": "sg-2016-spring-pm-q02-scenario-f03",
+      "scenarioId": "sg-2016-spring-pm-q02",
+      "ownerId": "sg-2016-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        13
+      ],
+      "matches": [
+        {
+          "score": 0.7674,
+          "page": 13,
+          "featureMatches": 31,
+          "scale": 1.91,
+          "box": [
+            174,
+            830,
+            955,
+            378
+          ]
+        }
+      ],
+      "templateSha256": "5a5fbfcbe6d7f032a60f3b225704eafbd7aae7fa57cd5fc59eb02b0d95bd29a5",
+      "cropBoxes": [
+        [
+          150,
+          806,
+          1003,
+          426
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q02-scenario-f03.png",
+      "outputSha256": "d4ca51980f8e1ef517c4b651e09d928d62a8a29b4469ba532ccff9303bedfb92"
+    },
+    {
+      "id": "sg-2016-spring-pm-q02-scenario-f04",
+      "scenarioId": "sg-2016-spring-pm-q02",
+      "ownerId": "sg-2016-spring-pm-q02",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        15
+      ],
+      "matches": [
+        {
+          "score": 0.774,
+          "page": 15,
+          "featureMatches": 32,
+          "scale": 1.91,
+          "box": [
+            210,
+            175,
+            949,
+            342
+          ]
+        }
+      ],
+      "templateSha256": "b66ee06f4909106240a6c718eee81f77c050e31c2a663b88eaa1abb62fda9d54",
+      "cropBoxes": [
+        [
+          186,
+          151,
+          997,
+          390
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q02-scenario-f04.png",
+      "outputSha256": "7dda7d2f1baaf3fce8f7b290ffdd298c38b86a5aba3a56c053274db6ffe02618"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-scenario-f01",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "ownerId": "sg-2016-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        22
+      ],
+      "matches": [
+        {
+          "score": 0.7699,
+          "page": 22,
+          "featureMatches": 36,
+          "scale": 1.91,
+          "box": [
+            197,
+            525,
+            949,
+            340
+          ]
+        }
+      ],
+      "templateSha256": "4d31a2c93ab6762c8a2fe33684b388b241af8d4f0f00ad57bcc104f04df75555",
+      "cropBoxes": [
+        [
+          173,
+          501,
+          997,
+          388
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-scenario-f01.png",
+      "outputSha256": "4ab83eb92f3434276c139a284981c3dbd3bcbb7214f635da000627414cfdfda7"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-scenario-f02",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "ownerId": "sg-2016-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        22
+      ],
+      "matches": [
+        {
+          "score": 0.7667,
+          "page": 22,
+          "featureMatches": 47,
+          "scale": 1.91,
+          "box": [
+            195,
+            1232,
+            949,
+            350
+          ]
+        }
+      ],
+      "templateSha256": "61ffbd0f364bcb9a70e46ece7a11de9a07bd0d90e7c7fb97bda554b52e27b406",
+      "cropBoxes": [
+        [
+          171,
+          1208,
+          997,
+          398
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-scenario-f02.png",
+      "outputSha256": "00f553e72789a83995d0d15b713ba76384c89a35bb1dda2e1209b0b92e2f58bf"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-scenario-f03",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "ownerId": "sg-2016-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        23
+      ],
+      "matches": [
+        {
+          "score": 0.7614,
+          "page": 23,
+          "featureMatches": 152,
+          "scale": 1.91,
+          "box": [
+            201,
+            918,
+            963,
+            432
+          ]
+        }
+      ],
+      "templateSha256": "30fec69f6db55b15090109b0413271bce4201ddd6ae2d3425830be97826d783d",
+      "cropBoxes": [
+        [
+          177,
+          894,
+          1011,
+          480
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-scenario-f03.png",
+      "outputSha256": "c63113027ed67ab9f6b91cf19f6d69c5e1fdb9244ba574e95fa87f059586106e"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-scenario-f04",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "ownerId": "sg-2016-spring-pm-q03",
+      "role": "scenario",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        24
+      ],
+      "matches": [
+        {
+          "score": 0.7416,
+          "page": 24,
+          "featureMatches": 212,
+          "scale": 1.91,
+          "box": [
+            199,
+            576,
+            947,
+            766
+          ]
+        }
+      ],
+      "templateSha256": "8ecb2d5cafa9cb169efd27682f16ba31889464e57c34075bc52113d2062a78f4",
+      "cropBoxes": [
+        [
+          175,
+          552,
+          995,
+          814
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-scenario-f04.png",
+      "outputSha256": "f8c7df3dc4e1b4cfb4895e3b069a3afb78710530cb3784cba90595defa71a0ae"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u04-choices-f01",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "ownerId": "sg-2016-spring-pm-q03-u04",
+      "role": "question",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        27
+      ],
+      "matches": [
+        {
+          "score": 0.7571,
+          "page": 27,
+          "featureMatches": 103,
+          "scale": 1.91,
+          "box": [
+            233,
+            221,
+            921,
+            313
+          ]
+        }
+      ],
+      "templateSha256": "786e95e2d15b30dc975fcc44c0f50779f29930f85f56d971c1e412f6a03e01e6",
+      "cropBoxes": [
+        [
+          209,
+          197,
+          969,
+          361
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-u04-choices-f01.png",
+      "outputSha256": "3219ea41a9ed3d074079f84297f6a089f68c1675b61b9b1aee1e874e3a597ba6"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u05-choices-f01",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "ownerId": "sg-2016-spring-pm-q03-u05",
+      "role": "question",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        27
+      ],
+      "matches": [
+        {
+          "score": 0.8119,
+          "page": 27,
+          "featureMatches": 41,
+          "scale": 1.91,
+          "box": [
+            233,
+            782,
+            919,
+            244
+          ]
+        }
+      ],
+      "templateSha256": "a838e992571c3d18330cb1ca0229dab8f24f065ebb01e0336016b0cfbd833451",
+      "cropBoxes": [
+        [
+          209,
+          758,
+          967,
+          292
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-u05-choices-f01.png",
+      "outputSha256": "714bec59033e02ed1d4b35726d83c49882bd80551b20f1640db2fdc64695437b"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u06-choices-f01",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "ownerId": "sg-2016-spring-pm-q03-u06",
+      "role": "question",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        27
+      ],
+      "matches": [
+        {
+          "score": 0.77,
+          "page": 27,
+          "featureMatches": 133,
+          "scale": 1.91,
+          "box": [
+            233,
+            1275,
+            921,
+            351
+          ]
+        }
+      ],
+      "templateSha256": "08aaed707dacd03e445680e29340b96bc5be1fb5ab3136ab4b52aa31f65e0311",
+      "cropBoxes": [
+        [
+          209,
+          1251,
+          969,
+          399
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-u06-choices-f01.png",
+      "outputSha256": "96ee9c6a9bde335f71e80f497a02d64ddf15258260ade140642c5691cd38ddf5"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u09-choices-f01",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "ownerId": "sg-2016-spring-pm-q03-u09",
+      "role": "question",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        29
+      ],
+      "matches": [
+        {
+          "score": 0.7431,
+          "page": 29,
+          "featureMatches": 101,
+          "scale": 1.91,
+          "box": [
+            233,
+            668,
+            647,
+            355
+          ]
+        }
+      ],
+      "templateSha256": "7f38462c8c7e0192143ab2eb3ba41d3a01f1d5db94d9defd36d9a1146ff3e6e0",
+      "cropBoxes": [
+        [
+          209,
+          644,
+          695,
+          403
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-u09-choices-f01.png",
+      "outputSha256": "134dec8c1245f0bb5e7edc0fcd5164c21143b31d70b4246cb716523fcb1f358f"
+    },
+    {
+      "id": "sg-2016-spring-pm-q03-u10-choices-f01",
+      "scenarioId": "sg-2016-spring-pm-q03",
+      "ownerId": "sg-2016-spring-pm-q03-u10",
+      "role": "question",
+      "sourceId": "ipa-sg-2016-spring-pm",
+      "officialPdfSha256": "c4ad8ab98f5f560d81257f786b4191c3a6b09a7edb1d88473390e959e38730b4",
+      "pages": [
+        30
+      ],
+      "matches": [
+        {
+          "score": 0.7843,
+          "page": 30,
+          "featureMatches": 148,
+          "scale": 1.91,
+          "box": [
+            231,
+            614,
+            647,
+            355
+          ]
+        }
+      ],
+      "templateSha256": "7940a988b86611c19a2c9735ac05ba5a346af4ecf9d61f44d0ab3c074b6816b3",
+      "cropBoxes": [
+        [
+          207,
+          590,
+          695,
+          403
+        ]
+      ],
+      "output": "/exams/sg/legacy/pm/sg-2016-spring-pm-q03-u10-choices-f01.png",
+      "outputSha256": "cb81ac03f84927810a107a98f0b680a3b321a3473456d5ccf36d57c8255c70a5"
+    }
+  ]
+}

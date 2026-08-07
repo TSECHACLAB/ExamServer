@@ -2,7 +2,7 @@
  * 採点ロジック
  *
  * 単一選択: 完全一致で1点 or 0点
- * 複数選択: 部分点あり = (正解した数 - 誤選択した数) / 正解の総数（0未満は0）
+ * 複数選択: 部分点あり。選択数指定問題は公式解答欄ごとの正答数、それ以外は誤選択を減点する。
  */
 
 import type { Question, QuestionResult } from "@/types/exam";
@@ -39,6 +39,11 @@ export function scoreQuestion(
     } else {
       wrongHits++;
     }
+  }
+
+  if (question.selectionLimit !== undefined) {
+    if (selectedSet.size > question.selectionLimit) return 0;
+    return correctHits / correctSet.size;
   }
 
   const rawScore = (correctHits - wrongHits) / correctSet.size;

@@ -9,6 +9,7 @@ import ExamSetupForm from "@/components/exam/ExamSetupForm";
 import FlowBackLink from "@/components/FlowBackLink";
 import PublicAppShell from "@/components/layout/PublicAppShell";
 import type { CategoryBucket } from "@/components/CategorySelector";
+import { getQuestionDomains } from "@/lib/question-domains";
 
 interface Props {
   params: Promise<{ categoryId: string }>;
@@ -24,13 +25,17 @@ export default async function ExamSetupPage({ params, searchParams }: Props) {
   const questions = getAllQuestions(categoryId);
   const totalQuestions = questions.length;
   const bucket = normalizeBucket(query?.bucket) ?? bucketFromGroup(category.group);
-  const domainQuestionCounts = questions.reduce<Record<string, number>>(
-    (counts, question) => {
-      if (!question.domain) return counts;
-      counts[question.domain] = (counts[question.domain] ?? 0) + 1;
-      return counts;
+  const domainQuestionIds = questions.reduce<Record<string, string[]>>(
+    (ids, question) => {
+      for (const domain of getQuestionDomains(question)) {
+        ids[domain] = [...(ids[domain] ?? []), question.id];
+      }
+      return ids;
     },
     {}
+  );
+  const domainQuestionCounts = Object.fromEntries(
+    Object.entries(domainQuestionIds).map(([domain, ids]) => [domain, ids.length])
   );
   const domainOptions = Object.keys(domainQuestionCounts).sort();
 
@@ -61,6 +66,7 @@ export default async function ExamSetupPage({ params, searchParams }: Props) {
             returnBucket={bucket}
             domainOptions={domainOptions}
             domainQuestionCounts={domainQuestionCounts}
+            domainQuestionIds={domainQuestionIds}
           />
         )}
       </section>

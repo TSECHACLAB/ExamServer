@@ -9,12 +9,16 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "validate": "npx tsx scripts/validate-schema.ts"
+    "validate": "tsx scripts/validate-schema.ts && tsx scripts/audit-sg-explanations.ts --check",
+    "verify:sg-sources": "tsx scripts/verify-sg-official-sources.ts",
+    "audit:sg-pm-explanations": "tsx scripts/audit-legacy-sg-pm-explanation-coverage.ts",
+    "audit:sg-explanations": "tsx scripts/audit-sg-explanations.ts",
+    "audit:sg-explanations:check": "tsx scripts/audit-sg-explanations.ts --check"
   },
   "dependencies": {
     "@octokit/rest": "^22.0.1",
     "lightningcss": "^1.32.0",
-    "next": "^16.2.9",
+    "next": "^16.3.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-markdown": "^10.1.0",
@@ -31,17 +35,19 @@
   "devDependencies": {
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.1",
-    "@next/mdx": "^16.2.9",
+    "@next/mdx": "^16.3.0",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
+    "@types/jsdom": "^28.0.3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "^16.2.9",
+    "eslint-config-next": "^16.3.0",
     "jsdom": "^29.1.1",
     "tailwindcss": "^4",
+    "tsx": "^4.20.6",
     "typescript": "^5",
     "vitest": "^3.2.6"
   }

@@ -15,7 +15,10 @@ import type {
   ExamMode,
   AnswerResponse,
   BatchAnswerResponse,
+  QuestionSourcePublisher,
+  PublicQuestionSourceSet,
 } from "@/types/exam";
+import { getQuestionDomains } from "@/lib/question-domains";
 
 // ---------------------------------------------------------------------------
 // sessionStorage による状態復帰キー
@@ -63,6 +66,10 @@ interface ExamSessionState {
   batchResult: BatchAnswerResponse | null;
   /** 問題IDからシナリオを引くマップ（シナリオ問題のみ） */
   scenarioMap: Record<string, PublicScenario>;
+  /** sourceIdから公式資料セットを引くマップ */
+  sourceMap: Record<string, PublicQuestionSourceSet>;
+  /** 公式資料の公開元 */
+  sourcePublisher: QuestionSourcePublisher | null;
 }
 
 interface ExamSessionActions {
@@ -109,6 +116,11 @@ export function useExamSession(
   const [scenarioMap, setScenarioMap] = useState<
     Record<string, PublicScenario>
   >({});
+  const [sourceMap, setSourceMap] = useState<
+    Record<string, PublicQuestionSourceSet>
+  >({});
+  const [sourcePublisher, setSourcePublisher] =
+    useState<QuestionSourcePublisher | null>(null);
 
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const hasTimer = remainingTime !== null;
@@ -120,6 +132,16 @@ export function useExamSession(
     const fetchQuestions = async () => {
       const res = await fetch(`/api/questions?categoryId=${categoryId}`);
       const data = await res.json();
+
+      const nextSourceMap: Record<string, PublicQuestionSourceSet> = {};
+      for (const source of (data.sources ?? []) as PublicQuestionSourceSet[]) {
+        nextSourceMap[source.id] = source;
+      }
+      setSourceMap(nextSourceMap);
+      setSourcePublisher(
+        (data.sourcePublisher as QuestionSourcePublisher | null | undefined) ??
+          null
+      );
 
       // 問題IDからシナリオを引くマップを構築
       const sMap: Record<string, PublicScenario> = {};
@@ -141,7 +163,9 @@ export function useExamSession(
       }
       if (selectedDomains.length > 0) {
         allQuestions = allQuestions.filter((question) =>
-          question.domain ? selectedDomains.includes(question.domain) : false
+          getQuestionDomains(question).some((domain) =>
+            selectedDomains.includes(domain)
+          )
         );
       }
 
@@ -244,10 +268,11 @@ export function useExamSession(
 
   const setAnswer = useCallback(
     (answer: number | number[]) => {
+      const selectedAnswer = normalizeSelectedAnswer(answer);
       setAnswers((prev) =>
         prev.map((a, i) =>
           i === currentIndex
-            ? { ...a, selectedAnswer: answer, uncertain: false }
+            ? { ...a, selectedAnswer, uncertain: false }
             : a
         )
       );
@@ -397,6 +422,8 @@ export function useExamSession(
     finished,
     batchResult,
     scenarioMap,
+    sourceMap,
+    sourcePublisher,
     setAnswer,
     toggleFlag,
     toggleUncertain,
@@ -438,8 +465,17 @@ function loadSessionState(): SessionState | null {
 function normalizeSavedAnswers(answers: AnswerState[]): AnswerState[] {
   return answers.map((answer) => ({
     ...answer,
+    selectedAnswer: normalizeSelectedAnswer(answer.selectedAnswer),
     uncertain: Boolean(answer.uncertain),
   }));
+}
+
+function normalizeSelectedAnswer(
+  answer: number | number[] | null,
+): number | number[] | null {
+  if (!Array.isArray(answer)) return answer;
+  const unique = [...new Set(answer)].sort((left, right) => left - right);
+  return unique.length === 0 ? null : unique;
 }
 
 function isRestorableSession(
