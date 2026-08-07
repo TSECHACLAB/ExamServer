@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "@digital-go-jp/tailwind-theme-plugin/v4";
 
 :root,
 [data-theme="modern-light"] {
@@ -120,6 +121,246 @@
   --code-bg: #000000;
   --code-text: #ffffff;
   --shadow-soft: none;
+}
+
+/*
+ * Digital Agency Design System scope for the practice flow.
+ * The upstream components stay byte-identical; theme compatibility lives here
+ * and in src/components/dads only.
+ */
+.practice-dads-surface {
+  min-height: 100%;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-noto-sans-jp), system-ui, sans-serif;
+  font-feature-settings: "palt";
+  line-height: 1.7;
+  scroll-padding-block: 5rem 9rem;
+  text-rendering: optimizeLegibility;
+  --font-sans: var(--font-noto-sans-jp), system-ui, sans-serif;
+  --font-mono: var(--font-noto-sans-mono), ui-monospace, monospace;
+}
+
+.practice-dads-surface :where(a) {
+  text-underline-offset: 0.1875rem;
+}
+
+.practice-dads-surface :where(button, a, input, select, textarea, summary) {
+  scroll-margin-block: 5rem 9rem;
+}
+
+.practice-dads-surface .dads-adapter-notification {
+  background: var(--surface);
+}
+
+[data-theme="modern-light"] .practice-dads-surface {
+  color-scheme: light;
+  --background: #f7f8fa;
+  --foreground: #1a1a1a;
+  --surface: #ffffff;
+  --surface-muted: #f2f2f2;
+  --surface-subtle: #f7f8fa;
+  --border: #cccccc;
+  --border-strong: #767676;
+  --primary: #0017c1;
+  --primary-hover: #00118f;
+  --primary-soft: #e8f1fe;
+  --text-muted: #4d4d4d;
+  --link: #0017c1;
+  --focus: #b78f00;
+  --warning: #927200;
+  --success: #197a4b;
+  --danger: #ce0000;
+  --code-bg: #f2f2f2;
+  --code-text: #1a1a1a;
+  --shadow-soft: 0 2px 8px 1px rgb(0 0 0 / 10%), 0 1px 5px rgb(0 0 0 / 30%);
+}
+
+[data-theme="simple-light"] .practice-dads-surface {
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: #111111;
+  --surface: #ffffff;
+  --surface-muted: #f5f5f5;
+  --surface-subtle: #fafafa;
+  --border: #cccccc;
+  --border-strong: #666666;
+  --primary: #174967;
+  --primary-hover: #10384f;
+  --primary-soft: #e7f1f7;
+  --text-muted: #4d4d4d;
+  --link: #174967;
+  --focus: #b78f00;
+  --warning: #806300;
+  --success: #0f6b3d;
+  --danger: #a90000;
+  --code-bg: #f2f2f2;
+  --code-text: #111111;
+  --shadow-soft: none;
+  --color-key-50: #e7f1f7;
+  --color-key-100: #d5e7f1;
+  --color-key-200: #b9d7e7;
+  --color-key-300: #8fbed5;
+  --color-key-400: #66a2bf;
+  --color-key-500: #4387a8;
+  --color-key-600: #2d7295;
+  --color-key-700: #1f5f8b;
+  --color-key-800: #1b557b;
+  --color-key-900: #174967;
+  --color-key-1000: #10384f;
+  --color-key-1100: #0b2a3c;
+  --color-key-1200: #071d29;
+  --color-blue-900: #174967;
+  --color-blue-1000: #10384f;
+  --color-blue-1100: #0b2a3c;
+  --color-blue-1200: #071d29;
+}
+
+[data-theme="modern-dark"] .practice-dads-surface,
+[data-theme="simple-dark"] .practice-dads-surface {
+  color-scheme: dark;
+  --background: #121417;
+  --foreground: #f7f8fa;
+  --surface: #1d2025;
+  --surface-muted: #292d33;
+  --surface-subtle: #181b20;
+  --border: #525862;
+  --border-strong: #a6adb8;
+  --primary: #8dbbff;
+  --primary-hover: #b6d2ff;
+  --primary-soft: #202f4d;
+  --text-muted: #c3c8d0;
+  --link: #b6d2ff;
+  --focus: #ffd43d;
+  --warning: #ffe380;
+  --success: #82d8a8;
+  --danger: #ff9696;
+  --code-bg: #292d33;
+  --code-text: #f7f8fa;
+  --shadow-soft: 0 2px 8px 1px rgb(0 0 0 / 35%);
+  --color-key-50: #202f4d;
+  --color-key-100: #263c63;
+  --color-key-200: #2f4b79;
+  --color-key-300: #3d5f93;
+  --color-key-400: #4e73ac;
+  --color-key-500: #6288c4;
+  --color-key-600: #76a0dc;
+  --color-key-700: #83adf0;
+  --color-key-800: #8dbbff;
+  --color-key-900: #9fc5ff;
+  --color-key-1000: #b6d2ff;
+  --color-key-1100: #cee0ff;
+  --color-key-1200: #e4edff;
+  --color-blue-50: #202f4d;
+  --color-blue-100: #263c63;
+  --color-blue-200: #2f4b79;
+  --color-blue-300: #3d5f93;
+  --color-blue-400: #4e73ac;
+  --color-blue-500: #6288c4;
+  --color-blue-600: #76a0dc;
+  --color-blue-700: #83adf0;
+  --color-blue-800: #8dbbff;
+  --color-blue-900: #9fc5ff;
+  --color-blue-1000: #b6d2ff;
+  --color-blue-1100: #cee0ff;
+  --color-blue-1200: #e4edff;
+  --color-solid-gray-50: #292d33;
+  --color-solid-gray-100: #343941;
+  --color-solid-gray-200: #464c56;
+  --color-solid-gray-300: #5f6672;
+  --color-solid-gray-400: #7d8591;
+  --color-solid-gray-420: #8e96a3;
+  --color-solid-gray-500: #a6adb8;
+  --color-solid-gray-536: #b6bdc7;
+  --color-solid-gray-600: #c3c8d0;
+  --color-solid-gray-700: #d8dce2;
+  --color-solid-gray-800: #edf0f4;
+  --color-solid-gray-900: #f7f8fa;
+  --color-success-1: #9be4b9;
+  --color-success-2: #82d8a8;
+  --color-error-1: #ff9696;
+  --color-error-2: #ffbbbb;
+  --color-warning-yellow-1: #ffe380;
+  --color-warning-yellow-2: #fff0b3;
+  --color-warning-orange-1: #ffa66d;
+  --color-warning-orange-2: #ffc199;
+  --color-red-900: #ff9696;
+  --color-red-1000: #ffbbbb;
+  --color-green-800: #82d8a8;
+  --color-green-900: #9be4b9;
+  --color-magenta-900: #ffaeff;
+  --color-orange-800: #ffc199;
+  --color-yellow-300: #ffd43d;
+}
+
+[data-theme="simple-dark"] .practice-dads-surface {
+  --background: #101010;
+  --surface: #191919;
+  --surface-muted: #242424;
+  --surface-subtle: #141414;
+  --shadow-soft: none;
+}
+
+[data-theme="modern-dark"] .practice-dads-surface .dads-adapter-button[data-dads-variant="solid-fill"],
+[data-theme="simple-dark"] .practice-dads-surface .dads-adapter-button[data-dads-variant="solid-fill"] {
+  color: #111111;
+}
+
+[data-theme="modern-dark"] .practice-dads-surface dialog > div,
+[data-theme="simple-dark"] .practice-dads-surface dialog > div {
+  color-scheme: dark;
+}
+
+[data-theme="high-contrast"] .practice-dads-surface {
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: #000000;
+  --surface: #ffffff;
+  --surface-muted: #f2f2f2;
+  --surface-subtle: #ffffff;
+  --border: #000000;
+  --border-strong: #000000;
+  --primary: #003cff;
+  --primary-hover: #001db8;
+  --primary-soft: #fff200;
+  --text-muted: #1f1f1f;
+  --link: #003cff;
+  --focus: #b78f00;
+  --warning: #806300;
+  --success: #006b2d;
+  --danger: #c40000;
+  --code-bg: #000000;
+  --code-text: #ffffff;
+  --shadow-soft: none;
+  --color-key-50: #e8f1fe;
+  --color-key-100: #d9e6ff;
+  --color-key-200: #c5d7fb;
+  --color-key-300: #9db7f9;
+  --color-key-400: #7096f8;
+  --color-key-500: #4979f5;
+  --color-key-600: #3460fb;
+  --color-key-700: #264af4;
+  --color-key-800: #003cff;
+  --color-key-900: #003cff;
+  --color-key-1000: #001db8;
+  --color-key-1100: #00127a;
+  --color-key-1200: #000d59;
+  --color-blue-900: #003cff;
+  --color-blue-1000: #001db8;
+  --color-blue-1100: #00127a;
+  --color-blue-1200: #000d59;
+  --color-solid-gray-50: #f2f2f2;
+  --color-solid-gray-100: #e6e6e6;
+  --color-solid-gray-200: #cccccc;
+  --color-solid-gray-300: #b3b3b3;
+  --color-solid-gray-400: #999999;
+  --color-solid-gray-420: #767676;
+  --color-solid-gray-500: #666666;
+  --color-solid-gray-536: #4d4d4d;
+  --color-solid-gray-600: #333333;
+  --color-solid-gray-700: #1a1a1a;
+  --color-solid-gray-800: #000000;
+  --color-solid-gray-900: #000000;
 }
 
 [data-theme="modern-light"] .exam-production-surface {

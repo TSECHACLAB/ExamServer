@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "repository": "digital-go-jp/design-system-example-components-react",
+  "commit": "22cda0df79f8f881953f11dca39e1c5a28619844",
+  "sourceUrl": "https://github.com/digital-go-jp/design-system-example-components-react/tree/22cda0df79f8f881953f11dca39e1c5a28619844",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sourcePath": "LICENSE",
+      "sha256": "ae61e7a436d5e708b3341beb7ca88fc467d4b0362b2c096c19e37afdb3be7f8f"
+    },
+    {
+      "path": "components/Button/Button.tsx",
+      "sourcePath": "src/components/Button/Button.tsx",
+      "sha256": "e32cb610a89ba7337ed728a0bc3914f06b3c4824fc62e6e4c5e71ab0e6ab0218"
+    },
+    {
+      "path": "components/Button/index.ts",
+      "sourcePath": "src/components/Button/index.ts",
+      "sha256": "ab93b09b06be3affde0cf3c1e2fdfb93db90a9e36925fd126d48821344fce481"
+    },
+    {
+      "path": "components/Checkbox/Checkbox.tsx",
+      "sourcePath": "src/components/Checkbox/Checkbox.tsx",
+      "sha256": "f51fbf1d6f7d2330753c18ce1398e6a24ea15c3a021ef4c84b0816f00af00d00"
+    },
+    {
+      "path": "components/Checkbox/index.ts",
+      "sourcePath": "src/components/Checkbox/index.ts",
+      "sha256": "5177409669ac6b8c94e597a74183bcad072f1c2e6e29ce95a7f11bb4849f2957"
+    },
+    {
+      "path": "components/ChipLabel/ChipLabel.tsx",
+      "sourcePath": "src/components/ChipLabel/ChipLabel.tsx",
+      "sha256": "1d22f32a7b1f016c70071aca37a8958635aacd96ce5bf4656765b620f540e27c"
+    },
+    {
+      "path": "components/ChipLabel/index.ts",
+      "sourcePath": "src/components/ChipLabel/index.ts",
+      "sha256": "428c85d8733f22fc433315311ad1447fa2eb7901637079337d273c397fad8684"
+    },
+    {
+      "path": "components/Disclosure/Disclosure.tsx",
+      "sourcePath": "src/components/Disclosure/Disclosure.tsx",
+      "sha256": "79092bc8da6f0370c7dfe3af937f5e8af57acfd7b27e23fd67d8ea23c774dd58"
+    },
+    {
+      "path": "components/Disclosure/index.ts",
+      "sourcePath": "src/components/Disclosure/index.ts",
+      "sha256": "d145127c726c14076509cec8b9357544757c33ed33e9efa82d232b8f7f1aedbd"
+    },
+    {
+      "path": "components/Divider/Divider.tsx",
+      "sourcePath": "src/components/Divider/Divider.tsx",
+      "sha256": "03905599c8aed0fc4687f39552ee709b9ae638cd3d30887fcb64c1161be04286"
+    },
+    {
+      "path": "components/Divider/index.ts",
+      "sourcePath": "src/components/Divider/index.ts",
+      "sha256": "4f91921d45cb66a707d93209669cb1b50a656a1185a6ff26985dcaba28ab20c0"
+    },
+    {
+      "path": "components/Heading/Heading.tsx",
+      "sourcePath": "src/components/Heading/Heading.tsx",
+      "sha256": "9c8058805eae2bf9a4ce72a307dc5ebc56058f4673503b9bfb066b94ff332ef7"
+    },
+    {
+      "path": "components/Heading/index.ts",
+      "sourcePath": "src/components/Heading/index.ts",
+      "sha256": "1144b5e18b98c987d0071a835e0cc6e74533d9d9f632852e76609ae64e062867"
+    },
+    {
+      "path": "components/Input/Input.tsx",
+      "sourcePath": "src/components/Input/Input.tsx",
+      "sha256": "f2472207ed4e3835ee05e8c0f1646e38f7fca5dfaaa4bd52fdd2704bec1a018f"
+    },
+    {
+      "path": "components/Input/index.ts",
+      "sourcePath": "src/components/Input/index.ts",
+      "sha256": "dbc01d9e9d303eba2fa4230b963ca0671bc4fd1c3dcea6a4a4e1541856c020d5"
+    },
+    {
+      "path": "components/Link/Link.tsx",
+      "sourcePath": "src/components/Link/Link.tsx",
+      "sha256": "40dd077ffd89c756827019c9b17d20f6a654c8415af8f4dc406eac960f48d423"
+    },
+    {
+      "path": "components/Link/index.ts",
+      "sourcePath": "src/components/Link/index.ts",
+      "sha256": "65841076a06e0b05eb8cb124c34e3c5fd81600dc39323e832d7ae7a6c944984e"
+    },
+    {
+      "path": "components/ModalDialog/ModalDialog.tsx",
+      "sourcePath": "src/components/ModalDialog/ModalDialog.tsx",
+      "sha256": "5c37c220521e5aeba439ebdd66edea66cec4bb1a1a82cc99b26e158019c9c31e"
+    },
+    {
+      "path": "components/ModalDialog/index.ts",
+      "sourcePath": "src/components/ModalDialog/index.ts",
+      "sha256": "5a6ec0c15f5f028e347ec916bbe7478a42b30c1c910d0f62afedd2c036299f4f"
+    },
+    {
+      "path": "components/ModalDialog/useModalDialog.ts",
+      "sourcePath": "src/components/ModalDialog/useModalDialog.ts",
+      "sha256": "127205a734c7f5bbd277c8a293cc1c10e115f3ddef83d28f39e4c3fe29daaab1"
+    },
+    {
+      "path": "components/NotificationBanner/NotificationBanner.tsx",
+      "sourcePath": "src/components/NotificationBanner/NotificationBanner.tsx",
+      "sha256": "56533544995ba17381d583db339a136890f23085e9d4be2c2e0b09da429ce836"
+    },
+    {
+      "path": "components/NotificationBanner/index.ts",
+      "sourcePath": "src/components/NotificationBanner/index.ts",
+      "sha256": "eb7912ad4fca48500070294bb5b00b744fffbf25d258a416c66b7504da90df5a"
+    },
+    {
+      "path": "components/NotificationBanner/parts/Body.tsx",
+      "sourcePath": "src/components/NotificationBanner/parts/Body.tsx",
+      "sha256": "52159559ae992fa7ce983e8c7907aca9b57e4fec20635edb0241169c49741213"
+    },
+    {
+      "path": "components/NotificationBanner/parts/Close.tsx",
+      "sourcePath": "src/components/NotificationBanner/parts/Close.tsx",
+      "sha256": "d36940d5e91080d01c86c4f2e94ba732e7b2dbf57cb512b637772b661b631c3f"
+    },
+    {
+      "path": "components/NotificationBanner/parts/Icon.tsx",
+      "sourcePath": "src/components/NotificationBanner/parts/Icon.tsx",
+      "sha256": "7f003ea80273b95a3af4025672812e02d6761ad9baae6d0c64ed93a1b4c863b9"
+    },
+    {
+      "path": "components/NotificationBanner/parts/MobileClose.tsx",
+      "sourcePath": "src/components/NotificationBanner/parts/MobileClose.tsx",
+      "sha256": "cc37d020557367183d806d7e904205176cabce72a70f7502cc593552763f2363"
+    },
+    {
+      "path": "components/NotificationBanner/styles.ts",
+      "sourcePath": "src/components/NotificationBanner/styles.ts",
+      "sha256": "2318673daa10b1c48923270c556202bb568102e2f51d7f532d3eb5e434aaa509"
+    },
+    {
+      "path": "components/NotificationBanner/types.ts",
+      "sourcePath": "src/components/NotificationBanner/types.ts",
+      "sha256": "de9c63e92e83975642f7cdf1e8d3f6ae8970100ab1e9c354fb699a6d0baf559f"
+    },
+    {
+      "path": "components/ProgressIndicator/ProgressIndicator.tsx",
+      "sourcePath": "src/components/ProgressIndicator/ProgressIndicator.tsx",
+      "sha256": "80dbaffa65dc5562b54bb3ed8f56f61922d43e2597a373a0160f7a71c361597a"
+    },
+    {
+      "path": "components/ProgressIndicator/index.ts",
+      "sourcePath": "src/components/ProgressIndicator/index.ts",
+      "sha256": "27b84dbd310fc1836f4fa42b18c3c13461fc24842ae33c1d9518110277438f7b"
+    },
+    {
+      "path": "components/ProgressIndicator/keyframes.css",
+      "sourcePath": "src/components/ProgressIndicator/keyframes.css",
+      "sha256": "ea33b0446021999f65d1eaee4a66610c6488ec32bbfab0baa30c320d4f13f23e"
+    },
+    {
+      "path": "components/ProgressIndicator/types.ts",
+      "sourcePath": "src/components/ProgressIndicator/types.ts",
+      "sha256": "bf557c65cbf35b874e104a1c49b7251c29a32755de55163099baa2216096aac8"
+    },
+    {
+      "path": "components/ProgressIndicator/useProgressIndicatorAnnouncer.ts",
+      "sourcePath": "src/components/ProgressIndicator/useProgressIndicatorAnnouncer.ts",
+      "sha256": "381a35c4907e34007d02676cde7acf8dc5e95d420402ab5e19e6f70489a04248"
+    },
+    {
+      "path": "components/Radio/Radio.tsx",
+      "sourcePath": "src/components/Radio/Radio.tsx",
+      "sha256": "e12912c2dc8dd021fc9c700833e9959e3d2c7c83c1c94287475eb410f800aaae"
+    },
+    {
+      "path": "components/Radio/index.ts",
+      "sourcePath": "src/components/Radio/index.ts",
+      "sha256": "5ac998f26bf0196b8b0e39a1e893d20f0ea6a7f364ab061201ac6bf9127c20d9"
+    },
+    {
+      "path": "components/Select/Select.tsx",
+      "sourcePath": "src/components/Select/Select.tsx",
+      "sha256": "4bebc22d54a3710268e2de5fb3ed02ff1c392345f6353f1e58eac749af529cde"
+    },
+    {
+      "path": "components/Select/index.ts",
+      "sourcePath": "src/components/Select/index.ts",
+      "sha256": "b18e6834189b339b999f7233e06e8816a9bf095b3a8fc9b02b6fe0af35209335"
+    },
+    {
+      "path": "components/Slot/Slot.tsx",
+      "sourcePath": "src/components/Slot/Slot.tsx",
+      "sha256": "90813cd63473495bc6a420341d20fcc8746c14b5072e309dac4ead6377ea67b3"
+    },
+    {
+      "path": "components/Slot/index.ts",
+      "sourcePath": "src/components/Slot/index.ts",
+      "sha256": "5bbaa600f2259c7ecc79f880229ad7b5c7783690923b25e841bfc922b435f647"
+    },
+    {
+      "path": "components/Textarea/Textarea.tsx",
+      "sourcePath": "src/components/Textarea/Textarea.tsx",
+      "sha256": "33f2232010387771698915a8aa893fee70f8d4e590032fcf896b4e6120b6c742"
+    },
+    {
+      "path": "components/Textarea/index.ts",
+      "sourcePath": "src/components/Textarea/index.ts",
+      "sha256": "8b734bb05838287deda3d64b1da9a8498a29336b6ee85297a89932c417bb3eaf"
+    },
+    {
+      "path": "components/UtilityLink/UtilityLink.tsx",
+      "sourcePath": "src/components/UtilityLink/UtilityLink.tsx",
+      "sha256": "55bc401dbb6840d226818796bd20f2cb7af05fe22642f3dcd43f9129264395f0"
+    },
+    {
+      "path": "components/UtilityLink/index.ts",
+      "sourcePath": "src/components/UtilityLink/index.ts",
+      "sha256": "3f9ce16a391ebf4fd70387fa4a91b1ab6f2c8706bec46e175f1d68c19d96d12f"
+    }
+  ]
+}
