@@ -1,59 +1,62 @@
-/**
- * 受験セッション画面
- * 問題の表示・回答・ナビゲーション・採点を行うメインページ。
- * クエリパラメータで受験設定を受け取る。
- */
-
-"use client";
-
-import { useSearchParams, useParams } from "next/navigation";
-import { Suspense } from "react";
+import { notFound } from "next/navigation";
 import ExamSession from "@/components/exam/ExamSession";
+import FlowBackLink from "@/components/FlowBackLink";
+import { DadsStatusBanner } from "@/components/dads/DadsStatus";
+import { Heading, HeadingTitle } from "@/vendor/dads-runtime/components/Heading";
+import {
+  normalizeExamSessionConfig,
+  type ExamSessionSearchParams,
+} from "@/lib/exam-session-config";
+import {
+  getAllQuestions,
+  getCategoryById,
+  toPublicQuestion,
+} from "@/lib/questions";
 
-/** useSearchParams を使うため Suspense でラップ */
-export default function SessionPage() {
-  return (
-    <Suspense
-      fallback={
-        <div className="flex items-center justify-center min-h-screen">
-          <p className="text-gray-500">読み込み中...</p>
-        </div>
-      }
-    >
-      <SessionContent />
-    </Suspense>
-  );
+interface Props {
+  params: Promise<{ categoryId: string }>;
+  searchParams: Promise<ExamSessionSearchParams>;
 }
 
-function SessionContent() {
-  const params = useParams();
-  const searchParams = useSearchParams();
+/** カテゴリとURL契約はServer Component境界で確定してからクライアントへ渡す。 */
+export default async function SessionPage({ params, searchParams }: Props) {
+  const [{ categoryId }, query] = await Promise.all([params, searchParams]);
+  const category = getCategoryById(categoryId);
+  if (!category) notFound();
 
-  const categoryId = params.categoryId as string;
-  const mode = (searchParams.get("mode") ?? "exam") as "exam" | "drill";
-  const count = Number(searchParams.get("count") ?? "10");
-  const timer = searchParams.get("timer") === "1";
-  const random = searchParams.get("random") === "1";
-  const domains = (searchParams.get("domains") ?? "")
-    .split(",")
-    .map((domain) => domain.trim())
-    .filter(Boolean);
-  const bucket =
-    searchParams.get("bucket") === "certification"
-      ? "certification"
-      : searchParams.get("bucket") === "other"
-        ? "other"
-        : null;
+  const publicQuestions = getAllQuestions(categoryId).map(toPublicQuestion);
+  const normalized = normalizeExamSessionConfig(category, publicQuestions, query);
+  const setupHref = `/exam/${categoryId}?bucket=${
+    normalized.ok ? normalized.config.returnBucket : normalized.returnBucket
+  }`;
 
-  return (
-    <ExamSession
-      categoryId={categoryId}
-      mode={mode}
-      questionCount={count}
-      timerEnabled={timer}
-      randomEnabled={random}
-      selectedDomains={domains}
-      returnBucket={bucket}
-    />
-  );
+  if (!normalized.ok) {
+    return (
+      <main className="practice-dads-surface min-h-svh px-4 py-10 sm:px-8 sm:py-16">
+        <div className="mx-auto max-w-3xl">
+          <Heading size="36">
+            <HeadingTitle level="h1">開始条件を確認できませんでした</HeadingTitle>
+          </Heading>
+          <div className="mt-8">
+            <DadsStatusBanner
+              title="URLの受験設定が正しくありません"
+              type="error"
+              live="assertive"
+            >
+              <ul className="list-disc space-y-1 pl-6">
+                {normalized.reasons.map((reason) => (
+                  <li key={reason}>{reason}</li>
+                ))}
+              </ul>
+            </DadsStatusBanner>
+          </div>
+          <div className="mt-8">
+            <FlowBackLink href={setupHref} label="設定画面に戻る" />
+          </div>
+        </div>
+      </main>
+    );
+  }
+
+  return <ExamSession category={category} config={normalized.config} />;
 }

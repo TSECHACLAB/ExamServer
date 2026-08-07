@@ -224,6 +224,40 @@ export interface ExamConfig {
   timerEnabled: boolean;
 }
 
+/** Server Component で検証済みの受験設定。 */
+export interface NormalizedExamSessionConfig {
+  categoryId: string;
+  mode: ExamMode;
+  questionCount: number;
+  timerEnabled: boolean;
+  randomEnabled: boolean;
+  selectedDomains: string[];
+  timeLimit: number;
+  passingScore: number;
+  returnBucket: "certification" | "other";
+  /** 保存済みセッションが同じ開始条件かを判定する安定した識別子。 */
+  fingerprint: string;
+}
+
+export type ExamSessionPhase =
+  | "loading"
+  | "active"
+  | "review"
+  | "feedback"
+  | "submitting"
+  | "finished"
+  | "error";
+
+export type FinishReason = "manual" | "time-expired" | "drill-complete";
+
+export interface ExamSessionError {
+  operation: "load" | "drill" | "submit";
+  kind: "network" | "invalid-response" | "empty";
+  message: string;
+  recoverPhase: "active" | "review" | "feedback";
+  finishReason?: FinishReason;
+}
+
 /** 受験中の1問の回答状態 */
 export interface AnswerState {
   questionId: string;
@@ -254,8 +288,13 @@ export interface QuestionResult {
 
 /** 試験全体の採点結果 */
 export interface ExamResult {
+  /** 1回の受験を一意に識別し、進捗の二重加算を防ぐ。 */
+  attemptId: string;
   categoryId: string;
   mode: ExamMode;
+  finishReason: FinishReason;
+  /** カテゴリの meta.json に定義された合格基準（%）。 */
+  passingScore: number;
   /** 各問の結果 */
   results: QuestionResult[];
   /** 総合スコア（0〜100） */
@@ -276,7 +315,7 @@ export interface ExamResult {
 export interface QuestionHistory {
   correct: number;
   wrong: number;
-  lastAnswer: number | number[];
+  lastAnswer: number | number[] | null;
 }
 
 /** カテゴリごとの進捗 */
@@ -287,8 +326,31 @@ export interface CategoryProgress {
   questionHistory: Record<string, QuestionHistory>;
 }
 
-/** localStorage に保存する全体の進捗 */
+/** UI が参照するカテゴリ別進捗。 */
 export type StudyProgress = Record<string, CategoryProgress>;
+
+/** localStorage に保存する version 2 の進捗。 */
+export interface StudyProgressV2 {
+  version: 2;
+  categories: StudyProgress;
+  processedAttemptIds: string[];
+}
+
+/** sessionStorage に保存する version 2 の受験状態。 */
+export interface SessionStateV2 {
+  version: 2;
+  attemptId: string;
+  configFingerprint: string;
+  categoryId: string;
+  mode: ExamMode;
+  questionIds: string[];
+  answers: AnswerState[];
+  currentIndex: number;
+  deadlineAt: number | null;
+  phase: ExamSessionPhase;
+  drillResults: Record<string, AnswerResponse>;
+  completedResult: ExamResult | null;
+}
 
 // ---------------------------------------------------------------------------
 // API レスポンス

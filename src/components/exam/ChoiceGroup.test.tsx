@@ -20,8 +20,9 @@ describe("ChoiceGroup", () => {
       />,
     );
 
-    expect(screen.getByRole("button", { name: "ウ" })).toBeDisabled();
-    fireEvent.click(screen.getByRole("button", { name: "ア" }));
+    expect(screen.getByRole("checkbox", { name: "ウ" })).toBeDisabled();
+    expect(screen.getByRole("status")).toHaveTextContent("上限の2個");
+    fireEvent.click(screen.getByRole("checkbox", { name: "ア" }));
     expect(onChange).toHaveBeenLastCalledWith([1]);
 
     view.rerender(
@@ -33,8 +34,8 @@ describe("ChoiceGroup", () => {
         onChange={onChange}
       />,
     );
-    expect(screen.getByRole("button", { name: "ウ" })).toBeEnabled();
-    fireEvent.click(screen.getByRole("button", { name: "ウ" }));
+    expect(screen.getByRole("checkbox", { name: "ウ" })).toBeEnabled();
+    fireEvent.click(screen.getByRole("checkbox", { name: "ウ" }));
     expect(onChange).toHaveBeenLastCalledWith([1, 2]);
   });
 });

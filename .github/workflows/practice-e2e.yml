@@ -1,0 +1,53 @@
+name: Practice flow quality
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/practice-e2e.yml"
+      - "data/**"
+      - "e2e/**"
+      - "src/**"
+      - "vendor/dads/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - "playwright.config.ts"
+      - "vitest.config.ts"
+      - "next.config.ts"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/practice-e2e.yml"
+      - "data/**"
+      - "e2e/**"
+      - "src/**"
+      - "vendor/dads/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - "playwright.config.ts"
+      - "vitest.config.ts"
+      - "next.config.ts"
+
+concurrency:
+  group: practice-flow-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run validate
+      - run: npm run verify:dads
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+      - run: npm run test:e2e:practice

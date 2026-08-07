@@ -9,6 +9,8 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "test:e2e:practice": "playwright test e2e/practice-flow.spec.ts",
     "validate": "tsx scripts/validate-schema.ts && tsx scripts/audit-sg-explanations.ts --check",
     "verify:sg-sources": "tsx scripts/verify-sg-official-sources.ts",
     "audit:sg-pm-explanations": "tsx scripts/audit-legacy-sg-pm-explanation-coverage.ts",
@@ -38,9 +40,11 @@
     "postcss": "^8.5.15"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.1",
     "@next/mdx": "^16.3.0",
+    "@playwright/test": "^1.62.1",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",

@@ -1,52 +1,56 @@
-/**
- * 問題ナビゲーション
- * 画面下部に問題番号を並べ、回答済み・フラグ付きを色分け表示する。
- */
-
 "use client";
 
+import { isAnswered } from "@/lib/answer-state";
 import type { AnswerState } from "@/types/exam";
 
 interface Props {
   answers: AnswerState[];
   currentIndex: number;
   onNavigate: (index: number) => void;
+  disabled?: boolean;
 }
 
 export default function QuestionNav({
   answers,
   currentIndex,
   onNavigate,
+  disabled = false,
 }: Props) {
   return (
-    <div className="flex flex-wrap gap-1.5 items-center">
-      {answers.map((ans, index) => {
-        const isCurrent = index === currentIndex;
-        const isAnswered = ans.selectedAnswer !== null;
-        const isFlagged = ans.flagged;
-        const isUncertain = ans.uncertain;
-        const label = isUncertain ? "？" : isFlagged ? "⚑" : index + 1;
+    <ol className="grid grid-cols-5 gap-2 sm:grid-cols-8 lg:grid-cols-4">
+      {answers.map((answer, index) => {
+        const current = index === currentIndex;
+        const answered = isAnswered(answer.selectedAnswer);
+        const markers = [
+          answered ? "回答済み" : "未回答",
+          answer.uncertain ? "分からない" : null,
+          answer.flagged ? "見直し対象" : null,
+          current ? "現在の問題" : null,
+        ].filter(Boolean);
 
         return (
-          <button
-            key={ans.questionId}
-            onClick={() => onNavigate(index)}
-            aria-current={isCurrent ? "step" : undefined}
-            aria-label={`問${index + 1}${isUncertain ? " 分からない" : ""}${isFlagged ? " フラグ" : ""}${isAnswered ? " 回答済み" : ""}`}
-            className={`
-              h-9 w-9 rounded-md text-xs font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600
-              ${isAnswered ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-700"}
-              ${isUncertain ? "border border-sky-300 bg-sky-50 text-sky-800" : ""}
-              ${isCurrent ? "outline outline-2 outline-offset-2 outline-blue-500" : ""}
-              ${isFlagged ? "border border-amber-400" : ""}
-              hover:bg-blue-50 hover:text-blue-800
-            `}
-            title={`問${index + 1}${isUncertain ? " (分からない)" : ""}${isFlagged ? " (フラグ)" : ""}${isAnswered ? " (回答済)" : ""}`}
-          >
-            {label}
-          </button>
+          <li key={answer.questionId}>
+            <button
+              type="button"
+              onClick={() => onNavigate(index)}
+              disabled={disabled}
+              aria-current={current ? "step" : undefined}
+              aria-label={`問${index + 1} ${markers.join("、")}`}
+              className={`flex min-h-12 w-full min-w-11 flex-col items-center justify-center rounded-6 border-2 px-1 py-1 text-sm font-bold forced-colors:border-[ButtonText] focus-visible:bg-yellow-300 focus-visible:text-blue-1000 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-black focus-visible:ring-2 focus-visible:ring-yellow-300 ${
+                answered
+                  ? "border-key-900 bg-[var(--primary-soft)] text-solid-gray-900"
+                  : "border-[var(--border-strong)] bg-[var(--surface)] text-solid-gray-800"
+              } ${current ? "border-key-900 shadow-[inset_0_-3px_0_var(--primary)]" : ""} disabled:cursor-not-allowed disabled:opacity-60`}
+            >
+              <span>問{index + 1}</span>
+              <span aria-hidden="true" className="text-[0.6875rem] leading-4">
+                {current ? "今・" : ""}{answer.uncertain ? "？" : answered ? "済" : "未"}
+                {answer.flagged ? "・旗" : ""}
+              </span>
+            </button>
+          </li>
         );
       })}
-    </div>
+    </ol>
   );
 }

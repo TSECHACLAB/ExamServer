@@ -1,251 +1,211 @@
-/**
- * 受験セッション
- * useExamSession フックで状態管理し、モードに応じた表示を切り替える。
- */
-
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
-import type { ExamMode, Category } from "@/types/exam";
-import type { CategoryBucket } from "@/components/CategorySelector";
-import { useExamSession } from "@/hooks/useExamSession";
+import AbandonSessionDialog from "@/components/exam/AbandonSessionDialog";
+import DrillFeedback from "@/components/exam/DrillFeedback";
+import ExamReview from "@/components/exam/ExamReview";
+import ExamSessionStatus from "@/components/exam/ExamSessionStatus";
 import ExamShell from "@/components/exam/ExamShell";
 import OneshotLayout from "@/components/exam/layouts/OneshotLayout";
 import ScenarioLayout from "@/components/exam/layouts/ScenarioLayout";
-import DrillFeedback from "@/components/exam/DrillFeedback";
 import ResultView from "@/components/exam/ResultView";
+import { useExamSession } from "@/hooks/useExamSession";
+import { isAnswered } from "@/lib/answer-state";
+import type { Category, NormalizedExamSessionConfig } from "@/types/exam";
 
 interface Props {
-  categoryId: string;
-  mode: ExamMode;
-  questionCount: number;
-  timerEnabled: boolean;
-  randomEnabled: boolean;
-  selectedDomains: string[];
-  returnBucket: CategoryBucket | null;
+  category: Category;
+  config: NormalizedExamSessionConfig;
 }
 
-export default function ExamSession({
-  categoryId,
-  mode,
-  questionCount,
-  timerEnabled,
-  randomEnabled,
-  selectedDomains,
-  returnBucket,
-}: Props) {
+export default function ExamSession({ category, config }: Props) {
   const router = useRouter();
-  const [category, setCategory] = useState<Category | null>(null);
+  const [abandonOpen, setAbandonOpen] = useState(false);
+  const session = useExamSession(config);
+  const setupHref = `/exam/${category.id}?bucket=${config.returnBucket}`;
 
-  // カテゴリ情報を取得（サーバーから）
-  useEffect(() => {
-    fetch(`/api/categories?id=${categoryId}`)
-      .then((res) => res.json())
-      .then((data) => setCategory(data))
-      .catch(() => {});
-  }, [categoryId]);
-
-  const session = useExamSession({
-    categoryId,
-    mode,
-    questionCount,
-    timerEnabled,
-    randomEnabled,
-    selectedDomains,
-    timeLimit: category?.timeLimit ?? 5400,
-  });
-
-  const effectiveReturnBucket =
-    returnBucket ??
-    (category?.group === "certification" ? "certification" : "other");
-  const setupHref = `/exam/${categoryId}?bucket=${effectiveReturnBucket}`;
-
-  // ローディング中
-  if (session.loading || !category) {
+  if (session.phase === "loading") {
     return (
-      <div className="exam-production-surface flex min-h-screen items-center justify-center">
-        <p className="text-gray-500">問題を読み込み中...</p>
-      </div>
-    );
-  }
-
-  // 問題がない
-  if (session.questions.length === 0) {
-    return (
-      <div className="exam-production-surface flex min-h-screen items-center justify-center">
-        <p className="text-gray-500">この試験には問題がありません。</p>
-      </div>
-    );
-  }
-
-  // 試験終了 → 結果表示
-  if (session.finished && session.batchResult) {
-    return (
-      <ResultView
-        categoryId={categoryId}
+      <ExamSessionStatus
         categoryName={category.name}
-        mode={mode}
-        result={session.batchResult}
-        questions={session.questions}
-        sourceMap={session.sourceMap}
-        sourcePublisher={session.sourcePublisher}
-        returnBucket={effectiveReturnBucket}
+        loadingLabel="問題を読み込んでいます"
+        setupHref={setupHref}
       />
     );
   }
 
-  // 一問一答モードで全問完了
-  if (session.finished && mode === "drill") {
+  if (session.phase === "submitting") {
     return (
-      <div className="exam-production-surface flex min-h-screen flex-col items-center justify-center gap-4">
-        <p className="text-lg font-semibold text-gray-800">
-          全問完了しました！
-        </p>
-        <a
-          href={setupHref}
-          className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-        >
-          設定画面に戻る
-        </a>
-      </div>
+      <ExamSessionStatus
+        categoryName={category.name}
+        loadingLabel={config.mode === "exam" ? "採点しています" : "答え合わせをしています"}
+        setupHref={setupHref}
+      />
+    );
+  }
+
+  if (session.phase === "error" && session.error) {
+    return (
+      <ExamSessionStatus
+        categoryName={category.name}
+        error={session.error}
+        onRetry={() => void session.retry()}
+        setupHref={setupHref}
+      />
+    );
+  }
+
+  if (session.phase === "finished" && session.completedResult) {
+    return (
+      <ResultView
+        categoryName={category.name}
+        result={session.completedResult}
+        questions={session.questions}
+        sourceMap={session.sourceMap}
+        sourcePublisher={session.sourcePublisher}
+        returnBucket={config.returnBucket}
+      />
+    );
+  }
+
+  if (session.phase === "review") {
+    return (
+      <ExamReview
+        answers={session.answers}
+        categoryName={category.name}
+        currentIndex={session.currentIndex}
+        passingScore={config.passingScore}
+        remainingTime={session.remainingTime}
+        isLocked={session.isLocked}
+        onReturn={session.resumeExam}
+        onSubmit={() => void session.finishExam("manual")}
+      />
     );
   }
 
   const currentQuestion = session.questions[session.currentIndex];
   const currentAnswer = session.answers[session.currentIndex];
-  const isScenario = currentQuestion.style === "scenario";
-  const parentScenario = isScenario
-    ? session.scenarioMap[currentQuestion.id]
-    : null;
-  const currentDrillResult =
-    session.drillResult?.questionId === currentQuestion.id
-      ? session.drillResult
-      : null;
+  if (!currentQuestion || !currentAnswer) {
+    return (
+      <ExamSessionStatus
+        categoryName={category.name}
+        error={{
+          operation: "load",
+          kind: "empty",
+          message: "表示できる問題がありません。設定を確認してください。",
+          recoverPhase: "active",
+        }}
+        setupHref={setupHref}
+      />
+    );
+  }
 
-  const resultProps = currentDrillResult
+  const isScenario = currentQuestion.style === "scenario";
+  const parentScenario = isScenario ? session.scenarioMap[currentQuestion.id] : null;
+  const showingFeedback = session.phase === "feedback" && session.drillResult !== null;
+  const resultProps = session.drillResult
     ? {
-        correctAnswer: currentDrillResult.answer,
+        correctAnswer: session.drillResult.answer,
         userAnswer: currentAnswer.selectedAnswer,
       }
     : undefined;
-  const handlePrimaryNext = () => {
-    if (mode !== "drill") {
-      session.goNext();
+
+  const handlePrimary = () => {
+    if (config.mode === "exam") {
+      if (session.currentIndex === session.questions.length - 1) session.requestReview();
+      else session.goNext();
       return;
     }
-
-    if (currentDrillResult) {
-      session.nextDrill();
-      return;
-    }
-
-    if (currentAnswer.selectedAnswer === null) {
-      void session.submitUnknownDrill();
-      return;
-    }
-
-    void session.submitDrill();
+    if (showingFeedback) session.nextDrill();
+    else void session.submitDrill();
   };
-  const handlePrimaryFinish = () => {
-    if (mode !== "drill") {
-      void session.finishExam();
-      return;
-    }
 
-    if (currentDrillResult) {
-      session.nextDrill();
-      return;
-    }
-
-    if (currentAnswer.selectedAnswer === null) {
-      void session.submitUnknownDrill();
-      return;
-    }
-
-    void session.submitDrill();
-  };
-  const handleExitExam = async () => {
-    const confirmed = window.confirm(
-      mode === "exam"
-        ? "試験を終了して採点しますか？未回答の問題は未回答として扱われます。"
-        : "一問一答を終了して設定画面に戻りますか？"
-    );
-    if (!confirmed) return;
-
-    if (mode === "exam") {
-      await session.finishExam();
-      return;
-    }
-
-    session.abandonSession();
-    router.push(setupHref);
-  };
-  const handleUncertain = async () => {
-    if (currentDrillResult) return;
-
-    if (mode === "drill") {
-      await session.submitUnknownDrill();
-      return;
-    }
-
-    session.toggleUncertain();
-  };
+  const primaryLabel =
+    config.mode === "exam"
+      ? session.currentIndex === session.questions.length - 1
+        ? "回答状況を確認"
+        : "次へ"
+      : showingFeedback
+        ? session.currentIndex === session.questions.length - 1
+          ? "結果を見る"
+          : "次の問題へ"
+        : "答え合わせ";
 
   return (
-    <ExamShell
-      categoryName={category.name}
-      currentIndex={session.currentIndex}
-      totalCount={session.questions.length}
-      answers={session.answers}
-      remainingTime={session.remainingTime}
-      isFlagged={currentAnswer.flagged}
-      isUncertain={currentAnswer.uncertain}
-      isScenario={isScenario}
-      onFlag={session.toggleFlag}
-      onUncertain={handleUncertain}
-      onPrev={session.goPrev}
-      onNext={handlePrimaryNext}
-      onNavigate={session.goTo}
-      onFinish={handlePrimaryFinish}
-      onExit={handleExitExam}
-    >
-      {/* style に応じてレイアウトを切り替え */}
-      {isScenario && parentScenario ? (
-        <ScenarioLayout
-          scenario={parentScenario}
-          question={currentQuestion}
-          selectedAnswer={currentAnswer.selectedAnswer}
-          onAnswer={session.setAnswer}
-          showResult={resultProps}
-          disabled={currentDrillResult !== null}
-        />
-      ) : (
-        <OneshotLayout
-          question={currentQuestion}
-          selectedAnswer={currentAnswer.selectedAnswer}
-          onAnswer={session.setAnswer}
-          showResult={resultProps}
-          disabled={currentDrillResult !== null}
-        />
-      )}
+    <>
+      <ExamShell
+        categoryName={category.name}
+        mode={config.mode}
+        currentIndex={session.currentIndex}
+        totalCount={session.questions.length}
+        answers={session.answers}
+        remainingTime={session.remainingTime}
+        isFlagged={currentAnswer.flagged}
+        isUncertain={currentAnswer.uncertain}
+        isScenario={isScenario}
+        isLocked={session.isLocked}
+        showingFeedback={showingFeedback}
+        primaryLabel={primaryLabel}
+        primaryDisabled={
+          config.mode === "drill" &&
+          !showingFeedback &&
+          !isAnswered(currentAnswer.selectedAnswer)
+        }
+        onFlag={session.toggleFlag}
+        onUncertain={() => {
+          if (config.mode === "drill") void session.submitUnknownDrill();
+          else session.toggleUncertain();
+        }}
+        onPrev={session.goPrev}
+        onPrimary={handlePrimary}
+        onNavigate={session.goTo}
+        onReview={session.requestReview}
+        onExit={() => setAbandonOpen(true)}
+      >
+        {isScenario && parentScenario ? (
+          <ScenarioLayout
+            scenario={parentScenario}
+            question={currentQuestion}
+            selectedAnswer={currentAnswer.selectedAnswer}
+            onAnswer={session.setAnswer}
+            showResult={resultProps}
+            disabled={session.isLocked || showingFeedback}
+          />
+        ) : (
+          <OneshotLayout
+            question={currentQuestion}
+            selectedAnswer={currentAnswer.selectedAnswer}
+            onAnswer={session.setAnswer}
+            showResult={resultProps}
+            disabled={session.isLocked || showingFeedback}
+          />
+        )}
 
-      {/* 一問一答モードのフィードバック表示 */}
-      {mode === "drill" && currentDrillResult && (
-        <DrillFeedback
-          result={currentDrillResult}
-          sourceReference={currentQuestion.source}
-          additionalSourceReferences={currentQuestion.sourceOccurrences}
-          source={
-            currentQuestion.source
-              ? session.sourceMap[currentQuestion.source.sourceId]
-              : undefined
-          }
-          sourceMap={session.sourceMap}
-          publisher={session.sourcePublisher}
-          onNext={session.nextDrill}
-        />
-      )}
-    </ExamShell>
+        {showingFeedback && session.drillResult ? (
+          <DrillFeedback
+            result={session.drillResult}
+            sourceReference={currentQuestion.source}
+            additionalSourceReferences={currentQuestion.sourceOccurrences}
+            source={
+              currentQuestion.source
+                ? session.sourceMap[currentQuestion.source.sourceId]
+                : undefined
+            }
+            sourceMap={session.sourceMap}
+            publisher={session.sourcePublisher}
+          />
+        ) : null}
+      </ExamShell>
+
+      <AbandonSessionDialog
+        open={abandonOpen}
+        onClose={() => setAbandonOpen(false)}
+        onConfirm={() => {
+          session.abandonSession();
+          router.push(setupHref);
+        }}
+      />
+    </>
   );
 }

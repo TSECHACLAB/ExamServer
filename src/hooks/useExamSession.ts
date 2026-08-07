@@ -1,429 +1,557 @@
-/**
- * 受験セッションのカスタムフック
- *
- * 問題の読み込み、回答状態の管理、タイマー、採点リクエストを一元管理する。
- * sessionStorage を利用してブラウザリロード時に回答状態を復帰できる。
- */
-
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type {
+  AnswerResponse,
+  AnswerState,
+  BatchAnswerResponse,
+  ExamResult,
+  ExamSessionError,
+  ExamSessionPhase,
+  FinishReason,
+  NormalizedExamSessionConfig,
   PublicQuestion,
   PublicScenario,
-  AnswerState,
-  ExamMode,
-  AnswerResponse,
-  BatchAnswerResponse,
   QuestionSourcePublisher,
   PublicQuestionSourceSet,
+  SessionStateV2,
 } from "@/types/exam";
 import { getQuestionDomains } from "@/lib/question-domains";
+import { normalizeSelectedAnswer } from "@/lib/answer-state";
+import {
+  clearSessionState,
+  loadSessionStateV2,
+  saveSessionStateV2,
+} from "@/lib/exam-session-storage";
 
-// ---------------------------------------------------------------------------
-// sessionStorage による状態復帰キー
-// ---------------------------------------------------------------------------
-const SESSION_KEY = "exam-session-state";
-
-interface SessionState {
-  categoryId: string;
-  questionIds: string[];
-  answers: AnswerState[];
-  currentIndex: number;
-  remainingTime: number | null;
-}
-
-// ---------------------------------------------------------------------------
-// フックのインターフェース
-// ---------------------------------------------------------------------------
-
-interface UseExamSessionOptions {
-  categoryId: string;
-  mode: ExamMode;
-  questionCount: number;
-  timerEnabled: boolean;
-  randomEnabled: boolean;
-  selectedDomains: string[];
-  timeLimit: number;
-}
-
-interface ExamSessionState {
-  /** 問題一覧（正解なし） */
+interface QuestionsResponse {
   questions: PublicQuestion[];
-  /** 回答状態 */
-  answers: AnswerState[];
-  /** 現在の問題インデックス */
-  currentIndex: number;
-  /** タイマー残り秒数（null=タイマー無効） */
-  remainingTime: number | null;
-  /** 読み込み中 */
-  loading: boolean;
-  /** 一問一答モードで表示中の結果 */
-  drillResult: AnswerResponse | null;
-  /** 試験が終了したか */
-  finished: boolean;
-  /** 一括採点結果 */
-  batchResult: BatchAnswerResponse | null;
-  /** 問題IDからシナリオを引くマップ（シナリオ問題のみ） */
-  scenarioMap: Record<string, PublicScenario>;
-  /** sourceIdから公式資料セットを引くマップ */
-  sourceMap: Record<string, PublicQuestionSourceSet>;
-  /** 公式資料の公開元 */
+  scenarios: PublicScenario[];
+  sources: PublicQuestionSourceSet[];
   sourcePublisher: QuestionSourcePublisher | null;
 }
 
-interface ExamSessionActions {
+export interface ExamSessionState {
+  questions: PublicQuestion[];
+  answers: AnswerState[];
+  currentIndex: number;
+  remainingTime: number | null;
+  phase: ExamSessionPhase;
+  error: ExamSessionError | null;
+  drillResult: AnswerResponse | null;
+  completedResult: ExamResult | null;
+  scenarioMap: Record<string, PublicScenario>;
+  sourceMap: Record<string, PublicQuestionSourceSet>;
+  sourcePublisher: QuestionSourcePublisher | null;
+  isLocked: boolean;
+}
+
+export interface ExamSessionActions {
   setAnswer: (answer: number | number[]) => void;
   toggleFlag: () => void;
   toggleUncertain: () => void;
   goTo: (index: number) => void;
   goNext: () => void;
   goPrev: () => void;
-  /** 一問一答で回答を送信 */
   submitDrill: () => Promise<void>;
-  /** 一問一答で未回答として正解・解説を表示 */
   submitUnknownDrill: () => Promise<void>;
-  /** 一問一答で次の問題へ */
   nextDrill: () => void;
-  /** 本番モードで試験を終了・一括採点 */
-  finishExam: () => Promise<void>;
-  /** 採点せずにセッションを破棄 */
+  requestReview: () => void;
+  resumeExam: (index?: number) => void;
+  finishExam: (reason?: FinishReason) => Promise<void>;
+  retry: () => Promise<void>;
   abandonSession: () => void;
 }
 
 export function useExamSession(
-  options: UseExamSessionOptions
+  config: NormalizedExamSessionConfig,
 ): ExamSessionState & ExamSessionActions {
-  const {
-    categoryId,
-    questionCount,
-    timerEnabled,
-    randomEnabled,
-    selectedDomains,
-    timeLimit,
-  } = options;
-
   const [questions, setQuestions] = useState<PublicQuestion[]>([]);
   const [answers, setAnswers] = useState<AnswerState[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [deadlineAt, setDeadlineAt] = useState<number | null>(null);
   const [remainingTime, setRemainingTime] = useState<number | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [drillResult, setDrillResult] = useState<AnswerResponse | null>(null);
-  const [finished, setFinished] = useState(false);
-  const [batchResult, setBatchResult] = useState<BatchAnswerResponse | null>(
-    null
-  );
-  const [scenarioMap, setScenarioMap] = useState<
-    Record<string, PublicScenario>
-  >({});
-  const [sourceMap, setSourceMap] = useState<
-    Record<string, PublicQuestionSourceSet>
-  >({});
+  const [phase, setPhase] = useState<ExamSessionPhase>("loading");
+  const [error, setError] = useState<ExamSessionError | null>(null);
+  const [drillResults, setDrillResults] = useState<Record<string, AnswerResponse>>({});
+  const [completedResult, setCompletedResult] = useState<ExamResult | null>(null);
+  const [attemptId, setAttemptId] = useState("");
+  const [scenarioMap, setScenarioMap] = useState<Record<string, PublicScenario>>({});
+  const [sourceMap, setSourceMap] = useState<Record<string, PublicQuestionSourceSet>>({});
   const [sourcePublisher, setSourcePublisher] =
     useState<QuestionSourcePublisher | null>(null);
 
-  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const hasTimer = remainingTime !== null;
+  const submittingRef = useRef(false);
+  const autoSubmitStartedRef = useRef(false);
+  const timerExpired = config.mode === "exam" && remainingTime === 0;
 
-  // ---------------------------------------------------------------------------
-  // 問題データ読み込み
-  // ---------------------------------------------------------------------------
-  useEffect(() => {
-    const fetchQuestions = async () => {
-      const res = await fetch(`/api/questions?categoryId=${categoryId}`);
-      const data = await res.json();
+  const loadQuestions = useCallback(async () => {
+    setPhase("loading");
+    setError(null);
+    autoSubmitStartedRef.current = false;
 
-      const nextSourceMap: Record<string, PublicQuestionSourceSet> = {};
-      for (const source of (data.sources ?? []) as PublicQuestionSourceSet[]) {
-        nextSourceMap[source.id] = source;
-      }
-      setSourceMap(nextSourceMap);
-      setSourcePublisher(
-        (data.sourcePublisher as QuestionSourcePublisher | null | undefined) ??
-          null
+    try {
+      const response = await fetch(
+        `/api/questions?categoryId=${encodeURIComponent(config.categoryId)}`,
       );
-
-      // 問題IDからシナリオを引くマップを構築
-      const sMap: Record<string, PublicScenario> = {};
-      if (data.scenarios) {
-        for (const scenario of data.scenarios as PublicScenario[]) {
-          for (const q of scenario.questions) {
-            sMap[q.id] = scenario;
-          }
-        }
+      const data: unknown = await readJson(response);
+      if (!response.ok) {
+        throw requestError(data, "問題を読み込めませんでした。");
       }
-      setScenarioMap(sMap);
-
-      // oneshot問題 → scenario問題の順で結合
-      let allQuestions: PublicQuestion[] = [...(data.questions || [])];
-      if (data.scenarios) {
-        for (const scenario of data.scenarios) {
-          allQuestions = [...allQuestions, ...scenario.questions];
-        }
+      if (!isQuestionsResponse(data)) {
+        throw invalidResponseError("問題データの形式が正しくありません。");
       }
-      if (selectedDomains.length > 0) {
-        allQuestions = allQuestions.filter((question) =>
+
+      const nextSourceMap = Object.fromEntries(
+        data.sources.map((source) => [source.id, source]),
+      );
+      const nextScenarioMap: Record<string, PublicScenario> = {};
+      for (const scenario of data.scenarios) {
+        for (const question of scenario.questions) nextScenarioMap[question.id] = scenario;
+      }
+
+      let availableQuestions = [
+        ...data.questions,
+        ...data.scenarios.flatMap((scenario) => scenario.questions),
+      ];
+      if (config.selectedDomains.length > 0) {
+        availableQuestions = availableQuestions.filter((question) =>
           getQuestionDomains(question).some((domain) =>
-            selectedDomains.includes(domain)
-          )
+            config.selectedDomains.includes(domain),
+          ),
         );
       }
 
-      const saved = loadSessionState();
-      const restoredQuestions = restoreSavedQuestionOrder(
-        saved,
-        categoryId,
-        allQuestions,
-        questionCount
-      );
-
-      // ランダム出題（問題数指定時）
-      if (restoredQuestions) {
-        allQuestions = restoredQuestions;
-      } else {
-        if (randomEnabled) {
-          allQuestions = shuffle(allQuestions);
-        }
-        if (questionCount < allQuestions.length) {
-          allQuestions = allQuestions.slice(0, questionCount);
-        }
+      if (availableQuestions.length === 0) {
+        setQuestions([]);
+        setAnswers([]);
+        setError({
+          operation: "load",
+          kind: "empty",
+          message: "選択した範囲には出題できる問題がありません。",
+          recoverPhase: "active",
+        });
+        setPhase("error");
+        return;
       }
 
-      // sessionStorage から復帰を試みる。
-      // カテゴリやランダム出題順が違うセッションを復帰すると、
-      // 表示中の選択肢と採点対象 questionId がズレるため、問題ID列まで一致させる。
-      if (isRestorableSession(saved, categoryId, allQuestions)) {
-        setAnswers(normalizeSavedAnswers(saved.answers));
-        setCurrentIndex(Math.min(saved.currentIndex, allQuestions.length - 1));
-        setRemainingTime(saved.remainingTime);
+      const saved = loadSessionStateV2(config.fingerprint);
+      const restored = restoreSession(saved, availableQuestions, config.questionCount);
+      let nextQuestions: PublicQuestion[];
+      let nextAnswers: AnswerState[];
+      let nextIndex: number;
+      let nextDeadline: number | null;
+      let nextPhase: ExamSessionPhase;
+      let nextAttemptId: string;
+      let nextDrillResults: Record<string, AnswerResponse>;
+      let nextCompletedResult: ExamResult | null;
+
+      if (restored) {
+        nextQuestions = restored.questions;
+        nextAnswers = restored.state.answers;
+        nextIndex = Math.min(restored.state.currentIndex, nextQuestions.length - 1);
+        nextDeadline = restored.state.deadlineAt;
+        nextPhase = restored.state.completedResult ? "finished" : restored.state.phase;
+        nextAttemptId = restored.state.attemptId;
+        nextDrillResults = restored.state.drillResults;
+        nextCompletedResult = restored.state.completedResult;
       } else {
-        const initialAnswers: AnswerState[] = allQuestions.map((q) => ({
-          questionId: q.id,
+        nextQuestions = config.randomEnabled
+          ? shuffle(availableQuestions)
+          : [...availableQuestions];
+        nextQuestions = nextQuestions.slice(0, config.questionCount);
+        nextAnswers = nextQuestions.map((question) => ({
+          questionId: question.id,
           selectedAnswer: null,
           flagged: false,
           uncertain: false,
         }));
-        setAnswers(initialAnswers);
-        setRemainingTime(timerEnabled ? timeLimit : null);
+        nextIndex = 0;
+        nextDeadline =
+          config.mode === "exam" && config.timerEnabled
+            ? Date.now() + config.timeLimit * 1000
+            : null;
+        nextPhase = "active";
+        nextAttemptId = createAttemptId();
+        nextDrillResults = {};
+        nextCompletedResult = null;
       }
 
-      setQuestions(allQuestions);
-      setLoading(false);
-    };
-
-    fetchQuestions();
-  }, [categoryId, questionCount, randomEnabled, selectedDomains, timerEnabled, timeLimit]);
-
-  // ---------------------------------------------------------------------------
-  // タイマー
-  // ---------------------------------------------------------------------------
-  useEffect(() => {
-    if (!hasTimer || finished) return;
-
-    timerRef.current = setInterval(() => {
-      setRemainingTime((prev) => {
-        if (prev === null || prev <= 0) {
-          if (timerRef.current) clearInterval(timerRef.current);
-          return 0;
-        }
-        return prev - 1;
+      setSourceMap(nextSourceMap);
+      setSourcePublisher(data.sourcePublisher);
+      setScenarioMap(nextScenarioMap);
+      setQuestions(nextQuestions);
+      setAnswers(nextAnswers);
+      setCurrentIndex(nextIndex);
+      setDeadlineAt(nextDeadline);
+      setRemainingTime(calculateRemainingTime(nextDeadline));
+      setAttemptId(nextAttemptId);
+      setDrillResults(nextDrillResults);
+      setCompletedResult(nextCompletedResult);
+      setPhase(nextPhase);
+    } catch (cause) {
+      const requestFailure = toRequestFailure(cause);
+      setError({
+        operation: "load",
+        kind: requestFailure.kind,
+        message: requestFailure.message,
+        recoverPhase: "active",
       });
-    }, 1000);
+      setPhase("error");
+    }
+  }, [config]);
 
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-    };
-  }, [hasTimer, finished]);
-
-  // ---------------------------------------------------------------------------
-  // sessionStorage への保存（回答変更時）
-  // ---------------------------------------------------------------------------
   useEffect(() => {
-    if (answers.length === 0) return;
-    saveSessionState({
-      categoryId,
-      questionIds: questions.map((q) => q.id),
+    queueMicrotask(() => void loadQuestions());
+  }, [loadQuestions]);
+
+  useEffect(() => {
+    if (deadlineAt === null || phase === "finished") {
+      return;
+    }
+    const update = () => setRemainingTime(calculateRemainingTime(deadlineAt));
+    update();
+    const timer = window.setInterval(update, 250);
+    return () => window.clearInterval(timer);
+  }, [deadlineAt, phase]);
+
+  useEffect(() => {
+    if (
+      phase === "loading" ||
+      !attemptId ||
+      questions.length === 0 ||
+      answers.length !== questions.length
+    ) return;
+    const state: SessionStateV2 = {
+      version: 2,
+      attemptId,
+      configFingerprint: config.fingerprint,
+      categoryId: config.categoryId,
+      mode: config.mode,
+      questionIds: questions.map((question) => question.id),
       answers,
       currentIndex,
-      remainingTime,
-    });
-  }, [categoryId, questions, answers, currentIndex, remainingTime]);
-
-  // ---------------------------------------------------------------------------
-  // ブラウザ離脱警告
-  // ---------------------------------------------------------------------------
-  useEffect(() => {
-    if (finished) return;
-
-    const handler = (e: BeforeUnloadEvent) => {
-      e.preventDefault();
+      deadlineAt,
+      phase,
+      drillResults,
+      completedResult,
     };
+    saveSessionStateV2(state);
+  }, [
+    answers,
+    attemptId,
+    completedResult,
+    config,
+    currentIndex,
+    deadlineAt,
+    drillResults,
+    phase,
+    questions,
+  ]);
+
+  useEffect(() => {
+    if (phase === "finished") return;
+    const handler = (event: BeforeUnloadEvent) => event.preventDefault();
     window.addEventListener("beforeunload", handler);
     return () => window.removeEventListener("beforeunload", handler);
-  }, [finished]);
-
-  // ---------------------------------------------------------------------------
-  // アクション
-  // ---------------------------------------------------------------------------
+  }, [phase]);
 
   const setAnswer = useCallback(
     (answer: number | number[]) => {
+      if (phase !== "active" || timerExpired) return;
       const selectedAnswer = normalizeSelectedAnswer(answer);
-      setAnswers((prev) =>
-        prev.map((a, i) =>
-          i === currentIndex
-            ? { ...a, selectedAnswer, uncertain: false }
-            : a
-        )
+      setAnswers((previous) =>
+        previous.map((item, index) =>
+          index === currentIndex
+            ? { ...item, selectedAnswer, uncertain: false }
+            : item,
+        ),
       );
-      // 一問一答で結果表示中に回答を変えたらリセット
-      setDrillResult(null);
     },
-    [currentIndex]
+    [currentIndex, phase, timerExpired],
   );
 
   const toggleFlag = useCallback(() => {
-    setAnswers((prev) =>
-      prev.map((a, i) =>
-        i === currentIndex ? { ...a, flagged: !a.flagged } : a
-      )
+    if (phase !== "active" || timerExpired) return;
+    setAnswers((previous) =>
+      previous.map((item, index) =>
+        index === currentIndex ? { ...item, flagged: !item.flagged } : item,
+      ),
     );
-  }, [currentIndex]);
+  }, [currentIndex, phase, timerExpired]);
 
   const toggleUncertain = useCallback(() => {
-    setAnswers((prev) =>
-      prev.map((a, i) =>
-        i === currentIndex
+    if (phase !== "active" || timerExpired) return;
+    setAnswers((previous) =>
+      previous.map((item, index) =>
+        index === currentIndex
           ? {
-              ...a,
+              ...item,
               selectedAnswer: null,
-              uncertain: !a.uncertain,
+              uncertain: !item.uncertain,
             }
-          : a
-      )
+          : item,
+      ),
     );
-    setDrillResult(null);
-  }, [currentIndex]);
+  }, [currentIndex, phase, timerExpired]);
 
-  const goTo = useCallback((index: number) => {
-    setCurrentIndex(index);
-    setDrillResult(null);
-  }, []);
+  const goTo = useCallback(
+    (index: number) => {
+      if (
+        phase !== "active" ||
+        timerExpired ||
+        index < 0 ||
+        index >= questions.length
+      ) return;
+      setCurrentIndex(index);
+    },
+    [phase, questions.length, timerExpired],
+  );
 
   const goNext = useCallback(() => {
-    setCurrentIndex((prev) => Math.min(prev + 1, questions.length - 1));
-    setDrillResult(null);
-  }, [questions.length]);
+    if (phase !== "active" || timerExpired) return;
+    setCurrentIndex((index) => Math.min(index + 1, questions.length - 1));
+  }, [phase, questions.length, timerExpired]);
 
   const goPrev = useCallback(() => {
-    setCurrentIndex((prev) => Math.max(prev - 1, 0));
-    setDrillResult(null);
-  }, []);
+    if (phase !== "active" || timerExpired) return;
+    setCurrentIndex((index) => Math.max(index - 1, 0));
+  }, [phase, timerExpired]);
 
-  /** 一問一答: 回答を送信して即座に結果を取得 */
-  const submitDrill = useCallback(async () => {
-    const currentQuestion = questions[currentIndex];
-    const current = answers[currentIndex];
-    if (!currentQuestion || !current || current.selectedAnswer === null) return;
+  const submitCurrentDrill = useCallback(
+    async (markUnknown: boolean) => {
+      if (submittingRef.current) return;
+      const question = questions[currentIndex];
+      const current = answers[currentIndex];
+      if (!question || !current) return;
+      const answer = markUnknown ? null : normalizeSelectedAnswer(current.selectedAnswer);
+      if (!markUnknown && answer === null) return;
 
-    const questionId = currentQuestion.id;
-    const res = await fetch("/api/answers", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        categoryId,
-        questionId,
-        answer: current.selectedAnswer,
-      }),
-    });
-    const data = (await res.json()) as AnswerResponse;
-    setDrillResult({ ...data, questionId: data.questionId ?? questionId });
-  }, [categoryId, questions, answers, currentIndex]);
+      if (markUnknown) {
+        setAnswers((previous) =>
+          previous.map((item, index) =>
+            index === currentIndex
+              ? { ...item, selectedAnswer: null, uncertain: true }
+              : item,
+          ),
+        );
+      }
 
-  /** 一問一答: 未回答として正解と解説を取得 */
-  const submitUnknownDrill = useCallback(async () => {
-    const currentQuestion = questions[currentIndex];
-    if (!currentQuestion) return;
+      submittingRef.current = true;
+      setError(null);
+      setPhase("submitting");
+      try {
+        const response = await fetch("/api/answers", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            categoryId: config.categoryId,
+            questionId: question.id,
+            answer,
+          }),
+        });
+        const data: unknown = await readJson(response);
+        if (!response.ok) throw requestError(data, "答え合わせに失敗しました。");
+        if (!isAnswerResponse(data) || data.questionId !== question.id) {
+          throw invalidResponseError("答え合わせ結果の形式が正しくありません。");
+        }
+        setDrillResults((previous) => ({ ...previous, [question.id]: data }));
+        setPhase("feedback");
+      } catch (cause) {
+        const requestFailure = toRequestFailure(cause);
+        setError({
+          operation: "drill",
+          kind: requestFailure.kind,
+          message: requestFailure.message,
+          recoverPhase: "active",
+        });
+        setPhase("error");
+      } finally {
+        submittingRef.current = false;
+      }
+    },
+    [answers, config.categoryId, currentIndex, questions],
+  );
 
-    setAnswers((prev) =>
-      prev.map((a, i) =>
-        i === currentIndex
-          ? { ...a, selectedAnswer: null, uncertain: true }
-          : a
-      )
-    );
+  const submitDrill = useCallback(
+    () => submitCurrentDrill(false),
+    [submitCurrentDrill],
+  );
+  const submitUnknownDrill = useCallback(
+    () => submitCurrentDrill(true),
+    [submitCurrentDrill],
+  );
 
-    const questionId = currentQuestion.id;
-    const res = await fetch("/api/answers", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        categoryId,
-        questionId,
-        answer: null,
-      }),
-    });
-    const data = (await res.json()) as AnswerResponse;
-    setDrillResult({ ...data, questionId: data.questionId ?? questionId });
-  }, [categoryId, questions, currentIndex]);
-
-  /** 一問一答: 結果を閉じて次へ */
   const nextDrill = useCallback(() => {
-    setDrillResult(null);
+    if (phase !== "feedback") return;
     if (currentIndex < questions.length - 1) {
-      setCurrentIndex((prev) => prev + 1);
-    } else {
-      setFinished(true);
+      setCurrentIndex((index) => index + 1);
+      setPhase("active");
+      return;
     }
-  }, [currentIndex, questions.length]);
 
-  /** 本番モード: 一括採点 */
-  const finishExam = useCallback(async () => {
-    if (timerRef.current) clearInterval(timerRef.current);
-
-    const res = await fetch("/api/answers/batch", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        categoryId,
-        answers: answers.map((a, index) => ({
-          questionId: questions[index]?.id ?? a.questionId,
-          answer: a.selectedAnswer,
-        })),
-      }),
+    const results = questions.flatMap((question, index) => {
+      const response = drillResults[question.id];
+      if (!response) return [];
+      return [{
+        questionId: question.id,
+        userAnswer: normalizeSelectedAnswer(answers[index]?.selectedAnswer ?? null),
+        correctAnswer: response.answer,
+        score: response.score,
+        explanation: response.explanation,
+      }];
     });
-    const data = (await res.json()) as BatchAnswerResponse;
-    const resultOrder = new Map(
-      questions.map((question, index) => [question.id, index])
-    );
-    const orderedResults = [...data.results].sort(
-      (a, b) =>
-        (resultOrder.get(a.questionId) ?? Number.MAX_SAFE_INTEGER) -
-        (resultOrder.get(b.questionId) ?? Number.MAX_SAFE_INTEGER)
-    );
-    setBatchResult({ ...data, results: orderedResults });
-    setFinished(true);
-    clearSessionState();
-  }, [categoryId, questions, answers]);
+    const totalPoints = results.reduce((sum, result) => sum + result.score, 0);
+    const result: ExamResult = {
+      attemptId,
+      categoryId: config.categoryId,
+      mode: "drill",
+      finishReason: "drill-complete",
+      passingScore: config.passingScore,
+      results,
+      totalScore: results.length > 0 ? Math.round((totalPoints / results.length) * 100) : 0,
+      correctCount: results.filter((item) => item.score === 1).length,
+      totalCount: questions.length,
+      timestamp: new Date().toISOString(),
+    };
+    setCompletedResult(result);
+    setPhase("finished");
+  }, [
+    answers,
+    attemptId,
+    config.categoryId,
+    config.passingScore,
+    currentIndex,
+    drillResults,
+    phase,
+    questions,
+  ]);
+
+  const requestReview = useCallback(() => {
+    if (config.mode === "exam" && phase === "active" && !timerExpired) {
+      setPhase("review");
+    }
+  }, [config.mode, phase, timerExpired]);
+
+  const resumeExam = useCallback(
+    (index?: number) => {
+      if (phase !== "review" || timerExpired) return;
+      if (index !== undefined && index >= 0 && index < questions.length) {
+        setCurrentIndex(index);
+      }
+      setPhase("active");
+    },
+    [phase, questions.length, timerExpired],
+  );
+
+  const finishExam = useCallback(
+    async (reason: FinishReason = "manual") => {
+      if (submittingRef.current || completedResult || config.mode !== "exam") return;
+      submittingRef.current = true;
+      setError(null);
+      setPhase("submitting");
+      try {
+        const response = await fetch("/api/answers/batch", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            attemptId,
+            categoryId: config.categoryId,
+            answers: answers.map((answer, index) => ({
+              questionId: questions[index]?.id ?? answer.questionId,
+              answer: normalizeSelectedAnswer(answer.selectedAnswer),
+            })),
+          }),
+        });
+        const data: unknown = await readJson(response);
+        if (!response.ok) throw requestError(data, "採点に失敗しました。");
+        if (!isBatchAnswerResponse(data) || !matchesQuestions(data, questions)) {
+          throw invalidResponseError("採点結果の形式が正しくありません。");
+        }
+        const order = new Map(questions.map((question, index) => [question.id, index]));
+        const result: ExamResult = {
+          attemptId,
+          categoryId: config.categoryId,
+          mode: "exam",
+          finishReason: reason,
+          passingScore: config.passingScore,
+          results: [...data.results].sort(
+            (left, right) =>
+              (order.get(left.questionId) ?? Number.MAX_SAFE_INTEGER) -
+              (order.get(right.questionId) ?? Number.MAX_SAFE_INTEGER),
+          ),
+          totalScore: data.totalScore,
+          correctCount: data.correctCount,
+          totalCount: data.totalCount,
+          timestamp: new Date().toISOString(),
+        };
+        setCompletedResult(result);
+        setPhase("finished");
+      } catch (cause) {
+        const requestFailure = toRequestFailure(cause);
+        setError({
+          operation: "submit",
+          kind: requestFailure.kind,
+          message: requestFailure.message,
+          recoverPhase: reason === "manual" ? "review" : "active",
+          finishReason: reason,
+        });
+        setPhase("error");
+      } finally {
+        submittingRef.current = false;
+      }
+    },
+    [answers, attemptId, completedResult, config, questions],
+  );
+
+  useEffect(() => {
+    if (
+      remainingTime !== 0 ||
+      config.mode !== "exam" ||
+      (phase !== "active" && phase !== "review") ||
+      autoSubmitStartedRef.current
+    ) {
+      return;
+    }
+    autoSubmitStartedRef.current = true;
+    void finishExam("time-expired");
+  }, [config.mode, finishExam, phase, remainingTime]);
+
+  const retry = useCallback(async () => {
+    if (!error) return;
+    if (error.operation === "load") {
+      await loadQuestions();
+      return;
+    }
+    if (error.operation === "drill") {
+      setPhase("active");
+      await submitCurrentDrill(Boolean(answers[currentIndex]?.uncertain));
+      return;
+    }
+    setPhase(error.recoverPhase);
+    await finishExam(error.finishReason ?? "manual");
+  }, [answers, currentIndex, error, finishExam, loadQuestions, submitCurrentDrill]);
 
   const abandonSession = useCallback(() => {
-    if (timerRef.current) clearInterval(timerRef.current);
     clearSessionState();
-    setFinished(true);
   }, []);
+
+  const currentQuestion = questions[currentIndex];
+  const drillResult = currentQuestion ? drillResults[currentQuestion.id] ?? null : null;
 
   return {
     questions,
     answers,
     currentIndex,
     remainingTime,
-    loading,
+    phase,
+    error,
     drillResult,
-    finished,
-    batchResult,
+    completedResult,
     scenarioMap,
     sourceMap,
     sourcePublisher,
+    isLocked: timerExpired || phase === "submitting" || phase === "finished",
     setAnswer,
     toggleFlag,
     toggleUncertain,
@@ -433,93 +561,203 @@ export function useExamSession(
     submitDrill,
     submitUnknownDrill,
     nextDrill,
+    requestReview,
+    resumeExam,
     finishExam,
+    retry,
     abandonSession,
   };
 }
 
-// ---------------------------------------------------------------------------
-// ユーティリティ
-// ---------------------------------------------------------------------------
-
-/** 配列をシャッフル（Fisher-Yates） */
-function shuffle<T>(arr: T[]): T[] {
-  const copy = [...arr];
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
-}
-
-function loadSessionState(): SessionState | null {
-  if (typeof window === "undefined") return null;
-  try {
-    const raw = sessionStorage.getItem(SESSION_KEY);
-    return raw ? JSON.parse(raw) : null;
-  } catch {
+function restoreSession(
+  state: SessionStateV2 | null,
+  availableQuestions: PublicQuestion[],
+  expectedCount: number,
+): { state: SessionStateV2; questions: PublicQuestion[] } | null {
+  if (!state || state.questionIds.length !== expectedCount) return null;
+  if (state.answers.length !== state.questionIds.length) return null;
+  const byId = new Map(availableQuestions.map((question) => [question.id, question]));
+  const questions = state.questionIds.map((id) => byId.get(id));
+  if (questions.some((question) => !question)) return null;
+  if (
+    state.answers.some(
+      (answer, index) => answer.questionId !== state.questionIds[index],
+    )
+  ) {
     return null;
   }
+  return { state, questions: questions as PublicQuestion[] };
 }
 
-function normalizeSavedAnswers(answers: AnswerState[]): AnswerState[] {
-  return answers.map((answer) => ({
-    ...answer,
-    selectedAnswer: normalizeSelectedAnswer(answer.selectedAnswer),
-    uncertain: Boolean(answer.uncertain),
-  }));
+function shuffle<T>(items: T[]): T[] {
+  const result = [...items];
+  for (let index = result.length - 1; index > 0; index -= 1) {
+    const next = Math.floor(Math.random() * (index + 1));
+    [result[index], result[next]] = [result[next], result[index]];
+  }
+  return result;
 }
 
-function normalizeSelectedAnswer(
-  answer: number | number[] | null,
-): number | number[] | null {
-  if (!Array.isArray(answer)) return answer;
-  const unique = [...new Set(answer)].sort((left, right) => left - right);
-  return unique.length === 0 ? null : unique;
+function calculateRemainingTime(deadlineAt: number | null): number | null {
+  if (deadlineAt === null) return null;
+  return Math.max(0, Math.ceil((deadlineAt - Date.now()) / 1000));
 }
 
-function isRestorableSession(
-  saved: SessionState | null,
-  categoryId: string,
-  questions: PublicQuestion[]
-): saved is SessionState {
-  if (!saved) return false;
-  if (saved.categoryId !== categoryId) return false;
-  if (saved.answers.length !== questions.length) return false;
-  if (saved.questionIds.length !== questions.length) return false;
-
-  return questions.every((question, index) => {
-    return (
-      saved.questionIds[index] === question.id &&
-      saved.answers[index]?.questionId === question.id
-    );
-  });
+function createAttemptId(): string {
+  if (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function") {
+    return crypto.randomUUID();
+  }
+  return `${Date.now()}-${Math.random().toString(36).slice(2)}`;
 }
 
-function restoreSavedQuestionOrder(
-  saved: SessionState | null,
-  categoryId: string,
+type RequestFailure = Error & { kind: "network" | "invalid-response" };
+
+function requestError(data: unknown, fallback: string): RequestFailure {
+  const message =
+    isRecord(data) && typeof data.error === "string" ? data.error : fallback;
+  return Object.assign(new Error(message), { kind: "network" as const });
+}
+
+function invalidResponseError(message: string): RequestFailure {
+  return Object.assign(new Error(message), { kind: "invalid-response" as const });
+}
+
+function toRequestFailure(cause: unknown): RequestFailure {
+  if (cause instanceof Error && "kind" in cause) return cause as RequestFailure;
+  return Object.assign(
+    new Error(cause instanceof Error ? cause.message : "通信に失敗しました。"),
+    { kind: "network" as const },
+  );
+}
+
+async function readJson(response: Response): Promise<unknown> {
+  try {
+    return await response.json();
+  } catch {
+    throw invalidResponseError("サーバーから正しい応答を受け取れませんでした。");
+  }
+}
+
+function isQuestionsResponse(value: unknown): value is QuestionsResponse {
+  return (
+    isRecord(value) &&
+    Array.isArray(value.questions) &&
+    value.questions.every(isPublicQuestion) &&
+    Array.isArray(value.scenarios) &&
+    value.scenarios.every(isPublicScenario) &&
+    Array.isArray(value.sources) &&
+    (value.sourcePublisher === null || isRecord(value.sourcePublisher))
+  );
+}
+
+function isPublicQuestion(value: unknown): value is PublicQuestion {
+  return (
+    isRecord(value) &&
+    typeof value.id === "string" &&
+    typeof value.text === "string" &&
+    Array.isArray(value.options) &&
+    value.options.every((option) => typeof option === "string") &&
+    (value.type === "single-choice" || value.type === "multiple-choice") &&
+    (value.style === "oneshot" || value.style === "scenario")
+  );
+}
+
+function isPublicScenario(value: unknown): value is PublicScenario {
+  return (
+    isRecord(value) &&
+    typeof value.id === "string" &&
+    typeof value.title === "string" &&
+    typeof value.scenario === "string" &&
+    Array.isArray(value.questions) &&
+    value.questions.every(isPublicQuestion)
+  );
+}
+
+function isAnswerResponse(value: unknown): value is AnswerResponse {
+  return (
+    isRecord(value) &&
+    typeof value.questionId === "string" &&
+    typeof value.correct === "boolean" &&
+    isUnitScore(value.score) &&
+    isCorrectAnswer(value.answer) &&
+    typeof value.explanation === "string" &&
+    value.correct === (value.score === 1)
+  );
+}
+
+function isBatchAnswerResponse(value: unknown): value is BatchAnswerResponse {
+  return (
+    isRecord(value) &&
+    Array.isArray(value.results) &&
+    value.results.every((result) =>
+      isRecord(result) &&
+      typeof result.questionId === "string" &&
+      isSelectedAnswer(result.userAnswer) &&
+      isCorrectAnswer(result.correctAnswer) &&
+      isUnitScore(result.score) &&
+      typeof result.explanation === "string",
+    ) &&
+    isFiniteNumber(value.totalScore) &&
+    value.totalScore >= 0 &&
+    value.totalScore <= 100 &&
+    typeof value.correctCount === "number" &&
+    Number.isInteger(value.correctCount) &&
+    value.correctCount >= 0 &&
+    typeof value.totalCount === "number" &&
+    Number.isInteger(value.totalCount) &&
+    value.totalCount >= 0
+  );
+}
+
+function matchesQuestions(
+  response: BatchAnswerResponse,
   questions: PublicQuestion[],
-  questionCount: number
-): PublicQuestion[] | null {
-  if (!saved) return null;
-  if (saved.categoryId !== categoryId) return null;
-  const expectedCount = Math.min(questionCount, questions.length);
-  if (saved.questionIds.length !== expectedCount) return null;
+): boolean {
+  if (
+    response.totalCount !== questions.length ||
+    response.results.length !== questions.length ||
+    response.correctCount > response.totalCount
+  ) return false;
 
-  const questionsById = new Map(questions.map((question) => [question.id, question]));
-  const restored = saved.questionIds.map((id) => questionsById.get(id));
-  if (restored.some((question) => !question)) return null;
+  const expectedIds = new Set(questions.map((question) => question.id));
+  const resultIds = new Set(response.results.map((result) => result.questionId));
+  if (
+    resultIds.size !== response.results.length ||
+    [...resultIds].some((questionId) => !expectedIds.has(questionId))
+  ) return false;
 
-  return restored as PublicQuestion[];
+  const totalPoints = response.results.reduce((sum, result) => sum + result.score, 0);
+  const expectedScore = Math.round((totalPoints / questions.length) * 100);
+  const expectedCorrectCount = response.results.filter((result) => result.score === 1).length;
+  return (
+    response.totalScore === expectedScore &&
+    response.correctCount === expectedCorrectCount
+  );
 }
 
-function saveSessionState(state: SessionState): void {
-  if (typeof window === "undefined") return;
-  sessionStorage.setItem(SESSION_KEY, JSON.stringify(state));
+function isSelectedAnswer(value: unknown): value is number | number[] | null {
+  return value === null || isCorrectAnswer(value);
 }
 
-function clearSessionState(): void {
-  if (typeof window === "undefined") return;
-  sessionStorage.removeItem(SESSION_KEY);
+function isCorrectAnswer(value: unknown): value is number | number[] {
+  return (
+    isAnswerIndex(value) ||
+    (Array.isArray(value) && value.length > 0 && value.every(isAnswerIndex))
+  );
+}
+
+function isAnswerIndex(value: unknown): value is number {
+  return Number.isInteger(value) && Number(value) >= 0;
+}
+
+function isUnitScore(value: unknown): value is number {
+  return isFiniteNumber(value) && value >= 0 && value <= 1;
+}
+
+function isFiniteNumber(value: unknown): value is number {
+  return typeof value === "number" && Number.isFinite(value);
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
 }

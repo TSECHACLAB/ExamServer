@@ -50,10 +50,10 @@ timeout: active(exam) -> submitting exactly once -> finished
 
 ## Interfaces
 
-- `NormalizedExamSessionConfig`: categoryId、mode、questionCount、timerEnabled、randomEnabled、selectedDomains。
+- `NormalizedExamSessionConfig`: categoryId、mode、questionCount、timerEnabled、randomEnabled、selectedDomains、timeLimit、passingScore、returnBucket、fingerprint。
 - `ExamSessionPhase`: loading、active、feedback、review、submitting、finished、error。
-- `ExamSessionError`: operation、message、retryable。
-- `FinishReason`: manual、time-expired。
+- `ExamSessionError`: operation、kind、message、recoverPhase、必要な場合のfinishReason。
+- `FinishReason`: manual、time-expired、drill-complete。
 - `SessionStateV2`: version、attemptId、configFingerprint、questionIds、answers、currentIndex、deadlineAt、phase、drillResults、completedResult。
 - `StudyProgressV2`: version付きenvelope。`QuestionHistory.lastAnswer`はnullable。
 
