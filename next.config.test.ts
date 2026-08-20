@@ -13,6 +13,15 @@ describe("practical lab external rewrites", () => {
     expect(rewrites).toEqual({
       beforeFiles: [
         {
+          source: "/bukai",
+          destination: "https://examserver-lab-origin.vercel.app/bukai",
+        },
+        {
+          source: "/bukai/:path+",
+          destination:
+            "https://examserver-lab-origin.vercel.app/bukai/:path+",
+        },
+        {
           source: "/lab",
           destination: "https://examserver-lab-origin.vercel.app/lab",
         },

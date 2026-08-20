@@ -37,7 +37,7 @@
 - Core domain objects: category, question, scenario, answer state, learning node, lesson, practical-lab entry.
 - State model: validated exam configuration is established on the server; versioned exam runtime and completed feedback stay in session storage; idempotent progress stays in local storage. Learning navigation is derived from static data. Practical-lab target state remains with the Debian/Kali lab, while a separate lab service relays only its sanitized projection.
 - Naming rules: user-facing labels are Japanese and task-based; code names describe domain purpose, not visual style.
-- Boundaries between modules: learning navigation belongs to learning components; public shell owns global navigation; exam session owns answer controls. External rewrites delegate `/lab` and `/api/lab` to the isolated lab deployment; ExamServer never owns raw commands, flags, credentials, or target runtime.
+- Boundaries between modules: learning navigation belongs to learning components; public shell owns global navigation; exam session owns answer controls. External rewrites delegate `/lab`, `/api/lab`, and the static `/bukai` reference to the isolated lab deployment; ExamServer never owns raw commands, flags, credentials, or target runtime.
 - Things that must not be duplicated: global public navigation, learning tree rendering rules, answer normalization, answered-state rules, category grouping rules, DADS primitive source, or session configuration parsing.
 
 ## Non-Goals
