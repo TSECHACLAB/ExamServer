@@ -9,6 +9,14 @@ const nextConfig: NextConfig = {
     return {
       beforeFiles: [
         {
+          source: "/bukai",
+          destination: `${LAB_ORIGIN}/bukai`,
+        },
+        {
+          source: "/bukai/:path+",
+          destination: `${LAB_ORIGIN}/bukai/:path+`,
+        },
+        {
           source: "/lab",
           destination: `${LAB_ORIGIN}/lab`,
         },
